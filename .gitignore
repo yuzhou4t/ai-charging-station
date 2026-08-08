@@ -9,6 +9,7 @@ logs/
 *.log
 data/digests/
 data/flow/
+data/public-api/
 data/feedback/items.json
 data/forgerss/
 data/latest.json

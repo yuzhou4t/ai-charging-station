@@ -82,8 +82,20 @@ if (digest.exitCode === 0) {
   await recordSkippedStep('report', 'digest 失败，跳过日报汇报。');
 }
 
+const coreOk = digest.exitCode === 0 && index.exitCode === 0 && report.exitCode === 0;
+if (coreOk && process.env.AI_CHARGING_STATION_PUBLIC_FEED_ENABLED === '1') {
+  await runNodeStep('public:publish', ['scripts/publish-public-daily.js'], {
+    allowFailure: true,
+    timeoutMs: Number(process.env.PUBLIC_FEED_WORKFLOW_TIMEOUT_MS || 120_000),
+  });
+} else if (!coreOk) {
+  await recordSkippedStep('public:publish', '日报核心流程失败，保留云端最后一次成功快照。');
+} else {
+  await recordSkippedStep('public:publish', '未启用 AI_CHARGING_STATION_PUBLIC_FEED_ENABLED，跳过公开日报同步。');
+}
+
 const finishedAt = new Date().toISOString();
-const ok = digest.exitCode === 0 && index.exitCode === 0 && report.exitCode === 0;
+const ok = coreOk;
 let reportText = report.stdout.trim() || digest.stdout.trim() || 'AI充电站日报未生成可读摘要，请检查 logs/daily-workflow.log。';
 if (translationWarnings.length) {
   reportText = `${reportText}\n\n## 翻译提醒\n${[...new Set(translationWarnings)].join('\n')}`;
