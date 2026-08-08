@@ -235,3 +235,28 @@ npm run feedback -- --rating=down --title="某个不太需要的标题"
 ```
 
 Codex 定时任务如果在普通运行环境里看到 `EPERM`、`ENOTFOUND` 或 `fetch failed`，通常是网络权限层拦住了本地 RSSHub 或外网请求；这时需要用本机网络权限重跑抓取命令。
+
+## Windows 助理只读接口
+
+AI充电站可以在每日工作流成功后，将脱敏快照发布到专用 `assistant-feed` 分支。公开内容只包含标题、摘要、来源、原文链接、发布时间和简化后的源状态，不包含本机路径、日志、Cookie、反馈记录或其他个人数据。
+
+在本机 `.env` 中启用：
+
+```bash
+AI_CHARGING_STATION_PUBLIC_FEED_ENABLED=1
+```
+
+手动构建和发布：
+
+```bash
+npm run public:build
+npm run public:publish
+```
+
+Windows 助理的固定读取地址：
+
+```text
+https://raw.githubusercontent.com/yuzhou4t/ai-charging-station/assistant-feed/latest.json
+```
+
+`windows-client/` 提供无需安装依赖的 Node.js 客户端，同时接入公开日报和 AI HOT 稳定 `/api/v1` 接口。

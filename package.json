@@ -16,6 +16,8 @@
     "index": "node scripts/build-digest-index.js",
     "flow:update": "node scripts/update-aihot-flow.js",
     "daily": "node scripts/run-daily-workflow.js",
+    "public:build": "node scripts/build-public-daily.js",
+    "public:publish": "node scripts/publish-public-daily.js",
     "backfill:7d": "node scripts/backfill-digests.js --days=7",
     "forgerss:xhs": "node scripts/run-forgerss-xhs.js",
     "forgerss:xhs:check": "node scripts/forgerss-xhs-session.js --check",

@@ -1,7 +1,7 @@
 import { SOURCES } from './sources.js';
 import { AIHOT_USER_AGENT, fetchSource } from './fetchers.js';
 
-const AIHOT_ITEMS_URL = 'https://aihot.virxact.com/api/public/items';
+const AIHOT_ITEMS_URL = 'https://aihot.virxact.com/api/v1/items';
 
 export async function fetchAiHotFlowItems({ now = new Date(), includeHourlySources = true } = {}) {
   const sourceHealth = {};
@@ -19,16 +19,16 @@ export async function fetchAiHotFlowItems({ now = new Date(), includeHourlySourc
   };
 }
 
-export async function fetchAiHotApiItems({ now = new Date(), maxItems = 5000 } = {}) {
+export async function fetchAiHotApiItems({ maxItems = 5000 } = {}) {
   const items = [];
   let cursor = '';
-  const since = new Date(now.getTime() - 7 * 24 * 36e5).toISOString();
 
   while (items.length < maxItems) {
     const url = new URL(AIHOT_ITEMS_URL);
     url.searchParams.set('mode', 'all');
-    url.searchParams.set('since', since);
-    url.searchParams.set('take', '100');
+    url.searchParams.set('window', '7d');
+    url.searchParams.set('by', 'timeline');
+    url.searchParams.set('limit', String(Math.min(100, maxItems - items.length)));
     if (cursor) {
       url.searchParams.set('cursor', cursor);
     }
@@ -46,7 +46,7 @@ export async function fetchAiHotApiItems({ now = new Date(), maxItems = 5000 } =
 
     const payload = await response.json();
     items.push(...(payload.items || []).map(normalizeAiHotItem));
-    cursor = payload.nextCursor || '';
+    cursor = payload.page?.nextCursor || '';
     if (!cursor || !payload.items?.length) {
       break;
     }
@@ -94,23 +94,22 @@ async function fetchHourlySourceItems({ now, sourceHealth }) {
 }
 
 function normalizeAiHotItem(item) {
-  const titleZh = item.titleZh || item.cnTitle || '';
-  const summaryZh = item.summaryZh || item.cnSummary || '';
+  const originalUrl = item.links?.original || item.links?.aihot || '';
 
   return {
-    id: item.id || item.url || item.title || titleZh,
+    id: item.id || originalUrl || item.title,
     sourceId: 'aihot-api',
     sourceName: 'AI HOT',
     platform: 'aihot',
     group: 'aihot',
-    title: titleZh || item.title || item.url,
-    url: item.url,
-    summary: summaryZh || item.summary || '',
+    title: item.title || item.originalTitle || originalUrl,
+    url: originalUrl,
+    summary: item.summary || '',
     publishedAt: item.publishedAt || null,
     category: item.category || null,
-    externalSource: item.source || item.sourceName || null,
+    externalSource: item.source?.name || null,
     score: item.score || null,
-    selected: Boolean(item.selected || item.aiSelected),
+    selected: Boolean(item.selected),
   };
 }
 
