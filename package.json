@@ -1,0 +1,30 @@
+{
+  "name": "ai-charging-station",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "digest": "node scripts/generate-digest.js",
+    "translate:digest": "node scripts/translate-digest.js",
+    "feedback": "node scripts/record-feedback.js",
+    "wechat:doctor": "node scripts/check-wechat-rss.js",
+    "wechat:link": "node scripts/link-wechat-khazix.js",
+    "werss:start": "node scripts/start-we-mp-rss.js",
+    "werss:stop": "node scripts/stop-we-mp-rss.js",
+    "report": "node scripts/report-digest.js",
+    "index": "node scripts/build-digest-index.js",
+    "flow:update": "node scripts/update-aihot-flow.js",
+    "daily": "node scripts/run-daily-workflow.js",
+    "backfill:7d": "node scripts/backfill-digests.js --days=7",
+    "forgerss:xhs": "node scripts/run-forgerss-xhs.js",
+    "forgerss:xhs:check": "node scripts/forgerss-xhs-session.js --check",
+    "forgerss:xhs:login": "node scripts/forgerss-xhs-session.js --login",
+    "rsshub:start": "node scripts/start-rsshub.js",
+    "rsshub:stop": "node scripts/stop-rsshub.js",
+    "rsshub:doctor": "node scripts/check-rsshub.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

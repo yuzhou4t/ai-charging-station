@@ -1,0 +1,1151 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>AI充电站 Site Tour</title>
+    <script src="./vendor/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        margin: 0;
+        overflow: hidden;
+        background: #0a0a0b;
+        font-family: Inter, sans-serif;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #0a0a0b;
+      }
+
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      #scene-2,
+      #scene-3,
+      #scene-4,
+      #scene-5 {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .scene-light {
+        color: #0f172a;
+        background: #f3f3f0;
+      }
+
+      .scene-dark {
+        color: #f1f5f9;
+        background: #0a0a0b;
+      }
+
+      .mesh {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .blob {
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(80px);
+        opacity: 0.48;
+      }
+
+      .light-a {
+        width: 760px;
+        height: 760px;
+        left: -220px;
+        top: -200px;
+        background: rgba(253, 186, 116, 0.52);
+      }
+
+      .light-b {
+        width: 840px;
+        height: 840px;
+        right: -240px;
+        bottom: -260px;
+        background: rgba(244, 114, 182, 0.24);
+      }
+
+      .light-c {
+        width: 520px;
+        height: 520px;
+        right: 420px;
+        top: 170px;
+        background: rgba(125, 211, 252, 0.28);
+      }
+
+      .dark-a {
+        width: 740px;
+        height: 740px;
+        left: -180px;
+        top: -220px;
+        background: rgba(79, 70, 229, 0.38);
+      }
+
+      .dark-b {
+        width: 880px;
+        height: 880px;
+        right: -260px;
+        bottom: -270px;
+        background: rgba(168, 85, 247, 0.24);
+      }
+
+      .dark-c {
+        width: 560px;
+        height: 560px;
+        right: 380px;
+        top: 150px;
+        background: rgba(6, 182, 212, 0.18);
+      }
+
+      .grain {
+        position: absolute;
+        inset: 0;
+        opacity: 0.12;
+        mix-blend-mode: overlay;
+        background-image:
+          radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25) 0 1px, transparent 1px),
+          radial-gradient(circle at 80% 40%, rgba(15, 23, 42, 0.24) 0 1px, transparent 1px);
+        background-size: 18px 18px, 23px 23px;
+      }
+
+      .progress-rail {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 5px;
+        transform-origin: left center;
+        background: linear-gradient(90deg, #6366f1, #8b5cf6, #a855f7, #ec4899);
+        z-index: 20;
+      }
+
+      .transition-wash {
+        position: absolute;
+        inset: -12% -20%;
+        z-index: 40;
+        pointer-events: none;
+        opacity: 0;
+        transform-origin: center;
+        filter: blur(10px);
+        mix-blend-mode: screen;
+        background:
+          linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.16) 28%, rgba(139, 92, 246, 0.42) 50%, rgba(56, 189, 248, 0.18) 72%, transparent 100%);
+      }
+
+      .transition-wash.warm {
+        background:
+          linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.22) 26%, rgba(251, 191, 36, 0.38) 50%, rgba(236, 72, 153, 0.18) 74%, transparent 100%);
+      }
+
+      .transition-wash.dark {
+        background:
+          linear-gradient(90deg, transparent 0%, rgba(15, 23, 42, 0.12) 24%, rgba(99, 102, 241, 0.46) 50%, rgba(14, 165, 233, 0.16) 74%, transparent 100%);
+      }
+
+      .layout {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 350px minmax(0, 1fr);
+        width: 100%;
+        height: 100%;
+      }
+
+      .sidebar {
+        height: 100%;
+        padding: 76px 44px 48px;
+        border-right: 1px solid rgba(148, 163, 184, 0.22);
+        background: rgba(243, 243, 240, 0.64);
+        backdrop-filter: blur(18px);
+      }
+
+      .dark-sidebar {
+        border-right-color: rgba(255, 255, 255, 0.08);
+        background: rgba(10, 10, 11, 0.72);
+      }
+
+      .brand {
+        margin: 0 0 30px;
+        font-family: Georgia, serif;
+        font-size: 56px;
+        line-height: 0.92;
+        letter-spacing: 0;
+      }
+
+      .brand-light {
+        background: linear-gradient(90deg, #1e293b, #64748b);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .brand-dark {
+        background: linear-gradient(90deg, #ffffff, #94a3b8);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .date-pill {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 14px;
+        border-top: 1px solid rgba(148, 163, 184, 0.28);
+        border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+        color: #334155;
+        font-family: monospace;
+        font-size: 17px;
+      }
+
+      .dark .date-pill,
+      .scene-dark .date-pill {
+        border-color: rgba(255, 255, 255, 0.08);
+        color: #cbd5e1;
+      }
+
+      .metric-block {
+        margin-top: 34px;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #475569;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .stats-row {
+        display: grid;
+        grid-template-columns: 84px 1fr;
+        gap: 22px;
+        align-items: center;
+      }
+
+      .ring {
+        position: relative;
+        width: 84px;
+        height: 84px;
+      }
+
+      .ring svg {
+        width: 84px;
+        height: 84px;
+        transform: rotate(-90deg);
+      }
+
+      .ring-track {
+        fill: none;
+        stroke: rgba(148, 163, 184, 0.25);
+        stroke-width: 7;
+      }
+
+      .ring-progress {
+        fill: none;
+        stroke: #10b981;
+        stroke-width: 7;
+        stroke-linecap: round;
+        stroke-dasharray: 188.5;
+        stroke-dashoffset: 188.5;
+      }
+
+      .ring-label {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        color: #0f172a;
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .scene-dark .ring-label {
+        color: #f8fafc;
+      }
+
+      .metric-number {
+        margin: 0;
+        color: #1e293b;
+        font-family: Outfit, Inter, sans-serif;
+        font-size: 54px;
+        font-weight: 800;
+        line-height: 0.95;
+      }
+
+      .scene-dark .metric-number {
+        color: #f8fafc;
+      }
+
+      .metric-label {
+        margin: 6px 0 0;
+        color: #334155;
+        font-size: 15px;
+      }
+
+      .scene-dark .metric-label {
+        color: #e2e8f0;
+      }
+
+      .breakdown {
+        margin-top: 26px;
+      }
+
+      .bar {
+        display: flex;
+        width: 100%;
+        height: 8px;
+        overflow: hidden;
+        border-radius: 99px;
+        background: rgba(148, 163, 184, 0.22);
+      }
+
+      .bar span {
+        display: block;
+        width: var(--w);
+        transform-origin: left center;
+      }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+        margin-top: 14px;
+        color: #334155;
+        font-size: 13px;
+      }
+
+      .scene-dark .legend {
+        color: #e2e8f0;
+      }
+
+      .legend i {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 6px;
+        border-radius: 999px;
+      }
+
+      .theme-toggle {
+        position: absolute;
+        left: 44px;
+        bottom: 54px;
+        width: 94px;
+        height: 46px;
+        padding: 5px;
+        border: 1px solid rgba(148, 163, 184, 0.38);
+        border-radius: 999px;
+        background: rgba(226, 232, 240, 0.85);
+      }
+
+      .scene-dark .theme-toggle {
+        border-color: rgba(255, 255, 255, 0.09);
+        background: #111113;
+      }
+
+      .toggle-knob {
+        width: 34px;
+        height: 34px;
+        border-radius: 999px;
+        background: #ffffff;
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+      }
+
+      .scene-dark .toggle-knob,
+      .theme-dark-knob {
+        transform: translateX(48px);
+        background: #202024;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+      }
+
+      .main {
+        position: relative;
+        min-width: 0;
+        padding: 84px 132px 70px;
+      }
+
+      .caption {
+        position: absolute;
+        left: 480px;
+        right: 132px;
+        bottom: 56px;
+        z-index: 12;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        padding-top: 22px;
+        border-top: 1px solid rgba(148, 163, 184, 0.24);
+      }
+
+      .scene-dark .caption {
+        border-top-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .caption strong {
+        display: block;
+        color: #0f172a;
+        font-family: Georgia, serif;
+        font-size: 40px;
+        line-height: 1.08;
+      }
+
+      .scene-dark .caption strong {
+        color: #f8fafc;
+      }
+
+      .caption span {
+        max-width: 570px;
+        color: #334155;
+        font-size: 21px;
+        line-height: 1.45;
+      }
+
+      .scene-dark .caption span {
+        color: #e2e8f0;
+      }
+
+      .card-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        max-width: 1020px;
+      }
+
+      .news-card {
+        position: relative;
+        overflow: hidden;
+        padding: 30px 34px 30px 38px;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        border-left: 4px solid var(--rail, #8b5cf6);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.54);
+        box-shadow: 0 26px 80px rgba(100, 116, 139, 0.16);
+        transform-style: preserve-3d;
+      }
+
+      .scene-dark .news-card,
+      .news-card.dark-card {
+        border-bottom-color: rgba(255, 255, 255, 0.06);
+        background: rgba(21, 21, 24, 0.72);
+        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.45);
+      }
+
+      .news-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, var(--wash, rgba(139, 92, 246, 0.12)), transparent 70%);
+        opacity: 0.9;
+        pointer-events: none;
+      }
+
+      .meta {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 13px;
+        color: #334155;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .scene-dark .meta {
+        color: #e2e8f0;
+      }
+
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: currentColor;
+        opacity: 0.55;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 10px;
+        border-radius: 999px;
+        color: var(--tag-color, #4c1d95);
+        background: var(--tag-bg, rgba(139, 92, 246, 0.2));
+        font-size: 12px;
+        letter-spacing: 0;
+        text-transform: none;
+      }
+
+      .news-title {
+        position: relative;
+        margin: 0 0 16px;
+        color: #1e293b;
+        font-family: Georgia, serif;
+        font-size: 42px;
+        line-height: 1.13;
+        letter-spacing: 0;
+      }
+
+      .scene-dark .news-title,
+      .dark-card .news-title {
+        color: #f8fafc;
+      }
+
+      .summary {
+        position: relative;
+        margin: 0;
+        max-width: 850px;
+        color: #334155;
+        font-size: 20px;
+        font-weight: 350;
+        line-height: 1.6;
+      }
+
+      .scene-dark .summary,
+      .dark-card .summary {
+        color: #e2e8f0;
+      }
+
+      .mini-card {
+        padding: 20px 22px;
+        border-left-width: 3px;
+      }
+
+      .mini-card .news-title {
+        font-size: 27px;
+        line-height: 1.22;
+        margin-bottom: 8px;
+      }
+
+      .mini-card .summary {
+        font-size: 16px;
+        line-height: 1.45;
+      }
+
+      .source-chip-row {
+        position: absolute;
+        right: 108px;
+        top: 102px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .source-chip {
+        min-width: 220px;
+        padding: 14px 18px;
+        border: 1px solid rgba(148, 163, 184, 0.22);
+        border-radius: 999px;
+        color: #334155;
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(16px);
+        font-size: 17px;
+        box-shadow: 0 14px 40px rgba(100, 116, 139, 0.13);
+      }
+
+      .scene-dark .source-chip {
+        border-color: rgba(255, 255, 255, 0.08);
+        color: #e2e8f0;
+        background: rgba(17, 17, 19, 0.64);
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.42);
+      }
+
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 28px;
+        color: #334155;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .section-title::before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 46px;
+        border-radius: 999px;
+        background: linear-gradient(#8b5cf6, #ec4899);
+      }
+
+      .scene-dark .section-title {
+        color: #cbd5e1;
+      }
+
+      .health-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        width: 940px;
+      }
+
+      .health-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 20px;
+        border: 1px solid rgba(148, 163, 184, 0.22);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.76);
+        color: #0f172a;
+      }
+
+      .scene-dark .health-row {
+        border-color: rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.045);
+        color: #e2e8f0;
+      }
+
+      .health-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+        font-size: 18px;
+      }
+
+      .ok-dot {
+        width: 11px;
+        height: 11px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        background: #10b981;
+        box-shadow: 0 0 16px rgba(16, 185, 129, 0.6);
+      }
+
+      .count {
+        color: #475569;
+        font-family: monospace;
+        font-size: 15px;
+      }
+
+      .scene-dark .count {
+        color: #cbd5e1;
+      }
+
+      .file-row {
+        display: flex;
+        gap: 18px;
+        margin-top: 34px;
+      }
+
+      .file-pill {
+        padding: 16px 20px;
+        border: 1px solid rgba(56, 189, 248, 0.26);
+        border-radius: 999px;
+        color: #075985;
+        background: rgba(224, 242, 254, 0.7);
+        font-family: monospace;
+        font-size: 16px;
+      }
+
+      .scene-dark .file-pill {
+        color: #bae6fd;
+        background: rgba(14, 165, 233, 0.1);
+      }
+
+      .feedback-stage {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .feedback-controls {
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        display: flex;
+        gap: 9px;
+        padding: 6px;
+        border: 1px solid rgba(148, 163, 184, 0.22);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(12px);
+      }
+
+      .scene-dark .feedback-controls {
+        border-color: rgba(255, 255, 255, 0.08);
+        background: rgba(17, 17, 19, 0.8);
+      }
+
+      .thumb {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 999px;
+        color: #334155;
+        font-size: 18px;
+      }
+
+      .thumb-good {
+        color: #047857;
+        background: rgba(16, 185, 129, 0.15);
+      }
+
+      .signal-board {
+        position: relative;
+        min-height: 390px;
+        padding: 34px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 28px;
+        background: rgba(17, 17, 19, 0.78);
+        box-shadow: 0 30px 100px rgba(0, 0, 0, 0.46);
+      }
+
+      .signal-title {
+        margin: 0 0 26px;
+        color: #f8fafc;
+        font-size: 28px;
+        font-weight: 800;
+      }
+
+      .memory-line {
+        position: relative;
+        height: 16px;
+        margin: 26px 0;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .memory-line span {
+        display: block;
+        width: 120px;
+        height: 100%;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #10b981, #38bdf8);
+        box-shadow: 0 0 22px rgba(56, 189, 248, 0.5);
+      }
+
+      .preference {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 14px;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        color: #cbd5e1;
+        font-size: 18px;
+      }
+
+      .preference b {
+        color: #f8fafc;
+      }
+
+      .theme-scene-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+      }
+
+      .theme-half {
+        position: relative;
+        overflow: hidden;
+        padding: 80px 70px;
+      }
+
+      .theme-label {
+        margin: 0 0 28px;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .launcher {
+        position: absolute;
+        left: 50%;
+        bottom: 62px;
+        z-index: 6;
+        width: 860px;
+        transform: translateX(-50%);
+        padding: 28px 34px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 28px;
+        color: #f8fafc;
+        background: rgba(10, 10, 11, 0.76);
+        box-shadow: 0 30px 110px rgba(0, 0, 0, 0.52);
+        backdrop-filter: blur(18px);
+      }
+
+      .launcher h2 {
+        margin: 0 0 8px;
+        font-family: Georgia, serif;
+        font-size: 60px;
+        line-height: 1;
+      }
+
+      .launcher p {
+        margin: 0;
+        color: #cbd5e1;
+        font-size: 21px;
+        line-height: 1.45;
+      }
+
+      .code-strip {
+        display: flex;
+        gap: 12px;
+        margin-top: 22px;
+        color: #bae6fd;
+        font-family: monospace;
+        font-size: 15px;
+      }
+
+      .code-strip span {
+        padding: 9px 12px;
+        border-radius: 999px;
+        background: rgba(14, 165, 233, 0.12);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1920"
+      data-height="1080"
+    >
+      <section id="scene-1" class="clip scene scene-light" data-start="0" data-duration="5" data-track-index="0">
+        <div class="mesh" data-layout-allow-overflow>
+          <div class="blob light-a"></div>
+          <div class="blob light-b"></div>
+          <div class="blob light-c"></div>
+        </div>
+        <div class="grain"></div>
+        <div class="progress-rail s1-progress"></div>
+        <div class="layout">
+          <aside class="sidebar s1-sidebar">
+            <h1 class="brand brand-light s1-brand">AI Daily.</h1>
+            <div class="date-pill s1-date"><span>2026-06-10</span><span>32 条</span></div>
+            <div class="metric-block">
+              <p class="eyebrow">今日概况</p>
+              <div class="stats-row">
+                <div class="ring">
+                  <svg viewBox="0 0 84 84">
+                    <circle class="ring-track" cx="42" cy="42" r="30"></circle>
+                    <circle class="ring-progress s1-ring" cx="42" cy="42" r="30"></circle>
+                  </svg>
+                  <div class="ring-label">8/8</div>
+                </div>
+                <div>
+                  <p class="metric-number s1-count">32</p>
+                  <p class="metric-label">条内容 · 全源健康</p>
+                </div>
+              </div>
+              <div class="breakdown">
+                <div class="bar">
+                  <span class="s1-bar" style="--w: 18%; background:#8b5cf6"></span>
+                  <span class="s1-bar" style="--w: 0%; background:#10b981"></span>
+                  <span class="s1-bar" style="--w: 82%; background:#f59e0b"></span>
+                </div>
+                <div class="legend">
+                  <span><i style="background:#8b5cf6"></i>创作者 2</span>
+                  <span><i style="background:#10b981"></i>官方 0</span>
+                  <span><i style="background:#f59e0b"></i>AI HOT 30</span>
+                </div>
+              </div>
+            </div>
+            <div class="theme-toggle"><div class="toggle-knob"></div></div>
+          </aside>
+          <main class="main">
+            <div class="card-stack s1-cards">
+              <article class="news-card" style="--rail:#8b5cf6; --wash:rgba(139,92,246,.12)">
+                <div class="meta"><span>卡兹克（AI HOT兜底）</span><span class="dot"></span><span>tip</span></div>
+                <h2 class="news-title">Anthropic发布Claude Fable 5与Mythos 5</h2>
+                <p class="summary">安全版免费至6月22日，价格公布，Creator-first 源被自动补入今日必看。</p>
+              </article>
+              <article class="news-card mini-card" style="--rail:#f59e0b; --wash:rgba(245,158,11,.12)">
+                <div class="meta"><span>AI HOT / Simon Willison 博客</span><span class="dot"></span><span>技巧与观点</span></div>
+                <h2 class="news-title">在 AgentsView 中为 Claude Fable 5 设置自定义价格</h2>
+                <p class="summary">补充行业背景，但不抢走创作者更新的位置。</p>
+              </article>
+              <article class="news-card mini-card" style="--rail:#10b981; --wash:rgba(16,185,129,.12)">
+                <div class="meta"><span>Hugging Face Blog</span><span class="dot"></span><span>模型发布</span></div>
+                <h2 class="news-title">Cohere发布North Mini Code</h2>
+                <p class="summary">官方与行业动态进入同一条阅读流。</p>
+              </article>
+            </div>
+          </main>
+        </div>
+        <div class="caption s1-caption">
+          <strong>每天早上，一份能看的 AI 日报。</strong>
+          <span>创作者、官方博客、AI HOT 精选和源健康状态，被整理成 JSON + Markdown + 前端归档。</span>
+        </div>
+      </section>
+
+      <section id="scene-2" class="clip scene scene-light" data-start="5" data-duration="6" data-track-index="0">
+        <div class="mesh" data-layout-allow-overflow>
+          <div class="blob light-a"></div>
+          <div class="blob light-b"></div>
+          <div class="blob light-c"></div>
+        </div>
+        <div class="grain"></div>
+        <div class="main" style="padding-left:140px; padding-right:140px;">
+          <div class="section-title s2-title">创作者更新 · creator first</div>
+          <div class="card-stack" style="max-width:1120px;">
+            <article class="news-card s2-card" style="--rail:#8b5cf6; --wash:rgba(139,92,246,.14)">
+              <div class="meta"><span>X：卡兹克 (@Khazix0918)</span><span class="dot"></span><span class="tag">AI HOT兜底</span></div>
+              <h2 class="news-title">Anthropic发布Claude Fable 5与Mythos 5：安全版免费至6月22日</h2>
+              <p class="summary">当公众号或平台源不稳定时，AI HOT 按 source 字段兜底，把卡兹克的新内容补回来。</p>
+            </article>
+            <article class="news-card mini-card s2-card" style="--rail:#07c160; --wash:rgba(7,193,96,.10)">
+              <div class="meta"><span>微信公众号：数字生命卡兹克</span><span class="dot"></span><span>原文链接</span></div>
+              <h2 class="news-title">Claude Fable 5正式发布 - 王者归航。</h2>
+              <p class="summary">同一主题保留原文入口，同时和 X / AI HOT 转述去重。</p>
+            </article>
+          </div>
+          <div class="source-chip-row">
+            <div class="source-chip s2-chip">微信公众号</div>
+            <div class="source-chip s2-chip">Bilibili UP主</div>
+            <div class="source-chip s2-chip">Claude Blog</div>
+            <div class="source-chip s2-chip">LangChain Blog</div>
+            <div class="source-chip s2-chip">AI HOT 精选补位</div>
+          </div>
+        </div>
+        <div class="caption s2-caption">
+          <strong>先看你指定的人。</strong>
+          <span>卡兹克、B站、官方博客和 AI HOT 被分层排序，创作者更新不会被行业噪声淹没。</span>
+        </div>
+      </section>
+
+      <section id="scene-3" class="clip scene scene-light" data-start="11" data-duration="6" data-track-index="0">
+        <div class="mesh" data-layout-allow-overflow>
+          <div class="blob light-a"></div>
+          <div class="blob light-c"></div>
+        </div>
+        <div class="grain"></div>
+        <div class="layout">
+          <aside class="sidebar s3-sidebar">
+            <h1 class="brand brand-light">8/8 OK</h1>
+            <div class="date-pill"><span>sourceHealth</span><span>healthy</span></div>
+            <div class="metric-block">
+              <p class="eyebrow">数据源状态</p>
+              <div class="ring" style="margin-top:18px;">
+                <svg viewBox="0 0 84 84">
+                  <circle class="ring-track" cx="42" cy="42" r="30"></circle>
+                  <circle class="ring-progress s3-ring" cx="42" cy="42" r="30"></circle>
+                </svg>
+                <div class="ring-label">100%</div>
+              </div>
+            </div>
+          </aside>
+          <main class="main">
+            <div class="section-title s3-title">源健康状态和缺失说明</div>
+            <div class="health-grid">
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>数字生命卡兹克</span><span class="count">1</span></div>
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>卡兹克（AI HOT兜底）</span><span class="count">2</span></div>
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>第四种黑猩猩CHIMP</span><span class="count">0</span></div>
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>唐吉可德拉曼查的英豪</span><span class="count">0</span></div>
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>Claude Blog</span><span class="count">ok</span></div>
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>LangChain Blog</span><span class="count">ok</span></div>
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>AI HOT</span><span class="count">30</span></div>
+              <div class="health-row s3-row"><span class="health-left"><i class="ok-dot"></i>秒秒Guo</span><span class="count">ok</span></div>
+            </div>
+            <div class="file-row">
+              <div class="file-pill s3-file">data/latest.json</div>
+              <div class="file-pill s3-file">data/digests/2026-06-10.json</div>
+              <div class="file-pill s3-file">data/digests/2026-06-10.md</div>
+            </div>
+          </main>
+        </div>
+        <div class="caption s3-caption">
+          <strong>失败不拖垮日报。</strong>
+          <span>每个源都有健康状态；抓不到也会被明确记录，整份日报仍然继续生成。</span>
+        </div>
+      </section>
+
+      <section id="scene-4" class="clip scene scene-dark" data-start="17" data-duration="6" data-track-index="0">
+        <div class="mesh" data-layout-allow-overflow>
+          <div class="blob dark-a"></div>
+          <div class="blob dark-b"></div>
+          <div class="blob dark-c"></div>
+        </div>
+        <div class="grain"></div>
+        <main class="main" style="padding:94px 134px;">
+          <div class="section-title s4-title">AI HOT 精选 · feedback loop</div>
+          <div class="feedback-stage">
+            <article class="news-card dark-card s4-card" style="--rail:#f59e0b; --wash:rgba(245,158,11,.11)">
+              <div class="feedback-controls s4-controls">
+                <span class="thumb thumb-good">▲</span>
+                <span class="thumb">▼</span>
+              </div>
+              <div class="meta"><span>AI HOT / Claude Blog</span><span class="dot"></span><span class="tag" style="--tag-color:#fbbf24; --tag-bg:rgba(245,158,11,.14)">精选补位</span></div>
+              <h2 class="news-title">Claude Managed Agents 新增定时运行和环境变量存储功能</h2>
+              <p class="summary">标记不错、降低权重、隐藏噪声；每天的 AI HOT 会越来越贴近你用 Codex 的关注点。</p>
+            </article>
+            <aside class="signal-board s4-board">
+              <h3 class="signal-title">偏好会留下来</h3>
+              <div class="memory-line" data-layout-allow-overflow><span class="s4-signal"></span></div>
+              <div class="preference"><span>Codex / agent</span><b>boost</b></div>
+              <div class="preference"><span>skills / MCP</span><b>boost</b></div>
+              <div class="preference"><span>低相关政策噪声</span><b>down</b></div>
+              <div class="preference"><span>重复标题</span><b>dedupe</b></div>
+            </aside>
+          </div>
+        </main>
+        <div class="caption s4-caption">
+          <strong>日报会慢慢更懂你。</strong>
+          <span>AI HOT 不是无差别塞满列表，而是通过反馈数据调整以后的筛选。</span>
+        </div>
+      </section>
+
+      <section id="scene-5" class="clip scene scene-dark" data-start="23" data-duration="7" data-track-index="0">
+        <div class="theme-scene-grid">
+          <div class="theme-half scene-light s5-day">
+            <div class="mesh" data-layout-allow-overflow>
+              <div class="blob light-a"></div>
+              <div class="blob light-c"></div>
+            </div>
+            <p class="theme-label" style="color:#334155">Day mode</p>
+            <article class="news-card s5-card" style="--rail:#8b5cf6; --wash:rgba(139,92,246,.13)">
+              <div class="meta"><span>日间扫描</span><span class="dot"></span><span>32 条</span></div>
+              <h2 class="news-title">快速扫一遍今天最值得看的 AI 更新</h2>
+              <p class="summary">温暖纸面、清晰摘要、适合早上浏览。</p>
+            </article>
+            <div class="theme-toggle s5-toggle"><div class="toggle-knob s5-knob"></div></div>
+          </div>
+          <div class="theme-half scene-dark s5-night">
+            <div class="mesh" data-layout-allow-overflow>
+              <div class="blob dark-b"></div>
+              <div class="blob dark-c"></div>
+            </div>
+            <p class="theme-label" style="color:#e2e8f0">Night mode</p>
+            <article class="news-card dark-card s5-card" style="--rail:#38bdf8; --wash:rgba(56,189,248,.12)">
+              <div class="meta"><span>夜间沉浸</span><span class="dot"></span><span>AI Daily</span></div>
+              <h2 class="news-title">看长摘要、追来源、留反馈</h2>
+              <p class="summary">深色背景、低眩光、适合晚上继续深读。</p>
+            </article>
+            <div class="theme-toggle"><div class="toggle-knob theme-dark-knob"></div></div>
+          </div>
+        </div>
+        <div class="launcher s5-launcher">
+          <h2>AI充电站</h2>
+          <p>creator-first AI daily digest · 自动抓取、每日归档、前端阅读、反馈筛选。</p>
+          <div class="code-strip">
+            <span>AI充电站.command</span>
+            <span>data/latest.json</span>
+            <span>YYYY-MM-DD.md</span>
+          </div>
+        </div>
+      </section>
+      <div class="transition-wash warm"></div>
+      <audio id="narration" data-start="0.35" data-track-index="2" src="media/narration.wav" data-volume="0.95"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const sweep = (at, className = "warm") => {
+        tl.set(".transition-wash", { attr: { class: `transition-wash ${className}` }, opacity: 0 }, at);
+        tl.fromTo(
+          ".transition-wash",
+          { xPercent: -120, skewX: -12 },
+          { xPercent: 115, skewX: -12, duration: 0.92, ease: "power2.inOut" },
+          at
+        );
+        tl.fromTo(
+          ".transition-wash",
+          { opacity: 0 },
+          { opacity: 0.92, duration: 0.22, repeat: 1, yoyo: true, repeatDelay: 0.2, ease: "power2.inOut" },
+          at + 0.08
+        );
+      };
+
+      tl.from(".s1-progress", { scaleX: 0, duration: 1.2, ease: "power3.out" }, 0);
+      tl.from(".s1-sidebar", { x: -120, opacity: 0, duration: 0.85, ease: "power3.out" }, 0.08);
+      tl.from(".s1-brand", { y: 30, opacity: 0, duration: 0.7, ease: "power2.out" }, 0.25);
+      tl.from(".s1-date", { y: 18, opacity: 0, duration: 0.55, ease: "power2.out" }, 0.42);
+      tl.to(".s1-ring", { strokeDashoffset: 0, duration: 1.25, ease: "power2.out" }, 0.62);
+      tl.from(".s1-count", { scale: 0.68, opacity: 0, duration: 0.62, ease: "back.out(1.7)" }, 0.65);
+      tl.from(".s1-bar", { scaleX: 0, stagger: 0.08, duration: 0.8, ease: "power2.out" }, 1.0);
+      tl.from(".s1-cards .news-card", { x: 160, y: 60, rotationY: -8, opacity: 0, stagger: 0.18, duration: 0.82, ease: "power3.out" }, 0.78);
+      tl.from(".s1-caption", { y: 40, opacity: 0, duration: 0.75, ease: "power2.out" }, 1.55);
+      tl.to("#scene-1 .card-stack", { scale: 1.035, x: -70, duration: 0.72, ease: "power2.inOut" }, 4.22);
+      tl.to("#scene-1 .sidebar, #scene-1 .caption", { x: -46, opacity: 0.45, duration: 0.58, ease: "power2.inOut" }, 4.36);
+      sweep(4.56, "warm");
+      tl.to("#scene-1", { opacity: 0, duration: 0.34, ease: "power2.inOut" }, 4.72);
+      tl.set("#scene-1", { autoAlpha: 0 }, 5);
+
+      tl.set("#scene-2", { autoAlpha: 1 }, 5);
+      tl.from(".s2-title", { x: -60, opacity: 0, duration: 0.65, ease: "power2.out" }, 5.05);
+      tl.from(".s2-card", { y: 90, rotationX: 8, opacity: 0, stagger: 0.18, duration: 0.8, ease: "power3.out" }, 5.22);
+      tl.from(".s2-chip", { x: 90, opacity: 0, stagger: 0.1, duration: 0.56, ease: "power2.out" }, 5.72);
+      tl.to(".s2-chip", { y: -8, stagger: 0.08, repeat: 2, yoyo: true, duration: 0.42, ease: "power1.inOut" }, 6.72);
+      tl.from(".s2-caption", { y: 34, opacity: 0, duration: 0.68, ease: "power2.out" }, 6.8);
+      tl.to(".s2-card", { rotationY: 4, x: -34, stagger: 0.05, duration: 0.46, ease: "power2.inOut" }, 9.7);
+      tl.to("#scene-2 .main, #scene-2 .caption", { x: -74, opacity: 0.38, duration: 0.62, ease: "power2.inOut" }, 10.28);
+      sweep(10.48, "warm");
+      tl.to("#scene-2", { opacity: 0, duration: 0.34, ease: "power2.inOut" }, 10.7);
+      tl.set("#scene-2", { autoAlpha: 0 }, 11);
+
+      tl.set("#scene-3", { autoAlpha: 1 }, 11);
+      tl.from(".s3-sidebar", { x: -100, opacity: 0, duration: 0.62, ease: "power3.out" }, 11.05);
+      tl.from(".s3-title", { y: 26, opacity: 0, duration: 0.6, ease: "power2.out" }, 11.18);
+      tl.to(".s3-ring", { strokeDashoffset: 0, duration: 1.15, ease: "power2.out" }, 11.45);
+      tl.from(".s3-row", { y: 28, opacity: 0, stagger: 0.08, duration: 0.42, ease: "power2.out" }, 11.65);
+      tl.from(".s3-file", { y: 22, opacity: 0, stagger: 0.12, duration: 0.48, ease: "power2.out" }, 13.05);
+      tl.from(".s3-caption", { y: 36, opacity: 0, duration: 0.65, ease: "power2.out" }, 13.45);
+      tl.to(".s3-row", { backgroundColor: "rgba(236,253,245,0.72)", stagger: 0.04, duration: 0.18, yoyo: true, repeat: 1 }, 14.45);
+      tl.to("#scene-3 .layout, #scene-3 .caption", { y: -28, scale: 0.985, opacity: 0.42, duration: 0.68, ease: "power2.inOut" }, 16.22);
+      sweep(16.48, "dark");
+      tl.to("#scene-3", { opacity: 0, duration: 0.34, ease: "power2.inOut" }, 16.7);
+      tl.set("#scene-3", { autoAlpha: 0 }, 17);
+
+      tl.set("#scene-4", { autoAlpha: 1 }, 17);
+      tl.from(".s4-title", { x: -55, opacity: 0, duration: 0.65, ease: "power2.out" }, 17.08);
+      tl.from(".s4-card", { x: -110, y: 55, opacity: 0, rotationY: 8, duration: 0.78, ease: "power3.out" }, 17.22);
+      tl.from(".s4-board", { x: 100, opacity: 0, duration: 0.72, ease: "power3.out" }, 17.42);
+      tl.from(".s4-controls", { scale: 0.7, opacity: 0, duration: 0.42, ease: "back.out(1.8)" }, 18.0);
+      tl.to(".thumb-good", { scale: 1.22, duration: 0.18, yoyo: true, repeat: 3, ease: "power1.inOut" }, 18.45);
+      tl.fromTo(".s4-signal", { x: -130 }, { x: 520, duration: 1.2, ease: "power2.inOut" }, 18.65);
+      tl.from(".preference", { x: 24, opacity: 0, stagger: 0.1, duration: 0.38, ease: "power2.out" }, 19.05);
+      tl.from(".s4-caption", { y: 34, opacity: 0, duration: 0.62, ease: "power2.out" }, 19.6);
+      tl.to("#scene-4 .feedback-stage, #scene-4 .caption", { x: -54, opacity: 0.5, duration: 0.64, ease: "power2.inOut" }, 22.08);
+      sweep(22.38, "dark");
+      tl.to("#scene-4", { opacity: 0, duration: 0.34, ease: "power2.inOut" }, 22.68);
+      tl.set("#scene-4", { autoAlpha: 0 }, 23);
+
+      tl.set("#scene-5", { autoAlpha: 1 }, 23);
+      tl.from(".s5-day", { x: -180, opacity: 0, duration: 0.75, ease: "power3.out" }, 23.02);
+      tl.from(".s5-night", { x: 180, opacity: 0, duration: 0.75, ease: "power3.out" }, 23.02);
+      tl.from(".s5-card", { y: 70, opacity: 0, stagger: 0.12, duration: 0.72, ease: "power3.out" }, 23.42);
+      tl.to(".s5-knob", { x: 48, backgroundColor: "#202024", duration: 0.65, ease: "power2.inOut" }, 24.62);
+      tl.to(".s5-day", { opacity: 0.68, scale: 0.98, duration: 0.9, ease: "power2.inOut" }, 25.0);
+      tl.to(".s5-night", { scale: 1.02, duration: 0.9, ease: "power2.inOut" }, 25.0);
+      tl.from(".s5-launcher", { y: 92, opacity: 0, scale: 0.94, duration: 0.82, ease: "power3.out" }, 25.82);
+      tl.from(".code-strip span", { y: 18, opacity: 0, stagger: 0.08, duration: 0.35, ease: "power2.out" }, 26.55);
+      tl.to(".s5-launcher", { scale: 1.018, duration: 0.24, yoyo: true, repeat: 1, ease: "power1.inOut" }, 28.2);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

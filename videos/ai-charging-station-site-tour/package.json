@@ -1,0 +1,13 @@
+{
+  "name": "ai-charging-station-site-tour",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "npx hyperframes lint .",
+    "validate": "npx hyperframes validate .",
+    "inspect": "npx hyperframes inspect . --samples 12",
+    "check": "npm run lint && npm run validate && npm run inspect",
+    "preview": "npx hyperframes preview . --port 3028 --no-open",
+    "render": "npx hyperframes render . --output renders/ai-charging-station-site-tour.mp4 --quality standard"
+  }
+}
