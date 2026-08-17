@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-08-17",
-  "generatedAt": "2026-08-17T00:07:11.900Z",
+  "date": "2026-08-18",
+  "generatedAt": "2026-08-17T23:56:05.117Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 2,
-    "mustRead": 2,
-    "creatorUpdates": 1,
-    "officialUpdates": 0,
-    "aihotPicks": 1,
+    "totalItems": 15,
+    "mustRead": 5,
+    "creatorUpdates": 2,
+    "officialUpdates": 5,
+    "aihotPicks": 8,
     "sources": [
       {
         "id": "mmguo-home",
@@ -45,91 +45,284 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "claude-blog",
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 3
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 9
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "bilibili-chimp-039740fb33a4",
-        "title": "桥水基金内部如何使用Agent?",
+        "id": "aihot-khazix-b840c848bc53",
+        "title": "反常识真相：Agent在真实工作场景成功率依然很低，多模型电商任务通过率不足50%",
+        "summary": "阿里国际站开源的RealReplicaBench评测显示，107个真实电商任务中，Claude Opus 5以60.75%通过率居首，Qwen 3.8 Max和DeepSeek V4 Pro以49.53%并列第三，多数模型通过率不足50%。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-08-17T00:09:00.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685310&idx=1&sn=a62263bd647f948b3d7a9492337fd137"
+        }
+      },
+      {
+        "id": "langchain-blog-0ceeccf6ee07",
+        "title": "AgentCore Payments：LangChain 智能体的支付中间件",
+        "summary": "让你的 LangChain 智能体使用确定性会话预算为 API 付费。AgentCore Payments 中间件为 x402 支付签名；LangSmith 对每一笔进行追踪。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-17T14:52:56.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/langchain-agentcore-payments"
+        }
+      },
+      {
+        "id": "aihot-c314c5801de2",
+        "title": "用 Google 的 Agent Development Kit 构建零信任 AI 智能体",
+        "summary": "Google 开源了基于 ADK 和 Gemini 的零信任客服与退货智能体示例，演示如何防御提示注入等攻击。该架构在 LLM 上下文之外通过三层硬性安全机制保障：硬件支持的加密签名确保数据库写入不可抵赖、gVisor 沙箱隔离动态代码执行、确定性语义网关校验业务逻辑。系统提示词只是软约束，无法作为安全边界。",
+        "source": "Google Developers Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-08-17T23:22:25.902Z",
+        "links": {
+          "original": "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit"
+        }
+      },
+      {
+        "id": "bilibili-chimp-57ee497daeb8",
+        "title": "WorkBuddy资料库，一句话把表格变成经营看板。",
         "summary": "",
         "source": "第四种黑猩猩CHIMP",
         "sourceId": "bilibili-chimp",
         "category": null,
-        "publishedAt": "2026-08-16T11:25:10.000Z",
+        "publishedAt": "2026-08-17T12:25:11.000Z",
         "links": {
-          "original": "https://www.bilibili.com/video/BV15RbX67ExM"
+          "original": "https://www.bilibili.com/video/BV1cKbe6uEqt"
         }
       },
       {
-        "id": "aihot-a49a5a5353a1",
-        "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
-        "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
-        "source": "Simon Willison 博客",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-08-16T22:00:39.000Z",
+        "id": "openai-news-d77e3bdb27b9",
+        "title": "防御者的窗口",
+        "summary": "人工智能正在重塑攻击者和防御者的网络安全格局。了解OpenAI如何加强防御，以及安全团队现在可以采取哪些措施。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-08-17T05:30:00.000Z",
         "links": {
-          "original": "https://simonwillison.net/2026/Aug/16/qwen-38-27b"
+          "original": "https://openai.com/index/the-defenders-window"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "bilibili-chimp-039740fb33a4",
-        "title": "桥水基金内部如何使用Agent?",
+        "id": "aihot-khazix-b840c848bc53",
+        "title": "反常识真相：Agent在真实工作场景成功率依然很低，多模型电商任务通过率不足50%",
+        "summary": "阿里国际站开源的RealReplicaBench评测显示，107个真实电商任务中，Claude Opus 5以60.75%通过率居首，Qwen 3.8 Max和DeepSeek V4 Pro以49.53%并列第三，多数模型通过率不足50%。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-08-17T00:09:00.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685310&idx=1&sn=a62263bd647f948b3d7a9492337fd137"
+        }
+      },
+      {
+        "id": "bilibili-chimp-57ee497daeb8",
+        "title": "WorkBuddy资料库，一句话把表格变成经营看板。",
         "summary": "",
         "source": "第四种黑猩猩CHIMP",
         "sourceId": "bilibili-chimp",
         "category": null,
-        "publishedAt": "2026-08-16T11:25:10.000Z",
+        "publishedAt": "2026-08-17T12:25:11.000Z",
         "links": {
-          "original": "https://www.bilibili.com/video/BV15RbX67ExM"
+          "original": "https://www.bilibili.com/video/BV1cKbe6uEqt"
         }
       }
     ],
-    "officialUpdates": [],
+    "officialUpdates": [
+      {
+        "id": "langchain-blog-0ceeccf6ee07",
+        "title": "AgentCore Payments：LangChain 智能体的支付中间件",
+        "summary": "让你的 LangChain 智能体使用确定性会话预算为 API 付费。AgentCore Payments 中间件为 x402 支付签名；LangSmith 对每一笔进行追踪。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-17T14:52:56.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/langchain-agentcore-payments"
+        }
+      },
+      {
+        "id": "openai-news-d77e3bdb27b9",
+        "title": "防御者的窗口",
+        "summary": "人工智能正在重塑攻击者和防御者的网络安全格局。了解OpenAI如何加强防御，以及安全团队现在可以采取哪些措施。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-08-17T05:30:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/the-defenders-window"
+        }
+      },
+      {
+        "id": "openai-news-cd8978f924f0",
+        "title": "OpenAI joins PORTS-Pike project",
+        "summary": "OpenAI joins PORTS-Pike project, expanding community investment and supporting thousands of Southern Ohio jobs",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-08-17T05:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/openai-joins-ports-pike-project"
+        }
+      },
+      {
+        "id": "openai-news-e2ab85d10173",
+        "title": "智能时代的新政策构想",
+        "summary": "OpenAI资助了14个独立项目，探索新的AI政策构想，以在智能时代扩大经济机会并增强社会韧性。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-08-17T03:15:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age"
+        }
+      },
+      {
+        "id": "claude-blog-971152745836",
+        "title": "ABC Legal 如何利用 Claude 托管代理让每位员工都成为构建者",
+        "summary": "Claude 博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/how-abc-legal-turned-every-employee-into-a-builder-with-claude-managed-agents"
+        }
+      }
+    ],
     "aihotPicks": [
       {
-        "id": "aihot-a49a5a5353a1",
-        "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
-        "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
-        "source": "Simon Willison 博客",
+        "id": "aihot-c314c5801de2",
+        "title": "用 Google 的 Agent Development Kit 构建零信任 AI 智能体",
+        "summary": "Google 开源了基于 ADK 和 Gemini 的零信任客服与退货智能体示例，演示如何防御提示注入等攻击。该架构在 LLM 上下文之外通过三层硬性安全机制保障：硬件支持的加密签名确保数据库写入不可抵赖、gVisor 沙箱隔离动态代码执行、确定性语义网关校验业务逻辑。系统提示词只是软约束，无法作为安全边界。",
+        "source": "Google Developers Blog（RSS）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-08-16T22:00:39.000Z",
+        "publishedAt": "2026-08-17T23:22:25.902Z",
         "links": {
-          "original": "https://simonwillison.net/2026/Aug/16/qwen-38-27b"
+          "original": "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit"
+        }
+      },
+      {
+        "id": "aihot-9d9ba6a97fbc",
+        "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
+        "summary": "OpenRouter 发布 Activity 仪表盘和 beta Analytics API，可按智能体、模型、请求维度查看支出、token 量、缓存命中率等指标，并支持下钻至单条请求日志。",
+        "source": "OpenRouter：Announcements（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-08-17T00:00:00.000Z",
+        "links": {
+          "original": "https://openrouter.ai/blog/announcements/activity-dashboard"
+        }
+      },
+      {
+        "id": "aihot-3265f7120094",
+        "title": "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案",
+        "summary": "Cursor 今日起向所有付费计划用户开放 Origin 代码托管的早期测试版，提供仓库、拉取请求、代码浏览及 GitHub 同步功能。用户可创建以 cursor.com/codebase/ 为前缀的仓库，或将 GitHub 仓库同步至 Origin，双向同步评论与审查。Vercel、Depot 和 Buildkite 集成已可用，智能体功能即将推出。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-08-17T22:14:00.748Z",
+        "links": {
+          "original": "https://cursor.com/changelog/origin-code-hosting"
+        }
+      },
+      {
+        "id": "aihot-d317d71bd579",
+        "title": "黄仁勋宣布与SB Energy合作，为OpenAI建AI工厂",
+        "summary": "黄仁勋宣布NVIDIA与SB Energy合作，在俄亥俄州PORTS-Pike科技园区锁定LPS容量，专供NVIDIA AI工厂使用，OpenAI将作为租户。初始部署预计提供4.25吉瓦AI工厂容量，每代系统约150万块NVIDIA GPU，对应1500亿至2000亿美元收入。OpenAI已承诺至2030年部署约12吉瓦NVIDIA算力，可扩展至16吉瓦，总机会约6000亿美元。",
+        "source": "X：Jensen Huang (@JensenHuang)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-17T12:40:19.000Z",
+        "links": {
+          "original": "https://x.com/JensenHuang/status/2089331487342829862"
+        }
+      },
+      {
+        "id": "aihot-c31041b18d6a",
+        "title": "NVIDIA 与 SB Energy 合作锁定俄亥俄州 PORTS-Pike 园区电力容量，OpenAI 将入驻",
+        "summary": "NVIDIA 宣布与 SB Energy 合作，锁定俄亥俄州 PORTS-Pike 科技园区的电力容量（LPS）以独家部署 NVIDIA 算力，OpenAI 将成为租户。",
+        "source": "NVIDIA Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-17T12:34:51.000Z",
+        "links": {
+          "original": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence"
+        }
+      },
+      {
+        "id": "aihot-77ac57456f31",
+        "title": "404 Media 追踪珍本图书流向：亚马逊批量购书扫描用于 AI 训练后销毁",
+        "summary": "404 Media 通过在一本珍本图书中放置追踪设备，首次揭露亚马逊未公开的购书行动：批量购入大量书籍，扫描用于 AI 训练数据，随后销毁。追踪显示这些书最终被送往亚马逊的一处人工智能训练中心。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-17T18:46:04.518Z",
+        "links": {
+          "original": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility"
+        }
+      },
+      {
+        "id": "aihot-752cdabd4ee1",
+        "title": "如何禁用或避免侵入式 AI：一份覆盖 Windows、Chrome、Edge、Firefox 及主流应用的实用指南",
+        "summary": "一份面向希望减少技术环境中侵入式 AI 的用户的操作指南，涵盖 Adobe Acrobat、Android/Gemini、Apple Intelligence、Chrome、Edge、Firefox、DuckDuckGo、Google Workspace、Slack、WhatsApp 及 Windows 11/Copilot 等平台。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-08-17T17:58:12.144Z",
+        "links": {
+          "original": "https://www.librarian.net/notoai"
+        }
+      },
+      {
+        "id": "aihot-99ad015f30bf",
+        "title": "A 股迎来\"人形机器人第一股\"，宇树科技官宣 8 月 19 日科创板上市",
+        "summary": "宇树科技宣布股票将于 2026 年 8 月 19 日在科创板上市，发行价 150.80 元/股，对应市值约 609.93 亿元，预计募资约 60.99 亿元。该公司 2023 至 2025 年营收分别为 1.59 亿元、3.93 亿元和 16.99 亿元，净利润分别为-1114.51 万元、9547.47 万元和 2.78 亿元，是全球少数实现盈利的高性能通用机器人公司。",
+        "source": "IT之家（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-17T12:25:27.000Z",
+        "links": {
+          "original": "https://www.ithome.com/0/990/812.htm"
         }
       }
     ]
