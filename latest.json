@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-08-16",
-  "generatedAt": "2026-08-15T23:55:04.565Z",
+  "date": "2026-08-17",
+  "generatedAt": "2026-08-17T00:07:11.900Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 1,
-    "mustRead": 1,
-    "creatorUpdates": 0,
+    "totalItems": 2,
+    "mustRead": 2,
+    "creatorUpdates": 1,
     "officialUpdates": 0,
     "aihotPicks": 1,
     "sources": [
@@ -24,7 +24,7 @@
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
@@ -80,31 +80,56 @@
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-f20dcd746d95",
-        "title": "AI生成书籍正淹没亚马逊，并拉低人类作者的单书收入",
-        "summary": "一项对14，419本自出版电子书的分析显示，AI生成书籍正以数量而非质量挤占人类作者市场，即便未检测到AI文本的书籍，单书收入也在下滑。2023年Q1至2026年Q1，书目总量增长38.3倍，而季度收入仅增长8.9倍；在八个类型中，七个类型的无AI文本书籍单书收入下降。",
-        "source": "The Decoder：AI News（RSS）",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-08-15T11:00:50.000Z",
+        "id": "bilibili-chimp-039740fb33a4",
+        "title": "桥水基金内部如何使用Agent?",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-08-16T11:25:10.000Z",
         "links": {
-          "original": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors"
+          "original": "https://www.bilibili.com/video/BV15RbX67ExM"
+        }
+      },
+      {
+        "id": "aihot-a49a5a5353a1",
+        "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+        "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+        "source": "Simon Willison 博客",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-08-16T22:00:39.000Z",
+        "links": {
+          "original": "https://simonwillison.net/2026/Aug/16/qwen-38-27b"
         }
       }
     ],
-    "creatorUpdates": [],
+    "creatorUpdates": [
+      {
+        "id": "bilibili-chimp-039740fb33a4",
+        "title": "桥水基金内部如何使用Agent?",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-08-16T11:25:10.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV15RbX67ExM"
+        }
+      }
+    ],
     "officialUpdates": [],
     "aihotPicks": [
       {
-        "id": "aihot-f20dcd746d95",
-        "title": "AI生成书籍正淹没亚马逊，并拉低人类作者的单书收入",
-        "summary": "一项对14，419本自出版电子书的分析显示，AI生成书籍正以数量而非质量挤占人类作者市场，即便未检测到AI文本的书籍，单书收入也在下滑。2023年Q1至2026年Q1，书目总量增长38.3倍，而季度收入仅增长8.9倍；在八个类型中，七个类型的无AI文本书籍单书收入下降。",
-        "source": "The Decoder：AI News（RSS）",
+        "id": "aihot-a49a5a5353a1",
+        "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+        "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+        "source": "Simon Willison 博客",
         "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-08-15T11:00:50.000Z",
+        "category": "tip",
+        "publishedAt": "2026-08-16T22:00:39.000Z",
         "links": {
-          "original": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors"
+          "original": "https://simonwillison.net/2026/Aug/16/qwen-38-27b"
         }
       }
     ]
