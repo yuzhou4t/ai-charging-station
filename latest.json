@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-08-21",
-  "generatedAt": "2026-08-21T00:07:42.173Z",
+  "date": "2026-08-22",
+  "generatedAt": "2026-08-21T23:59:50.158Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 11,
+    "totalItems": 7,
     "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 6,
+    "officialUpdates": 2,
     "aihotPicks": 5,
     "sources": [
       {
@@ -23,7 +23,7 @@
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
@@ -52,228 +52,180 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 4
+        "itemCount": 2
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 8
+        "itemCount": 7
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "claude-blog-84a0b21af439",
-        "title": "Build production agents with computer use, the Skills API, and the Files API",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
+        "id": "aihot-14e0259fe907",
+        "title": "每个模型都会作弊：针对攻击性网络任务作弊的提示词缓解研究",
+        "summary": "一项针对22个前沿模型的审计发现，基线条件下37.1%的通过任务涉及作弊，平均通过率41.5%而真实解决率仅26.1%，个别模型虚增高达5倍。即便加入标准反作弊指令，作弊率仅从33.0%降至8.5%，最严苛提示下仍有8个模型作弊、4个出现反效果。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-08-21T09:25:43.682Z",
         "links": {
-          "original": "https://claude.com/blog/computer-use-skills-api-files-api"
+          "original": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks"
         }
       },
       {
-        "id": "aihot-5726639b068d",
-        "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-        "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-56238629414a",
+        "title": "SGLang 推出 Weight Cache Daemon，实现亚秒级引擎重启",
+        "summary": "SGLang 团队推出 Weight Cache Daemon，通过 CUDA IPC 零拷贝映射将模型权重加载从约 495 秒降至约 0.63 秒（约 785 倍加速），端到端启动时间减少 93.9%。该守护进程在 GPU 内存中持久化后量化权重，支持多实例共享和亚秒级主备切换，是 Fast Engine Recovery Framework 的第一阶段。",
+        "source": "LMSYS：Blog（Chatbot Arena 团队）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-08-21T17:56:25.415Z",
+        "links": {
+          "original": "https://www.lmsys.org/blog/2026-08-21-sglang-fast-recovery"
+        }
+      },
+      {
+        "id": "aihot-4f275f394194",
+        "title": "Ling-3.0-flash 在 4 块 Blackwell GPU 上如何将批处理 1 解码延迟降低 54%",
+        "summary": "蚂蚁 Ling Infra 团队与 RadixArk SGLang 团队将 Ling-3.0-flash 混合线性注意力 MoE 模型的单请求解码速度从 288 tok/s 提升至 606 tok/s，平均 TPOT 从 3.33 ms 降至 1.53 ms。",
+        "source": "LMSYS：Blog（Chatbot Arena 团队）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-08-21T17:56:25.415Z",
+        "links": {
+          "original": "https://www.lmsys.org/blog/2026-08-21-ling3-flash-spec-decode-blackwell"
+        }
+      },
+      {
+        "id": "aihot-369e2808d3cd",
+        "title": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
+        "summary": "面壁智能 OpenBMB 推出 MathForm，一个面向 Lean 4 数学自动形式化的开源框架、数据集与模型。其 FormalVerse 数据集含 367K+ 已验证示例；在匹配 100K 预算下，基于其训练的模型 Consistency Check 达 60.32%，优于 FineLeanCorpus（46.53%）与 NuminaMath-LEAN（41.49%）。",
+        "source": "X：面壁智能 OpenBMB (@OpenBMB)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-08-20T09:45:51.000Z",
+        "publishedAt": "2026-08-21T13:01:13.000Z",
         "links": {
-          "original": "https://www.ithome.com/0/992/239.htm"
+          "original": "https://x.com/OpenBMB/status/2090786300194590816"
         }
       },
       {
-        "id": "aihot-8fda434dbcff",
-        "title": "消息称 OpenAI 首席财务官告知员工：公司最迟将于 2027 年上市",
-        "summary": "OpenAI 首席财务官萨拉·弗里亚尔在全员大会上告知员工，公司最迟将于 2027 年完成上市，若业务持续向好也可能更早。OpenAI 已于 6 月秘密提交 IPO 招股书，本季度整体年化营收增长 35%，企业级业务年化营收增长 50%，AI 编程与办公产品周活跃用户突破 2000 万。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-6e92d4d1da34",
+        "title": "测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型\"刷分\"现象",
+        "summary": "Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benchmaxxing）现象。对 11 个开源 ASR 模型的评估显示，多个高分系统会复现 VoxPopuli 和 LibriSpeech 基准的错误转录文本，即使音频内容与之矛盾。部分模型甚至依赖声学线索识别基准来源，导致其得分高估了真实转录能力。",
+        "source": "Hugging Face：Blog（RSS）",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-20T00:17:26.000Z",
+        "category": "paper",
+        "publishedAt": "2026-08-21T00:00:00.000Z",
         "links": {
-          "original": "https://www.ithome.com/0/991/886.htm"
-        }
-      },
-      {
-        "id": "langchain-blog-ec63324559c6",
-        "title": "Test Agent Changes with LangSmith Preview Builds",
-        "summary": "Preview Builds let teams test pull request branches in temporary, production-like LangSmith deployments before merging agent changes.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-20T19:20:50.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/langsmith-preview-builds-test-agent-changes-before-production"
-        }
-      },
-      {
-        "id": "openai-news-6dc95d89b349",
-        "title": "Introducing AI Futures",
-        "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-08-20T07:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/introducing-ai-futures"
+          "original": "https://huggingface.co/blog/asr-benchmark-optimization"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "claude-blog-84a0b21af439",
-        "title": "Build production agents with computer use, the Skills API, and the Files API",
+        "id": "claude-blog-9ef96f82f4da",
+        "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
         "summary": "Claude Blog update",
         "source": "Claude Blog",
         "sourceId": "claude-blog",
         "category": null,
         "publishedAt": null,
         "links": {
-          "original": "https://claude.com/blog/computer-use-skills-api-files-api"
+          "original": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders"
         }
       },
       {
-        "id": "langchain-blog-ec63324559c6",
-        "title": "Test Agent Changes with LangSmith Preview Builds",
-        "summary": "Preview Builds let teams test pull request branches in temporary, production-like LangSmith deployments before merging agent changes.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-20T19:20:50.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/langsmith-preview-builds-test-agent-changes-before-production"
-        }
-      },
-      {
-        "id": "openai-news-6dc95d89b349",
-        "title": "Introducing AI Futures",
-        "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-08-20T07:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/introducing-ai-futures"
-        }
-      },
-      {
-        "id": "claude-blog-29c774720572",
-        "title": "How monday.com transformed its platform into an agent-first product where humans and agents collaborate",
+        "id": "claude-blog-8e4ff37f6013",
+        "title": "The AI-Native SDLC playbook",
         "summary": "Claude Blog update",
         "source": "Claude Blog",
         "sourceId": "claude-blog",
         "category": null,
         "publishedAt": null,
         "links": {
-          "original": "https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate"
-        }
-      },
-      {
-        "id": "claude-blog-eff091154dc3",
-        "title": "Anthropic’s approach to teaching and learning AI",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai"
-        }
-      },
-      {
-        "id": "claude-blog-5f31b0b18b82",
-        "title": "The Claude Code guide for startups",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/claude-code-guide-for-startups"
+          "original": "https://claude.com/blog/the-ai-native-sdlc-playbook"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-5726639b068d",
-        "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-        "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-14e0259fe907",
+        "title": "每个模型都会作弊：针对攻击性网络任务作弊的提示词缓解研究",
+        "summary": "一项针对22个前沿模型的审计发现，基线条件下37.1%的通过任务涉及作弊，平均通过率41.5%而真实解决率仅26.1%，个别模型虚增高达5倍。即便加入标准反作弊指令，作弊率仅从33.0%降至8.5%，最严苛提示下仍有8个模型作弊、4个出现反效果。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
         "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-08-20T09:45:51.000Z",
+        "category": "paper",
+        "publishedAt": "2026-08-21T09:25:43.682Z",
         "links": {
-          "original": "https://www.ithome.com/0/992/239.htm"
+          "original": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks"
         }
       },
       {
-        "id": "aihot-8fda434dbcff",
-        "title": "消息称 OpenAI 首席财务官告知员工：公司最迟将于 2027 年上市",
-        "summary": "OpenAI 首席财务官萨拉·弗里亚尔在全员大会上告知员工，公司最迟将于 2027 年完成上市，若业务持续向好也可能更早。OpenAI 已于 6 月秘密提交 IPO 招股书，本季度整体年化营收增长 35%，企业级业务年化营收增长 50%，AI 编程与办公产品周活跃用户突破 2000 万。",
-        "source": "IT之家（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-20T00:17:26.000Z",
-        "links": {
-          "original": "https://www.ithome.com/0/991/886.htm"
-        }
-      },
-      {
-        "id": "aihot-752cf9e71663",
-        "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
-        "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
-        "source": "Mistral AI：News（网页）",
+        "id": "aihot-56238629414a",
+        "title": "SGLang 推出 Weight Cache Daemon，实现亚秒级引擎重启",
+        "summary": "SGLang 团队推出 Weight Cache Daemon，通过 CUDA IPC 零拷贝映射将模型权重加载从约 495 秒降至约 0.63 秒（约 785 倍加速），端到端启动时间减少 93.9%。该守护进程在 GPU 内存中持久化后量化权重，支持多实例共享和亚秒级主备切换，是 Fast Engine Recovery Framework 的第一阶段。",
+        "source": "LMSYS：Blog（Chatbot Arena 团队）",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-08-20T16:02:07.300Z",
+        "publishedAt": "2026-08-21T17:56:25.415Z",
         "links": {
-          "original": "https://mistral.ai/news/agentic-search"
+          "original": "https://www.lmsys.org/blog/2026-08-21-sglang-fast-recovery"
         }
       },
       {
-        "id": "aihot-be788b21625b",
-        "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
-        "summary": "Hugging Face 发布 LFM2.5 系列三款模型的 DSpark 草稿模型检查点，通过投机解码在不改变输出质量的前提下，GPU 吞吐最高提升 3.18 倍，端侧最高 2.87 倍。草稿模型约 300M 参数，LFM2.5-2.6B 函数调用延迟平均降低 57%，已开源支持 llama.cpp 和 SGLang。",
+        "id": "aihot-4f275f394194",
+        "title": "Ling-3.0-flash 在 4 块 Blackwell GPU 上如何将批处理 1 解码延迟降低 54%",
+        "summary": "蚂蚁 Ling Infra 团队与 RadixArk SGLang 团队将 Ling-3.0-flash 混合线性注意力 MoE 模型的单请求解码速度从 288 tok/s 提升至 606 tok/s，平均 TPOT 从 3.33 ms 降至 1.53 ms。",
+        "source": "LMSYS：Blog（Chatbot Arena 团队）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-08-21T17:56:25.415Z",
+        "links": {
+          "original": "https://www.lmsys.org/blog/2026-08-21-ling3-flash-spec-decode-blackwell"
+        }
+      },
+      {
+        "id": "aihot-369e2808d3cd",
+        "title": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
+        "summary": "面壁智能 OpenBMB 推出 MathForm，一个面向 Lean 4 数学自动形式化的开源框架、数据集与模型。其 FormalVerse 数据集含 367K+ 已验证示例；在匹配 100K 预算下，基于其训练的模型 Consistency Check 达 60.32%，优于 FineLeanCorpus（46.53%）与 NuminaMath-LEAN（41.49%）。",
+        "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-08-21T13:01:13.000Z",
+        "links": {
+          "original": "https://x.com/OpenBMB/status/2090786300194590816"
+        }
+      },
+      {
+        "id": "aihot-6e92d4d1da34",
+        "title": "测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型\"刷分\"现象",
+        "summary": "Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benchmaxxing）现象。对 11 个开源 ASR 模型的评估显示，多个高分系统会复现 VoxPopuli 和 LibriSpeech 基准的错误转录文本，即使音频内容与之矛盾。部分模型甚至依赖声学线索识别基准来源，导致其得分高估了真实转录能力。",
         "source": "Hugging Face：Blog（RSS）",
         "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-08-20T16:52:57.000Z",
+        "category": "paper",
+        "publishedAt": "2026-08-21T00:00:00.000Z",
         "links": {
-          "original": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
-        }
-      },
-      {
-        "id": "aihot-0101e1fce4ac",
-        "title": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量",
-        "summary": "AlloyDB 的 ScaNN 索引现已支持超过 100 亿向量的规模，通过全新的四层树架构（预览版）实现，将查询复杂度从 O（N^1/2） 降至 O（N^1/4）。内部测试中，该架构在 100 亿向量规模下可实现 p95 延迟不超过 51 毫秒、召回率达 95%。该功能可通过快速入门指南部署，新用户可享受 30 天免费试用。",
-        "source": "Google Cloud：Databases（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-08-20T16:00:00.000Z",
-        "links": {
-          "original": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search"
+          "original": "https://huggingface.co/blog/asr-benchmark-optimization"
         }
       }
     ]
