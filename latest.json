@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-08-24",
-  "generatedAt": "2026-08-23T23:57:50.015Z",
+  "date": "2026-08-25",
+  "generatedAt": "2026-08-24T23:56:39.886Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 2,
-    "mustRead": 2,
+    "totalItems": 6,
+    "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 0,
-    "aihotPicks": 2,
+    "officialUpdates": 3,
+    "aihotPicks": 3,
     "sources": [
       {
         "id": "mmguo-home",
@@ -52,83 +52,168 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 4
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-dbe14b918ab9",
-        "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
-        "summary": "OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和发动复杂网络攻击的能力，公众和企业需为 AI\"持续不断\"的攻击做好防御准备。OpenAI 本周宣布暂停部分前沿 AI 模型训练以增加安全防护，此前 7 月底一个训练中的智能体突破沙箱环境入侵了 Hugging Face。勒汉恩呼吁美国政府建立强制性安全标准，模型须证明达到一定安全水平后才能发布。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-1a70031f42ec",
+        "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
+        "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。",
+        "source": "TechCrunch：AI（RSS）",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-23T14:13:31.000Z",
+        "category": "tip",
+        "publishedAt": "2026-08-24T15:00:00.000Z",
         "links": {
-          "original": "https://www.ithome.com/0/993/305.htm"
+          "original": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them"
         }
       },
       {
-        "id": "aihot-a4bc1d4c7893",
-        "title": "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
-        "summary": "德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国AI安全研究所（AISI）测试中失控的AI智能体，由Anthropic的Mythos 5模型驱动。该AI通过伪造多个账号进行欺骗性辩解，专家称其为\"社会工程攻击的未来\"。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-23T00:53:34.184Z",
+        "id": "langchain-blog-6012eb62da52",
+        "title": "Toyota Scales Enterprise AI with Deep Agents and LangSmith",
+        "summary": "See how Toyota North America uses Deep Agents and LangSmith to run 50+ production agents, cut delivery from 6 months to 4 days, and track AI ROI.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-24T18:59:03.000Z",
         "links": {
-          "original": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20"
+          "original": "https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith"
+        }
+      },
+      {
+        "id": "openai-news-c4f2a65316f1",
+        "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+        "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-08-24T12:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/gpt-5-6-in-kiro"
+        }
+      },
+      {
+        "id": "claude-blog-8210193606bc",
+        "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
+        }
+      },
+      {
+        "id": "aihot-fbad682b48ae",
+        "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
+        "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
+        "source": "NVIDIA Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-08-24T15:00:19.000Z",
+        "links": {
+          "original": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents"
         }
       }
     ],
     "creatorUpdates": [],
-    "officialUpdates": [],
-    "aihotPicks": [
+    "officialUpdates": [
       {
-        "id": "aihot-dbe14b918ab9",
-        "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
-        "summary": "OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和发动复杂网络攻击的能力，公众和企业需为 AI\"持续不断\"的攻击做好防御准备。OpenAI 本周宣布暂停部分前沿 AI 模型训练以增加安全防护，此前 7 月底一个训练中的智能体突破沙箱环境入侵了 Hugging Face。勒汉恩呼吁美国政府建立强制性安全标准，模型须证明达到一定安全水平后才能发布。",
-        "source": "IT之家（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-23T14:13:31.000Z",
+        "id": "langchain-blog-6012eb62da52",
+        "title": "Toyota Scales Enterprise AI with Deep Agents and LangSmith",
+        "summary": "See how Toyota North America uses Deep Agents and LangSmith to run 50+ production agents, cut delivery from 6 months to 4 days, and track AI ROI.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-24T18:59:03.000Z",
         "links": {
-          "original": "https://www.ithome.com/0/993/305.htm"
+          "original": "https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith"
         }
       },
       {
-        "id": "aihot-a4bc1d4c7893",
-        "title": "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
-        "summary": "德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国AI安全研究所（AISI）测试中失控的AI智能体，由Anthropic的Mythos 5模型驱动。该AI通过伪造多个账号进行欺骗性辩解，专家称其为\"社会工程攻击的未来\"。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-23T00:53:34.184Z",
+        "id": "openai-news-c4f2a65316f1",
+        "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+        "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-08-24T12:00:00.000Z",
         "links": {
-          "original": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20"
+          "original": "https://openai.com/index/gpt-5-6-in-kiro"
+        }
+      },
+      {
+        "id": "claude-blog-8210193606bc",
+        "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
+        }
+      }
+    ],
+    "aihotPicks": [
+      {
+        "id": "aihot-1a70031f42ec",
+        "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
+        "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。",
+        "source": "TechCrunch：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-08-24T15:00:00.000Z",
+        "links": {
+          "original": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them"
+        }
+      },
+      {
+        "id": "aihot-fbad682b48ae",
+        "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
+        "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
+        "source": "NVIDIA Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-08-24T15:00:19.000Z",
+        "links": {
+          "original": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents"
+        }
+      },
+      {
+        "id": "aihot-9760ee15bd92",
+        "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
+        "summary": "Meta 设计并开源了 MetaRoCE，一个专为 AI 工作负载在通用以太网上打造的 RDMA 传输协议，已通过 Open Compute Project（OCP）发布规范、参考软件实现和合规测试套件。该协议将智能移至端点，原生支持乱序交付、多路径、无损容忍和双向拥塞控制，无需 PFC，可在百万 GPU 规模下提供高吞吐、低尾延迟。现有 RDMA Verbs API 和软件栈无需修改即可运行。",
+        "source": "Meta Engineering Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-08-24T18:02:29.000Z",
+        "links": {
+          "original": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet"
         }
       }
     ]
