@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-08-25",
-  "generatedAt": "2026-08-24T23:56:39.886Z",
+  "date": "2026-08-27",
+  "generatedAt": "2026-08-27T00:00:10.533Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 6,
+    "totalItems": 43,
     "mustRead": 5,
-    "creatorUpdates": 0,
-    "officialUpdates": 3,
-    "aihotPicks": 3,
+    "creatorUpdates": 1,
+    "officialUpdates": 12,
+    "aihotPicks": 10,
     "sources": [
       {
         "id": "mmguo-home",
         "name": "秒秒Guo",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
@@ -45,175 +45,380 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "claude-blog",
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 5
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 24
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 4
+        "itemCount": 13
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-1a70031f42ec",
-        "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
-        "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。",
-        "source": "TechCrunch：AI（RSS）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-08-24T15:00:00.000Z",
-        "links": {
-          "original": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them"
-        }
-      },
-      {
-        "id": "langchain-blog-6012eb62da52",
-        "title": "Toyota Scales Enterprise AI with Deep Agents and LangSmith",
-        "summary": "See how Toyota North America uses Deep Agents and LangSmith to run 50+ production agents, cut delivery from 6 months to 4 days, and track AI ROI.",
+        "id": "langchain-blog-77acafad33eb",
+        "title": "OpenAI's Bet on a Cognitive Architecture",
+        "summary": "Why LangChain believes in open, customizable cognitive architectures over closed systems. Build reliable LLM agents with OpenGPTs and LangSmith.",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-08-24T18:59:03.000Z",
+        "publishedAt": "2026-08-26T15:02:51.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith"
+          "original": "https://www.langchain.com/blog/openais-bet-on-a-cognitive-architecture"
         }
       },
       {
-        "id": "openai-news-c4f2a65316f1",
-        "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
-        "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "aihot-khazix-2e51ffbee65f",
+        "title": "智谱发布GLM-5.3-Flash，匿名模型OX Alpha正式亮相",
+        "summary": "智谱正式发布GLM-5.3-Flash，即此前在OpenRouter和OpenCode上爆火的匿名模型OX Alpha。该模型为总参数320B、激活18B的MoE架构，是GLM-5系列首个原生多模态模型，支持图像、视频和文本输入，原生上下文100万。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "ai-models",
+        "publishedAt": "2026-08-26T22:19:23.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685603&idx=1&sn=91bbef667086bed84b6f213be79733aa"
+        }
+      },
+      {
+        "id": "langchain-blog-0d367b281019",
+        "title": "How to design an Agent for Production",
+        "summary": "Build production-ready AI agents with LangChain. Technical guide covering OpenAI functions, tools, prompts, and architecture for Cal.ai's scheduling assistant.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-08-24T12:00:00.000Z",
+        "publishedAt": "2026-08-26T15:02:51.000Z",
         "links": {
-          "original": "https://openai.com/index/gpt-5-6-in-kiro"
+          "original": "https://www.langchain.com/blog/how-to-design-an-agent-for-production"
         }
       },
       {
-        "id": "claude-blog-8210193606bc",
-        "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
+        "id": "langchain-blog-80666428972e",
+        "title": "Autonomous Agents & Agent Simulations",
+        "summary": "Explore how LangChain implements autonomous agents like AutoGPT and BabyAGI. Learn about planning techniques, memory systems, and agent simulations.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": null,
+        "publishedAt": "2026-08-26T14:14:49.000Z",
         "links": {
-          "original": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
+          "original": "https://www.langchain.com/blog/agents-round"
         }
       },
       {
-        "id": "aihot-fbad682b48ae",
-        "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
-        "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
-        "source": "NVIDIA Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-08-24T15:00:19.000Z",
+        "id": "langchain-blog-f7d7b612b0e3",
+        "title": "August 2026: LangChain Newsletter — Managed Deep Agents, LLM Gateway, and More",
+        "summary": "Managed Deep Agents and LLM Gateway hit public beta, plus Deep Agents v0.7, Tuned Evaluators, Bring Your Own Cloud on AWS, and LangSmith Engine upgrades.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T22:28:36.000Z",
         "links": {
-          "original": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents"
+          "original": "https://www.langchain.com/blog/august-2026-langchain-newsletter"
         }
       }
     ],
-    "creatorUpdates": [],
+    "creatorUpdates": [
+      {
+        "id": "aihot-khazix-2e51ffbee65f",
+        "title": "智谱发布GLM-5.3-Flash，匿名模型OX Alpha正式亮相",
+        "summary": "智谱正式发布GLM-5.3-Flash，即此前在OpenRouter和OpenCode上爆火的匿名模型OX Alpha。该模型为总参数320B、激活18B的MoE架构，是GLM-5系列首个原生多模态模型，支持图像、视频和文本输入，原生上下文100万。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "ai-models",
+        "publishedAt": "2026-08-26T22:19:23.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685603&idx=1&sn=91bbef667086bed84b6f213be79733aa"
+        }
+      }
+    ],
     "officialUpdates": [
       {
-        "id": "langchain-blog-6012eb62da52",
-        "title": "Toyota Scales Enterprise AI with Deep Agents and LangSmith",
-        "summary": "See how Toyota North America uses Deep Agents and LangSmith to run 50+ production agents, cut delivery from 6 months to 4 days, and track AI ROI.",
+        "id": "langchain-blog-77acafad33eb",
+        "title": "OpenAI's Bet on a Cognitive Architecture",
+        "summary": "Why LangChain believes in open, customizable cognitive architectures over closed systems. Build reliable LLM agents with OpenGPTs and LangSmith.",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-08-24T18:59:03.000Z",
+        "publishedAt": "2026-08-26T15:02:51.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith"
+          "original": "https://www.langchain.com/blog/openais-bet-on-a-cognitive-architecture"
         }
       },
       {
-        "id": "openai-news-c4f2a65316f1",
-        "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
-        "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-0d367b281019",
+        "title": "How to design an Agent for Production",
+        "summary": "Build production-ready AI agents with LangChain. Technical guide covering OpenAI functions, tools, prompts, and architecture for Cal.ai's scheduling assistant.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-08-24T12:00:00.000Z",
+        "publishedAt": "2026-08-26T15:02:51.000Z",
         "links": {
-          "original": "https://openai.com/index/gpt-5-6-in-kiro"
+          "original": "https://www.langchain.com/blog/how-to-design-an-agent-for-production"
         }
       },
       {
-        "id": "claude-blog-8210193606bc",
-        "title": "How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
+        "id": "langchain-blog-80666428972e",
+        "title": "Autonomous Agents & Agent Simulations",
+        "summary": "Explore how LangChain implements autonomous agents like AutoGPT and BabyAGI. Learn about planning techniques, memory systems, and agent simulations.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": null,
+        "publishedAt": "2026-08-26T14:14:49.000Z",
         "links": {
-          "original": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep"
+          "original": "https://www.langchain.com/blog/agents-round"
+        }
+      },
+      {
+        "id": "langchain-blog-f7d7b612b0e3",
+        "title": "August 2026: LangChain Newsletter — Managed Deep Agents, LLM Gateway, and More",
+        "summary": "Managed Deep Agents and LLM Gateway hit public beta, plus Deep Agents v0.7, Tuned Evaluators, Bring Your Own Cloud on AWS, and LangSmith Engine upgrades.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T22:28:36.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/august-2026-langchain-newsletter"
+        }
+      },
+      {
+        "id": "langchain-blog-a0414ba4244b",
+        "title": "Introducing Interrupt: The AI Agent Conference by LangChain",
+        "summary": "Join us this May at Interrupt, LangChain’s inaugural conference where the future of AI agents takes center stage.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T16:53:53.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/introducing-interrupt-langchain-conference"
+        }
+      },
+      {
+        "id": "langchain-blog-c34d33cedcea",
+        "title": "Why We Rebuilt LangChain’s Chatbot and What We Learned",
+        "summary": "Learn how LangChain rebuilt their chatbot using Deep Agents and subgraphs for sub-15-second responses with precise citations—and what you can apply.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T16:53:53.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/rebuilding-chat-langchain"
+        }
+      },
+      {
+        "id": "langchain-blog-6cb9b3e34baa",
+        "title": "LangChain Announces Enterprise Agentic AI Platform Built with NVIDIA",
+        "summary": "Build, deploy, and monitor production-grade AI agents at scale with LangChain's enterprise agentic AI platform integrated with NVIDIA.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T16:15:01.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/nvidia-enterprise"
+        }
+      },
+      {
+        "id": "langchain-blog-0e5186a420a6",
+        "title": "Applying OpenAI's RAG Strategies",
+        "summary": "Implement OpenAI's proven RAG strategies with LangChain. Explore query transformations, routing, post-processing, and evaluation methods for optimal retrieval.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T15:02:51.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/applying-openai-rag"
+        }
+      },
+      {
+        "id": "langchain-blog-7391b455e9c0",
+        "title": "Meet Connery: An Open-Source Plugin Infrastructure for OpenGPTs and LLM apps",
+        "summary": "Discover Connery: open-source plugin infrastructure for LLM apps. Secure integrations, personalization, and human-in-the-loop control for AI agents.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T15:02:51.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/meet-connery-an-open-source-plugin-infrastructure-for-opengpts-and-llm-apps"
+        }
+      },
+      {
+        "id": "langchain-blog-716d83aa0a39",
+        "title": "Announcing LangGraph v0.1 & LangGraph Cloud: Running agents at scale, reliably",
+        "summary": "Our new infrastructure for running agents at scale, LangGraph Cloud, is available in beta. We also have a new stable release of LangGraph.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T16:53:53.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/langgraph-cloud"
+        }
+      },
+      {
+        "id": "langchain-blog-262972947bfa",
+        "title": "Evaluating OpenWiki with WikiBench",
+        "summary": "We built WikiBench to test whether generated wikis help coding agents. Pairing a wiki with source code scored higher than source alone, at lower cost.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T16:15:01.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/evaluating-openwiki-with-wikibench"
+        }
+      },
+      {
+        "id": "langchain-blog-937138b53755",
+        "title": "AI Agent Latency 101: How do I speed up my AI agent?",
+        "summary": "Learn proven strategies to speed up your AI agent: reduce latency, optimize LLM calls, enable parallelism, and improve UX. Expert tips from LangChain.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-08-26T16:15:01.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/how-do-i-speed-up-my-agent"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-1a70031f42ec",
-        "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
-        "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。",
-        "source": "TechCrunch：AI（RSS）",
+        "id": "aihot-4b462c3c45c7",
+        "title": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
+        "summary": "豆包工作（豆包 Work）是当前企业接入Agent门槛最低的路径，但需用飞书账号登录才能解锁满血功能。实测可用手机远程控制最多7台设备、定时任务、自动读取本地skill、侧边栏直接编辑并同步飞书，且管理员看不到聊天记录。作者认为Work Agent是token消耗倍增器，飞书原生生态是豆包工作相比Claude Cowork、Codex Work的核心优势。",
+        "source": "公众号：卡尔的AI沃茨",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-08-24T15:00:00.000Z",
+        "publishedAt": "2026-08-26T08:27:00.000Z",
         "links": {
-          "original": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them"
+          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247509950&idx=1&sn=18e7ecdceb66058f5ae1681009b4054e"
         }
       },
       {
-        "id": "aihot-fbad682b48ae",
-        "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
-        "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
-        "source": "NVIDIA Blog（RSS）",
+        "id": "aihot-e32cadf4e06c",
+        "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
+        "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
+        "source": "Anthropic：Research（发表成果 · 网页）",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-08-24T15:00:19.000Z",
+        "category": "paper",
+        "publishedAt": "2026-08-26T17:30:30.074Z",
         "links": {
-          "original": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents"
+          "original": "https://www.anthropic.com/research/enabling-independent-research"
         }
       },
       {
-        "id": "aihot-9760ee15bd92",
-        "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
-        "summary": "Meta 设计并开源了 MetaRoCE，一个专为 AI 工作负载在通用以太网上打造的 RDMA 传输协议，已通过 Open Compute Project（OCP）发布规范、参考软件实现和合规测试套件。该协议将智能移至端点，原生支持乱序交付、多路径、无损容忍和双向拥塞控制，无需 PFC，可在百万 GPU 规模下提供高吞吐、低尾延迟。现有 RDMA Verbs API 和软件栈无需修改即可运行。",
-        "source": "Meta Engineering Blog（RSS）",
+        "id": "aihot-60eb4c81e6e5",
+        "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+        "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-08-24T18:02:29.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-08-26T15:32:46.000Z",
         "links": {
-          "original": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet"
+          "original": "https://x.com/Alibaba_Qwen/status/2092636376990990503"
+        }
+      },
+      {
+        "id": "aihot-e5965f1b41a0",
+        "title": "GlucoFM：面向连续血糖监测的基础模型",
+        "summary": "Google Research 推出 GlucoFM，一款轻量级自监督 CGM 基础模型，采用双流设计分别建模缓慢血糖趋势与短期波动。在四个队列、七项临床预测任务的 14 项评估中，其 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点，并在 PPGR 预测中取得最低 MAE。模型在 109，066 小时无标注 CGM 数据上预训练，具备跨数据集迁移与少样本适应能力。",
+        "source": "Google Research：Blog（网页）",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-08-26T20:10:19.416Z",
+        "links": {
+          "original": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring"
+        }
+      },
+      {
+        "id": "aihot-095ca900c0d3",
+        "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+        "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。",
+        "source": "Google DeepMind：Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-08-26T17:01:00.000Z",
+        "links": {
+          "original": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe"
+        }
+      },
+      {
+        "id": "aihot-20f5ecb52611",
+        "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+        "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
+        "source": "公众号：智谱（GLM）",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-08-26T14:11:33.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c"
+        }
+      },
+      {
+        "id": "aihot-a003514a5bb9",
+        "title": "以色列资助的假美国智库试图利用AI进行宣传",
+        "summary": "一个打着\"汉诺威公共政策研究所\"旗号的亲以色列网站，在九天内发布了124篇、超56万字的报告，旨在优化内容以引导ChatGPT等AI聊天机器人引用其亲以观点。该网站由美国公司Piro Inc依据《外国代理人登记法》为以色列政府分发内容，其背后是以色列政府数千万美元资助、经Havas Media等第三方转手的更广泛宣传行动。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-26T14:05:28.706Z",
+        "links": {
+          "original": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda"
+        }
+      },
+      {
+        "id": "aihot-c4b64918a8f5",
+        "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+        "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+        "source": "公众号：腾讯混元",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-08-26T08:04:03.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a"
+        }
+      },
+      {
+        "id": "aihot-0c10df3f47ce",
+        "title": "亚马逊将英伟达芯片订单增至三倍，新增200万颗GPU",
+        "summary": "亚马逊与英伟达宣布扩大合作，将在2027和2028年为AWS数据中心新增200万颗GPU芯片，包括Blackwell Ultra、Rubin和Rubin Ultra。此前五个月亚马逊刚同意部署超100万颗英伟达GPU，英伟达称此后\"需求超出预期\"。双方未披露财务条款，但按GPU单价估算交易价值达数百亿美元。",
+        "source": "TechCrunch：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-26T23:47:18.000Z",
+        "links": {
+          "original": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand"
+        }
+      },
+      {
+        "id": "aihot-e321c1e7ec06",
+        "title": "英伟达 2027 财年半年报归母净利润 1180.1 亿美元，同比增长 161.1%",
+        "summary": "英伟达发布 2027 财年半年报，上半年营收 1778.37 亿美元，归母净利润 1180.1 亿美元，同比增长 161.1%，GAAP 毛利率 75%。第二财季营收 962.21 亿美元，同比增长 106%，环比增长 18%，归母净利润 596.88 亿美元，同比增长 126%。数据中心业务第二季度收入 890.23 亿美元，同比增长 117%，Vera Rubin 平台已进入全面量产。",
+        "source": "IT之家（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-26T20:25:54.000Z",
+        "links": {
+          "original": "https://www.ithome.com/0/994/791.htm"
         }
       }
     ]
