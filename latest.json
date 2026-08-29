@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-08-27",
-  "generatedAt": "2026-08-27T00:00:10.533Z",
+  "date": "2026-08-29",
+  "generatedAt": "2026-08-29T00:06:27.437Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 43,
+    "totalItems": 11,
     "mustRead": 5,
-    "creatorUpdates": 1,
-    "officialUpdates": 12,
-    "aihotPicks": 10,
+    "creatorUpdates": 0,
+    "officialUpdates": 3,
+    "aihotPicks": 8,
     "sources": [
       {
         "id": "mmguo-home",
         "name": "秒秒Guo",
         "group": "creator",
-        "status": "failed",
+        "status": "ok",
         "itemCount": 0
       },
       {
@@ -45,380 +45,235 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "claude-blog",
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 2
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 1
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 24
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 13
+        "itemCount": 8
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "langchain-blog-77acafad33eb",
-        "title": "OpenAI's Bet on a Cognitive Architecture",
-        "summary": "Why LangChain believes in open, customizable cognitive architectures over closed systems. Build reliable LLM agents with OpenGPTs and LangSmith.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T15:02:51.000Z",
+        "id": "aihot-08bdbc494c16",
+        "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+        "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-08-28T08:36:31.021Z",
         "links": {
-          "original": "https://www.langchain.com/blog/openais-bet-on-a-cognitive-architecture"
+          "original": "https://github.com/calmrocks/ai-engineer-notebooks"
         }
       },
       {
-        "id": "aihot-khazix-2e51ffbee65f",
-        "title": "智谱发布GLM-5.3-Flash，匿名模型OX Alpha正式亮相",
-        "summary": "智谱正式发布GLM-5.3-Flash，即此前在OpenRouter和OpenCode上爆火的匿名模型OX Alpha。该模型为总参数320B、激活18B的MoE架构，是GLM-5系列首个原生多模态模型，支持图像、视频和文本输入，原生上下文100万。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-08-26T22:19:23.000Z",
+        "id": "aihot-c903e9dbc983",
+        "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+        "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
+        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-08-28T18:24:05.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685603&idx=1&sn=91bbef667086bed84b6f213be79733aa"
+          "original": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging"
         }
       },
       {
-        "id": "langchain-blog-0d367b281019",
-        "title": "How to design an Agent for Production",
-        "summary": "Build production-ready AI agents with LangChain. Technical guide covering OpenAI functions, tools, prompts, and architecture for Cal.ai's scheduling assistant.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "openai-news-dc119076f19b",
+        "title": "Supporting Thailand’s next generation of AI startups",
+        "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-08-26T15:02:51.000Z",
+        "publishedAt": "2026-08-28T02:00:00.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/how-to-design-an-agent-for-production"
+          "original": "https://openai.com/index/supporting-next-generation-ai-startups-thailand"
         }
       },
       {
-        "id": "langchain-blog-80666428972e",
-        "title": "Autonomous Agents & Agent Simulations",
-        "summary": "Explore how LangChain implements autonomous agents like AutoGPT and BabyAGI. Learn about planning techniques, memory systems, and agent simulations.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T14:14:49.000Z",
+        "id": "aihot-890cf913b1c4",
+        "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+        "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
+        "source": "Ars Technica：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-28T18:07:55.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/agents-round"
+          "original": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge"
         }
       },
       {
-        "id": "langchain-blog-f7d7b612b0e3",
-        "title": "August 2026: LangChain Newsletter — Managed Deep Agents, LLM Gateway, and More",
-        "summary": "Managed Deep Agents and LLM Gateway hit public beta, plus Deep Agents v0.7, Tuned Evaluators, Bring Your Own Cloud on AWS, and LangSmith Engine upgrades.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T22:28:36.000Z",
+        "id": "aihot-1a9a9950f58d",
+        "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
+        "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
+        "source": "Anthropic：Research（发表成果 · 网页）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-08-28T17:25:56.912Z",
         "links": {
-          "original": "https://www.langchain.com/blog/august-2026-langchain-newsletter"
+          "original": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures"
         }
       }
     ],
-    "creatorUpdates": [
-      {
-        "id": "aihot-khazix-2e51ffbee65f",
-        "title": "智谱发布GLM-5.3-Flash，匿名模型OX Alpha正式亮相",
-        "summary": "智谱正式发布GLM-5.3-Flash，即此前在OpenRouter和OpenCode上爆火的匿名模型OX Alpha。该模型为总参数320B、激活18B的MoE架构，是GLM-5系列首个原生多模态模型，支持图像、视频和文本输入，原生上下文100万。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-08-26T22:19:23.000Z",
-        "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685603&idx=1&sn=91bbef667086bed84b6f213be79733aa"
-        }
-      }
-    ],
+    "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "langchain-blog-77acafad33eb",
-        "title": "OpenAI's Bet on a Cognitive Architecture",
-        "summary": "Why LangChain believes in open, customizable cognitive architectures over closed systems. Build reliable LLM agents with OpenGPTs and LangSmith.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "openai-news-dc119076f19b",
+        "title": "Supporting Thailand’s next generation of AI startups",
+        "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-08-26T15:02:51.000Z",
+        "publishedAt": "2026-08-28T02:00:00.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/openais-bet-on-a-cognitive-architecture"
+          "original": "https://openai.com/index/supporting-next-generation-ai-startups-thailand"
         }
       },
       {
-        "id": "langchain-blog-0d367b281019",
-        "title": "How to design an Agent for Production",
-        "summary": "Build production-ready AI agents with LangChain. Technical guide covering OpenAI functions, tools, prompts, and architecture for Cal.ai's scheduling assistant.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "claude-blog-db3961b09cb1",
+        "title": "How Anthropic employees use Claude Tag",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
         "category": null,
-        "publishedAt": "2026-08-26T15:02:51.000Z",
+        "publishedAt": null,
         "links": {
-          "original": "https://www.langchain.com/blog/how-to-design-an-agent-for-production"
+          "original": "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
         }
       },
       {
-        "id": "langchain-blog-80666428972e",
-        "title": "Autonomous Agents & Agent Simulations",
-        "summary": "Explore how LangChain implements autonomous agents like AutoGPT and BabyAGI. Learn about planning techniques, memory systems, and agent simulations.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "claude-blog-a958e4586db5",
+        "title": "Claude for Teachers, now available for U.S. K-12 schools and districts",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
         "category": null,
-        "publishedAt": "2026-08-26T14:14:49.000Z",
+        "publishedAt": null,
         "links": {
-          "original": "https://www.langchain.com/blog/agents-round"
-        }
-      },
-      {
-        "id": "langchain-blog-f7d7b612b0e3",
-        "title": "August 2026: LangChain Newsletter — Managed Deep Agents, LLM Gateway, and More",
-        "summary": "Managed Deep Agents and LLM Gateway hit public beta, plus Deep Agents v0.7, Tuned Evaluators, Bring Your Own Cloud on AWS, and LangSmith Engine upgrades.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T22:28:36.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/august-2026-langchain-newsletter"
-        }
-      },
-      {
-        "id": "langchain-blog-a0414ba4244b",
-        "title": "Introducing Interrupt: The AI Agent Conference by LangChain",
-        "summary": "Join us this May at Interrupt, LangChain’s inaugural conference where the future of AI agents takes center stage.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T16:53:53.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/introducing-interrupt-langchain-conference"
-        }
-      },
-      {
-        "id": "langchain-blog-c34d33cedcea",
-        "title": "Why We Rebuilt LangChain’s Chatbot and What We Learned",
-        "summary": "Learn how LangChain rebuilt their chatbot using Deep Agents and subgraphs for sub-15-second responses with precise citations—and what you can apply.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T16:53:53.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/rebuilding-chat-langchain"
-        }
-      },
-      {
-        "id": "langchain-blog-6cb9b3e34baa",
-        "title": "LangChain Announces Enterprise Agentic AI Platform Built with NVIDIA",
-        "summary": "Build, deploy, and monitor production-grade AI agents at scale with LangChain's enterprise agentic AI platform integrated with NVIDIA.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T16:15:01.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/nvidia-enterprise"
-        }
-      },
-      {
-        "id": "langchain-blog-0e5186a420a6",
-        "title": "Applying OpenAI's RAG Strategies",
-        "summary": "Implement OpenAI's proven RAG strategies with LangChain. Explore query transformations, routing, post-processing, and evaluation methods for optimal retrieval.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T15:02:51.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/applying-openai-rag"
-        }
-      },
-      {
-        "id": "langchain-blog-7391b455e9c0",
-        "title": "Meet Connery: An Open-Source Plugin Infrastructure for OpenGPTs and LLM apps",
-        "summary": "Discover Connery: open-source plugin infrastructure for LLM apps. Secure integrations, personalization, and human-in-the-loop control for AI agents.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T15:02:51.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/meet-connery-an-open-source-plugin-infrastructure-for-opengpts-and-llm-apps"
-        }
-      },
-      {
-        "id": "langchain-blog-716d83aa0a39",
-        "title": "Announcing LangGraph v0.1 & LangGraph Cloud: Running agents at scale, reliably",
-        "summary": "Our new infrastructure for running agents at scale, LangGraph Cloud, is available in beta. We also have a new stable release of LangGraph.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T16:53:53.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/langgraph-cloud"
-        }
-      },
-      {
-        "id": "langchain-blog-262972947bfa",
-        "title": "Evaluating OpenWiki with WikiBench",
-        "summary": "We built WikiBench to test whether generated wikis help coding agents. Pairing a wiki with source code scored higher than source alone, at lower cost.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T16:15:01.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/evaluating-openwiki-with-wikibench"
-        }
-      },
-      {
-        "id": "langchain-blog-937138b53755",
-        "title": "AI Agent Latency 101: How do I speed up my AI agent?",
-        "summary": "Learn proven strategies to speed up your AI agent: reduce latency, optimize LLM calls, enable parallelism, and improve UX. Expert tips from LangChain.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-08-26T16:15:01.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/how-do-i-speed-up-my-agent"
+          "original": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-4b462c3c45c7",
-        "title": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
-        "summary": "豆包工作（豆包 Work）是当前企业接入Agent门槛最低的路径，但需用飞书账号登录才能解锁满血功能。实测可用手机远程控制最多7台设备、定时任务、自动读取本地skill、侧边栏直接编辑并同步飞书，且管理员看不到聊天记录。作者认为Work Agent是token消耗倍增器，飞书原生生态是豆包工作相比Claude Cowork、Codex Work的核心优势。",
-        "source": "公众号：卡尔的AI沃茨",
+        "id": "aihot-08bdbc494c16",
+        "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+        "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-08-26T08:27:00.000Z",
+        "publishedAt": "2026-08-28T08:36:31.021Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247509950&idx=1&sn=18e7ecdceb66058f5ae1681009b4054e"
+          "original": "https://github.com/calmrocks/ai-engineer-notebooks"
         }
       },
       {
-        "id": "aihot-e32cadf4e06c",
-        "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
-        "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
+        "id": "aihot-c903e9dbc983",
+        "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+        "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
+        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-08-28T18:24:05.000Z",
+        "links": {
+          "original": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging"
+        }
+      },
+      {
+        "id": "aihot-890cf913b1c4",
+        "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+        "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
+        "source": "Ars Technica：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-08-28T18:07:55.000Z",
+        "links": {
+          "original": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge"
+        }
+      },
+      {
+        "id": "aihot-1a9a9950f58d",
+        "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
+        "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
         "source": "Anthropic：Research（发表成果 · 网页）",
         "sourceId": "aihot",
         "category": "paper",
-        "publishedAt": "2026-08-26T17:30:30.074Z",
+        "publishedAt": "2026-08-28T17:25:56.912Z",
         "links": {
-          "original": "https://www.anthropic.com/research/enabling-independent-research"
+          "original": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures"
         }
       },
       {
-        "id": "aihot-60eb4c81e6e5",
-        "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
-        "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
-        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+        "id": "aihot-545f6dd85763",
+        "title": "GLM-5.3 开源权重，智能体编码与网防最强",
+        "summary": "GLM-5.3 现已开放权重。 我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。 权重：https://huggingface.co/zai-org/GLM-5.3 技术博客：https://z.ai/blog/glm-5.3",
+        "source": "X：智谱 Z.ai (@Zai_org)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-08-26T15:32:46.000Z",
+        "publishedAt": "2026-08-28T15:04:44.000Z",
         "links": {
-          "original": "https://x.com/Alibaba_Qwen/status/2092636376990990503"
+          "original": "https://x.com/Zai_org/status/2093354097122455713"
         }
       },
       {
-        "id": "aihot-e5965f1b41a0",
-        "title": "GlucoFM：面向连续血糖监测的基础模型",
-        "summary": "Google Research 推出 GlucoFM，一款轻量级自监督 CGM 基础模型，采用双流设计分别建模缓慢血糖趋势与短期波动。在四个队列、七项临床预测任务的 14 项评估中，其 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点，并在 PPGR 预测中取得最低 MAE。模型在 109，066 小时无标注 CGM 数据上预训练，具备跨数据集迁移与少样本适应能力。",
-        "source": "Google Research：Blog（网页）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-08-26T20:10:19.416Z",
-        "links": {
-          "original": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring"
-        }
-      },
-      {
-        "id": "aihot-095ca900c0d3",
-        "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
-        "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。",
-        "source": "Google DeepMind：Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-08-26T17:01:00.000Z",
-        "links": {
-          "original": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe"
-        }
-      },
-      {
-        "id": "aihot-20f5ecb52611",
-        "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
-        "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
-        "source": "公众号：智谱（GLM）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-08-26T14:11:33.000Z",
-        "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c"
-        }
-      },
-      {
-        "id": "aihot-a003514a5bb9",
-        "title": "以色列资助的假美国智库试图利用AI进行宣传",
-        "summary": "一个打着\"汉诺威公共政策研究所\"旗号的亲以色列网站，在九天内发布了124篇、超56万字的报告，旨在优化内容以引导ChatGPT等AI聊天机器人引用其亲以观点。该网站由美国公司Piro Inc依据《外国代理人登记法》为以色列政府分发内容，其背后是以色列政府数千万美元资助、经Havas Media等第三方转手的更广泛宣传行动。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-26T14:05:28.706Z",
-        "links": {
-          "original": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda"
-        }
-      },
-      {
-        "id": "aihot-c4b64918a8f5",
-        "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
-        "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+        "id": "aihot-b69655c70346",
+        "title": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
+        "summary": "腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾讯云 TokenHub 和 OpenRouter 上线。",
         "source": "公众号：腾讯混元",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-08-26T08:04:03.000Z",
+        "publishedAt": "2026-08-28T06:03:48.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831"
         }
       },
       {
-        "id": "aihot-0c10df3f47ce",
-        "title": "亚马逊将英伟达芯片订单增至三倍，新增200万颗GPU",
-        "summary": "亚马逊与英伟达宣布扩大合作，将在2027和2028年为AWS数据中心新增200万颗GPU芯片，包括Blackwell Ultra、Rubin和Rubin Ultra。此前五个月亚马逊刚同意部署超100万颗英伟达GPU，英伟达称此后\"需求超出预期\"。双方未披露财务条款，但按GPU单价估算交易价值达数百亿美元。",
-        "source": "TechCrunch：AI（RSS）",
+        "id": "aihot-5ef879a5a1ff",
+        "title": "Gemini 3.5 Transcribe 完整指南：告别 ASR 转录难题",
+        "summary": "Google 推出专用于语音转文字的 Gemini 3.5 Transcribe 模型，主打快速、准确且低成本的转录，原生支持说话人分离和词级毫秒时间戳。该模型支持 85+ 种语言自动识别与代码切换，可通过 custom_vocabulary 传入最多 1，000 个领域术语避免专有名词拼写错误，并提供 Smart Transcription 与 Verbatim 两种模式。",
+        "source": "Google AI：DEV 作者专属（RSS）",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-26T23:47:18.000Z",
+        "category": "tip",
+        "publishedAt": "2026-08-28T13:34:29.000Z",
         "links": {
-          "original": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand"
+          "original": "https://dev.to/googleai/stop-wrestling-with-asr-the-complete-guide-to-gemini-35-transcribe-1m6i"
         }
       },
       {
-        "id": "aihot-e321c1e7ec06",
-        "title": "英伟达 2027 财年半年报归母净利润 1180.1 亿美元，同比增长 161.1%",
-        "summary": "英伟达发布 2027 财年半年报，上半年营收 1778.37 亿美元，归母净利润 1180.1 亿美元，同比增长 161.1%，GAAP 毛利率 75%。第二财季营收 962.21 亿美元，同比增长 106%，环比增长 18%，归母净利润 596.88 亿美元，同比增长 126%。数据中心业务第二季度收入 890.23 亿美元，同比增长 117%，Vera Rubin 平台已进入全面量产。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-2e6cab19905d",
+        "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+        "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-26T20:25:54.000Z",
+        "category": "paper",
+        "publishedAt": "2026-08-28T12:04:47.737Z",
         "links": {
-          "original": "https://www.ithome.com/0/994/791.htm"
+          "original": "https://www.terminal-bench-science.ai/announcement"
         }
       }
     ]
