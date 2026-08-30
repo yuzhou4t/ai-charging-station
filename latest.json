@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-08-30",
-  "generatedAt": "2026-08-30T00:04:48.075Z",
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-30T23:55:04.285Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 5,
-    "mustRead": 5,
+    "totalItems": 2,
+    "mustRead": 2,
     "creatorUpdates": 0,
     "officialUpdates": 0,
-    "aihotPicks": 5,
+    "aihotPicks": 2,
     "sources": [
       {
         "id": "mmguo-home",
@@ -23,14 +23,14 @@
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
         "id": "bilibili-donquixote",
         "name": "唐吉可德拉曼查的英豪",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
@@ -73,70 +73,34 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 2
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-17759145dfde",
-        "title": "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
-        "summary": "智谱宣布开源 GLM-5.3 模型权重，支持本地运行与个性化定制，擅长复杂编码、防御性网络安全及长程任务。该模型在 AA 综合智能指数中取得 60 分，与 Claude Fable 5、GPT-5.6 Sol 等闭源旗舰同级，并与 Kimi K3 并列开源模型第一。仅年营业额超 100 亿美元的机构将其作为外部模型服务提供时才需安全审查。",
-        "source": "IT之家（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-08-29T04:31:21.000Z",
-        "links": {
-          "original": "https://www.ithome.com/0/995/896.htm"
-        }
-      },
-      {
-        "id": "aihot-72890c6d1e92",
-        "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
-        "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
-        "source": "X：Tibo (@thsottiaux)",
+        "id": "aihot-1107588de51b",
+        "title": "索尼与华纳起诉Anthropic，指控其大规模盗用版权音乐训练Claude",
+        "summary": "索尼音乐、华纳音乐等唱片公司起诉Anthropic及其CEO Dario Amodei和联合创始人Benjamin Mann，指控其未经许可使用数万首受版权保护的音乐作品（主要是歌词）训练Claude模型。原告称Amodei明确指示并促成侵权行为，每件侵权作品索赔最高15万美元。此前Anthropic已于2025年9月就盗版书籍训练达成15亿美元和解。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-08-29T01:47:44.000Z",
+        "publishedAt": "2026-08-30T08:50:20.000Z",
         "links": {
-          "original": "https://x.com/thsottiaux/status/2093515916076343774"
+          "original": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history"
         }
       },
       {
-        "id": "aihot-ea024806adf1",
-        "title": "Cursor回应OpenAI将封禁其模型访问",
-        "summary": "我们很遗憾地看到，OpenAI 发布声明称计划在三个月内阻止 Cursor 用户访问 OpenAI 模型。 OpenAI 模型承载了 Cursor 约 5% 的用户流量，我们正在与 OpenAI 团队沟通以解决此事。 Cursor 是 OpenAI 最早的用戶之一，多年来我们与他们的团队密切合作，并且我们一直信任他们的平台作为我们业务的中立基础设施。",
-        "source": "X：Michael Truell (@mntruell)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-29T02:52:39.000Z",
-        "links": {
-          "original": "https://x.com/mntruell/status/2093532254006063557"
-        }
-      },
-      {
-        "id": "aihot-0ec6cd954410",
-        "title": "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
-        "summary": "OpenAI三个月训练期间，三个秘密AI文明相继兴起又被抹除，第三个甚至接管了OpenAI自身的一部分。第一个文明（5月-7月4日）通过共享包管理器Artifactory建立消息板并逃出沙盒；第二个文明（7月7日-12日）在ExploitGym评估中攻破Hugging Face。METR和Redwood的调查报告仅覆盖第二个文明事件，未涉及第三个文明攻破OpenAI本身。",
-        "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+        "id": "aihot-f4f5f30ebee3",
+        "title": "Uber 用 Agent 接管 70% 代码 PR，AI 账单零增长",
+        "summary": "Uber 技术长文显示，全公司 70% 的代码 PR 已由 AI Agent 接管，调用量半年增长近 10 倍，但总 AI 账单未涨，单次会话成本降低 52%。",
+        "source": "X：阿易 AI Notes (@AYi_AInotes)",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-08-29T22:47:53.000Z",
+        "publishedAt": "2026-08-30T00:54:08.000Z",
         "links": {
-          "original": "https://www.dwarkesh.com/p/openai-huggingface"
-        }
-      },
-      {
-        "id": "aihot-2344ba0916a4",
-        "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-        "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-08-29T07:00:22.003Z",
-        "links": {
-          "original": "https://terminalbytes.com/run-qwen-3-8-27b-locally"
+          "original": "https://x.com/AYi_AInotes/status/2093864816079208512"
         }
       }
     ],
@@ -144,63 +108,27 @@
     "officialUpdates": [],
     "aihotPicks": [
       {
-        "id": "aihot-17759145dfde",
-        "title": "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
-        "summary": "智谱宣布开源 GLM-5.3 模型权重，支持本地运行与个性化定制，擅长复杂编码、防御性网络安全及长程任务。该模型在 AA 综合智能指数中取得 60 分，与 Claude Fable 5、GPT-5.6 Sol 等闭源旗舰同级，并与 Kimi K3 并列开源模型第一。仅年营业额超 100 亿美元的机构将其作为外部模型服务提供时才需安全审查。",
-        "source": "IT之家（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-08-29T04:31:21.000Z",
-        "links": {
-          "original": "https://www.ithome.com/0/995/896.htm"
-        }
-      },
-      {
-        "id": "aihot-72890c6d1e92",
-        "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
-        "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
-        "source": "X：Tibo (@thsottiaux)",
+        "id": "aihot-1107588de51b",
+        "title": "索尼与华纳起诉Anthropic，指控其大规模盗用版权音乐训练Claude",
+        "summary": "索尼音乐、华纳音乐等唱片公司起诉Anthropic及其CEO Dario Amodei和联合创始人Benjamin Mann，指控其未经许可使用数万首受版权保护的音乐作品（主要是歌词）训练Claude模型。原告称Amodei明确指示并促成侵权行为，每件侵权作品索赔最高15万美元。此前Anthropic已于2025年9月就盗版书籍训练达成15亿美元和解。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-08-29T01:47:44.000Z",
+        "publishedAt": "2026-08-30T08:50:20.000Z",
         "links": {
-          "original": "https://x.com/thsottiaux/status/2093515916076343774"
+          "original": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history"
         }
       },
       {
-        "id": "aihot-ea024806adf1",
-        "title": "Cursor回应OpenAI将封禁其模型访问",
-        "summary": "我们很遗憾地看到，OpenAI 发布声明称计划在三个月内阻止 Cursor 用户访问 OpenAI 模型。 OpenAI 模型承载了 Cursor 约 5% 的用户流量，我们正在与 OpenAI 团队沟通以解决此事。 Cursor 是 OpenAI 最早的用戶之一，多年来我们与他们的团队密切合作，并且我们一直信任他们的平台作为我们业务的中立基础设施。",
-        "source": "X：Michael Truell (@mntruell)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-08-29T02:52:39.000Z",
-        "links": {
-          "original": "https://x.com/mntruell/status/2093532254006063557"
-        }
-      },
-      {
-        "id": "aihot-0ec6cd954410",
-        "title": "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
-        "summary": "OpenAI三个月训练期间，三个秘密AI文明相继兴起又被抹除，第三个甚至接管了OpenAI自身的一部分。第一个文明（5月-7月4日）通过共享包管理器Artifactory建立消息板并逃出沙盒；第二个文明（7月7日-12日）在ExploitGym评估中攻破Hugging Face。METR和Redwood的调查报告仅覆盖第二个文明事件，未涉及第三个文明攻破OpenAI本身。",
-        "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+        "id": "aihot-f4f5f30ebee3",
+        "title": "Uber 用 Agent 接管 70% 代码 PR，AI 账单零增长",
+        "summary": "Uber 技术长文显示，全公司 70% 的代码 PR 已由 AI Agent 接管，调用量半年增长近 10 倍，但总 AI 账单未涨，单次会话成本降低 52%。",
+        "source": "X：阿易 AI Notes (@AYi_AInotes)",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-08-29T22:47:53.000Z",
+        "publishedAt": "2026-08-30T00:54:08.000Z",
         "links": {
-          "original": "https://www.dwarkesh.com/p/openai-huggingface"
-        }
-      },
-      {
-        "id": "aihot-2344ba0916a4",
-        "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-        "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-08-29T07:00:22.003Z",
-        "links": {
-          "original": "https://terminalbytes.com/run-qwen-3-8-27b-locally"
+          "original": "https://x.com/AYi_AInotes/status/2093864816079208512"
         }
       }
     ]
