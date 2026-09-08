@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-09-08",
-  "generatedAt": "2026-09-07T23:55:04.287Z",
+  "date": "2026-09-09",
+  "generatedAt": "2026-09-08T23:55:03.685Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 4,
-    "mustRead": 4,
-    "creatorUpdates": 2,
-    "officialUpdates": 1,
-    "aihotPicks": 1,
+    "totalItems": 22,
+    "mustRead": 5,
+    "creatorUpdates": 1,
+    "officialUpdates": 9,
+    "aihotPicks": 10,
     "sources": [
       {
         "id": "mmguo-home",
@@ -23,14 +23,14 @@
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "ok",
-        "itemCount": 1
+        "status": "failed",
+        "itemCount": 0
       },
       {
         "id": "bilibili-donquixote",
         "name": "唐吉可德拉曼查的英豪",
         "group": "creator",
-        "status": "failed",
+        "status": "ok",
         "itemCount": 0
       },
       {
@@ -52,133 +52,337 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 7
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 15
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-khazix-f8c1cd0f66fa",
-        "title": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
-        "summary": "GPT-6 Astra上线后，大量用户用它自主操控Blender、Houdini、Unity、Aseprite等专业软件，做出游戏Demo、3D复刻旧金山艺术宫等作品，其中旧金山艺术宫案例里Astra自己搜索几百张参考图、翻到美国国会图书馆的老扫描文件找柱子尺寸，多数工作在夜间自主完成。",
+        "id": "aihot-khazix-7a4fc1dd5048",
+        "title": "GPT-6 Astra操控Blender保姆级教程：三种玩法与踩坑实录",
+        "summary": "作者数字生命卡兹克发布GPT-6 Astra操控Blender的小白教程，介绍前期安装、官方MCP与Computer Use插件配置，并实测三种玩法。Computer Use花约4小时搭出天坛祈年殿，但耗掉200美刀Pro会员近半额度；MCP更快，可完成摩托车建模与组装动画，但复杂任务会单次运行超时，可拆分步骤或用CLI执行Python脚本解决。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-09-07T00:08:00.000Z",
+        "publishedAt": "2026-09-08T00:17:23.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686056&idx=1&sn=c1710404c08cf3201da27f4d53f94940"
         }
       },
       {
-        "id": "bilibili-chimp-b13dca5aad43",
-        "title": "如何让AI便宜1000倍？",
-        "summary": "",
-        "source": "第四种黑猩猩CHIMP",
-        "sourceId": "bilibili-chimp",
+        "id": "aihot-3055b9374a66",
+        "title": "Emad Mostaque 称 OpenAI 智能体求解 Navier-Stokes 千禧年难题是迈向 ASI 的里程碑",
+        "summary": "Emad Mostaque 转发 OpenAI 的公告并评论称这是迈向 ASI 的里程碑事件。OpenAI 宣布由一组智能体使用显著强于 GPT-6 Astra 的下一代模型，给出了 Navier-Stokes 千禧年大奖难题的一个 blow up 解，该问题涉及三维光滑流体运动的描述是否会崩溃，约 90 年未解。",
+        "source": "X：Emad Mostaque (@EMostaque)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-08T17:35:10.000Z",
+        "links": {
+          "original": "https://x.com/EMostaque/status/2097378223138959719"
+        }
+      },
+      {
+        "id": "aihot-572dcdfc0e61",
+        "title": "OpenAI 智能体团队宣布求解 Navier-Stokes 千禧年大奖难题并向独立证明者致贺",
+        "summary": "OpenAI 宣布由一组智能体使用一个能力显著超过 GPT-6 Astra 的下一代模型给出 Navier-Stokes 千禧年大奖难题的解，该问题关注三维光滑流体运动的描述是否会失效，已悬置约 90 年。",
+        "source": "X：OpenAI (@OpenAI)",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-08T17:23:27.000Z",
+        "links": {
+          "original": "https://x.com/OpenAI/status/2097375276384567642"
+        }
+      },
+      {
+        "id": "langchain-blog-eb95bfbbba27",
+        "title": "在多智能体框架中组织上下文",
+        "summary": "了解deepagents中的上下文模式如何帮助子代理分叉监督者的上下文或启动隔离——以实现更快、更便宜、更专注的多智能体工作。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-09-07T10:00:00.000Z",
+        "publishedAt": "2026-09-08T18:07:23.000Z",
         "links": {
-          "original": "https://www.bilibili.com/video/BV1jsbK6HErm"
+          "original": "https://www.langchain.com/blog/organizing-context-in-a-multi-agent-harness"
         }
       },
       {
-        "id": "openai-news-3772cb449f35",
-        "title": "Supporting independent journalism in Ukraine",
-        "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+        "id": "openai-news-32883cc38292",
+        "title": "GPT-5.6 Sol 如何帮助运行量子计算实验",
+        "summary": "了解麻省理工学院的研究人员如何利用 GPT-5.6 Sol 与 Codex 自主运行量子计算实验、分析结果并校准量子比特。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-07T00:00:00.000Z",
+        "publishedAt": "2026-09-08T17:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/supporting-independent-journalism-in-ukraine"
-        }
-      },
-      {
-        "id": "aihot-b0c1ba7aed3a",
-        "title": "Anthropic 据报道签约高达 5170 亿美元算力协议，锁定至少 14.8 GW 算力",
-        "summary": "据 The Information 报道，Anthropic 在十一个月内签署了价值高达 5170 亿美元的算力合同，自 2025 年 10 月以来锁定至少 14.8 GW 算力，并计划自建数据中心。",
-        "source": "The Decoder：AI News（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-07T18:12:41.000Z",
-        "links": {
-          "original": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk"
+          "original": "https://openai.com/index/codex-quantum-computing-experiments"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-f8c1cd0f66fa",
-        "title": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
-        "summary": "GPT-6 Astra上线后，大量用户用它自主操控Blender、Houdini、Unity、Aseprite等专业软件，做出游戏Demo、3D复刻旧金山艺术宫等作品，其中旧金山艺术宫案例里Astra自己搜索几百张参考图、翻到美国国会图书馆的老扫描文件找柱子尺寸，多数工作在夜间自主完成。",
+        "id": "aihot-khazix-7a4fc1dd5048",
+        "title": "GPT-6 Astra操控Blender保姆级教程：三种玩法与踩坑实录",
+        "summary": "作者数字生命卡兹克发布GPT-6 Astra操控Blender的小白教程，介绍前期安装、官方MCP与Computer Use插件配置，并实测三种玩法。Computer Use花约4小时搭出天坛祈年殿，但耗掉200美刀Pro会员近半额度；MCP更快，可完成摩托车建模与组装动画，但复杂任务会单次运行超时，可拆分步骤或用CLI执行Python脚本解决。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-09-07T00:08:00.000Z",
+        "publishedAt": "2026-09-08T00:17:23.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621"
-        }
-      },
-      {
-        "id": "bilibili-chimp-b13dca5aad43",
-        "title": "如何让AI便宜1000倍？",
-        "summary": "",
-        "source": "第四种黑猩猩CHIMP",
-        "sourceId": "bilibili-chimp",
-        "category": null,
-        "publishedAt": "2026-09-07T10:00:00.000Z",
-        "links": {
-          "original": "https://www.bilibili.com/video/BV1jsbK6HErm"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686056&idx=1&sn=c1710404c08cf3201da27f4d53f94940"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "openai-news-3772cb449f35",
-        "title": "Supporting independent journalism in Ukraine",
-        "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+        "id": "langchain-blog-eb95bfbbba27",
+        "title": "在多智能体框架中组织上下文",
+        "summary": "了解deepagents中的上下文模式如何帮助子代理分叉监督者的上下文或启动隔离——以实现更快、更便宜、更专注的多智能体工作。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-09-08T18:07:23.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/organizing-context-in-a-multi-agent-harness"
+        }
+      },
+      {
+        "id": "openai-news-32883cc38292",
+        "title": "GPT-5.6 Sol 如何帮助运行量子计算实验",
+        "summary": "了解麻省理工学院的研究人员如何利用 GPT-5.6 Sol 与 Codex 自主运行量子计算实验、分析结果并校准量子比特。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-07T00:00:00.000Z",
+        "publishedAt": "2026-09-08T17:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/supporting-independent-journalism-in-ukraine"
+          "original": "https://openai.com/index/codex-quantum-computing-experiments"
+        }
+      },
+      {
+        "id": "openai-news-2c18f24adeee",
+        "title": "推出 ChatGPT Images 2.5",
+        "summary": "ChatGPT Images 2.5 可帮助你将想法、草图和参考照片转化为更个性化、更精美且更能反映你想法的图像。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-08T11:30:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-chatgpt-images-2-5"
+        }
+      },
+      {
+        "id": "openai-news-d84e4e37bf91",
+        "title": "为AI与青少年发展新研究提供资助",
+        "summary": "立即申请OpenAI的500万美元资助计划，该计划支持关于生成式AI如何影响青少年发展、福祉和安全性的独立研究。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-08T09:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/teen-development-research-grants"
+        }
+      },
+      {
+        "id": "openai-news-e24e615a462c",
+        "title": "OpenAI扩展举措，从课堂到新闻编辑室全方位支持新闻业",
+        "summary": "OpenAI正在通过为学生、教育工作者、记者和新闻机构提供工具、培训和合作，扩大对新闻业的支持。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-08T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms"
+        }
+      },
+      {
+        "id": "openai-news-ddfd7e21fb64",
+        "title": "1Password借助Codex将工程生产率提升21%",
+        "summary": "1Password的工程师使用Codex快速构建新功能和内部工具，在达到生产就绪状态的同时维持严格的安全策略。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-08T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/1password"
+        }
+      },
+      {
+        "id": "openai-news-308fa76846aa",
+        "title": "如今触手可及的工作",
+        "summary": "探索更强大、更实惠的AI如何扩展个人和企业能够完成的工作——并使增长更加经济。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-08T13:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/the-work-now-within-reach"
+        }
+      },
+      {
+        "id": "openai-news-4f37a022a22f",
+        "title": "关于纳维-斯托克斯千禧年奖问题",
+        "summary": "我们分享了一个AI生成的纳维-斯托克斯千禧年奖问题的解决方案，包括详细说明和Lean形式化证明。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-08T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/navier-stokes-solution"
+        }
+      },
+      {
+        "id": "claude-blog-48fa04573878",
+        "title": "使用Claude平台降低成本并提升性能",
+        "summary": "Claude博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-b0c1ba7aed3a",
-        "title": "Anthropic 据报道签约高达 5170 亿美元算力协议，锁定至少 14.8 GW 算力",
-        "summary": "据 The Information 报道，Anthropic 在十一个月内签署了价值高达 5170 亿美元的算力合同，自 2025 年 10 月以来锁定至少 14.8 GW 算力，并计划自建数据中心。",
-        "source": "The Decoder：AI News（RSS）",
+        "id": "aihot-3055b9374a66",
+        "title": "Emad Mostaque 称 OpenAI 智能体求解 Navier-Stokes 千禧年难题是迈向 ASI 的里程碑",
+        "summary": "Emad Mostaque 转发 OpenAI 的公告并评论称这是迈向 ASI 的里程碑事件。OpenAI 宣布由一组智能体使用显著强于 GPT-6 Astra 的下一代模型，给出了 Navier-Stokes 千禧年大奖难题的一个 blow up 解，该问题涉及三维光滑流体运动的描述是否会崩溃，约 90 年未解。",
+        "source": "X：Emad Mostaque (@EMostaque)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-08T17:35:10.000Z",
+        "links": {
+          "original": "https://x.com/EMostaque/status/2097378223138959719"
+        }
+      },
+      {
+        "id": "aihot-572dcdfc0e61",
+        "title": "OpenAI 智能体团队宣布求解 Navier-Stokes 千禧年大奖难题并向独立证明者致贺",
+        "summary": "OpenAI 宣布由一组智能体使用一个能力显著超过 GPT-6 Astra 的下一代模型给出 Navier-Stokes 千禧年大奖难题的解，该问题关注三维光滑流体运动的描述是否会失效，已悬置约 90 年。",
+        "source": "X：OpenAI (@OpenAI)",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-08T17:23:27.000Z",
+        "links": {
+          "original": "https://x.com/OpenAI/status/2097375276384567642"
+        }
+      },
+      {
+        "id": "aihot-122c79571bfc",
+        "title": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra",
+        "summary": "OpenAI 宣布 Astra 已全面推送给 Codex 和 ChatGPT Work 中的 Plus、Pro、Business 和 Enterprise 用户。用户可以直接使用，并可通过 openai.com/gpt-tv/ 观看 Astra 的实机演示。",
+        "source": "X：OpenAI (@OpenAI)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-09-08T21:06:10.000Z",
+        "links": {
+          "original": "https://x.com/OpenAI/status/2097431322117476423"
+        }
+      },
+      {
+        "id": "aihot-df2824742b73",
+        "title": "Anthropic 讲解用 Claude Platform 降低成本并提升性能的三个方法",
+        "summary": "Anthropic 团队文章指出，优化 prompt cache 命中率、清除升级到前沿 Claude 模型后的提示词反模式、校准 effort 三个手段可在不牺牲性能的情况下降低成本。",
+        "source": "X：Claude Devs (@ClaudeDevs)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-08T17:01:27.000Z",
+        "links": {
+          "original": "https://x.com/ClaudeDevs/status/2097369738968195513"
+        }
+      },
+      {
+        "id": "aihot-b266bcb98b1e",
+        "title": "NYU 数学家指控 OpenAI 在千禧年难题竞赛中不正当竞争，Bubeck 否认",
+        "summary": "NYU 数学教授 Tristan Buckmaster 与 Anthropic 数学家 Levent Alpöge 公布针对 Navier-Stokes 存在与光滑性这一千禧年难题的三项证明初步结果，并称其研究进展信息被泄露给 OpenAI，对方随后用大量算力沿其独特路线追赶证明。",
+        "source": "TechCrunch：AI（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-07T18:12:41.000Z",
+        "publishedAt": "2026-09-08T17:32:15.000Z",
         "links": {
-          "original": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk"
+          "original": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician"
+        }
+      },
+      {
+        "id": "aihot-3eea817ce4e7",
+        "title": "Noam Brown 评 OpenAI 用智能体求解 Navier-Stokes 千禧年难题：成本会快速下降",
+        "summary": "Noam Brown 就 OpenAI 宣布以智能体组合求解 Navier-Stokes 千禧年大奖难题发表看法，承认这次证明花费数百万美元，但认为成本会快速下降。",
+        "source": "X：Noam Brown (@polynoamial)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-08T17:25:41.000Z",
+        "links": {
+          "original": "https://x.com/polynoamial/status/2097375837670785447"
+        }
+      },
+      {
+        "id": "aihot-862e9fdc8423",
+        "title": "Tom Tunguz 分析 OpenAI 的 3x AI 生产力增益是否只是机器不睡觉",
+        "summary": "Tom Tunguz 引用 OpenAI 内部数据，分析其 3x 研究生产力增益的来源：每名研究员 8 小时班次对应 3.14 个 agent 工作日，通常并行运行 4 个 agent。",
+        "source": "Tomer Tunguz 博客（VC 分析）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-08T00:00:00.000Z",
+        "links": {
+          "original": "https://tomtunguz.com/openai-research-acceleration-agentic-productivity"
+        }
+      },
+      {
+        "id": "aihot-44c445ff4653",
+        "title": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议",
+        "summary": "Sam Altman 发文回应与 Anthropic 一方围绕 Euler/Navier-Stokes 证明发布的争议，称对方只有 Euler 结果、双方协调失败，并称对方以抄袭指控相威胁。",
+        "source": "X：Sam Altman (@sama)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-08T18:02:46.000Z",
+        "links": {
+          "original": "https://x.com/sama/status/2097385167002415140"
+        }
+      },
+      {
+        "id": "aihot-9e1e727e107b",
+        "title": "Dwarkesh Patel 研究：预训练进步主要来自数据改进",
+        "summary": "Dwarkesh Patel 发布实验分析，在最高 1e19 FLOPs 的算力预算下训练 2019 至 2025 年各年度代表性模型配方与数据语料，发现数据改进带来 12.0x 算力效率提升，模型改进为 3.7x，数据贡献约为模型的 3.24 倍。",
+        "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-08T16:10:16.000Z",
+        "links": {
+          "original": "https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data"
+        }
+      },
+      {
+        "id": "aihot-466301ff94fc",
+        "title": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
+        "summary": "特里斯坦·巴克马斯特（Tristan Buckmaster）与 Levent Alpöge 公开三项有限时间 blowup 结果，涵盖带光滑强迫的不可压缩多孔介质方程。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-08T07:20:02.739Z",
+        "links": {
+          "original": "https://cims.nyu.edu/~tristanb/statement.pdf"
         }
       }
     ]
