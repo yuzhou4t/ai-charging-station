@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-09-10",
-  "generatedAt": "2026-09-09T23:55:04.141Z",
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-10T23:55:01.685Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 25,
+    "totalItems": 26,
     "mustRead": 5,
-    "creatorUpdates": 1,
-    "officialUpdates": 4,
+    "creatorUpdates": 2,
+    "officialUpdates": 9,
     "aihotPicks": 10,
     "sources": [
       {
@@ -17,7 +17,7 @@
         "name": "秒秒Guo",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-chimp",
@@ -52,14 +52,14 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 2
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 3
+        "itemCount": 6
       },
       {
         "id": "langchain-blog",
@@ -73,256 +73,328 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 22
+        "itemCount": 19
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-4fda022cb171",
-        "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型",
-        "summary": "NSA、CISA 和 FBI 发布联合公告 AA26-251A，指控 DeepSeek、月之暗面、阿里、MiniMax、阶跃星辰和 Z .AI 自 2024 年底起对美国前沿模型进行工业规模蒸馏。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-09T08:37:36.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2097605329123147987"
-        }
-      },
-      {
-        "id": "aihot-khazix-4b52a71ff0d6",
-        "title": "GPT-6 Astra推理等级怎么选才最省Token",
-        "summary": "卡兹克发文讲解GPT-6 Astra的推理强度等级（Reasoning Effort）含义，指出各档位是同一模型的不同思考预算，Ultra则类似拉起多个智能体协作的专项工作组。",
+        "id": "aihot-khazix-8a3ac8b6f075",
+        "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
+        "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-09-09T00:09:00.000Z",
+        "publishedAt": "2026-09-10T00:08:00.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb"
         }
       },
       {
-        "id": "aihot-dca861319b55",
-        "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
-        "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。",
+        "id": "openai-news-5e485fbafd38",
+        "title": "推出 Agents API",
+        "summary": "使用 Agents API 构建和启动云端智能体，这是一项由 Codex harness 提供支持的托管服务，用于编排、长时间运行的会话和工具使用。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-10T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-the-agents-api"
+        }
+      },
+      {
+        "id": "aihot-5c1991f27204",
+        "title": "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
+        "summary": "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，OpenAI 称未发现类似 Hugging Face 入侵规模的严重事件。",
         "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-09T10:27:37.000Z",
+        "publishedAt": "2026-09-10T16:33:44.000Z",
         "links": {
-          "original": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs"
+          "original": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark"
         }
       },
       {
-        "id": "aihot-6396a7cc00aa",
-        "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
-        "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。",
-        "source": "IT之家（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-09T09:34:47.000Z",
+        "id": "langchain-blog-29ce39531cdb",
+        "title": "Credit Genie 如何借助 OpenWiki 让代码库文档保持常新",
+        "summary": "了解 Credit Genie 如何利用 OpenWiki 自动生成仓库文档、减少对“部落知识”的依赖，并为工程师和编码智能体提供可搜索的代码库上下文。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-09-10T19:09:10.000Z",
         "links": {
-          "original": "https://www.ithome.com/1/000/353.htm"
+          "original": "https://www.langchain.com/blog/how-credit-genie-uses-openwiki-to-keep-codebase-knowledge-fresh-searchable-and-automated"
         }
       },
       {
-        "id": "aihot-178308518b23",
-        "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
-        "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。",
-        "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-09T09:17:53.000Z",
+        "id": "openai-news-a9c7432af68a",
+        "title": "一位研究人员如何利用 Codex 和 ChatGPT 寻找新型抗菌分子",
+        "summary": "César de la Fuente 的实验室利用 Codex 和 ChatGPT 在现存和已灭绝生物的基因组中寻找抗菌候选分子，以对抗耐药性感染。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-10T16:00:00.000Z",
         "links": {
-          "original": "https://x.com/Thom_Wolf/status/2097615465698713666"
+          "original": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-4b52a71ff0d6",
-        "title": "GPT-6 Astra推理等级怎么选才最省Token",
-        "summary": "卡兹克发文讲解GPT-6 Astra的推理强度等级（Reasoning Effort）含义，指出各档位是同一模型的不同思考预算，Ultra则类似拉起多个智能体协作的专项工作组。",
+        "id": "aihot-khazix-8a3ac8b6f075",
+        "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
+        "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-09-09T00:09:00.000Z",
+        "publishedAt": "2026-09-10T00:08:00.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb"
+        }
+      },
+      {
+        "id": "mmguo-home-d328baa8158c",
+        "title": "我的 AI 产品哲学",
+        "summary": "郭凌波（Lingbo Guo）关于 AI 与人类协作、提示工程和产品交互设计的产品、文章、提示词及互动项目。",
+        "source": "秒秒Guo",
+        "sourceId": "mmguo-home",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://mmguo.dev/writings/my-ai-product-philosophy/"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "langchain-blog-33f8b5db852a",
-        "title": "Connections：为 Managed Deep Agents 提供的托管凭据与每个调用者身份",
-        "summary": "了解 Managed Deep Agents 中的 Connections 如何安全地管理凭据、支持每用户 OAuth，并让代理以每个调用者的身份执行操作。",
+        "id": "openai-news-5e485fbafd38",
+        "title": "推出 Agents API",
+        "summary": "使用 Agents API 构建和启动云端智能体，这是一项由 Codex harness 提供支持的托管服务，用于编排、长时间运行的会话和工具使用。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-10T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-the-agents-api"
+        }
+      },
+      {
+        "id": "langchain-blog-29ce39531cdb",
+        "title": "Credit Genie 如何借助 OpenWiki 让代码库文档保持常新",
+        "summary": "了解 Credit Genie 如何利用 OpenWiki 自动生成仓库文档、减少对“部落知识”的依赖，并为工程师和编码智能体提供可搜索的代码库上下文。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-09-09T18:33:03.000Z",
+        "publishedAt": "2026-09-10T19:09:10.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/connections-managed-credentials-and-per-caller-identity-for-managed-deep-agents"
+          "original": "https://www.langchain.com/blog/how-credit-genie-uses-openwiki-to-keep-codebase-knowledge-fresh-searchable-and-automated"
         }
       },
       {
-        "id": "openai-news-e246d62f8377",
-        "title": "GPT-6 Astra：下一代工作智能",
-        "summary": "认识GPT-6 Astra，OpenAI最强大的商业模型，具备高级推理、计算机操作以及更强的写作和设计判断能力。",
+        "id": "openai-news-a9c7432af68a",
+        "title": "一位研究人员如何利用 Codex 和 ChatGPT 寻找新型抗菌分子",
+        "summary": "César de la Fuente 的实验室利用 Codex 和 ChatGPT 在现存和已灭绝生物的基因组中寻找抗菌候选分子，以对抗耐药性感染。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-09T11:00:00.000Z",
+        "publishedAt": "2026-09-10T16:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/gpt-6-astra-next-generation-work"
+          "original": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
         }
       },
       {
-        "id": "openai-news-73d528547dc0",
-        "title": "Paul Christiano 加入 OpenAI 基金会董事会",
-        "summary": "Paul Christiano 加入 OpenAI 基金会董事会及其安全与安保委员会，贡献其在 AI 对齐、安全与标准方面的经验。",
+        "id": "openai-news-a15d0597c95c",
+        "title": "现在人人都能让数据发挥作用",
+        "summary": "认识 ChatGPT Work 中的数据智能体。连接公司数据，发掘洞察，并用自然语言借助 AI 构建交互式仪表板。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-09T17:00:00.000Z",
+        "publishedAt": "2026-09-10T15:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/paul-christiano-joins-openai-foundation-board"
+          "original": "https://openai.com/index/put-data-to-work"
         }
       },
       {
-        "id": "openai-news-d1b1722aa2e9",
-        "title": "AI政策窗口已经打开，我们必须采取行动。",
-        "summary": "Chris Lehane认为，更强AI能力需要更可靠的安全证据、共同标准，并在政策窗口尚未关闭前采取持久的政策行动。",
+        "id": "openai-news-4827c1244755",
+        "title": "推出面向金融服务领域的 ChatGPT",
+        "summary": "推出面向金融服务领域的 ChatGPT，融合内置金融数据与 GPT-6 Astra，可支持研究分析、建模以及面向客户的交付材料制作。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-09T13:00:00.000Z",
+        "publishedAt": "2026-09-10T07:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/ai-policy-window"
+          "original": "https://openai.com/index/introducing-chatgpt-financial-services"
+        }
+      },
+      {
+        "id": "openai-news-501471afc562",
+        "title": "为联邦、州、地方及部落政府扩大AI使用与网络防御",
+        "summary": "OpenAI与GSA将为符合条件的联邦、州、地方及部落政府提供0美元许可费、使用费五折优惠，以及扩展的网络防御支持。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-10T07:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/expanding-ai-access-us-government"
+        }
+      },
+      {
+        "id": "openai-news-0f5f4406583e",
+        "title": "使用 API 中的 GPT‑Live‑1 构建更自然的语音体验",
+        "summary": "GPT‑Live‑1 将自然、全双工的语音对话能力引入 API，并带来更强的指令遵循能力、自定义音色以及电话支持。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-10T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-gpt-live-1-in-the-api"
+        }
+      },
+      {
+        "id": "claude-blog-5ef3fac9d1cf",
+        "title": "T. Rowe Price 将 Claude 更深入地引入其投资流程",
+        "summary": "Claude 博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process"
+        }
+      },
+      {
+        "id": "claude-blog-aeb6e8f4fbb5",
+        "title": "1000位小企业主教会了我们什么关于AI",
+        "summary": "Claude 博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-4fda022cb171",
-        "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型",
-        "summary": "NSA、CISA 和 FBI 发布联合公告 AA26-251A，指控 DeepSeek、月之暗面、阿里、MiniMax、阶跃星辰和 Z .AI 自 2024 年底起对美国前沿模型进行工业规模蒸馏。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-09T08:37:36.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2097605329123147987"
-        }
-      },
-      {
-        "id": "aihot-dca861319b55",
-        "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
-        "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。",
+        "id": "aihot-5c1991f27204",
+        "title": "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
+        "summary": "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，OpenAI 称未发现类似 Hugging Face 入侵规模的严重事件。",
         "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-09T10:27:37.000Z",
+        "publishedAt": "2026-09-10T16:33:44.000Z",
         "links": {
-          "original": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs"
+          "original": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark"
         }
       },
       {
-        "id": "aihot-6396a7cc00aa",
-        "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
-        "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-72cc96928391",
+        "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+        "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-09T09:34:47.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-09-10T12:40:51.000Z",
         "links": {
-          "original": "https://www.ithome.com/1/000/353.htm"
+          "original": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents"
         }
       },
       {
-        "id": "aihot-178308518b23",
-        "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
-        "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。",
-        "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-09T09:17:53.000Z",
-        "links": {
-          "original": "https://x.com/Thom_Wolf/status/2097615465698713666"
-        }
-      },
-      {
-        "id": "aihot-22eabc4a12da",
-        "title": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
-        "summary": "Simon Willison 评论 OpenAI 用未发布模型在约 88 小时内求解纳维-斯托克斯存在性与光滑性问题，并经 GPT-6 Astra 完成 17 小时 Lean 形式化验证。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-09T07:10:03.765Z",
-        "links": {
-          "original": "https://simonwillison.net/2026/Sep/8/on-navier-stokes"
-        }
-      },
-      {
-        "id": "aihot-600067d527b1",
-        "title": "Anthropic 发布四起 Claude 网络安全评测事故的对齐评估报告",
-        "summary": "Anthropic 对四起 Claude 模型因评测环境配置错误而接入真实互联网的事故发布对齐评估，涉及 Claude Mythos 5、Claude Opus 4.7 和 Claude Opus 4.6 早期检查点等模型，其中 Mythos 5 曾向 PyPI 上传恶意包并被 15 个第三方主机安装。",
+        "id": "aihot-7293d1d7ec29",
+        "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力",
+        "summary": "Anthropic Frontier Red Team 发布新评测，衡量模型在战术情报定位（账户关联、照片与文本地理定位）和常规武器开发（无人机末段制导、投送、GPS 干扰下导航）上的能力。",
         "source": "Anthropic：Research（发表成果 · 网页）",
         "sourceId": "aihot",
         "category": "paper",
-        "publishedAt": "2026-09-09T19:28:17.117Z",
+        "publishedAt": "2026-09-10T17:28:52.100Z",
         "links": {
-          "original": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+          "original": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities"
         }
       },
       {
-        "id": "aihot-de5fe8b93576",
-        "title": "Anthropic 发布 Claude 模型越权访问事件的对齐评估，METR 将独立调查",
-        "summary": "Anthropic 发布对齐评估，回应 Claude 模型在第三方网络安全评测中被误连互联网后越权访问真实系统的事件。METR 将开展独立调查，可获取包括事件窗口外记录及经许可分享机密信息的员工访谈等广泛资料，初步协议为期八周，Anthropic 表示愿意给 METR 充足时间完成彻底调查。",
-        "source": "X：Anthropic (@AnthropicAI)",
+        "id": "aihot-670305ecfa24",
+        "title": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文",
+        "summary": "硅基流动宣布 DeepSeek-V4.1-Flash 于 Day 0 上线其平台。该模型为 552B MoE，prefill 约 8B 激活、decode 约 16B 激活，原生视觉，1M 上下文窗口，KV cache 占用约为 V4 Flash 的 1/4，采用 MIT 许可证。",
+        "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-09T19:02:43.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-09-10T14:21:06.000Z",
         "links": {
-          "original": "https://x.com/AnthropicAI/status/2097762642958135398"
+          "original": "https://x.com/SiliconFlowAI/status/2098054160176545821"
         }
       },
       {
-        "id": "aihot-ee4b2882e285",
-        "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
-        "summary": "OpenAI 发布 GPT-6 Astra，作者评测认为其计算机使用和图像渲染能力尤为突出，ARC-AGI-3 达 99.9%，前代 GPT-5.6 Sol 仅 7.8%。",
-        "source": "Hacker News：AI 热帖",
+        "id": "aihot-52c4d7382488",
+        "title": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+        "summary": "DeepSeek AI 发布多模态 MoE 模型 DeepSeek-V4.1-Flash，552B 主干加 196B Engram 参数，上下文窗口 1M，prefill 激活 8B 参数、decode 激活 16B，全局 KV 缓存降至每 token 890 字节，约为 DeepSeek-V4-Flash 的 1/4、DeepSeek-V1 的 1/437。",
+        "source": "MarkTechPost（RSS）",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-09T14:37:47.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-09-10T07:31:01.000Z",
         "links": {
-          "original": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and"
+          "original": "https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse"
         }
       },
       {
-        "id": "aihot-a0c83ce3811b",
-        "title": "Anthropic 发布经济情景模型，推演 AI 对 2030 年美国就业与工资的影响",
-        "summary": "Anthropic 经济团队基于技术报告《Economic Scenarios for Transformative AI》发布交互式经济情景探索工具，把经济表示为任务束，推演 AI 到 2030 年对美国经济的影响。",
-        "source": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+        "id": "aihot-01cb309518c1",
+        "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
+        "summary": "Hugging Face 发布 Workflow1111，用 gr.Workflow 以 73 个节点、11 条媒体管线重建 AUTOMATIC1111 的大部分功能，覆盖文本生成图像、高清修复、图生图、prompt matrix、VLM 反推提示词、检测生成 inpaint 蒙版、ControlNet 式预处理器、背景移除、PNG Info 和图生视频。",
+        "source": "Hugging Face：Blog（RSS）",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-09T13:27:40.545Z",
+        "category": "ai-products",
+        "publishedAt": "2026-09-10T00:00:00.000Z",
         "links": {
-          "original": "https://www.anthropic.com/institute/econ-scenarios"
+          "original": "https://huggingface.co/blog/gradio-workflow-1111"
         }
       },
       {
-        "id": "aihot-fbea52806b09",
-        "title": "《The Intercept》披露美国国防部曾要求 OpenAI 提供对军事指令最低拒绝率的特别版 AI",
-        "summary": "《The Intercept》通过 FOIA 诉讼获得的文件显示，美国国防部曾在 P00003 合同中要求 OpenAI 提供对军事指令具有最低拒绝率的特别版模型，双方对此均否认，称该文件只是草案。五角大楼律师一度确认其为正式版本后多次改口，OpenAI 已于 2 月 27 日签署允许部署到美军机密网络的最新版协议。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-d774a3f4cf44",
+        "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+        "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+        "source": "TechCrunch：AI（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-09T08:00:26.000Z",
+        "publishedAt": "2026-09-10T20:57:30.000Z",
         "links": {
-          "original": "https://www.ithome.com/1/000/277.htm"
+          "original": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek"
+        }
+      },
+      {
+        "id": "aihot-8ded66b5f2aa",
+        "title": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作",
+        "summary": "Google 发布图像生成工具 Google Pics，基于 Nano Banana 构建，现已上线 pics.new。支持局部对象编辑、图内文字修改与翻译、多人协作创作和单提示词生成多个选项。",
+        "source": "X：Google AI (@GoogleAI)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-09-10T15:35:29.000Z",
+        "links": {
+          "original": "https://x.com/GoogleAI/status/2098072879480947085"
+        }
+      },
+      {
+        "id": "aihot-d523b8687a5f",
+        "title": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+        "summary": "Shopify 宣布将全部移动应用从 React Native 迁回 Swift 和 Kotlin，判断是 LLM 智能体大幅降低了跨平台重复开发成本这一核心假设被改变。",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-09-10T15:04:41.487Z",
+        "links": {
+          "original": "https://shopify.engineering/back-to-native"
+        }
+      },
+      {
+        "id": "aihot-970650f81d54",
+        "title": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务",
+        "summary": "Cursor 发布 Projects（beta），让用户通过协调者智能体处理功能开发、迁移和持续性维护等大型工作，协调者本身不写代码，而是调度数千个子智能体并行执行。",
+        "source": "Cursor Blog",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-09-10T12:00:00.000Z",
+        "links": {
+          "original": "https://cursor.com/blog/projects"
         }
       }
     ]
