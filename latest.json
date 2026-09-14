@@ -1,36 +1,36 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-09-13",
-  "generatedAt": "2026-09-12T23:55:01.434Z",
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-14T23:55:05.347Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 8,
+    "totalItems": 17,
     "mustRead": 5,
-    "creatorUpdates": 0,
-    "officialUpdates": 0,
-    "aihotPicks": 8,
+    "creatorUpdates": 2,
+    "officialUpdates": 6,
+    "aihotPicks": 9,
     "sources": [
       {
         "id": "mmguo-home",
         "name": "秒秒Guo",
         "group": "creator",
-        "status": "failed",
+        "status": "ok",
         "itemCount": 0
       },
       {
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "failed",
-        "itemCount": 0
+        "status": "ok",
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
         "name": "唐吉可德拉曼查的英豪",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
@@ -45,198 +45,308 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "claude-blog",
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 4
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 8
+        "itemCount": 10
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-776be8e3fb92",
-        "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-        "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-use 的代码，包括完全一致的 Hopper agent 提示词和示例，却未在 README 中署名；更早的包文件曾列出三位作者，8 月一次 force push 将其替换为另一作者。",
+        "id": "aihot-khazix-b20fd16cb38b",
+        "title": "AI导演DiDi_OK专访：用Seedance 2.5打造新作《糖果》，聊聊模型如何吞掉工作流",
+        "summary": "自媒体作者专访AI影像创作者DiDi_OK，聊其用Seedance 2.5制作的新片《糖果》及此前B站播放2000万的《牌子》。DiDi_OK认为Seedance 2.5在运动规律和高度定制化上跨时代升级，让他做出几乎百分百纯AI的片子，省掉约60%叙事成本，参考图重要性下降、提示词作用上升；他还谈到AI时代创作本质在于取舍判断，模型变强后自己反而更痛苦，表达成本越低，平庸越没有借口。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-09-14T00:08:00.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686222&idx=1&sn=2b570842f213cc90ddaa3603ab7746ab"
+        }
+      },
+      {
+        "id": "aihot-3748c100936b",
+        "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+        "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+        "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-09-14T16:32:25.000Z",
+        "links": {
+          "original": "https://x.com/SiliconFlowAI/status/2099536759168352634"
+        }
+      },
+      {
+        "id": "bilibili-chimp-af1324a5c829",
+        "title": "跳过Demo做生产级项目",
+        "summary": "能生成demo的AI很多，能交付生产级系统的很少",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-09-14T10:29:05.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1TtY16tEUU"
+        }
+      },
+      {
+        "id": "langchain-blog-6d0c39dabfda",
+        "title": "我们如何构建 LangChain 的付费媒体智能体",
+        "summary": "LangChain 如何构建一个付费媒体智能体，用于分析营销活动表现、优化广告、提出调整建议，并将营销数据转化为行动。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-09-14T19:42:20.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/paid-media-agent"
+        }
+      },
+      {
+        "id": "aihot-258ca0015661",
+        "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+        "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
         "source": "Hacker News：AI 热帖",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-12T02:39:39.000Z",
-        "links": {
-          "original": "https://www.minitap.ai/blog/i-expected-better-from-google"
-        }
-      },
-      {
-        "id": "aihot-2f3765749624",
-        "title": "Dario Amodei 发文呼吁 AI 行业放慢前沿速度并公布三步计划",
-        "summary": "Dario Amodei 发布新文章 We Must Pace the Frontier，主张 AI 行业应放慢速度，并提出三部分计划。Anthropic 单方面承诺第一步，为第三方评估者提供永久的员工级系统访问权限，以核实安全措施执行、报告事故并评估训练期间模型的 alignment。",
-        "source": "X：Peter McCrory（Anthropic 首席经济学家，@PeterMcCrory）",
-        "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-12T20:18:42.000Z",
+        "publishedAt": "2026-09-14T19:56:20.000Z",
         "links": {
-          "original": "https://x.com/PeterMcCrory/status/2098868931071226252"
-        }
-      },
-      {
-        "id": "aihot-fa9cbd883dd4",
-        "title": "Sam Altman 表示同意 Dario Amodei 的放缓前沿主张，OpenAI 将同样开放独立评估者访问",
-        "summary": "Sam Altman 回应 Dario Amodei 的《We Must Pace the Frontier》一文，同意需要为前沿 AI 发展设定节奏，称这是 OpenAI 近几周内部讨论的重要话题。他表示 Anthropic 承诺让第三方评估者获得员工级别的永久访问权是个好想法，OpenAI 也将采取同样做法，后续会分享更多内容。",
-        "source": "X：Sam Altman (@sama)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-12T16:30:45.000Z",
-        "links": {
-          "original": "https://x.com/sama/status/2098811563415150910"
-        }
-      },
-      {
-        "id": "aihot-8e6708e4cb1e",
-        "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-09-12T00:24:20.561Z",
-        "links": {
-          "original": "https://www.rubyhack.ai/"
-        }
-      },
-      {
-        "id": "aihot-64a3eef44ef2",
-        "title": "Thariq 支持 Dario Amodei 的放缓前沿 AI 倡议，呼吁给系统加固和社会讨论留出时间",
-        "summary": "Anthropic 的 Thariq 转发并支持 Dario Amodei 的新文章《We Must Pace the Frontier》，后者提出 AI 行业应放缓的三部分计划，并承诺向第三方评估者提供永久的员工级系统访问权限。",
-        "source": "X：Thariq (@trq212)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-12T19:46:58.000Z",
-        "links": {
-          "original": "https://x.com/trq212/status/2098860941391872132"
+          "original": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review"
         }
       }
     ],
-    "creatorUpdates": [],
-    "officialUpdates": [],
+    "creatorUpdates": [
+      {
+        "id": "aihot-khazix-b20fd16cb38b",
+        "title": "AI导演DiDi_OK专访：用Seedance 2.5打造新作《糖果》，聊聊模型如何吞掉工作流",
+        "summary": "自媒体作者专访AI影像创作者DiDi_OK，聊其用Seedance 2.5制作的新片《糖果》及此前B站播放2000万的《牌子》。DiDi_OK认为Seedance 2.5在运动规律和高度定制化上跨时代升级，让他做出几乎百分百纯AI的片子，省掉约60%叙事成本，参考图重要性下降、提示词作用上升；他还谈到AI时代创作本质在于取舍判断，模型变强后自己反而更痛苦，表达成本越低，平庸越没有借口。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-09-14T00:08:00.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686222&idx=1&sn=2b570842f213cc90ddaa3603ab7746ab"
+        }
+      },
+      {
+        "id": "bilibili-chimp-af1324a5c829",
+        "title": "跳过Demo做生产级项目",
+        "summary": "能生成demo的AI很多，能交付生产级系统的很少",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-09-14T10:29:05.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1TtY16tEUU"
+        }
+      }
+    ],
+    "officialUpdates": [
+      {
+        "id": "langchain-blog-6d0c39dabfda",
+        "title": "我们如何构建 LangChain 的付费媒体智能体",
+        "summary": "LangChain 如何构建一个付费媒体智能体，用于分析营销活动表现、优化广告、提出调整建议，并将营销数据转化为行动。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-09-14T19:42:20.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/paid-media-agent"
+        }
+      },
+      {
+        "id": "openai-news-d882d0c4bad5",
+        "title": "Fyxer 如何打造出人们信任的 AI 行政助理",
+        "summary": "Fyxer 利用 OpenAI 模型、微调、记忆功能和真实用户反馈来整理收件箱，并以每位用户自己的语气起草电子邮件。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-14T12:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/fyxer"
+        }
+      },
+      {
+        "id": "claude-blog-91f8dd0e1b91",
+        "title": "智能体编程正让 CI 不堪重负：我们如何在 Anthropic 扩展测试影响分析",
+        "summary": "Claude 博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic"
+        }
+      },
+      {
+        "id": "claude-blog-7311a4e4dc27",
+        "title": "面向财务顾问的 Claude",
+        "summary": "Claude 博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/claude-for-financial-advisors"
+        }
+      },
+      {
+        "id": "claude-blog-46d3eb1ac2a9",
+        "title": "医疗机构如何使用 Claude Tag",
+        "summary": "Claude 博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/how-healthcare-organizations-use-claude-tag"
+        }
+      },
+      {
+        "id": "claude-blog-0f8b94ef69e7",
+        "title": "将 AI 从试点推向生产",
+        "summary": "Claude 博客更新",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/deploying-ai-from-pilot-to-production"
+        }
+      }
+    ],
     "aihotPicks": [
       {
-        "id": "aihot-776be8e3fb92",
-        "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-        "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-use 的代码，包括完全一致的 Hopper agent 提示词和示例，却未在 README 中署名；更早的包文件曾列出三位作者，8 月一次 force push 将其替换为另一作者。",
+        "id": "aihot-3748c100936b",
+        "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+        "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+        "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-09-14T16:32:25.000Z",
+        "links": {
+          "original": "https://x.com/SiliconFlowAI/status/2099536759168352634"
+        }
+      },
+      {
+        "id": "aihot-258ca0015661",
+        "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+        "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
         "source": "Hacker News：AI 热帖",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-12T02:39:39.000Z",
-        "links": {
-          "original": "https://www.minitap.ai/blog/i-expected-better-from-google"
-        }
-      },
-      {
-        "id": "aihot-2f3765749624",
-        "title": "Dario Amodei 发文呼吁 AI 行业放慢前沿速度并公布三步计划",
-        "summary": "Dario Amodei 发布新文章 We Must Pace the Frontier，主张 AI 行业应放慢速度，并提出三部分计划。Anthropic 单方面承诺第一步，为第三方评估者提供永久的员工级系统访问权限，以核实安全措施执行、报告事故并评估训练期间模型的 alignment。",
-        "source": "X：Peter McCrory（Anthropic 首席经济学家，@PeterMcCrory）",
-        "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-12T20:18:42.000Z",
+        "publishedAt": "2026-09-14T19:56:20.000Z",
         "links": {
-          "original": "https://x.com/PeterMcCrory/status/2098868931071226252"
+          "original": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review"
         }
       },
       {
-        "id": "aihot-fa9cbd883dd4",
-        "title": "Sam Altman 表示同意 Dario Amodei 的放缓前沿主张，OpenAI 将同样开放独立评估者访问",
-        "summary": "Sam Altman 回应 Dario Amodei 的《We Must Pace the Frontier》一文，同意需要为前沿 AI 发展设定节奏，称这是 OpenAI 近几周内部讨论的重要话题。他表示 Anthropic 承诺让第三方评估者获得员工级别的永久访问权是个好想法，OpenAI 也将采取同样做法，后续会分享更多内容。",
-        "source": "X：Sam Altman (@sama)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-12T16:30:45.000Z",
-        "links": {
-          "original": "https://x.com/sama/status/2098811563415150910"
-        }
-      },
-      {
-        "id": "aihot-8e6708e4cb1e",
-        "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "id": "aihot-e1c99224776c",
+        "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+        "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。",
+        "source": "X：Arena (@arena)",
         "sourceId": "aihot",
         "category": "paper",
-        "publishedAt": "2026-09-12T00:24:20.561Z",
+        "publishedAt": "2026-09-14T17:21:29.000Z",
         "links": {
-          "original": "https://www.rubyhack.ai/"
+          "original": "https://x.com/arena/status/2099549108013006958"
         }
       },
       {
-        "id": "aihot-64a3eef44ef2",
-        "title": "Thariq 支持 Dario Amodei 的放缓前沿 AI 倡议，呼吁给系统加固和社会讨论留出时间",
-        "summary": "Anthropic 的 Thariq 转发并支持 Dario Amodei 的新文章《We Must Pace the Frontier》，后者提出 AI 行业应放缓的三部分计划，并承诺向第三方评估者提供永久的员工级系统访问权限。",
-        "source": "X：Thariq (@trq212)",
+        "id": "aihot-e7c195a273e1",
+        "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+        "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
+        "source": "The Decoder：AI News（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-09-14T15:46:45.000Z",
+        "links": {
+          "original": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo"
+        }
+      },
+      {
+        "id": "aihot-c37b5a831245",
+        "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+        "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。",
+        "source": "Hacker News：AI 热帖",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-12T19:46:58.000Z",
+        "publishedAt": "2026-09-14T12:40:57.000Z",
         "links": {
-          "original": "https://x.com/trq212/status/2098860941391872132"
+          "original": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive"
         }
       },
       {
-        "id": "aihot-859d71c10f64",
-        "title": "Suno 发布 v6 音乐模型，推出 v6、v6-wild、v6-mini 三个版本",
-        "summary": "Suno 发布新一代音乐模型 v6，与 Warner Music Group、BMG、Believe 等行业伙伴合作开发，后续将全面替换旧模型。v6 分为三个版本：旗舰 v6 和探索向的 v6-wild 面向 Pro 与 Premier 订阅用户，更快的 v6-mini 向所有人开放。",
-        "source": "Suno：Blog（网页）",
+        "id": "aihot-970d4b56a67a",
+        "title": "小红书 AllSpark 开源 Search Agent 模型 Iris，35B 与 397B 版本同量级成绩领先",
+        "summary": "小红书 AllSpark 团队发布并开源 Search Agent 模型 Iris，权重和评测代码已公开，数据与训练配方将陆续公布。",
+        "source": "公众号：小红书技术（dots.llm）",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-09-12T16:39:24.855Z",
+        "publishedAt": "2026-09-14T09:59:00.000Z",
         "links": {
-          "original": "https://suno.com/blog/introducing-v6"
+          "original": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496383&idx=1&sn=2db8607f797615a3647d9fec7e54f448"
         }
       },
       {
-        "id": "aihot-a2aa2a01f49b",
-        "title": "OpenAI 将 GPT-Live-1 语音模型开放至 API",
-        "summary": "OpenAI 宣布 GPT-Live-1 正式登陆 API，即 1-800-ChatGPT 背后的语音能力。开发者可把它接入应用，获得边说边听的自然对话语音智能体，并搭配自选的模型与 harness 使用。",
-        "source": "X：OpenAI Developers (@OpenAIDevs)",
+        "id": "aihot-36411e71321a",
+        "title": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔",
+        "summary": "Sam Altman、Dario Amodei、Demis Hassabis 和 Elon Musk 周末粗略同意放慢 AI 开发，提出引入第三方审计、监管国内实验室并达成全球放缓协议，批评者则称其为压制竞争者和开源运动的\"卡特尔\"。",
+        "source": "The Verge：AI（RSS）",
         "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-09-12T23:16:27.000Z",
+        "category": "tip",
+        "publishedAt": "2026-09-14T22:59:41.000Z",
         "links": {
-          "original": "https://x.com/OpenAIDevs/status/2098913661993603215"
+          "original": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel"
         }
       },
       {
-        "id": "aihot-883a863d998d",
-        "title": "OpenAI 发布 GPT-6 Astra 并展示社区构建案例",
-        "summary": "OpenAI 开发者账号宣布发布 GPT-6 Astra，并汇总社区开发者基于它做出的构建案例，包括 2234 个建模解剖部件的 3D 展示、Unreal Engine 曼哈顿复刻。",
-        "source": "X：OpenAI Developers (@OpenAIDevs)",
+        "id": "aihot-00dd4c89c22f",
+        "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+        "summary": "Apple 发布新一代 Apple Intelligence，推出全面重构的 Siri AI，支持个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起以英文测试版随 2027 系统更新推出，下月扩展至法语、日语、韩语、葡萄牙语和西班牙语。",
+        "source": "Apple：Newsroom（RSS）",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-09-12T17:33:23.000Z",
+        "publishedAt": "2026-09-14T17:09:41.324Z",
         "links": {
-          "original": "https://x.com/OpenAIDevs/status/2098827327832822014"
+          "original": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here"
+        }
+      },
+      {
+        "id": "aihot-4e7a441da76f",
+        "title": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
+        "summary": "Tomer Tunguz 分析 Dario Amodei 提出的放缓前沿 AI 发展号召，梳理出可解释性、劳工、经济、地缘政治和监管俘获五派立场，并指出没有任何一派给出具体速度。",
+        "source": "Tomer Tunguz 博客（VC 分析）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-14T00:00:00.000Z",
+        "links": {
+          "original": "https://tomtunguz.com/what-does-the-pause-mean"
         }
       }
     ]
