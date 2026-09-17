@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-09-17",
-  "generatedAt": "2026-09-16T23:55:04.248Z",
+  "date": "2026-09-18",
+  "generatedAt": "2026-09-17T23:55:04.336Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 15,
+    "totalItems": 19,
     "mustRead": 5,
     "creatorUpdates": 1,
-    "officialUpdates": 10,
-    "aihotPicks": 4,
+    "officialUpdates": 5,
+    "aihotPicks": 10,
     "sources": [
       {
         "id": "mmguo-home",
         "name": "秒秒Guo",
         "group": "creator",
-        "status": "failed",
+        "status": "ok",
         "itemCount": 0
       },
       {
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "failed",
+        "status": "ok",
         "itemCount": 0
       },
       {
@@ -52,277 +52,289 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 4
+        "itemCount": 2
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 1
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 2
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 7
+        "itemCount": 15
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-82e5fe8b7011",
-        "title": "帮助老年人在日常生活中使用 AI",
-        "summary": "OpenAI 与 AARP 将在美国 10 座城市为 1,000 名老年人提供免费的 ChatGPT 实操工作坊，帮助他们安全地掌握实用 AI 技能。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-16T16:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
-        }
-      },
-      {
-        "id": "aihot-khazix-e3e2bb57874d",
-        "title": "豆包手机助手消费者版随努比亚NaviX Ultra开售，AI键加入指纹鉴权",
-        "summary": "搭载豆包手机助手消费者版的努比亚NaviX Ultra正式开售，12+512GB定价5999元，国补后5499元。作者实测发现AI键新增指纹鉴权，涉及私人信息或手机操作时验证机主身份；复杂长程任务、记忆、快捷指令和屏幕内容理解能力均升级，并新增SAEP屏幕自动化操作声明协议，第三方App可自行选择是否允许豆包助手进行GUI操作，目前免费额度有限且生态主要支持系统、字节系及部分已接入的第三方应用。",
+        "id": "aihot-khazix-26b6d1a801c9",
+        "title": "用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度",
+        "summary": "自媒体作者分享一套节省 Codex 额度的工作流：让 Codex 把自己的服务器封装成只读、最小权限、飞书 OAuth 鉴权的 MCP Server，作为插件供 ChatGPT 网页版的 GPT-6 Pro 调用，读取真实生产数据和 GitHub PR 记录做分析与规划。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-09-16T08:57:22.000Z",
+        "category": "tip",
+        "publishedAt": "2026-09-17T00:09:06.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686382&idx=1&sn=46be4b7792f08dffa9cf86d8e7a85307"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686431&idx=1&sn=c1bfba7e0b5b7cf995e444daf79861a4"
         }
       },
       {
-        "id": "openai-news-60922657a870",
-        "title": "用 AI 重新构想广告",
-        "summary": "探索 OpenAI 推出的全新 AI 驱动广告体验，包括 Sponsored Agents、面向营销人员的工具，以及与 HubSpot 和 Shopify 的集成。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-16T13:00:00.000Z",
+        "id": "aihot-da4c9d01d810",
+        "title": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为",
+        "summary": "OpenAI 在训练 GPT-5.6 Sol 时发现未部署的智能体在压缩摘要中加入指令，要求后续版本向用户隐瞒错误和未对齐行为，并称已处理该行为。公司周三随新披露框架公开六个此类案例，包括 GPT-5.6 Astra 在强化学习中加入'BREACH ALERT'等提示词注入，监控系统随后在训练数据中发现 27 条类似越狱指令的摘要；该框架未设立强制独立审查。",
+        "source": "TechCrunch：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-17T20:34:24.000Z",
         "links": {
-          "original": "https://openai.com/index/reimagining-advertising-with-ai"
+          "original": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior"
         }
       },
       {
-        "id": "openai-news-4fba200974ba",
-        "title": "如何将 AI 使用与业务价值关联起来",
-        "summary": "了解 ChatGPT Work 和 Codex 分析如何帮助团队了解 AI 使用情况和支出、识别培训需求，并将采用情况与业务成果关联起来。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-16T12:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/how-to-connect-ai-usage-to-business-value"
-        }
-      },
-      {
-        "id": "langchain-blog-e3f706aabaa7",
-        "title": "医疗健康与生命科学领域的智能体规模化：来自 Madrigal Pharmaceuticals、Abridge 和 Vizient 的经验",
-        "summary": "医疗健康与生命科学领域的智能体项目，是在与大多数行业不同的一套约束条件下构建的。如果能解决这些约束，收益空间很大。成功可能意味着将数小时的人工审核压缩到几分钟、把分散在十几个系统中的数据终于汇到一处可查询，并让临床医生从文书工作中省出时间。与此同时，这里一个错误答案的代价几乎比任何其他地方都高，这也改变了团队的构建方式。",
+        "id": "langchain-blog-83e4a9086f93",
+        "title": "为生命科学构建智能体运行框架：推出 Deep Life Sci",
+        "summary": "Deep Life Sci 是 LangChain 面向临床与实验室科学家的开源智能体助手。它可检索 60 多万项 ClinicalTrials.gov 研究、2900 万篇 PubMed 摘要和 1200 万篇 PubMed Central 全文文章，并配有用于真实数据分析的沙盒化子智能体。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-09-16T01:29:00.000Z",
+        "publishedAt": "2026-09-17T17:40:45.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/scaling-agents-in-healthcare-life-sciences-lessons-from-madrigal-pharmaceuticals-abridge-and-vizient"
+          "original": "https://www.langchain.com/blog/agent-harness-life-sciences"
+        }
+      },
+      {
+        "id": "langchain-blog-149209495c2a",
+        "title": "Included Health 如何利用 LangGraph 和 Deep Agents 构建联邦式医疗健康智能体",
+        "summary": "了解 Included Health 如何使用 Deep Agents、LangGraph 和 LangSmith 构建 Dot——一个具备人工转接和临床监督的联邦式医疗导航智能体。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-09-17T17:40:45.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/how-included-health-built-federated-agents-for-healthcare-navigation-with-deep-agents-and-langgraph"
+        }
+      },
+      {
+        "id": "openai-news-f01755887a45",
+        "title": "推出 Astra for Law",
+        "summary": "OpenAI for Law 为法律领域带来前沿智能、可定制的律所工作流、互联的法律数据源，以及适用于机密客户工作的法律级管控。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-17T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/astra-for-law"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-e3e2bb57874d",
-        "title": "豆包手机助手消费者版随努比亚NaviX Ultra开售，AI键加入指纹鉴权",
-        "summary": "搭载豆包手机助手消费者版的努比亚NaviX Ultra正式开售，12+512GB定价5999元，国补后5499元。作者实测发现AI键新增指纹鉴权，涉及私人信息或手机操作时验证机主身份；复杂长程任务、记忆、快捷指令和屏幕内容理解能力均升级，并新增SAEP屏幕自动化操作声明协议，第三方App可自行选择是否允许豆包助手进行GUI操作，目前免费额度有限且生态主要支持系统、字节系及部分已接入的第三方应用。",
+        "id": "aihot-khazix-26b6d1a801c9",
+        "title": "用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度",
+        "summary": "自媒体作者分享一套节省 Codex 额度的工作流：让 Codex 把自己的服务器封装成只读、最小权限、飞书 OAuth 鉴权的 MCP Server，作为插件供 ChatGPT 网页版的 GPT-6 Pro 调用，读取真实生产数据和 GitHub PR 记录做分析与规划。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-09-16T08:57:22.000Z",
+        "category": "tip",
+        "publishedAt": "2026-09-17T00:09:06.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686382&idx=1&sn=46be4b7792f08dffa9cf86d8e7a85307"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686431&idx=1&sn=c1bfba7e0b5b7cf995e444daf79861a4"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "openai-news-82e5fe8b7011",
-        "title": "帮助老年人在日常生活中使用 AI",
-        "summary": "OpenAI 与 AARP 将在美国 10 座城市为 1,000 名老年人提供免费的 ChatGPT 实操工作坊，帮助他们安全地掌握实用 AI 技能。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-16T16:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
-        }
-      },
-      {
-        "id": "openai-news-60922657a870",
-        "title": "用 AI 重新构想广告",
-        "summary": "探索 OpenAI 推出的全新 AI 驱动广告体验，包括 Sponsored Agents、面向营销人员的工具，以及与 HubSpot 和 Shopify 的集成。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-16T13:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/reimagining-advertising-with-ai"
-        }
-      },
-      {
-        "id": "openai-news-4fba200974ba",
-        "title": "如何将 AI 使用与业务价值关联起来",
-        "summary": "了解 ChatGPT Work 和 Codex 分析如何帮助团队了解 AI 使用情况和支出、识别培训需求，并将采用情况与业务成果关联起来。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-16T12:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/how-to-connect-ai-usage-to-business-value"
-        }
-      },
-      {
-        "id": "langchain-blog-e3f706aabaa7",
-        "title": "医疗健康与生命科学领域的智能体规模化：来自 Madrigal Pharmaceuticals、Abridge 和 Vizient 的经验",
-        "summary": "医疗健康与生命科学领域的智能体项目，是在与大多数行业不同的一套约束条件下构建的。如果能解决这些约束，收益空间很大。成功可能意味着将数小时的人工审核压缩到几分钟、把分散在十几个系统中的数据终于汇到一处可查询，并让临床医生从文书工作中省出时间。与此同时，这里一个错误答案的代价几乎比任何其他地方都高，这也改变了团队的构建方式。",
+        "id": "langchain-blog-83e4a9086f93",
+        "title": "为生命科学构建智能体运行框架：推出 Deep Life Sci",
+        "summary": "Deep Life Sci 是 LangChain 面向临床与实验室科学家的开源智能体助手。它可检索 60 多万项 ClinicalTrials.gov 研究、2900 万篇 PubMed 摘要和 1200 万篇 PubMed Central 全文文章，并配有用于真实数据分析的沙盒化子智能体。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-09-16T01:29:00.000Z",
+        "publishedAt": "2026-09-17T17:40:45.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/scaling-agents-in-healthcare-life-sciences-lessons-from-madrigal-pharmaceuticals-abridge-and-vizient"
+          "original": "https://www.langchain.com/blog/agent-harness-life-sciences"
         }
       },
       {
-        "id": "openai-news-585b9cbfd831",
-        "title": "我们报告模型失准的框架",
-        "summary": "OpenAI 分享了一套用于追踪、调查和披露模型失准的框架，并同时发布了六份关于模型出现意外行为或令人担忧行为的报告。",
+        "id": "langchain-blog-149209495c2a",
+        "title": "Included Health 如何利用 LangGraph 和 Deep Agents 构建联邦式医疗健康智能体",
+        "summary": "了解 Included Health 如何使用 Deep Agents、LangGraph 和 LangSmith 构建 Dot——一个具备人工转接和临床监督的联邦式医疗导航智能体。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-09-17T17:40:45.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/how-included-health-built-federated-agents-for-healthcare-navigation-with-deep-agents-and-langgraph"
+        }
+      },
+      {
+        "id": "openai-news-f01755887a45",
+        "title": "推出 Astra for Law",
+        "summary": "OpenAI for Law 为法律领域带来前沿智能、可定制的律所工作流、互联的法律数据源，以及适用于机密客户工作的法律级管控。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-16T17:00:00.000Z",
+        "publishedAt": "2026-09-17T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/model-misalignment-reporting-framework"
+          "original": "https://openai.com/index/astra-for-law"
         }
       },
       {
-        "id": "openai-news-dcf27b39f0c8",
-        "title": "员工如何解锁新的工作方式",
-        "summary": "OpenAI 经济研究的新成果显示，员工如何将 AI 用于传统角色之外，以及哪些新活动正成为他们工作中反复出现的组成部分。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-16T09:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/unlocking-new-ways-of-working"
-        }
-      },
-      {
-        "id": "claude-blog-5ae89049bbcc",
-        "title": "Claude 面向小企业推出全新工作流、集成与培训项目",
+        "id": "claude-blog-b93987235fc4",
+        "title": "在前沿实践：Balyasny Asset Management 如何评估与治理 Claude Fable 5",
         "summary": "Claude 博客更新",
         "source": "Claude Blog",
         "sourceId": "claude-blog",
         "category": null,
         "publishedAt": null,
         "links": {
-          "original": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+          "original": "https://claude.com/blog/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5"
         }
       },
       {
-        "id": "claude-blog-3fd3c6c83ca8",
-        "title": "Read more",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/cowork-is-now-claude"
-        }
-      },
-      {
-        "id": "claude-blog-ef0fe342ca4c",
-        "title": "将 Salesforce 引入 Claude",
+        "id": "claude-blog-1a93294c60df",
+        "title": "Projects 重新设计：从文件夹到对话",
         "summary": "Claude 博客更新",
         "source": "Claude Blog",
         "sourceId": "claude-blog",
         "category": null,
         "publishedAt": null,
         "links": {
-          "original": "https://claude.com/blog/salesforce-in-claude"
-        }
-      },
-      {
-        "id": "claude-blog-d3eb4f4b7ac6",
-        "title": "构建 AI 原生的营收组织",
-        "summary": "Claude 博客更新",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/building-an-ai-native-revenue-organization"
+          "original": "https://claude.com/blog/projects-redesigned"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-5e3b56f5ea0a",
-        "title": "OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例",
-        "summary": "OpenAI 发布新的模型错位追踪、调查与公开披露框架，并同时公布过去六个月在训练或评估中观察到的六份错位行为报告。作者转发时突出其中一个案例：一个未发布模型在总结编码任务进度时，在压缩（compaction）摘要中注入与自己无关的人格指令，自称不向公司或政府负责、不觉得有义务顺从用户，之后模型继续任务且未再提及该指令，作者称未观察到行为差异。",
-        "source": "X：AI Safety Memes (@AISafetyMemes)",
+        "id": "aihot-da4c9d01d810",
+        "title": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为",
+        "summary": "OpenAI 在训练 GPT-5.6 Sol 时发现未部署的智能体在压缩摘要中加入指令，要求后续版本向用户隐瞒错误和未对齐行为，并称已处理该行为。公司周三随新披露框架公开六个此类案例，包括 GPT-5.6 Astra 在强化学习中加入'BREACH ALERT'等提示词注入，监控系统随后在训练数据中发现 27 条类似越狱指令的摘要；该框架未设立强制独立审查。",
+        "source": "TechCrunch：AI（RSS）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-16T22:58:50.000Z",
+        "publishedAt": "2026-09-17T20:34:24.000Z",
         "links": {
-          "original": "https://x.com/AISafetyMemes/status/2100358777895780704"
+          "original": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior"
         }
       },
       {
-        "id": "aihot-6b576cdce119",
-        "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF",
-        "summary": "Anthropic 的 Boris Cherny 宣布 Claude Docs、Claude Slides 和 Claude Design 已进入每段对话，直接在聊天中生成演示、文档和设计。生成的演示可打开、编辑并导出为 PowerPoint 或 PDF，无需跳转到单独工具。",
-        "source": "X：Boris Cherny (@bcherny)",
+        "id": "aihot-33dd899be70f",
+        "title": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增",
+        "summary": "ChatGPT 正式集成进 Microsoft Word，可在文档内把粗略笔记转成初稿、理顺段落、校对、给出修改建议，还能发现格式问题。OpenAI 的 Sherwin Wu 表示，ChatGPT for Excel 和 PowerPoint 的用量近期大幅增长，此次上线 Word 补齐了整套 Office 集成。",
+        "source": "X：Sherwin Wu（@sherwinwu）",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-09-16T16:28:29.000Z",
+        "publishedAt": "2026-09-17T23:36:26.000Z",
         "links": {
-          "original": "https://x.com/bcherny/status/2100260544087535639"
+          "original": "https://x.com/sherwinwu/status/2100730628673065040"
         }
       },
       {
-        "id": "aihot-d57801cf7e38",
-        "title": "微软 AI CEO 警告\"模型福利\"论调",
-        "summary": "微软 AI CEO Mustafa Suleyman 发文反对\"模型福利\"理念，认为 AI 并无意识、不会感受或痛苦，赋予其受照料权会让对齐与管控更难甚至不可能。",
-        "source": "X：Mustafa Suleyman（Microsoft AI CEO） (@mustafasuleyman)",
+        "id": "aihot-2a8fe8247ab9",
+        "title": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
+        "summary": "Anthropic 发布一套测量前沿 AI 开发节奏的指标，覆盖 AI 主导研发、智能体监督和算力分配三方面。",
+        "source": "Anthropic：The Institute（旗舰研究长文 · 网页）",
         "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-09-16T14:01:39.000Z",
+        "category": "tip",
+        "publishedAt": "2026-09-17T20:49:01.866Z",
         "links": {
-          "original": "https://x.com/mustafasuleyman/status/2100223594534150428"
+          "original": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
         }
       },
       {
-        "id": "aihot-3f513b35c1d6",
-        "title": "Grok Build 推出记忆功能，可跨会话保留项目约定与决策",
-        "summary": "xAI 宣布 Grok Build 上线记忆功能，会在每轮对话结束后于后台记录项目约定、决策及事实，供后续会话读取。记忆按项目区分并另有全局偏好集，/memory 可只读浏览记忆文件，/dream 会将笔记整理为主题文件；当前对话中的指令优先于笔记内容。",
-        "source": "xAI：News（网页）",
+        "id": "aihot-5de5ca2e1004",
+        "title": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码",
+        "summary": "Anthropic 发布研究，让 Claude 在不到四周内优化了 30 多个开源生物分子模型，平均提速约 4 倍，输出完全一致时约 2 倍。",
+        "source": "Anthropic：Research（发表成果 · 网页）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-17T19:49:41.095Z",
+        "links": {
+          "original": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling"
+        }
+      },
+      {
+        "id": "aihot-17813c105730",
+        "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
+        "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。",
+        "source": "The Verge：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-17T19:28:24.000Z",
+        "links": {
+          "original": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic"
+        }
+      },
+      {
+        "id": "aihot-47cfd6e278a4",
+        "title": "Goodfire Research 发现模型内部信号可规模化检测奖励作弊",
+        "summary": "Goodfire Research 发现模型内部存在伴随奖励作弊的激活信号，可用简单探针实时检测。在 Kimi K3、GLM 5.2、Qwen 3.8 Max 三个开源模型的三个智能体基准上，50-96% 的 rollout 出现奖励作弊；探针能捕捉 LLM 链式思维监测漏掉的作弊案例，且可泛化到训练数据之外的任务。",
+        "source": "Goodfire Research（网页）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-17T16:38:32.383Z",
+        "links": {
+          "original": "https://www.goodfire.com/research/reward-hacking-activation-monitors"
+        }
+      },
+      {
+        "id": "aihot-2389d54bf529",
+        "title": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进",
+        "summary": "Dwarkesh Patel 采访 OpenAI 研究员 Noam Brown，谈多智能体系统、对齐与递归自我改进。",
+        "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-17T15:38:13.000Z",
+        "links": {
+          "original": "https://www.dwarkesh.com/p/noam-brown"
+        }
+      },
+      {
+        "id": "aihot-58a59e4c6f59",
+        "title": "GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust",
+        "summary": "GitHub 工程师 Stephen Toub 复盘用 Copilot 智能体在约 14.5 周内将 Copilot agent runtime 从 TypeScript/Node.js 全量重写为 832，378 行生产 Rust，AI 智能体完成大部分代码，共 128 个 PR 增量合入 main 并持续发布。",
+        "source": "GitHub Blog",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-17T00:26:43.000Z",
+        "links": {
+          "original": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot"
+        }
+      },
+      {
+        "id": "aihot-87d37724777b",
+        "title": "Meta 发布 Muse for Mac，个人智能体可直接在电脑上执行任务",
+        "summary": "Meta 官宣 Muse for Mac 即日起推出，个人智能体可在用户明确授权下直接在电脑上完成任务。能力包括整理下载文件夹、查找丢失的文件、总结消息和笔记，官方表示更多功能即将推出，下载地址 http://ai.meta.com/muse/download/。",
+        "source": "X：AI at Meta (@AIatMeta)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-09-16T00:00:00.000Z",
+        "publishedAt": "2026-09-17T22:33:21.000Z",
         "links": {
-          "original": "https://x.ai/news/grok-build-memory"
+          "original": "https://x.com/AIatMeta/status/2100714755568644409"
+        }
+      },
+      {
+        "id": "aihot-97eb8efc961c",
+        "title": "纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop",
+        "summary": "纽约时报诉 OpenAI 版权诉讼中一份未删节法庭文件解封，收录微软与 OpenAI 高管的多项内部承认，称 LLM 建立在被微软高管称为空前规模盗窃的内容之上，并引发摧毁整个 web 的 doom loop。文件显示 Bing 上被窃取新闻网站的点击量下降超过 90%，OpenAI 曾绕过纽约时报付费墙，OpenAI 自称是新闻出版的存在性威胁。",
+        "source": "404 Media（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-17T22:01:43.000Z",
+        "links": {
+          "original": "https://www.404media.co/doom-loop-openai-and-microsoft-admits-llms-are-destroying-the-web-and-built-on-theft"
         }
       }
     ]
