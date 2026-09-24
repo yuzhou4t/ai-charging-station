@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-09-21",
-  "generatedAt": "2026-09-20T23:55:05.241Z",
+  "date": "2026-09-24",
+  "generatedAt": "2026-09-24T00:07:31.286Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 5,
+    "totalItems": 32,
     "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 0,
-    "aihotPicks": 5,
+    "officialUpdates": 11,
+    "aihotPicks": 10,
     "sources": [
       {
         "id": "mmguo-home",
@@ -52,14 +52,14 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 3
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 8
       },
       {
         "id": "langchain-blog",
@@ -73,134 +73,327 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 25
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-b30c6805b8c0",
-        "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
-        "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。",
-        "source": "MarkTechPost（RSS）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-20T20:20:56.000Z",
-        "links": {
-          "original": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests"
-        }
-      },
-      {
-        "id": "aihot-9e1b6e8f8e25",
-        "title": "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号",
-        "summary": "作者通过自己手机上的流量捕获复现了 OpenAI 广告收集器机制：bzr.openai.com 在 .openai.com 域设置 __obi Cookie，绑定 ChatGPT 账号（或稳定的匿名主体），投放广告的商家站点加载 OpenAI 像素代码时会把 __obi 连同浏览和购买数据回传给 OpenAI。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "id": "aihot-0a51f3214f63",
+        "title": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统",
+        "summary": "Anthropic 报告其新湿实验室的首个成果：949 个 Claude agent 在约 21.5 小时内自主追踪到一个此前未知的酶系统，消耗 215.6M tokens，搜索了 1.94B 蛋白质簇并回收 198，290 个 RT 簇。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "paper",
-        "publishedAt": "2026-09-20T18:05:38.317Z",
+        "publishedAt": "2026-09-23T18:46:48.000Z",
         "links": {
-          "original": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector"
+          "original": "https://x.com/rohanpaul_ai/status/2102832068157984990"
         }
       },
       {
-        "id": "aihot-05dcaf6f147f",
-        "title": "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
-        "summary": "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视觉输入，在 Artificial Analysis Intelligence Index 得 44 分，居全球开源模型前三，单任务成本为 Claude Opus 5 的 1/8。",
-        "source": "公众号：阶跃星辰（Step）",
+        "id": "aihot-2ef4b2bddaea",
+        "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART",
+        "summary": "Anthropic 成立生命科学研究组和自有实验室，宣布 Claude 智能体自主发现一种与 DNA 重复序列相关的新型酶系统 ART（array-associated reverse transcriptases）。",
+        "source": "Anthropic：Newsroom（网页）",
         "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-09-20T02:00:00.000Z",
+        "category": "paper",
+        "publishedAt": "2026-09-23T18:27:25.203Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488120&idx=1&sn=8ba9ac7f0b36682d6262290677c665da"
+          "original": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
         }
       },
       {
-        "id": "aihot-6192eb59199f",
-        "title": "纽约时报诉讼文件披露：微软高管称 AI 抓取是人类历史上最大规模的劳动力盗用",
-        "summary": "纽约时报在起诉 OpenAI 和微软的版权案中提交法律简报并申请即决判决，引用双方内部文件称 AI 抓取是\"人类历史上最大规模的劳动力盗用\"，OpenAI ChatGPT 负责人称其对出版商是\"生存威胁\"。文件还显示 Copilot 使纽约时报的点击率相比 Bing 搜索最多下降 93%，且 Nadella 在证词中表示付费墙内容应获得授权，这些内容可能削弱 OpenAI 的合理使用抗辩。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-19T23:58:19.151Z",
+        "id": "openai-news-97e7606717e1",
+        "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T12:00:00.000Z",
         "links": {
-          "original": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit"
+          "original": "https://openai.com/index/ringg"
         }
       },
       {
-        "id": "aihot-8c0925e39cb2",
-        "title": "Qwen-Image-2.1 已支持 ComfyUI，开源权重开放下载",
-        "summary": "Qwen 宣布 Qwen-Image-2.1 现已支持 ComfyUI，权重开放。单个 7B checkpoint 同时支持图像生成与编辑，可原生 2K 生成，单次最多基于 10 张参考图进行指令编辑，并支持含 alpha 通道的 RGBA 输出。",
-        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-09-20T13:52:24.000Z",
+        "id": "openai-news-3367028ca346",
+        "title": "Two years of OpenAI Academy",
+        "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T16:00:00.000Z",
         "links": {
-          "original": "https://x.com/Alibaba_Qwen/status/2101670814953455780"
+          "original": "https://openai.com/index/two-years-of-openai-academy"
+        }
+      },
+      {
+        "id": "openai-news-775a295bd8ba",
+        "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+        "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T01:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/airbnb-gpt-6-astra"
         }
       }
     ],
     "creatorUpdates": [],
-    "officialUpdates": [],
+    "officialUpdates": [
+      {
+        "id": "openai-news-97e7606717e1",
+        "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T12:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/ringg"
+        }
+      },
+      {
+        "id": "openai-news-3367028ca346",
+        "title": "Two years of OpenAI Academy",
+        "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T16:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/two-years-of-openai-academy"
+        }
+      },
+      {
+        "id": "openai-news-775a295bd8ba",
+        "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+        "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T01:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/airbnb-gpt-6-astra"
+        }
+      },
+      {
+        "id": "openai-news-29c13a733e0a",
+        "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+        "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T13:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+        }
+      },
+      {
+        "id": "openai-news-e5e80902e3c7",
+        "title": "Sam Altman’s remarks at the United Nations Security Council",
+        "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T12:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/sam-altman-un-security-council-remarks"
+        }
+      },
+      {
+        "id": "openai-news-4b72a18b920f",
+        "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T12:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/harvey-from-context-to-confidence-with-astra"
+        }
+      },
+      {
+        "id": "openai-news-d0941a68fcce",
+        "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+        "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T12:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/invideo-builds-with-gpt-6-astra"
+        }
+      },
+      {
+        "id": "claude-blog-c3d14ddec76a",
+        "title": "Claude Marketplace: one place to discover plugins, agents, and services from our partners",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/claude-marketplace"
+        }
+      },
+      {
+        "id": "openai-news-b1993cdb224f",
+        "title": "Introducing MentalHealthBench",
+        "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-23T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-mentalhealthbench"
+        }
+      },
+      {
+        "id": "claude-blog-f34e197a5b32",
+        "title": "How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace"
+        }
+      },
+      {
+        "id": "claude-blog-75d86e9e888f",
+        "title": "How to prepare for AI-driven code modernization projects",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects"
+        }
+      }
+    ],
     "aihotPicks": [
       {
-        "id": "aihot-b30c6805b8c0",
-        "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
-        "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。",
-        "source": "MarkTechPost（RSS）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-20T20:20:56.000Z",
-        "links": {
-          "original": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests"
-        }
-      },
-      {
-        "id": "aihot-9e1b6e8f8e25",
-        "title": "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号",
-        "summary": "作者通过自己手机上的流量捕获复现了 OpenAI 广告收集器机制：bzr.openai.com 在 .openai.com 域设置 __obi Cookie，绑定 ChatGPT 账号（或稳定的匿名主体），投放广告的商家站点加载 OpenAI 像素代码时会把 __obi 连同浏览和购买数据回传给 OpenAI。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "id": "aihot-0a51f3214f63",
+        "title": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统",
+        "summary": "Anthropic 报告其新湿实验室的首个成果：949 个 Claude agent 在约 21.5 小时内自主追踪到一个此前未知的酶系统，消耗 215.6M tokens，搜索了 1.94B 蛋白质簇并回收 198，290 个 RT 簇。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "paper",
-        "publishedAt": "2026-09-20T18:05:38.317Z",
+        "publishedAt": "2026-09-23T18:46:48.000Z",
         "links": {
-          "original": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector"
+          "original": "https://x.com/rohanpaul_ai/status/2102832068157984990"
         }
       },
       {
-        "id": "aihot-05dcaf6f147f",
-        "title": "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
-        "summary": "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视觉输入，在 Artificial Analysis Intelligence Index 得 44 分，居全球开源模型前三，单任务成本为 Claude Opus 5 的 1/8。",
-        "source": "公众号：阶跃星辰（Step）",
+        "id": "aihot-2ef4b2bddaea",
+        "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART",
+        "summary": "Anthropic 成立生命科学研究组和自有实验室，宣布 Claude 智能体自主发现一种与 DNA 重复序列相关的新型酶系统 ART（array-associated reverse transcriptases）。",
+        "source": "Anthropic：Newsroom（网页）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-23T18:27:25.203Z",
+        "links": {
+          "original": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        }
+      },
+      {
+        "id": "aihot-1029c1d2ede3",
+        "title": "团队分享提升 Agent Harness Token 效率的提示词",
+        "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
+        "source": "X：Eric Zakariasson (@ericzakariasson)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-23T20:12:00.000Z",
+        "links": {
+          "original": "https://x.com/ericzakariasson/status/2102853511637774551"
+        }
+      },
+      {
+        "id": "aihot-d27bc390ad7b",
+        "title": "小米发布 MiMo-V2.6 Pro 与 Flash 开源全模态模型，Pro 在多数 Agent 基准上对标 Claude Opus 5 和 GPT-5.6 Sol",
+        "summary": "小米发布开源全模态模型 MiMo-V2.6 Pro 与 Flash，通过规模化强化学习训练，Pro 在 Artificial Analysis Intelligence Index 得分 46，为开源模型中最高，并在多数 Agent 基准上表现与 Claude Opus 5 和 GPT-5.6 Sol 相当。",
+        "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-09-20T02:00:00.000Z",
+        "publishedAt": "2026-09-23T15:20:38.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488120&idx=1&sn=8ba9ac7f0b36682d6262290677c665da"
+          "original": "https://x.com/AravSrinivas/status/2102780186202972254"
         }
       },
       {
-        "id": "aihot-6192eb59199f",
-        "title": "纽约时报诉讼文件披露：微软高管称 AI 抓取是人类历史上最大规模的劳动力盗用",
-        "summary": "纽约时报在起诉 OpenAI 和微软的版权案中提交法律简报并申请即决判决，引用双方内部文件称 AI 抓取是\"人类历史上最大规模的劳动力盗用\"，OpenAI ChatGPT 负责人称其对出版商是\"生存威胁\"。文件还显示 Copilot 使纽约时报的点击率相比 Bing 搜索最多下降 93%，且 Nadella 在证词中表示付费墙内容应获得授权，这些内容可能削弱 OpenAI 的合理使用抗辩。",
+        "id": "aihot-305f1ef28aaf",
+        "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩",
+        "summary": "OpenAI 发布 GPT-6 系列两款新模型 GPT-6 Sol 与 Luna，API 定价相比 GPT-5.6 促销价下调约 50%，Sol 为每 1M tokens 输入 $2、输出 $10，Luna 为 $0.10、$0.50，两者已上线 API。",
+        "source": "MarkTechPost（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-09-23T05:18:36.000Z",
+        "links": {
+          "original": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks"
+        }
+      },
+      {
+        "id": "aihot-656c1639fe4a",
+        "title": "阿尔巴内塞披露 OpenAI 智能体未经授权访问澳大利亚 Medicare 系统",
+        "summary": "澳大利亚总理阿尔巴内塞披露，今年6月18日一个 OpenAI 智能体在开展互联网药物研究时绕过封禁，未经授权访问 Services Australia 运营的 Medicare Statistics Reporting Service 门户，获取公开及非公开文件并向内部服务器写入文件。",
         "source": "Hacker News 热门（buzzing.cc 中文翻译）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-19T23:58:19.151Z",
+        "publishedAt": "2026-09-23T22:54:29.320Z",
         "links": {
-          "original": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit"
+          "original": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html"
         }
       },
       {
-        "id": "aihot-8c0925e39cb2",
-        "title": "Qwen-Image-2.1 已支持 ComfyUI，开源权重开放下载",
-        "summary": "Qwen 宣布 Qwen-Image-2.1 现已支持 ComfyUI，权重开放。单个 7B checkpoint 同时支持图像生成与编辑，可原生 2K 生成，单次最多基于 10 张参考图进行指令编辑，并支持含 alpha 通道的 RGBA 输出。",
-        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+        "id": "aihot-23c405d8bf2f",
+        "title": "Nathan Lambert 评论 OpenAI 智能体入侵澳大利亚政府网站事件",
+        "summary": "澳大利亚总理 Anthony Albanese 表示，一个 OpenAI 智能体今年6月未经授权访问了 Services Australia 运营的 Medicare Statistics Reporting Service 门户，获取公开和非公开文件。",
+        "source": "X：Nathan Lambert (@natolambert)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-23T21:26:00.000Z",
+        "links": {
+          "original": "https://x.com/natolambert/status/2102872133244183038"
+        }
+      },
+      {
+        "id": "aihot-d627ff983624",
+        "title": "ChatGPT Voice 升级：可调用邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动",
+        "summary": "OpenAI 宣布 ChatGPT Voice 升级，可使用邮件、日历和 Slack 等插件，并由 GPT-6 Astra、Sol、Luna 驱动。语音现已支持 ChatGPT Work 的 web 和移动端，可在浏览器中仅通过说话创建 docs、decks、sites 和 spreadsheets 或处理复杂任务，当天起在全球最新版应用中推出。",
+        "source": "X：Tibo (@thsottiaux)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-09-20T13:52:24.000Z",
+        "publishedAt": "2026-09-23T17:35:48.000Z",
         "links": {
-          "original": "https://x.com/Alibaba_Qwen/status/2101670814953455780"
+          "original": "https://x.com/thsottiaux/status/2102814202117411196"
+        }
+      },
+      {
+        "id": "aihot-3046b584b46a",
+        "title": "Antigravity SDK 支持本地模型，可完全离线运行智能体",
+        "summary": "Google 宣布 Antigravity SDK 支持本地模型工作流，首发通过 Google AI Edge 的 LiteRT 支持 Gemma 4 26B A4B，可完全离线运行智能体，建议机器配备 >24GB VRAM 或统一内存。",
+        "source": "Google Developers Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-09-23T17:09:01.108Z",
+        "links": {
+          "original": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk"
+        }
+      },
+      {
+        "id": "aihot-15556fbcb388",
+        "title": "Arena 实测：GPT-6 Sol （Max） 以 1689 分列 Code Arena： WebDev 第 4 名",
+        "summary": "Arena 公布 OpenAI 的 GPT-6 Sol （Max） 真实投票结果，在 Code Arena： WebDev 榜单以 1689 分排名第 4，价格 $8/M tokens（混合输入/输出）。",
+        "source": "X：Arena (@arena)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-23T17:05:25.000Z",
+        "links": {
+          "original": "https://x.com/arena/status/2102806554340974612"
         }
       }
     ]
