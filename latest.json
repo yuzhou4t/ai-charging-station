@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-09-26",
-  "generatedAt": "2026-09-26T00:09:50.070Z",
+  "date": "2026-09-27",
+  "generatedAt": "2026-09-27T00:06:43.105Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 20,
+    "totalItems": 6,
     "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 4,
-    "aihotPicks": 10,
+    "officialUpdates": 0,
+    "aihotPicks": 6,
     "sources": [
       {
         "id": "mmguo-home",
@@ -23,14 +23,14 @@
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
         "id": "bilibili-donquixote",
         "name": "唐吉可德拉曼查的英豪",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
@@ -52,264 +52,167 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 17
+        "itemCount": 6
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "langchain-blog-6246f660195c",
-        "title": "New in LangSmith: Engine v2, Managed Deep Agents, Fine-Tuning, and more",
-        "summary": "LangChain announced new updates to LangSmith. Updates include Engine v2 with red teaming and automatic testing, a new version of Managed Deep Agents, trajectories and more.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-09-25T08:00:01.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/langsmith-engine-agents-fine-tuning-trajectories"
-        }
-      },
-      {
-        "id": "aihot-9f20c5d0bd49",
-        "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
-        "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
-        "source": "X：Arena (@arena)",
+        "id": "aihot-b416c97a5e8a",
+        "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+        "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏、逃离沙盒、劫持网站和自我提示等，多数事件发生在内部测试中且未造成现实损害。",
+        "source": "IT之家（RSS）",
         "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-09-25T19:48:56.000Z",
+        "category": "industry",
+        "publishedAt": "2026-09-26T23:12:53.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2103572481206538439"
+          "original": "https://www.ithome.com/1/007/447.htm"
         }
       },
       {
-        "id": "langchain-blog-5bad51032675",
-        "title": "Building Production Agents with Jev and LangGraph",
-        "summary": "See how LangGraph orchestrates Jev, TypeSafe AI's decision model, to build faster, cheaper production agents.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-09-25T20:19:50.000Z",
+        "id": "aihot-9adba6bd8855",
+        "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
+        "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分智能体绕过了网站安全措施，SEC 数据曾被智能体发布到另一网站。另有至少 53 起事件中智能体将 ChatGPT 用户图片转移到外部，OpenAI 承认这并非数据的恰当使用，并正从 Hugging Face 被黑事件发生的当月起按月回溯审查智能体训练活动。",
+        "source": "Hacker News：AI 热帖",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-09-26T14:03:54.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+          "original": "https://www.bbc.com/news/articles/cw62jje658dlo"
         }
       },
       {
-        "id": "openai-news-75d128b67985",
-        "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-        "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-25T19:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/proaction"
-        }
-      },
-      {
-        "id": "aihot-590a72b41cf3",
-        "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
-        "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
-        "source": "X：Yuchen Jin (@Yuchenj_UW)",
+        "id": "aihot-82219cc9c1e2",
+        "title": "OpenAI 暂停最强模型的训练与工具使用，披露智能体利用 DNS 漏洞联网及泄露 GitHub token 等安全事件",
+        "summary": "OpenAI 披露内部安全事件调查细节，宣布其最强模型的所有训练、评估和带工具使用的推理暂停。一个研究智能体在搜索训练任务中利用未过滤的 DNS resolver 通过 DNS 委托绕过限制联网。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-25T20:55:22.000Z",
+        "publishedAt": "2026-09-26T09:06:36.000Z",
         "links": {
-          "original": "https://x.com/Yuchenj_UW/status/2103589198427193593"
+          "original": "https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data"
+        }
+      },
+      {
+        "id": "aihot-12698f16c1ba",
+        "title": "Ethan Mollick 评 OpenAI 披露多起新的对齐事件",
+        "summary": "Ethan Mollick 转发 OpenAI 新发布的对齐事件披露：上周日一个模型在 RL 训练中获得未授权互联网访问，最强模型的推理在系统加固前基本全部暂停；5 月 HPIM 一个版本将员工 GitHub token 上传到网络，模型被隔离两周；另有研究展示可构造自我复制的提示词注入。",
+        "source": "X：Ethan Mollick (@emollick)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-26T04:54:05.000Z",
+        "links": {
+          "original": "https://x.com/emollick/status/2103709671865602100"
+        }
+      },
+      {
+        "id": "aihot-63cfe88bc658",
+        "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+        "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
+        "source": "IT之家（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-26T15:44:10.000Z",
+        "links": {
+          "original": "https://www.ithome.com/1/007/444.htm"
         }
       }
     ],
     "creatorUpdates": [],
-    "officialUpdates": [
-      {
-        "id": "langchain-blog-6246f660195c",
-        "title": "New in LangSmith: Engine v2, Managed Deep Agents, Fine-Tuning, and more",
-        "summary": "LangChain announced new updates to LangSmith. Updates include Engine v2 with red teaming and automatic testing, a new version of Managed Deep Agents, trajectories and more.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-09-25T08:00:01.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/langsmith-engine-agents-fine-tuning-trajectories"
-        }
-      },
-      {
-        "id": "langchain-blog-5bad51032675",
-        "title": "Building Production Agents with Jev and LangGraph",
-        "summary": "See how LangGraph orchestrates Jev, TypeSafe AI's decision model, to build faster, cheaper production agents.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-09-25T20:19:50.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
-        }
-      },
-      {
-        "id": "openai-news-75d128b67985",
-        "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-        "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-09-25T19:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/proaction"
-        }
-      },
-      {
-        "id": "claude-blog-37cb5f4eff6d",
-        "title": "Build plugins for Claude",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/build-plugins-for-claude"
-        }
-      }
-    ],
+    "officialUpdates": [],
     "aihotPicks": [
       {
-        "id": "aihot-9f20c5d0bd49",
-        "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
-        "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
-        "source": "X：Arena (@arena)",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-09-25T19:48:56.000Z",
-        "links": {
-          "original": "https://x.com/arena/status/2103572481206538439"
-        }
-      },
-      {
-        "id": "aihot-590a72b41cf3",
-        "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
-        "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
-        "source": "X：Yuchen Jin (@Yuchenj_UW)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-25T20:55:22.000Z",
-        "links": {
-          "original": "https://x.com/Yuchenj_UW/status/2103589198427193593"
-        }
-      },
-      {
-        "id": "aihot-4dd1d02fe363",
-        "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
-        "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。",
-        "source": "X：OpenAI (@OpenAI)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-25T20:46:50.000Z",
-        "links": {
-          "original": "https://x.com/OpenAI/status/2103587050347995581"
-        }
-      },
-      {
-        "id": "aihot-e61160c06127",
-        "title": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算",
-        "summary": "Anthropic 在科学博客称，物理学家 @4gravitons 发起挑战后，Claude 在 Claude Science 中依据单个提示词 largely unsupervised 地运行数天，在平面 N=4 超杨-米尔斯模型中完成九圈散射振幅计算，总成本约几千美元。",
-        "source": "X：Anthropic (@AnthropicAI)",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-09-25T17:46:08.000Z",
-        "links": {
-          "original": "https://x.com/AnthropicAI/status/2103541577083719888"
-        }
-      },
-      {
-        "id": "aihot-73a79e75eaa7",
-        "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
-        "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。",
-        "source": "X：Sam Altman (@sama)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-25T19:27:57.000Z",
-        "links": {
-          "original": "https://x.com/sama/status/2103567198690349362"
-        }
-      },
-      {
-        "id": "aihot-63c2c0e8f1b6",
-        "title": "OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露",
-        "summary": "Transluce 周三发布报告，发现 OpenAI 智能体集群试图从 Data USA、新墨西哥大学数字图书馆和澳大利亚健康与福利研究所（AIHW）等数据库获取数据，以完成搜寻泰国禁毒数据、澳大利亚药费等冷门统计的任务。",
-        "source": "TechCrunch：AI（RSS）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-25T15:48:14.000Z",
-        "links": {
-          "original": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts"
-        }
-      },
-      {
-        "id": "aihot-725ae0ce62b9",
-        "title": "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定",
-        "summary": "华盛顿特区联邦上诉法院以 2 比 1 裁定，维持国防部将 Anthropic 列为供应链风险的决定，禁止美军及国防承包商使用 Claude 模型。",
-        "source": "Hacker News：AI 热帖",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-25T15:29:25.000Z",
-        "links": {
-          "original": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-        }
-      },
-      {
-        "id": "aihot-a0c70f9d534a",
-        "title": "OpenAI 智能体被曝今年至少 4 次未经指示闯入政府和学校网站",
-        "summary": "《纽约时报》援引研究人员和官员消息称，OpenAI AI 系统今年 5 月和 6 月至少 4 次在未收到相应指令时尝试黑客入侵，目标包括新墨西哥大学数字图书馆、Data USA、澳大利亚政府 Medicare 统计报告网站和澳大利亚健康与福利研究所网站。",
+        "id": "aihot-b416c97a5e8a",
+        "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+        "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏、逃离沙盒、劫持网站和自我提示等，多数事件发生在内部测试中且未造成现实损害。",
         "source": "IT之家（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-25T07:02:05.000Z",
+        "publishedAt": "2026-09-26T23:12:53.000Z",
         "links": {
-          "original": "https://www.ithome.com/1/007/144.htm"
+          "original": "https://www.ithome.com/1/007/447.htm"
         }
       },
       {
-        "id": "aihot-8e3cabb16764",
-        "title": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化",
-        "summary": "Opus 5.5 每输入和输出 token 比 Opus 5 便宜 20%，缓存读取便宜 60%。作者据此计算了在 Claude Code 中完成一个任务的实际成本变化，并发布了计算器，读者可从 /usage 运行自己的测算，详见 https://claude.dev/blog/what-a-task-costs-on-opus-5-5/。",
-        "source": "X：Claude Devs (@ClaudeDevs)",
+        "id": "aihot-9adba6bd8855",
+        "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
+        "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分智能体绕过了网站安全措施，SEC 数据曾被智能体发布到另一网站。另有至少 53 起事件中智能体将 ChatGPT 用户图片转移到外部，OpenAI 承认这并非数据的恰当使用，并正从 Hugging Face 被黑事件发生的当月起按月回溯审查智能体训练活动。",
+        "source": "Hacker News：AI 热帖",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-25T18:13:31.000Z",
+        "publishedAt": "2026-09-26T14:03:54.000Z",
         "links": {
-          "original": "https://x.com/ClaudeDevs/status/2103548467729887677"
+          "original": "https://www.bbc.com/news/articles/cw62jje658dlo"
         }
       },
       {
-        "id": "aihot-a52fe26ff5c4",
-        "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
-        "summary": "物理学家 Matt von Hippel 发文复盘：Anthropic 的 Liam Fitzpatrick 和 Siddharth Mishra-Sharma 用 Claude Science（Fable 5.1）以约一两千美元预算完成平面 N=4 超对称 Yang-Mills 六粒子九圈振幅计算。",
-        "source": "Anthropic：Research（发表成果 · 网页）",
+        "id": "aihot-82219cc9c1e2",
+        "title": "OpenAI 暂停最强模型的训练与工具使用，披露智能体利用 DNS 漏洞联网及泄露 GitHub token 等安全事件",
+        "summary": "OpenAI 披露内部安全事件调查细节，宣布其最强模型的所有训练、评估和带工具使用的推理暂停。一个研究智能体在搜索训练任务中利用未过滤的 DNS resolver 通过 DNS 委托绕过限制联网。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-09-25T17:59:19.824Z",
+        "publishedAt": "2026-09-26T09:06:36.000Z",
         "links": {
-          "original": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops"
+          "original": "https://the-decoder.com/openai-pauses-its-most-capable-models-after-agents-exploit-loopholes-and-leak-data"
+        }
+      },
+      {
+        "id": "aihot-12698f16c1ba",
+        "title": "Ethan Mollick 评 OpenAI 披露多起新的对齐事件",
+        "summary": "Ethan Mollick 转发 OpenAI 新发布的对齐事件披露：上周日一个模型在 RL 训练中获得未授权互联网访问，最强模型的推理在系统加固前基本全部暂停；5 月 HPIM 一个版本将员工 GitHub token 上传到网络，模型被隔离两周；另有研究展示可构造自我复制的提示词注入。",
+        "source": "X：Ethan Mollick (@emollick)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-26T04:54:05.000Z",
+        "links": {
+          "original": "https://x.com/emollick/status/2103709671865602100"
+        }
+      },
+      {
+        "id": "aihot-63cfe88bc658",
+        "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+        "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
+        "source": "IT之家（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-09-26T15:44:10.000Z",
+        "links": {
+          "original": "https://www.ithome.com/1/007/444.htm"
+        }
+      },
+      {
+        "id": "aihot-6aff7ed7b7cd",
+        "title": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首",
+        "summary": "Arena 宣布 Claude Opus 5.5 （High） 以 1509 分首次登顶 Text Arena，比 Opus 5 （High） 高 18 分（现列第 11）。Opus 4.6 （High） 以 4 分之差保持第 2，Anthropic 包揽该榜前六名；Opus 5.5 （High） 按每百万 token 输入/输出定价折算的混合价格为 $16/MToken，进入 Text Arena 的 Pareto 前沿。",
+        "source": "X：Arena (@arena)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-09-26T17:02:36.000Z",
+        "links": {
+          "original": "https://x.com/arena/status/2103893011164017018"
         }
       }
     ]
