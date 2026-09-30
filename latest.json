@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-09-28",
-  "generatedAt": "2026-09-28T00:05:58.087Z",
+  "date": "2026-10-01",
+  "generatedAt": "2026-09-30T23:55:04.633Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 2,
-    "mustRead": 2,
+    "totalItems": 28,
+    "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 0,
-    "aihotPicks": 2,
+    "officialUpdates": 5,
+    "aihotPicks": 10,
     "sources": [
       {
         "id": "mmguo-home",
@@ -52,14 +52,14 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 3
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
@@ -73,62 +73,255 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 24
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-22e487a50b00",
-        "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
-        "summary": "Authors Guild v. OpenAI 诉讼中 2026 年 9 月 21 日公布的原告简报称，OpenAI 和 Microsoft 高管及员工有意使用盗版书籍训练模型，并知道其产品可能取代人类作家。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "id": "aihot-48ea5473da30",
+        "title": "Trump 推动二十余家科技公司签署自愿性 AI 安全协议",
+        "summary": "约二十余家科技公司签署白宫超级智能协议，承诺实施独立安全审计、定期会商并制定共同安全标准，涵盖网络安全、生物安全和化学威胁等风险。协议无法律约束力，Trump 称其具有道德约束力。文章指出 OpenAI 近期多起事故源于今年 5 至 7 月开发中的一个未发布模型，其安全委员会有效性受到特拉华和加州总检察长调查，FTC 也就 AI 智能体潜在消费者损害发起调查。",
+        "source": "Ars Technica：AI（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-27T09:27:15.061Z",
+        "publishedAt": "2026-09-30T18:47:01.000Z",
         "links": {
-          "original": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal"
+          "original": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/"
         }
       },
       {
-        "id": "aihot-41dd537148bc",
-        "title": "OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会",
-        "summary": "澳大利亚参议院 AI 专项调查已传唤 OpenAI 的 Sam Altman 和 Anthropic 的 Dario Amodei，要求出席堪培拉的公开质询。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-739cbb03c3de",
+        "title": "Arena 开放限时测试 Claude Sonnet 5.5，Direct Mode 可用 48 小时",
+        "summary": "Arena 宣布在 Direct Mode 限时开放 Anthropic 的 Claude Sonnet 5.5（High），截止 10 月 2 日上午 8 点（太平洋时间），之后仍可在 Battle 和 Agent Mode 使用。引用内容称 Claude Sonnet 5.5 是 Claude 5.5 系列第二款模型，比 Sonnet 5 快 30% 以上，多数工作成本最高降低 30%。",
+        "source": "X：Arena (@arena)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-09-30T14:58:15.000Z",
+        "links": {
+          "original": "https://x.com/arena/status/2105311267619848419"
+        }
+      },
+      {
+        "id": "aihot-c52fd5c2c4cb",
+        "title": "ElevenLabs 完成 3 亿美元员工股份回购，估值升至 220 亿美元",
+        "summary": "ElevenLabs 完成 3 亿美元员工 tender offer，估值达 220 亿美元，是 2026 年 2 月 Series D 估值的两倍，由 Wellington 和 T. Rowe Price 领投。企业业务占收入 55%，ElevenAgents 每周处理超 1500 万次对话，ARR 自 2 月以来增长超 3 倍，客户语音智能体解决问题平均比聊天智能体快 31%。",
+        "source": "ElevenLabs：Blog（网页）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-27T05:35:36.000Z",
+        "publishedAt": "2026-09-30T12:00:00.000Z",
         "links": {
-          "original": "https://www.ithome.com/1/007/508.htm"
+          "original": "https://elevenlabs.io/blog/tender-22bn"
+        }
+      },
+      {
+        "id": "aihot-5a1dd6b221ac",
+        "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
+        "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
+        "source": "OpenRouter：Announcements（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-30T00:00:00.000Z",
+        "links": {
+          "original": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change/"
+        }
+      },
+      {
+        "id": "claude-blog-ab51d9d70380",
+        "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
         }
       }
     ],
     "creatorUpdates": [],
-    "officialUpdates": [],
-    "aihotPicks": [
+    "officialUpdates": [
       {
-        "id": "aihot-22e487a50b00",
-        "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
-        "summary": "Authors Guild v. OpenAI 诉讼中 2026 年 9 月 21 日公布的原告简报称，OpenAI 和 Microsoft 高管及员工有意使用盗版书籍训练模型，并知道其产品可能取代人类作家。",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-27T09:27:15.061Z",
+        "id": "claude-blog-ab51d9d70380",
+        "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
         "links": {
-          "original": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal"
+          "original": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
         }
       },
       {
-        "id": "aihot-41dd537148bc",
-        "title": "OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会",
-        "summary": "澳大利亚参议院 AI 专项调查已传唤 OpenAI 的 Sam Altman 和 Anthropic 的 Dario Amodei，要求出席堪培拉的公开质询。",
+        "id": "openai-news-aae2fbc0fb36",
+        "title": "Disrupting a coordinated model-distillation campaign",
+        "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-30T10:30:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+        }
+      },
+      {
+        "id": "openai-news-165cf4d08d45",
+        "title": "Helping small businesses put AI to work",
+        "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-09-30T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/helping-small-businesses-put-ai-to-work"
+        }
+      },
+      {
+        "id": "claude-blog-6a61f0b7ec48",
+        "title": "Agents you can coach: how Asana builds human-agent teams with Claude",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
+        }
+      },
+      {
+        "id": "claude-blog-da07b478ebcc",
+        "title": "Claude for Government is now generally available",
+        "summary": "Claude Blog update",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.com/blog/claude-for-government-is-now-generally-available"
+        }
+      }
+    ],
+    "aihotPicks": [
+      {
+        "id": "aihot-48ea5473da30",
+        "title": "Trump 推动二十余家科技公司签署自愿性 AI 安全协议",
+        "summary": "约二十余家科技公司签署白宫超级智能协议，承诺实施独立安全审计、定期会商并制定共同安全标准，涵盖网络安全、生物安全和化学威胁等风险。协议无法律约束力，Trump 称其具有道德约束力。文章指出 OpenAI 近期多起事故源于今年 5 至 7 月开发中的一个未发布模型，其安全委员会有效性受到特拉华和加州总检察长调查，FTC 也就 AI 智能体潜在消费者损害发起调查。",
+        "source": "Ars Technica：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-09-30T18:47:01.000Z",
+        "links": {
+          "original": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/"
+        }
+      },
+      {
+        "id": "aihot-739cbb03c3de",
+        "title": "Arena 开放限时测试 Claude Sonnet 5.5，Direct Mode 可用 48 小时",
+        "summary": "Arena 宣布在 Direct Mode 限时开放 Anthropic 的 Claude Sonnet 5.5（High），截止 10 月 2 日上午 8 点（太平洋时间），之后仍可在 Battle 和 Agent Mode 使用。引用内容称 Claude Sonnet 5.5 是 Claude 5.5 系列第二款模型，比 Sonnet 5 快 30% 以上，多数工作成本最高降低 30%。",
+        "source": "X：Arena (@arena)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-09-30T14:58:15.000Z",
+        "links": {
+          "original": "https://x.com/arena/status/2105311267619848419"
+        }
+      },
+      {
+        "id": "aihot-c52fd5c2c4cb",
+        "title": "ElevenLabs 完成 3 亿美元员工股份回购，估值升至 220 亿美元",
+        "summary": "ElevenLabs 完成 3 亿美元员工 tender offer，估值达 220 亿美元，是 2026 年 2 月 Series D 估值的两倍，由 Wellington 和 T. Rowe Price 领投。企业业务占收入 55%，ElevenAgents 每周处理超 1500 万次对话，ARR 自 2 月以来增长超 3 倍，客户语音智能体解决问题平均比聊天智能体快 31%。",
+        "source": "ElevenLabs：Blog（网页）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-09-30T12:00:00.000Z",
+        "links": {
+          "original": "https://elevenlabs.io/blog/tender-22bn"
+        }
+      },
+      {
+        "id": "aihot-5a1dd6b221ac",
+        "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
+        "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
+        "source": "OpenRouter：Announcements（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-09-30T00:00:00.000Z",
+        "links": {
+          "original": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change/"
+        }
+      },
+      {
+        "id": "aihot-22a5352fafda",
+        "title": "OpenAI 发布 GPT-6.1 Sol：以 Astra 五分之一价格接近其编码与计算机操作水平",
+        "summary": "OpenAI 发布 GPT-6.1 Sol，定价为每百万 token 2 美元输入、10 美元输出、0.10 美元缓存输入，为 GPT-6 Astra 标准价格约五分之一。",
+        "source": "MarkTechPost（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-09-30T21:09:24.000Z",
+        "links": {
+          "original": "https://www.marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price/"
+        }
+      },
+      {
+        "id": "aihot-5c59f48a94db",
+        "title": "Perplexity 开放 Computer 邮件委托入口并限时免费运行任务",
+        "summary": "Perplexity 向所有人开放 Computer 的邮件委托功能，无需 Perplexity 账号，将转发或抄送 computer@perplexity.com 的任务限时免费运行。智能体会在后台完成任务并保留邮件上下文，每个邮件任务在 Computer 中作为正常会话运行，可在网页和移动端查看，并带有与应用内任务相同的审计记录。",
+        "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-09-30T18:49:34.000Z",
+        "links": {
+          "original": "https://x.com/AravSrinivas/status/2105369479190601754"
+        }
+      },
+      {
+        "id": "aihot-b5d9a3c73309",
+        "title": "GPT-6.1 Sol (Max) 以 1759 分登上 Code Arena: WebDev 第 3 名",
+        "summary": "Arena 评测榜单显示，OpenAI 的 GPT-6.1 Sol (Max) 以 1759 分位列 Code Arena: WebDev 第 3 名，混合价格为 $8/MToken。相比 GPT-6 Sol (Max) 同价提升 70 分，排名上升 4 位，且在 Consumer Product 等所有类目均有提升。",
+        "source": "X：Arena (@arena)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-09-30T18:42:04.000Z",
+        "links": {
+          "original": "https://x.com/arena/status/2105367591174995999"
+        }
+      },
+      {
+        "id": "aihot-4b8f2d6c579d",
+        "title": "FTC 以消费者保护为由对 OpenAI、Anthropic 等 AI 实验室启动全面调查",
+        "summary": "FTC 正以潜在消费者保护违规为由调查 OpenAI、Anthropic 等头部 AI 实验室，主席 Andrew Ferguson 计划通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，命令将在数周内发出，METR 也在审查范围之列。",
+        "source": "The Decoder：AI News（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-09-30T16:20:04.000Z",
+        "links": {
+          "original": "https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns/"
+        }
+      },
+      {
+        "id": "aihot-15f6fbb0556a",
+        "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+        "summary": "《纽约时报》报道称，OpenAI 两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。",
         "source": "IT之家（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-27T05:35:36.000Z",
+        "publishedAt": "2026-09-30T01:48:21.000Z",
         "links": {
-          "original": "https://www.ithome.com/1/007/508.htm"
+          "original": "https://www.ithome.com/1/008/592.htm"
+        }
+      },
+      {
+        "id": "aihot-a8e1978904e6",
+        "title": "Gemini 4 Argon (High) 登 Arena Agent Arena 第 8 名，净提升 +7.92%",
+        "summary": "Arena 公布 Gemini 4 Argon (High) 在 Agent Arena 排名第 8，净提升分 +7.92%，每任务成本 $0.62。",
+        "source": "X：Arena (@arena)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-09-30T21:35:38.000Z",
+        "links": {
+          "original": "https://x.com/arena/status/2105411271525052418"
         }
       }
     ]
