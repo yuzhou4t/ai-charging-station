@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-01",
-  "generatedAt": "2026-09-30T23:55:04.633Z",
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-02T00:05:19.459Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 28,
+    "totalItems": 17,
     "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 5,
+    "officialUpdates": 4,
     "aihotPicks": 10,
     "sources": [
       {
@@ -52,7 +52,7 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 3
+        "itemCount": 1
       },
       {
         "id": "openai-news",
@@ -66,262 +66,250 @@
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 24
+        "itemCount": 14
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-48ea5473da30",
-        "title": "Trump 推动二十余家科技公司签署自愿性 AI 安全协议",
-        "summary": "约二十余家科技公司签署白宫超级智能协议，承诺实施独立安全审计、定期会商并制定共同安全标准，涵盖网络安全、生物安全和化学威胁等风险。协议无法律约束力，Trump 称其具有道德约束力。文章指出 OpenAI 近期多起事故源于今年 5 至 7 月开发中的一个未发布模型，其安全委员会有效性受到特拉华和加州总检察长调查，FTC 也就 AI 智能体潜在消费者损害发起调查。",
-        "source": "Ars Technica：AI（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-30T18:47:01.000Z",
-        "links": {
-          "original": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/"
-        }
-      },
-      {
-        "id": "aihot-739cbb03c3de",
-        "title": "Arena 开放限时测试 Claude Sonnet 5.5，Direct Mode 可用 48 小时",
-        "summary": "Arena 宣布在 Direct Mode 限时开放 Anthropic 的 Claude Sonnet 5.5（High），截止 10 月 2 日上午 8 点（太平洋时间），之后仍可在 Battle 和 Agent Mode 使用。引用内容称 Claude Sonnet 5.5 是 Claude 5.5 系列第二款模型，比 Sonnet 5 快 30% 以上，多数工作成本最高降低 30%。",
-        "source": "X：Arena (@arena)",
+        "id": "aihot-839ed764d4fd",
+        "title": "FLUX 3 Image 上线 OpenRouter，支持原生 4K 生成与多参考编辑",
+        "summary": "Black Forest Labs 的 FLUX 3 Image 现已上线 OpenRouter，是支持文生图与多参考编辑的旗舰图像模型，原生可渲染至 4K。原文提到可精确多轮编辑不动其他像素、用 bounding box 布局、最多用 10 个参考图合成，商业权重已开放，开放权重版将在未来数周发布。",
+        "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-09-30T14:58:15.000Z",
+        "publishedAt": "2026-10-01T20:37:38.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2105311267619848419"
+          "original": "https://x.com/OpenRouter/status/2105759062835220852"
         }
       },
       {
-        "id": "aihot-c52fd5c2c4cb",
-        "title": "ElevenLabs 完成 3 亿美元员工股份回购，估值升至 220 亿美元",
-        "summary": "ElevenLabs 完成 3 亿美元员工 tender offer，估值达 220 亿美元，是 2026 年 2 月 Series D 估值的两倍，由 Wellington 和 T. Rowe Price 领投。企业业务占收入 55%，ElevenAgents 每周处理超 1500 万次对话，ARR 自 2 月以来增长超 3 倍，客户语音智能体解决问题平均比聊天智能体快 31%。",
-        "source": "ElevenLabs：Blog（网页）",
+        "id": "openai-news-3e4bb4d5b93a",
+        "title": "How Albertsons Companies is reimagining retail from the inside out",
+        "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-01T16:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/albertsons-reimagining-retail"
+        }
+      },
+      {
+        "id": "aihot-7099d9d4fe23",
+        "title": "MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena，分列开源模型第5和第9",
+        "summary": "Arena 宣布 Xiaomi MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena。Pro 在 8.1K+ 真实智能体会话中净提升 +3.17%，列开源模型第5，较 MiMo-V2.5-Pro（第13，-7.23%）提升9个名次；其 Confirmed Success 得分 +7.35%，列开源模型第2。",
+        "source": "X：Arena (@arena)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-01T18:57:58.000Z",
+        "links": {
+          "original": "https://x.com/arena/status/2105733983250301224"
+        }
+      },
+      {
+        "id": "aihot-25def71612c3",
+        "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
+        "summary": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户的 16000 次请求，关联账号超 15000 个，OpenAI 将其与 Moonshot AI 相关人员联系起来，并于 7 月 28 日关停。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-30T12:00:00.000Z",
+        "publishedAt": "2026-10-01T12:05:49.000Z",
         "links": {
-          "original": "https://elevenlabs.io/blog/tender-22bn"
+          "original": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/"
         }
       },
       {
-        "id": "aihot-5a1dd6b221ac",
-        "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
-        "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
-        "source": "OpenRouter：Announcements（RSS）",
+        "id": "aihot-6e96abfc704d",
+        "title": "Claude Code 推出 mods 功能，可用 TypeScript 定制行为与 UI",
+        "summary": "Claude Code 推出 mods 功能，支持修改模型行为、自定义 UI 并替换自有功能。用几行 TypeScript 即可编写，也可由 Claude 代为构建；mods 随插件分发，可在 CLI 或桌面应用中通过 /plugin 安装。",
+        "source": "X：Claude Devs (@ClaudeDevs)",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-30T00:00:00.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-01T18:08:07.000Z",
         "links": {
-          "original": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change/"
-        }
-      },
-      {
-        "id": "claude-blog-ab51d9d70380",
-        "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
+          "original": "https://x.com/ClaudeDevs/status/2105721434807083061"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "claude-blog-ab51d9d70380",
-        "title": "How Anthropic's sales team rebuilt inbound with Claude Managed Agents",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents"
-        }
-      },
-      {
-        "id": "openai-news-aae2fbc0fb36",
-        "title": "Disrupting a coordinated model-distillation campaign",
-        "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+        "id": "openai-news-3e4bb4d5b93a",
+        "title": "How Albertsons Companies is reimagining retail from the inside out",
+        "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-30T10:30:00.000Z",
+        "publishedAt": "2026-10-01T16:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+          "original": "https://openai.com/index/albertsons-reimagining-retail"
         }
       },
       {
-        "id": "openai-news-165cf4d08d45",
-        "title": "Helping small businesses put AI to work",
-        "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+        "id": "langchain-blog-88aece468d00",
+        "title": "How to Build a Model Router in the Harness",
+        "summary": "How we built a model router into Open SWE's harness that cut median cost per coding task by 64% with no measurable drop in quality, and how to build your own.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-10-01T17:01:32.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness"
+        }
+      },
+      {
+        "id": "openai-news-ee549801a16e",
+        "title": "The eternal complement",
+        "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-09-30T10:00:00.000Z",
+        "publishedAt": "2026-10-01T17:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/helping-small-businesses-put-ai-to-work"
+          "original": "https://openai.com/index/the-eternal-complement"
         }
       },
       {
-        "id": "claude-blog-6a61f0b7ec48",
-        "title": "Agents you can coach: how Asana builds human-agent teams with Claude",
+        "id": "claude-blog-66e812aa50cd",
+        "title": "Customize Claude Code with mods",
         "summary": "Claude Blog update",
         "source": "Claude Blog",
         "sourceId": "claude-blog",
         "category": null,
         "publishedAt": null,
         "links": {
-          "original": "https://claude.com/blog/agents-you-can-coach-how-asana-builds-human-agent-teams-with-claude"
-        }
-      },
-      {
-        "id": "claude-blog-da07b478ebcc",
-        "title": "Claude for Government is now generally available",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/claude-for-government-is-now-generally-available"
+          "original": "https://claude.com/blog/claude-code-mods"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-48ea5473da30",
-        "title": "Trump 推动二十余家科技公司签署自愿性 AI 安全协议",
-        "summary": "约二十余家科技公司签署白宫超级智能协议，承诺实施独立安全审计、定期会商并制定共同安全标准，涵盖网络安全、生物安全和化学威胁等风险。协议无法律约束力，Trump 称其具有道德约束力。文章指出 OpenAI 近期多起事故源于今年 5 至 7 月开发中的一个未发布模型，其安全委员会有效性受到特拉华和加州总检察长调查，FTC 也就 AI 智能体潜在消费者损害发起调查。",
-        "source": "Ars Technica：AI（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-30T18:47:01.000Z",
-        "links": {
-          "original": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/"
-        }
-      },
-      {
-        "id": "aihot-739cbb03c3de",
-        "title": "Arena 开放限时测试 Claude Sonnet 5.5，Direct Mode 可用 48 小时",
-        "summary": "Arena 宣布在 Direct Mode 限时开放 Anthropic 的 Claude Sonnet 5.5（High），截止 10 月 2 日上午 8 点（太平洋时间），之后仍可在 Battle 和 Agent Mode 使用。引用内容称 Claude Sonnet 5.5 是 Claude 5.5 系列第二款模型，比 Sonnet 5 快 30% 以上，多数工作成本最高降低 30%。",
-        "source": "X：Arena (@arena)",
+        "id": "aihot-839ed764d4fd",
+        "title": "FLUX 3 Image 上线 OpenRouter，支持原生 4K 生成与多参考编辑",
+        "summary": "Black Forest Labs 的 FLUX 3 Image 现已上线 OpenRouter，是支持文生图与多参考编辑的旗舰图像模型，原生可渲染至 4K。原文提到可精确多轮编辑不动其他像素、用 bounding box 布局、最多用 10 个参考图合成，商业权重已开放，开放权重版将在未来数周发布。",
+        "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-09-30T14:58:15.000Z",
+        "publishedAt": "2026-10-01T20:37:38.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2105311267619848419"
+          "original": "https://x.com/OpenRouter/status/2105759062835220852"
         }
       },
       {
-        "id": "aihot-c52fd5c2c4cb",
-        "title": "ElevenLabs 完成 3 亿美元员工股份回购，估值升至 220 亿美元",
-        "summary": "ElevenLabs 完成 3 亿美元员工 tender offer，估值达 220 亿美元，是 2026 年 2 月 Series D 估值的两倍，由 Wellington 和 T. Rowe Price 领投。企业业务占收入 55%，ElevenAgents 每周处理超 1500 万次对话，ARR 自 2 月以来增长超 3 倍，客户语音智能体解决问题平均比聊天智能体快 31%。",
-        "source": "ElevenLabs：Blog（网页）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-30T12:00:00.000Z",
-        "links": {
-          "original": "https://elevenlabs.io/blog/tender-22bn"
-        }
-      },
-      {
-        "id": "aihot-5a1dd6b221ac",
-        "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
-        "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
-        "source": "OpenRouter：Announcements（RSS）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-09-30T00:00:00.000Z",
-        "links": {
-          "original": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change/"
-        }
-      },
-      {
-        "id": "aihot-22a5352fafda",
-        "title": "OpenAI 发布 GPT-6.1 Sol：以 Astra 五分之一价格接近其编码与计算机操作水平",
-        "summary": "OpenAI 发布 GPT-6.1 Sol，定价为每百万 token 2 美元输入、10 美元输出、0.10 美元缓存输入，为 GPT-6 Astra 标准价格约五分之一。",
-        "source": "MarkTechPost（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-09-30T21:09:24.000Z",
-        "links": {
-          "original": "https://www.marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price/"
-        }
-      },
-      {
-        "id": "aihot-5c59f48a94db",
-        "title": "Perplexity 开放 Computer 邮件委托入口并限时免费运行任务",
-        "summary": "Perplexity 向所有人开放 Computer 的邮件委托功能，无需 Perplexity 账号，将转发或抄送 computer@perplexity.com 的任务限时免费运行。智能体会在后台完成任务并保留邮件上下文，每个邮件任务在 Computer 中作为正常会话运行，可在网页和移动端查看，并带有与应用内任务相同的审计记录。",
-        "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-09-30T18:49:34.000Z",
-        "links": {
-          "original": "https://x.com/AravSrinivas/status/2105369479190601754"
-        }
-      },
-      {
-        "id": "aihot-b5d9a3c73309",
-        "title": "GPT-6.1 Sol (Max) 以 1759 分登上 Code Arena: WebDev 第 3 名",
-        "summary": "Arena 评测榜单显示，OpenAI 的 GPT-6.1 Sol (Max) 以 1759 分位列 Code Arena: WebDev 第 3 名，混合价格为 $8/MToken。相比 GPT-6 Sol (Max) 同价提升 70 分，排名上升 4 位，且在 Consumer Product 等所有类目均有提升。",
+        "id": "aihot-7099d9d4fe23",
+        "title": "MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena，分列开源模型第5和第9",
+        "summary": "Arena 宣布 Xiaomi MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena。Pro 在 8.1K+ 真实智能体会话中净提升 +3.17%，列开源模型第5，较 MiMo-V2.5-Pro（第13，-7.23%）提升9个名次；其 Confirmed Success 得分 +7.35%，列开源模型第2。",
         "source": "X：Arena (@arena)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-09-30T18:42:04.000Z",
+        "publishedAt": "2026-10-01T18:57:58.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2105367591174995999"
+          "original": "https://x.com/arena/status/2105733983250301224"
         }
       },
       {
-        "id": "aihot-4b8f2d6c579d",
-        "title": "FTC 以消费者保护为由对 OpenAI、Anthropic 等 AI 实验室启动全面调查",
-        "summary": "FTC 正以潜在消费者保护违规为由调查 OpenAI、Anthropic 等头部 AI 实验室，主席 Andrew Ferguson 计划通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，命令将在数周内发出，METR 也在审查范围之列。",
+        "id": "aihot-25def71612c3",
+        "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
+        "summary": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户的 16000 次请求，关联账号超 15000 个，OpenAI 将其与 Moonshot AI 相关人员联系起来，并于 7 月 28 日关停。",
         "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-09-30T16:20:04.000Z",
+        "publishedAt": "2026-10-01T12:05:49.000Z",
         "links": {
-          "original": "https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns/"
+          "original": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/"
         }
       },
       {
-        "id": "aihot-15f6fbb0556a",
-        "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
-        "summary": "《纽约时报》报道称，OpenAI 两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。",
-        "source": "IT之家（RSS）",
+        "id": "aihot-6e96abfc704d",
+        "title": "Claude Code 推出 mods 功能，可用 TypeScript 定制行为与 UI",
+        "summary": "Claude Code 推出 mods 功能，支持修改模型行为、自定义 UI 并替换自有功能。用几行 TypeScript 即可编写，也可由 Claude 代为构建；mods 随插件分发，可在 CLI 或桌面应用中通过 /plugin 安装。",
+        "source": "X：Claude Devs (@ClaudeDevs)",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-09-30T01:48:21.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-01T18:08:07.000Z",
         "links": {
-          "original": "https://www.ithome.com/1/008/592.htm"
+          "original": "https://x.com/ClaudeDevs/status/2105721434807083061"
         }
       },
       {
-        "id": "aihot-a8e1978904e6",
-        "title": "Gemini 4 Argon (High) 登 Arena Agent Arena 第 8 名，净提升 +7.92%",
-        "summary": "Arena 公布 Gemini 4 Argon (High) 在 Agent Arena 排名第 8，净提升分 +7.92%，每任务成本 $0.62。",
+        "id": "aihot-d59686b6dddf",
+        "title": "Claude Code mods 入门教程：从零构建 Token Weather 上下文窗口预报插件",
+        "summary": "这篇 Claude Code 官方开发者教程介绍 mods，即以 hooks 形式运行在插件内的 JavaScript 或 TypeScript 模块，可以观察、重写或拒绝事件，甚至绘制自定义 UI，需 Claude Code 2.1.287 或更高版本。",
+        "source": "Anthropic：Claude.dev 开发者博客（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-10-01T12:00:00.000Z",
+        "links": {
+          "original": "https://claude.dev/blog/getting-started-with-claude-code-mods/"
+        }
+      },
+      {
+        "id": "aihot-bd421e56b268",
+        "title": "ChatGPT 现可直接构建并部署 MCP 服务器",
+        "summary": "ChatGPT Sites 现在可以托管 MCP 服务器，用户可直接在 ChatGPT 中构建并部署 MCP 服务器，还能将其转为插件并安装到 web、移动端和桌面端。作者补充，可限制访问权限给指定的人，也可向全世界公开分享。",
+        "source": "X：Tibo (@thsottiaux)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-01T04:44:34.000Z",
+        "links": {
+          "original": "https://x.com/thsottiaux/status/2105519215092584786"
+        }
+      },
+      {
+        "id": "aihot-3113556858ae",
+        "title": "Artificial Analysis 评测：Qwen-Image-2.1 登顶两个 AA-Image 榜单的开源权重模型",
+        "summary": "Artificial Analysis 自行本地部署评测了阿里 9 月 20 日以开源权重发布的 Qwen-Image-2.1，该模型在 AA-Image-T2I v2.0 和 AA-Image-Editing v2.0 上均排名第 18，为两个榜单上排名第一的开源权重模型，超过 Ideogram 4.0（Quality）和 HunyuanImage 3.0 Instruct。",
+        "source": "X：Artificial Analysis (@ArtificialAnlys)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-01T22:43:17.000Z",
+        "links": {
+          "original": "https://x.com/ArtificialAnlys/status/2105790682376065463"
+        }
+      },
+      {
+        "id": "aihot-1336f53bd00f",
+        "title": "Suno 推出 Speech beta：语音与背景音乐一体生成",
+        "summary": "Suno 推出 Speech beta，称其为首个能把语音与原创背景音乐作为一条完整曲目生成的音频模型。用户输入文字并描述想要的声音和音乐风格即可创作，beta 已向所有用户开放，官方提示仍存在口音漂移、停顿过重等问题并将持续改进。",
+        "source": "Suno：Blog（网页）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-01T20:35:00.000Z",
+        "links": {
+          "original": "https://suno.com/blog/introducing-speech-beta"
+        }
+      },
+      {
+        "id": "aihot-92c4c71e3f64",
+        "title": "Claude Sonnet 5.5 (xHigh) 以 1786 分登 Code Arena: WebDev 第 3 名",
+        "summary": "Arena 宣布 Claude Sonnet 5.5（xHigh）进入 Code Arena: WebDev 榜单，以 1786 分排名第 3，距第 2 名 GPT-6 Astra 的 1788 分仅差 2 分。",
         "source": "X：Arena (@arena)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-09-30T21:35:38.000Z",
+        "publishedAt": "2026-10-01T16:51:02.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2105411271525052418"
+          "original": "https://x.com/arena/status/2105702037849841954"
+        }
+      },
+      {
+        "id": "aihot-a2d43dcb2f50",
+        "title": "Ethan Mollick 谈点与群：智能体自组织为何让管理假设失效",
+        "summary": "Ethan Mollick 承认自己此前认为人类需像经理一样精心设计智能体组织的判断错了，Bitter Lesson 同样适用于组织管理。",
+        "source": "Ethan Mollick：One Useful Thing（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-10-01T10:54:12.000Z",
+        "links": {
+          "original": "https://www.oneusefulthing.org/p/the-dot-and-the-swarm"
         }
       }
     ]
