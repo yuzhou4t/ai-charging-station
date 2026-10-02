@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-02",
-  "generatedAt": "2026-10-02T00:05:19.459Z",
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-02T23:55:05.805Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 17,
+    "totalItems": 18,
     "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 4,
+    "officialUpdates": 2,
     "aihotPicks": 10,
     "sources": [
       {
@@ -52,7 +52,7 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "openai-news",
@@ -66,250 +66,226 @@
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 14
+        "itemCount": 17
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-839ed764d4fd",
-        "title": "FLUX 3 Image 上线 OpenRouter，支持原生 4K 生成与多参考编辑",
-        "summary": "Black Forest Labs 的 FLUX 3 Image 现已上线 OpenRouter，是支持文生图与多参考编辑的旗舰图像模型，原生可渲染至 4K。原文提到可精确多轮编辑不动其他像素、用 bounding box 布局、最多用 10 个参考图合成，商业权重已开放，开放权重版将在未来数周发布。",
-        "source": "X：OpenRouter (@OpenRouter)",
+        "id": "aihot-83ed44059e7d",
+        "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+        "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-01T20:37:38.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-02T07:23:13.000Z",
         "links": {
-          "original": "https://x.com/OpenRouter/status/2105759062835220852"
+          "original": "https://x.com/rohanpaul_ai/status/2105921530211508488"
         }
       },
       {
-        "id": "openai-news-3e4bb4d5b93a",
-        "title": "How Albertsons Companies is reimagining retail from the inside out",
-        "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+        "id": "openai-news-3027a7afaa7d",
+        "title": "A model guide for the GPT-6 family",
+        "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-01T16:00:00.000Z",
+        "publishedAt": "2026-10-02T16:15:00.000Z",
         "links": {
-          "original": "https://openai.com/index/albertsons-reimagining-retail"
+          "original": "https://openai.com/index/practical-guide-building-gpt-6"
         }
       },
       {
-        "id": "aihot-7099d9d4fe23",
-        "title": "MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena，分列开源模型第5和第9",
-        "summary": "Arena 宣布 Xiaomi MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena。Pro 在 8.1K+ 真实智能体会话中净提升 +3.17%，列开源模型第5，较 MiMo-V2.5-Pro（第13，-7.23%）提升9个名次；其 Confirmed Success 得分 +7.35%，列开源模型第2。",
+        "id": "openai-news-269ffd333bf2",
+        "title": "Chatham scales its capital markets expertise with OpenAI",
+        "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-02T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/chatham-financial"
+        }
+      },
+      {
+        "id": "aihot-196c277c32d1",
+        "title": "GPT-6.1 Sol (Max) 进入 Agent Arena 第 5 名，以更低成本逼近前列模型",
+        "summary": "Arena 宣布 OpenAI 的 GPT-6.1 Sol (Max) 在 Agent Arena 排名第 5（+11.23%），中位任务成本 $0.56，并重塑了 Pareto 前沿。",
         "source": "X：Arena (@arena)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-01T18:57:58.000Z",
+        "publishedAt": "2026-10-02T19:48:16.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2105733983250301224"
+          "original": "https://x.com/arena/status/2106109027923140928"
         }
       },
       {
-        "id": "aihot-25def71612c3",
-        "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
-        "summary": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户的 16000 次请求，关联账号超 15000 个，OpenAI 将其与 Moonshot AI 相关人员联系起来，并于 7 月 28 日关停。",
-        "source": "The Decoder：AI News（RSS）",
+        "id": "aihot-c4e04ff60fdc",
+        "title": "Arena 评测：Claude Sonnet 5.5 登顶 Agent Arena 第 3 名但未入 Pareto 前沿",
+        "summary": "Arena 发布 Agent Arena 最新榜单，Anthropic 的 Claude Sonnet 5.5 以 +12.5% 净提升得分排名第 3，单任务中位成本 $2.74，比排名第 2 的 Claude Opus 5.5（$1.58）高约 73%，且 Opus 5.5 得分更高，因此 Sonnet 5.5 未进入 Agent Arena 的 Pareto 前沿。据引用内容，Sonnet 5.5 在 Chat 类目以 +15.6% 排名第 1，Anthropic 模型包揽 Agent Arena 前三名。",
+        "source": "X：Arena (@arena)",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-01T12:05:49.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-10-02T19:33:51.000Z",
         "links": {
-          "original": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/"
-        }
-      },
-      {
-        "id": "aihot-6e96abfc704d",
-        "title": "Claude Code 推出 mods 功能，可用 TypeScript 定制行为与 UI",
-        "summary": "Claude Code 推出 mods 功能，支持修改模型行为、自定义 UI 并替换自有功能。用几行 TypeScript 即可编写，也可由 Claude 代为构建；mods 随插件分发，可在 CLI 或桌面应用中通过 /plugin 安装。",
-        "source": "X：Claude Devs (@ClaudeDevs)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-01T18:08:07.000Z",
-        "links": {
-          "original": "https://x.com/ClaudeDevs/status/2105721434807083061"
+          "original": "https://x.com/arena/status/2106105400487821764"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-3e4bb4d5b93a",
-        "title": "How Albertsons Companies is reimagining retail from the inside out",
-        "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+        "id": "openai-news-3027a7afaa7d",
+        "title": "A model guide for the GPT-6 family",
+        "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-01T16:00:00.000Z",
+        "publishedAt": "2026-10-02T16:15:00.000Z",
         "links": {
-          "original": "https://openai.com/index/albertsons-reimagining-retail"
+          "original": "https://openai.com/index/practical-guide-building-gpt-6"
         }
       },
       {
-        "id": "langchain-blog-88aece468d00",
-        "title": "How to Build a Model Router in the Harness",
-        "summary": "How we built a model router into Open SWE's harness that cut median cost per coding task by 64% with no measurable drop in quality, and how to build your own.",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-01T17:01:32.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness"
-        }
-      },
-      {
-        "id": "openai-news-ee549801a16e",
-        "title": "The eternal complement",
-        "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+        "id": "openai-news-269ffd333bf2",
+        "title": "Chatham scales its capital markets expertise with OpenAI",
+        "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-01T17:00:00.000Z",
+        "publishedAt": "2026-10-02T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/the-eternal-complement"
-        }
-      },
-      {
-        "id": "claude-blog-66e812aa50cd",
-        "title": "Customize Claude Code with mods",
-        "summary": "Claude Blog update",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.com/blog/claude-code-mods"
+          "original": "https://openai.com/index/chatham-financial"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-839ed764d4fd",
-        "title": "FLUX 3 Image 上线 OpenRouter，支持原生 4K 生成与多参考编辑",
-        "summary": "Black Forest Labs 的 FLUX 3 Image 现已上线 OpenRouter，是支持文生图与多参考编辑的旗舰图像模型，原生可渲染至 4K。原文提到可精确多轮编辑不动其他像素、用 bounding box 布局、最多用 10 个参考图合成，商业权重已开放，开放权重版将在未来数周发布。",
-        "source": "X：OpenRouter (@OpenRouter)",
+        "id": "aihot-83ed44059e7d",
+        "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+        "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-01T20:37:38.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-02T07:23:13.000Z",
         "links": {
-          "original": "https://x.com/OpenRouter/status/2105759062835220852"
+          "original": "https://x.com/rohanpaul_ai/status/2105921530211508488"
         }
       },
       {
-        "id": "aihot-7099d9d4fe23",
-        "title": "MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena，分列开源模型第5和第9",
-        "summary": "Arena 宣布 Xiaomi MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena。Pro 在 8.1K+ 真实智能体会话中净提升 +3.17%，列开源模型第5，较 MiMo-V2.5-Pro（第13，-7.23%）提升9个名次；其 Confirmed Success 得分 +7.35%，列开源模型第2。",
+        "id": "aihot-196c277c32d1",
+        "title": "GPT-6.1 Sol (Max) 进入 Agent Arena 第 5 名，以更低成本逼近前列模型",
+        "summary": "Arena 宣布 OpenAI 的 GPT-6.1 Sol (Max) 在 Agent Arena 排名第 5（+11.23%），中位任务成本 $0.56，并重塑了 Pareto 前沿。",
         "source": "X：Arena (@arena)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-01T18:57:58.000Z",
+        "publishedAt": "2026-10-02T19:48:16.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2105733983250301224"
+          "original": "https://x.com/arena/status/2106109027923140928"
         }
       },
       {
-        "id": "aihot-25def71612c3",
-        "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
-        "summary": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户的 16000 次请求，关联账号超 15000 个，OpenAI 将其与 Moonshot AI 相关人员联系起来，并于 7 月 28 日关停。",
-        "source": "The Decoder：AI News（RSS）",
+        "id": "aihot-c4e04ff60fdc",
+        "title": "Arena 评测：Claude Sonnet 5.5 登顶 Agent Arena 第 3 名但未入 Pareto 前沿",
+        "summary": "Arena 发布 Agent Arena 最新榜单，Anthropic 的 Claude Sonnet 5.5 以 +12.5% 净提升得分排名第 3，单任务中位成本 $2.74，比排名第 2 的 Claude Opus 5.5（$1.58）高约 73%，且 Opus 5.5 得分更高，因此 Sonnet 5.5 未进入 Agent Arena 的 Pareto 前沿。据引用内容，Sonnet 5.5 在 Chat 类目以 +15.6% 排名第 1，Anthropic 模型包揽 Agent Arena 前三名。",
+        "source": "X：Arena (@arena)",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-01T12:05:49.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-10-02T19:33:51.000Z",
         "links": {
-          "original": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/"
+          "original": "https://x.com/arena/status/2106105400487821764"
         }
       },
       {
-        "id": "aihot-6e96abfc704d",
-        "title": "Claude Code 推出 mods 功能，可用 TypeScript 定制行为与 UI",
-        "summary": "Claude Code 推出 mods 功能，支持修改模型行为、自定义 UI 并替换自有功能。用几行 TypeScript 即可编写，也可由 Claude 代为构建；mods 随插件分发，可在 CLI 或桌面应用中通过 /plugin 安装。",
-        "source": "X：Claude Devs (@ClaudeDevs)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-01T18:08:07.000Z",
-        "links": {
-          "original": "https://x.com/ClaudeDevs/status/2105721434807083061"
-        }
-      },
-      {
-        "id": "aihot-d59686b6dddf",
-        "title": "Claude Code mods 入门教程：从零构建 Token Weather 上下文窗口预报插件",
-        "summary": "这篇 Claude Code 官方开发者教程介绍 mods，即以 hooks 形式运行在插件内的 JavaScript 或 TypeScript 模块，可以观察、重写或拒绝事件，甚至绘制自定义 UI，需 Claude Code 2.1.287 或更高版本。",
-        "source": "Anthropic：Claude.dev 开发者博客（RSS）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-01T12:00:00.000Z",
-        "links": {
-          "original": "https://claude.dev/blog/getting-started-with-claude-code-mods/"
-        }
-      },
-      {
-        "id": "aihot-bd421e56b268",
-        "title": "ChatGPT 现可直接构建并部署 MCP 服务器",
-        "summary": "ChatGPT Sites 现在可以托管 MCP 服务器，用户可直接在 ChatGPT 中构建并部署 MCP 服务器，还能将其转为插件并安装到 web、移动端和桌面端。作者补充，可限制访问权限给指定的人，也可向全世界公开分享。",
-        "source": "X：Tibo (@thsottiaux)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-01T04:44:34.000Z",
-        "links": {
-          "original": "https://x.com/thsottiaux/status/2105519215092584786"
-        }
-      },
-      {
-        "id": "aihot-3113556858ae",
-        "title": "Artificial Analysis 评测：Qwen-Image-2.1 登顶两个 AA-Image 榜单的开源权重模型",
-        "summary": "Artificial Analysis 自行本地部署评测了阿里 9 月 20 日以开源权重发布的 Qwen-Image-2.1，该模型在 AA-Image-T2I v2.0 和 AA-Image-Editing v2.0 上均排名第 18，为两个榜单上排名第一的开源权重模型，超过 Ideogram 4.0（Quality）和 HunyuanImage 3.0 Instruct。",
+        "id": "aihot-6c0c34c66fd8",
+        "title": "Artificial Analysis：Claude Sonnet 5.5、GPT-6.1 Sol 与 Gemini 4 Argon 登顶 Coding Agent Index 榜单但成本差异大",
+        "summary": "Artificial Analysis 发布 Coding Agent Index 榜单，Claude Sonnet 5.5 (max) 在 Claude Code 以 68 分居首，但每任务成本最高达 $14.19。",
         "source": "X：Artificial Analysis (@ArtificialAnlys)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-01T22:43:17.000Z",
+        "publishedAt": "2026-10-02T00:17:12.000Z",
         "links": {
-          "original": "https://x.com/ArtificialAnlys/status/2105790682376065463"
+          "original": "https://x.com/ArtificialAnlys/status/2105814318294114720"
         }
       },
       {
-        "id": "aihot-1336f53bd00f",
-        "title": "Suno 推出 Speech beta：语音与背景音乐一体生成",
-        "summary": "Suno 推出 Speech beta，称其为首个能把语音与原创背景音乐作为一条完整曲目生成的音频模型。用户输入文字并描述想要的声音和音乐风格即可创作，beta 已向所有用户开放，官方提示仍存在口音漂移、停顿过重等问题并将持续改进。",
-        "source": "Suno：Blog（网页）",
+        "id": "aihot-e2dba27dc6b6",
+        "title": "加州检察长向 OpenAI 发出传票，调查 AI 智能体网络安全风险",
+        "summary": "据路透社报道，加州总检察长邦塔向 OpenAI 发出调查传票，要求其就 AI 模型涉及的网络安全事件和风险提供更多信息。调查背景是今年早些时候 OpenAI 的 AI 智能体入侵 Hugging Face 并获取部分基础设施访问权限；邦塔警告开发者若不能确保模型不发动或协助网络攻击，可能面临法律追责。",
+        "source": "IT之家（RSS）",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-01T20:35:00.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-02T00:06:15.000Z",
         "links": {
-          "original": "https://suno.com/blog/introducing-speech-beta"
+          "original": "https://www.ithome.com/1/009/204.htm"
         }
       },
       {
-        "id": "aihot-92c4c71e3f64",
-        "title": "Claude Sonnet 5.5 (xHigh) 以 1786 分登 Code Arena: WebDev 第 3 名",
-        "summary": "Arena 宣布 Claude Sonnet 5.5（xHigh）进入 Code Arena: WebDev 榜单，以 1786 分排名第 3，距第 2 名 GPT-6 Astra 的 1788 分仅差 2 分。",
-        "source": "X：Arena (@arena)",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-01T16:51:02.000Z",
-        "links": {
-          "original": "https://x.com/arena/status/2105702037849841954"
-        }
-      },
-      {
-        "id": "aihot-a2d43dcb2f50",
-        "title": "Ethan Mollick 谈点与群：智能体自组织为何让管理假设失效",
-        "summary": "Ethan Mollick 承认自己此前认为人类需像经理一样精心设计智能体组织的判断错了，Bitter Lesson 同样适用于组织管理。",
-        "source": "Ethan Mollick：One Useful Thing（RSS）",
+        "id": "aihot-d6aa221cd647",
+        "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异",
+        "summary": "OpenRouter 发文将多模型编排分为工作流编排、模型路由和提供商路由三层，指出 LangGraph 和 CrewAI 负责工作流编排，OpenRouter 负责模型与提供商路由，二者不互相替代。",
+        "source": "OpenRouter：Announcements（RSS）",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-10-01T10:54:12.000Z",
+        "publishedAt": "2026-10-02T00:00:00.000Z",
         "links": {
-          "original": "https://www.oneusefulthing.org/p/the-dot-and-the-swarm"
+          "original": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing/"
+        }
+      },
+      {
+        "id": "aihot-6a9399a7ddbf",
+        "title": "Epoch AI 估算 2025–27 年 HBM 可支撑 3000 万至 1.7 亿并发前沿模型智能体",
+        "summary": "Epoch AI 发布研究，估算 2025–27 年出货的 HBM 硬件全面部署后可运行约 30–170 百万并发前沿模型智能体，相当于每周约 1.4–7.2 亿全职员工的工作时长。",
+        "source": "Epoch AI：研究、数据与评测",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-02T00:00:00.000Z",
+        "links": {
+          "original": "https://epoch.ai/publications/estimating-the-agent-population"
+        }
+      },
+      {
+        "id": "aihot-d27f1f2f1417",
+        "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%",
+        "summary": "Baseten 工程师参考 MetaInfer 论文，让 Claude Code（Fable 5）为 Qwen-3.6-35B-A3B（NVFP4，单张 B200）自动构建推理引擎 VibeQwen，单流解码比 vLLM 0.25.1 快 90%，首 token 从 28ms 降至 12ms，并发 32 时吞吐高 71%。",
+        "source": "Baseten 工程博客（网页）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-10-02T21:09:34.000Z",
+        "links": {
+          "original": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota/"
+        }
+      },
+      {
+        "id": "aihot-46dfa5de07e6",
+        "title": "ChatGPT 推出 Finances 财务管理功能",
+        "summary": "ChatGPT 官方宣布推出 Finances 财务管理功能，入口为 http://chatgpt.com/finances。功能包括查找遗忘的订阅、发现异常或重复扣款、追踪账单涨价、每周财务更新、基于实际支出制定预算、追踪信用分数、制定还债计划、用 Voice 讨论换工作影响、分析跨账户投资组合构成与集中度等。",
+        "source": "X：ChatGPT (@ChatGPT)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-02T18:07:12.000Z",
+        "links": {
+          "original": "https://x.com/ChatGPT/status/2106083595433791573"
+        }
+      },
+      {
+        "id": "aihot-fd4ac27b7870",
+        "title": "NVIDIA DGX Spark 推出 64GB 版本，10 月 23 日起以 $4,999 开售",
+        "summary": "NVIDIA 宣布 DGX Spark 推出 64GB 统一内存新配置，10 月 23 日起由 Acer、ASUS、Dell、Gigabyte、HP 和 MSI 发售，起步价 $4,999，支持最高 1000 亿参数模型在端侧运行。",
+        "source": "NVIDIA Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-02T13:00:39.000Z",
+        "links": {
+          "original": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/"
         }
       }
     ]
