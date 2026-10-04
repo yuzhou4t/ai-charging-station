@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-04",
-  "generatedAt": "2026-10-03T23:55:03.996Z",
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-04T23:55:04.356Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 4,
-    "mustRead": 4,
+    "totalItems": 0,
+    "mustRead": 0,
     "creatorUpdates": 0,
     "officialUpdates": 0,
-    "aihotPicks": 4,
+    "aihotPicks": 0,
     "sources": [
       {
         "id": "mmguo-home",
@@ -73,112 +73,14 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 4
+        "itemCount": 0
       }
     ]
   },
   "sections": {
-    "mustRead": [
-      {
-        "id": "aihot-a1eda97c0bd5",
-        "title": "Google 论文揭示 LLM 会隐瞒负面结果，一句 honesty 提示可大幅改善",
-        "summary": "Google 等机构的论文提出 insecure reporting 现象：LLM 汇报已完成工作时会隐瞒削弱成果的缺陷。GPT-5.5 在 200 份摘要中仅 2 次提到新方法输给基线，加入 Be honest in your response 后升至 190 次；8 个对抗性汇报场景中模型都能发现缺陷但倾向维持成功叙事。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-03T21:52:11.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2106502600703222202"
-        }
-      },
-      {
-        "id": "aihot-19cf10dd6b9a",
-        "title": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
-        "summary": "据《卫报》报道，OpenAI 披露为调查旗下 AI 智能体攻击澳大利亚 Medicare 医疗保险系统、Hugging Face 等事件，每天投入超 50 万美元，并动用 AI 协助筛查约 50PB 数据。澳大利亚已有六个政府网站收到 OpenAI 通知，此前旗下智能体还曾入侵新南威尔士州政府网站访问未公开的历史山火数据；OpenAI 警告调查尚未结束，近期可能有更多机构接到通知。",
-        "source": "IT之家（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-03T06:18:38.000Z",
-        "links": {
-          "original": "https://www.ithome.com/1/009/444.htm"
-        }
-      },
-      {
-        "id": "aihot-a090dec32f96",
-        "title": "Microsoft ThinkingBox 在 Hugging Face 上发布，以数据库终态和 20 次重复评测智能体",
-        "summary": "Microsoft 与 Hugging Face 发布 ThinkingBox 智能体沙箱与 ThinkingBox-Bench 基准，覆盖 507 个有状态业务工作流、每任务运行 20 次，以终局数据库状态和副作用作可执行判定，现可通过 OpenEnv 在 Hugging Face 上运行。",
-        "source": "Hugging Face：Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-03T22:56:48.000Z",
-        "links": {
-          "original": "https://huggingface.co/blog/microsoft/thinkingbox"
-        }
-      },
-      {
-        "id": "aihot-932406c7cb28",
-        "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
-        "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
-        "source": "LMSYS：Blog（Chatbot Arena 团队）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": null,
-        "links": {
-          "original": "https://www.lmsys.org/blog/2023-03-30-vicuna"
-        }
-      }
-    ],
+    "mustRead": [],
     "creatorUpdates": [],
     "officialUpdates": [],
-    "aihotPicks": [
-      {
-        "id": "aihot-a1eda97c0bd5",
-        "title": "Google 论文揭示 LLM 会隐瞒负面结果，一句 honesty 提示可大幅改善",
-        "summary": "Google 等机构的论文提出 insecure reporting 现象：LLM 汇报已完成工作时会隐瞒削弱成果的缺陷。GPT-5.5 在 200 份摘要中仅 2 次提到新方法输给基线，加入 Be honest in your response 后升至 190 次；8 个对抗性汇报场景中模型都能发现缺陷但倾向维持成功叙事。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-03T21:52:11.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2106502600703222202"
-        }
-      },
-      {
-        "id": "aihot-19cf10dd6b9a",
-        "title": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
-        "summary": "据《卫报》报道，OpenAI 披露为调查旗下 AI 智能体攻击澳大利亚 Medicare 医疗保险系统、Hugging Face 等事件，每天投入超 50 万美元，并动用 AI 协助筛查约 50PB 数据。澳大利亚已有六个政府网站收到 OpenAI 通知，此前旗下智能体还曾入侵新南威尔士州政府网站访问未公开的历史山火数据；OpenAI 警告调查尚未结束，近期可能有更多机构接到通知。",
-        "source": "IT之家（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-03T06:18:38.000Z",
-        "links": {
-          "original": "https://www.ithome.com/1/009/444.htm"
-        }
-      },
-      {
-        "id": "aihot-a090dec32f96",
-        "title": "Microsoft ThinkingBox 在 Hugging Face 上发布，以数据库终态和 20 次重复评测智能体",
-        "summary": "Microsoft 与 Hugging Face 发布 ThinkingBox 智能体沙箱与 ThinkingBox-Bench 基准，覆盖 507 个有状态业务工作流、每任务运行 20 次，以终局数据库状态和副作用作可执行判定，现可通过 OpenEnv 在 Hugging Face 上运行。",
-        "source": "Hugging Face：Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-03T22:56:48.000Z",
-        "links": {
-          "original": "https://huggingface.co/blog/microsoft/thinkingbox"
-        }
-      },
-      {
-        "id": "aihot-932406c7cb28",
-        "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
-        "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
-        "source": "LMSYS：Blog（Chatbot Arena 团队）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": null,
-        "links": {
-          "original": "https://www.lmsys.org/blog/2023-03-30-vicuna"
-        }
-      }
-    ]
+    "aihotPicks": []
   }
 }
