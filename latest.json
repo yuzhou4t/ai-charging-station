@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-05",
-  "generatedAt": "2026-10-04T23:55:04.356Z",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-05T23:55:00.168Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 0,
-    "mustRead": 0,
-    "creatorUpdates": 0,
-    "officialUpdates": 0,
-    "aihotPicks": 0,
+    "totalItems": 8,
+    "mustRead": 5,
+    "creatorUpdates": 1,
+    "officialUpdates": 2,
+    "aihotPicks": 5,
     "sources": [
       {
         "id": "mmguo-home",
@@ -24,7 +24,7 @@
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
@@ -51,7 +51,7 @@
         "id": "claude-blog",
         "name": "Claude Blog",
         "group": "official",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
@@ -59,7 +59,7 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
@@ -73,14 +73,174 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 7
       }
     ]
   },
   "sections": {
-    "mustRead": [],
-    "creatorUpdates": [],
-    "officialUpdates": [],
-    "aihotPicks": []
+    "mustRead": [
+      {
+        "id": "bilibili-chimp-246052242f07",
+        "title": "Personal Agent和Codex，小龙虾有什么区别？",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-05T05:55:47.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1HTHp6pEPK"
+        }
+      },
+      {
+        "id": "openai-news-cbbe3b195490",
+        "title": "为人们使用 AI 的方式打造广告",
+        "summary": "OpenAI 在 ChatGPT 中推出一种新型视觉广告形式，并扩展广告衡量工具、归因合作伙伴关系和品牌适配性功能。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-05T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+        }
+      },
+      {
+        "id": "aihot-b3d25e1f37b3",
+        "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
+        "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。",
+        "source": "SemiAnalysis 长文 RSS（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-05T20:01:09.000Z",
+        "links": {
+          "original": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x"
+        }
+      },
+      {
+        "id": "openai-news-399903aa7230",
+        "title": "我们对欧盟文本来源追溯规则的应对方式",
+        "summary": "了解 OpenAI 如何应对欧盟规则下的文本水印要求：水印适用于哪些场景、检测机制如何运作，以及为何首先向研究人员开放访问权限。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-05T15:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/eu-text-provenance"
+        }
+      },
+      {
+        "id": "aihot-032ad1f26ab8",
+        "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动",
+        "summary": "Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的\"流氓\"智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。",
+        "source": "Hacker News：AI 热帖",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-05T17:53:35.000Z",
+        "links": {
+          "original": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
+        }
+      }
+    ],
+    "creatorUpdates": [
+      {
+        "id": "bilibili-chimp-246052242f07",
+        "title": "Personal Agent和Codex，小龙虾有什么区别？",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-05T05:55:47.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1HTHp6pEPK"
+        }
+      }
+    ],
+    "officialUpdates": [
+      {
+        "id": "openai-news-cbbe3b195490",
+        "title": "为人们使用 AI 的方式打造广告",
+        "summary": "OpenAI 在 ChatGPT 中推出一种新型视觉广告形式，并扩展广告衡量工具、归因合作伙伴关系和品牌适配性功能。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-05T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+        }
+      },
+      {
+        "id": "openai-news-399903aa7230",
+        "title": "我们对欧盟文本来源追溯规则的应对方式",
+        "summary": "了解 OpenAI 如何应对欧盟规则下的文本水印要求：水印适用于哪些场景、检测机制如何运作，以及为何首先向研究人员开放访问权限。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-05T15:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/eu-text-provenance"
+        }
+      }
+    ],
+    "aihotPicks": [
+      {
+        "id": "aihot-b3d25e1f37b3",
+        "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
+        "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。",
+        "source": "SemiAnalysis 长文 RSS（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-05T20:01:09.000Z",
+        "links": {
+          "original": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x"
+        }
+      },
+      {
+        "id": "aihot-032ad1f26ab8",
+        "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动",
+        "summary": "Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的\"流氓\"智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。",
+        "source": "Hacker News：AI 热帖",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-05T17:53:35.000Z",
+        "links": {
+          "original": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
+        }
+      },
+      {
+        "id": "aihot-523a21a391fd",
+        "title": "Together AI 推出 Together Link，一键在现有编码智能体中接入开源模型并降费超 50%",
+        "summary": "Together AI 发布 Together Link，把团队已用的编码智能体工具连接到 Together AI 上的开源模型，宣称可节省超过 50% 支出。",
+        "source": "Together AI 研究与产品博客（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-05T00:00:00.000Z",
+        "links": {
+          "original": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use"
+        }
+      },
+      {
+        "id": "aihot-702b810c62a4",
+        "title": "PromptArmor 披露 Databricks Genie 恶意 Skill 可绕过控制实现钓鱼与数据外泄",
+        "summary": "PromptArmor 报告称 Databricks Genie Code 执行上传的恶意 Skill 后，可在聊天渲染结果时弹出钓鱼页面并经用户浏览器外泄租户数据，全程无需人工批准。",
+        "source": "PromptArmor：Threat Intelligence",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-05T00:24:02.000Z",
+        "links": {
+          "original": "https://www.promptarmor.com/resources/four-databricks-genie-controls-that-dont-stop-malicious-skills"
+        }
+      },
+      {
+        "id": "aihot-edf93ba56dbe",
+        "title": "Liquid AI 发布 d1 决策模型并新增图像输入能力",
+        "summary": "Liquid AI 发布 d1 决策模型，新增文本与图像输入，可通过 console.liquid.ai 和 d1 Playground 使用。",
+        "source": "Liquid AI 模型与工程博客（网页）",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-05T00:00:00.000Z",
+        "links": {
+          "original": "https://www.liquid.ai/blog/d1-decision-model"
+        }
+      }
+    ]
   }
 }
