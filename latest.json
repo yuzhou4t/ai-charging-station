@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-07",
-  "generatedAt": "2026-10-06T23:55:05.227Z",
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08T00:06:47.356Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 29,
+    "totalItems": 23,
     "mustRead": 5,
-    "creatorUpdates": 6,
+    "creatorUpdates": 1,
     "officialUpdates": 6,
     "aihotPicks": 10,
     "sources": [
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 6
+        "itemCount": 1
       },
       {
         "id": "claude-blog",
@@ -59,354 +59,294 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 4
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 2
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 20
+        "itemCount": 17
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-0ee1b4f1e9fb",
-        "title": "Mistral Large 4 上线 OpenRouter 公测：1T 参数、512K 上下文",
-        "summary": "Mistral Large 4 现已在 OpenRouter 开放公测，规格为 1T 参数（49B 激活）、原生多模态、512K 上下文、最高 256K 输出。前两周五折：每 1M tokens 输入 $0.68、输出 $2.09，缓存 $0.07。",
+        "id": "aihot-70f03439a82d",
+        "title": "GPT-6 Luna Decisions 上架 OpenRouter",
+        "summary": "OpenRouter 宣布 GPT-6 Luna Decisions 上线。OpenAI 的 Decisions API 可让应用选择合适的模型、工具或动作，支持发送文本、JSON 或图片并返回带概率的类型化答案。定价为输入 $0.10/M、输出免费，上下文 1M；引用 OpenAI 开发者账号称其决策速度比通过 Responses API 的 GPT-6 Luna 最快 10 倍。",
         "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-10-06T14:02:29.000Z",
+        "publishedAt": "2026-10-07T20:21:00.000Z",
         "links": {
-          "original": "https://x.com/OpenRouter/status/2107471559040635360"
+          "original": "https://x.com/OpenRouter/status/2107929204142874759"
         }
       },
       {
-        "id": "aihot-d6078b2ecc1e",
-        "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
-        "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
+        "id": "aihot-khazix-2d8eb0a6049f",
+        "title": "Anthropic 向 Max 会员每月发放免费 API 额度，$100 档领 $100、$200 档领 $200",
+        "summary": "Anthropic 在发布 Claude Haiku 5.5（比 Haiku 4.5 平均便宜约 75%）之外，宣布 Max 订阅会员每月可领取 Claude 开放平台免费 API 额度：$100 档每月领 $100，$200 档每月领 $200。额度可用于任何 Claude 模型，也能在自己的应用和其他 Agent 中使用。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
         "category": "industry",
-        "publishedAt": "2026-10-06T05:47:05.000Z",
+        "publishedAt": "2026-10-07T19:36:51.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2107346890648076595"
+          "original": "https://x.com/Khazix0918/status/2107918094220083326"
         }
       },
       {
-        "id": "aihot-khazix-016c138f4b1a",
-        "title": "两天手搓飞书中台替换工作台",
-        "summary": "卡兹克借假期花2天基于飞书全部数据和自建MCP手搓了一个企业中台，直接替换飞书自带工作台，解决公司Vibe Coding业务应用部署、信息安全、权限管理及应用和skill流转问题。下一步将开放自定义配置界面，让公司小伙伴用各自的Agent修改可见的首页和数据页。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-06T16:32:50.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2107509396091941308"
-        }
-      },
-      {
-        "id": "aihot-khazix-46e2fa3e2970",
-        "title": "AIHOT 上线模型性价比帕累托前沿功能",
-        "summary": "AIHOT 上线帕累托前沿功能，可查看模型性价比，切换到右上角\"性价比\"即可访问。不同场景采用不同 Token 权重算法：综合与专业办公按缓存命中:输入:输出=7:2:1，编程按 97:2:1，科研按输入:输出=1:3，知识问答按 3:1。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-06T09:00:33.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2107395576321208577"
-        }
-      },
-      {
-        "id": "openai-news-b329ee47fac2",
-        "title": "借助 Ironclad 推进计算机操作能力",
-        "summary": "了解 OpenAI 和 Ironclad 如何围绕复杂的合同工作流训练和评估 AI 智能体，以提升 AI 在专业工作中的计算机操作能力。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-5eac4e43405d",
+        "title": "Revamping Skills in Deep Agents",
+        "summary": "Deep Agents now lets you bind tools to skills, pin skills at runtime, and reload skills mid-thread, so agents with expansive skill repositories stay context-efficient and effective.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-06T10:00:00.000Z",
+        "publishedAt": "2026-10-07T18:49:50.000Z",
         "links": {
-          "original": "https://openai.com/index/advancing-computer-use-with-ironclad"
+          "original": "https://www.langchain.com/blog/revamping-skills-in-deep-agents"
+        }
+      },
+      {
+        "id": "langchain-blog-b65ddda6cbfa",
+        "title": "What's New in Managed Deep Agents: schedules, per-run configuration, and Slack reactions",
+        "summary": "LangChain just released new capabilities in Managed Deep Agents. Agents can now schedule follow-ups, reconfigure themselves on every run, and react to Slack messages.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-10-07T18:09:51.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/managed-deep-agents-schedules-per-run-configuration-slack"
+        }
+      },
+      {
+        "id": "aihot-acb8f5c1ed1f",
+        "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
+        "summary": "Claude Code 发布 v2.1.293，新增 Claude Haiku 5.5（claude-haiku-5-5）作为 Anthropic API 默认 Haiku 模型，支持 1M 上下文，价格为 $0.10/$0.50 每百万 token（超 100K 提示为 $0.50/$2.50）。",
+        "source": "Claude Code：GitHub Releases（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-07T18:10:20.000Z",
+        "links": {
+          "original": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-016c138f4b1a",
-        "title": "两天手搓飞书中台替换工作台",
-        "summary": "卡兹克借假期花2天基于飞书全部数据和自建MCP手搓了一个企业中台，直接替换飞书自带工作台，解决公司Vibe Coding业务应用部署、信息安全、权限管理及应用和skill流转问题。下一步将开放自定义配置界面，让公司小伙伴用各自的Agent修改可见的首页和数据页。",
+        "id": "aihot-khazix-2d8eb0a6049f",
+        "title": "Anthropic 向 Max 会员每月发放免费 API 额度，$100 档领 $100、$200 档领 $200",
+        "summary": "Anthropic 在发布 Claude Haiku 5.5（比 Haiku 4.5 平均便宜约 75%）之外，宣布 Max 订阅会员每月可领取 Claude 开放平台免费 API 额度：$100 档每月领 $100，$200 档每月领 $200。额度可用于任何 Claude 模型，也能在自己的应用和其他 Agent 中使用。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-06T16:32:50.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-07T19:36:51.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2107509396091941308"
-        }
-      },
-      {
-        "id": "aihot-khazix-46e2fa3e2970",
-        "title": "AIHOT 上线模型性价比帕累托前沿功能",
-        "summary": "AIHOT 上线帕累托前沿功能，可查看模型性价比，切换到右上角\"性价比\"即可访问。不同场景采用不同 Token 权重算法：综合与专业办公按缓存命中:输入:输出=7:2:1，编程按 97:2:1，科研按输入:输出=1:3，知识问答按 3:1。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-06T09:00:33.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2107395576321208577"
-        }
-      },
-      {
-        "id": "aihot-khazix-c94d2ab385c7",
-        "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-        "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-06T02:31:56.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2107297777583825359"
-        }
-      },
-      {
-        "id": "aihot-khazix-706836a5d7f0",
-        "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-        "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-06T00:18:00.000Z",
-        "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7"
-        }
-      },
-      {
-        "id": "aihot-khazix-11a0a19af804",
-        "title": "https://x.com/Khazix0918/status/2107347736098218383",
-        "summary": "",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": null,
-        "publishedAt": "2026-10-06T05:50:27.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2107347736098218383"
-        }
-      },
-      {
-        "id": "aihot-khazix-0116c74b3f14",
-        "title": "Claude 支持中文了？",
-        "summary": "等等，我没看错吧... Claude支持中文了？？？",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-06T05:44:04.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2107346131122536912"
+          "original": "https://x.com/Khazix0918/status/2107918094220083326"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "openai-news-b329ee47fac2",
-        "title": "借助 Ironclad 推进计算机操作能力",
-        "summary": "了解 OpenAI 和 Ironclad 如何围绕复杂的合同工作流训练和评估 AI 智能体，以提升 AI 在专业工作中的计算机操作能力。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-5eac4e43405d",
+        "title": "Revamping Skills in Deep Agents",
+        "summary": "Deep Agents now lets you bind tools to skills, pin skills at runtime, and reload skills mid-thread, so agents with expansive skill repositories stay context-efficient and effective.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-06T10:00:00.000Z",
+        "publishedAt": "2026-10-07T18:49:50.000Z",
         "links": {
-          "original": "https://openai.com/index/advancing-computer-use-with-ironclad"
+          "original": "https://www.langchain.com/blog/revamping-skills-in-deep-agents"
         }
       },
       {
-        "id": "openai-news-4e6b31607636",
-        "title": "Jump Trading 如何借助 ChatGPT 扩大量化研究",
-        "summary": "Jump Trading 使用 OpenAI 扩大量化研究。了解更长时间运行的 AI 工作流如何整合多个数据源，并结合人工审核。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-b65ddda6cbfa",
+        "title": "What's New in Managed Deep Agents: schedules, per-run configuration, and Slack reactions",
+        "summary": "LangChain just released new capabilities in Managed Deep Agents. Agents can now schedule follow-ups, reconfigure themselves on every run, and react to Slack messages.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-06T12:00:00.000Z",
+        "publishedAt": "2026-10-07T18:09:51.000Z",
         "links": {
-          "original": "https://openai.com/index/jump-trading"
+          "original": "https://www.langchain.com/blog/managed-deep-agents-schedules-per-run-configuration-slack"
         }
       },
       {
-        "id": "openai-news-17b9f6fc4b2c",
-        "title": "Atlassian 与 OpenAI 扩大合作，将企业知识转化为行动",
-        "summary": "Atlassian 与 OpenAI 正在扩大合作，将前沿模型与企业知识相连接，帮助团队规划、构建并交付工作成果。",
+        "id": "openai-news-b2876c9547b5",
+        "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+        "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-06T16:00:00.000Z",
+        "publishedAt": "2026-10-07T07:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/atlassian-partnership"
+          "original": "https://openai.com/index/radisson"
         }
       },
       {
-        "id": "openai-news-445b420afa58",
-        "title": "分享数学领域的 AI 进展",
-        "summary": "OpenAI 发布了内部前沿模型针对数学未解问题取得的新成果，并在 GitHub 上分享 Lean 证明形式化内容和研究详情。",
+        "id": "openai-news-4fb7edcedfb1",
+        "title": "Helping teens learn, plan, and shape the future of AI",
+        "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-06T12:00:00.000Z",
+        "publishedAt": "2026-10-07T12:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/sharing-ai-progress-in-mathematics"
+          "original": "https://openai.com/index/teens-learn-and-plan"
         }
       },
       {
-        "id": "claude-blog-0fdf7bf9ecc5",
-        "title": "文章｜2026年9月28日｜使用 Claude 实现评测设计自动化与逐步优化",
-        "summary": "设计评测并据此逐步优化而不自欺的原则，以及 claude-api 技能中的 build-eval 和 hillclimb 命令如何将这些原则付诸实践。Claude Platform（在新标签页中打开）",
+        "id": "claude-blog-cfa2607f1e4f",
+        "title": "Article Oct 6, 2026 Claude Code in the cloud: a field guide to cloud sessions What changes when Claude Code runs on its own machine, the workflows where that pays off, and how to connect GitHub on the first try. Claude Code (opens in new tab)",
+        "summary": "Claude Blog update",
         "source": "Claude Blog",
         "sourceId": "claude-blog",
         "category": null,
         "publishedAt": null,
         "links": {
-          "original": "https://claude.dev/blog/automating-eval-design-and-hillclimbing/"
+          "original": "https://claude.dev/blog/claude-code-in-the-cloud/"
         }
       },
       {
-        "id": "claude-blog-86d579111f10",
-        "title": "文章｜2026年9月28日｜使用 Claude Sonnet 5.5 构建",
-        "summary": "何时选择 Sonnet 而非 Opus、费用如何，以及如何调整其配置。Claude Platform（在新标签页中打开）",
+        "id": "claude-blog-ae9c2b14a064",
+        "title": "Article Oct 1, 2026 Getting started with Claude Code mods Claude Code (opens in new tab)",
+        "summary": "Claude Blog update",
         "source": "Claude Blog",
         "sourceId": "claude-blog",
         "category": null,
         "publishedAt": null,
         "links": {
-          "original": "https://claude.dev/blog/building-with-claude-sonnet-5-5/"
+          "original": "https://claude.dev/blog/getting-started-with-claude-code-mods/"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-0ee1b4f1e9fb",
-        "title": "Mistral Large 4 上线 OpenRouter 公测：1T 参数、512K 上下文",
-        "summary": "Mistral Large 4 现已在 OpenRouter 开放公测，规格为 1T 参数（49B 激活）、原生多模态、512K 上下文、最高 256K 输出。前两周五折：每 1M tokens 输入 $0.68、输出 $2.09，缓存 $0.07。",
+        "id": "aihot-70f03439a82d",
+        "title": "GPT-6 Luna Decisions 上架 OpenRouter",
+        "summary": "OpenRouter 宣布 GPT-6 Luna Decisions 上线。OpenAI 的 Decisions API 可让应用选择合适的模型、工具或动作，支持发送文本、JSON 或图片并返回带概率的类型化答案。定价为输入 $0.10/M、输出免费，上下文 1M；引用 OpenAI 开发者账号称其决策速度比通过 Responses API 的 GPT-6 Luna 最快 10 倍。",
         "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-10-06T14:02:29.000Z",
+        "publishedAt": "2026-10-07T20:21:00.000Z",
         "links": {
-          "original": "https://x.com/OpenRouter/status/2107471559040635360"
+          "original": "https://x.com/OpenRouter/status/2107929204142874759"
         }
       },
       {
-        "id": "aihot-d6078b2ecc1e",
-        "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
-        "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-06T05:47:05.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2107346890648076595"
-        }
-      },
-      {
-        "id": "aihot-20a2b337dab3",
-        "title": "ChatGPT 推出 Meetings 插件，可自动记会议纪要并跟进待办",
-        "summary": "ChatGPT 发布 Meetings 插件，可替用户记会议笔记，并基于 ChatGPT 对用户和既往工作的了解，在 ChatGPT Space 保存个性化摘要和后续步骤。笔记可私密保存或与团队共享，还能让 ChatGPT 更新项目计划或起草跟进内容。目前以 beta 形式面向 Pro 和 Business 用户开放，可在 macOS 桌面应用的插件目录搜索 Meetings 使用，Enterprise 版即将推出。作者 Tibo 补充称，可放心畅谈并将积累的上下文载入 codex 来完成任务。",
-        "source": "X：Tibo (@thsottiaux)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-06T20:47:11.000Z",
-        "links": {
-          "original": "https://x.com/thsottiaux/status/2107573405553938664"
-        }
-      },
-      {
-        "id": "aihot-2ea8537eccfa",
-        "title": "Sierra 与 Meta 联合多家企业发布 Personal Agent Protocol 开放协议",
-        "summary": "Sierra 与 Meta 联合 Genesys、Instinct、Rocket、Shopify、Stripe、Walmart 等伙伴宣布开发 Personal Agent Protocol，一个定义个人 AI 智能体如何与企业交互的开放标准，任何人都可实现。",
-        "source": "Sierra：Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-06T17:32:00.000Z",
-        "links": {
-          "original": "https://sierra.ai/blog/introducing-personal-agent-protocol"
-        }
-      },
-      {
-        "id": "aihot-d8b7d0f47a4b",
-        "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
-        "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。",
-        "source": "X：Arena (@arena)",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-06T14:21:52.000Z",
-        "links": {
-          "original": "https://x.com/arena/status/2107476436223504484"
-        }
-      },
-      {
-        "id": "aihot-85749ec41610",
-        "title": "Reflection 发布 501B-A23B 开源编码模型 Beam",
-        "summary": "Reflection 发布文本-only 的 501B 总参数 / 23B 激活 MoE 模型 Beam，面向编码、智能体和科学任务，从零训练，完整权重将在本月以 Apache 2.0 发布。",
-        "source": "Latent Space（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-06T06:28:43.000Z",
-        "links": {
-          "original": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b"
-        }
-      },
-      {
-        "id": "aihot-981dda5312cd",
-        "title": "Vercel COO 讲解如何用 Agent 自动化 Inbound 销售",
-        "summary": "Vercel COO Jeanne DeWitt Grosser 在 Tom Tunguz 的 Office Hours 节目中讲解团队如何搭建运行销售漏斗顶端的 Agent。",
-        "source": "Tomasz Tunguz 博客（VC 分析）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-06T00:00:00.000Z",
-        "links": {
-          "original": "https://tomtunguz.com/how-to-automate-inbound/"
-        }
-      },
-      {
-        "id": "aihot-86b79316e67e",
-        "title": "Anthropic Cowork 改为云端运行模型推理与 VM",
-        "summary": "Anthropic 工程师 Felix Rieseberg 说明 Cowork 的新旧架构差异：旧版在云端推理、在用户电脑上运行本地 VM，磁盘、电池和性能开销大，合上笔记本工作就停止。新版把模型推理和 VM 都移到云端，每个会话有独立沙盒，桌面应用只负责文件访问等需要本机设备的工具调用，官方认为这解决了手机使用、保持工作运行和电池消耗等问题。",
-        "source": "Simon Willison 博客",
+        "id": "aihot-acb8f5c1ed1f",
+        "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
+        "summary": "Claude Code 发布 v2.1.293，新增 Claude Haiku 5.5（claude-haiku-5-5）作为 Anthropic API 默认 Haiku 模型，支持 1M 上下文，价格为 $0.10/$0.50 每百万 token（超 100K 提示为 $0.50/$2.50）。",
+        "source": "Claude Code：GitHub Releases（RSS）",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-10-05T23:56:47.000Z",
+        "publishedAt": "2026-10-07T18:10:20.000Z",
         "links": {
-          "original": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/"
+          "original": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293"
         }
       },
       {
-        "id": "aihot-4b24b0c8011a",
-        "title": "GitHub 重建 Git 基础设施，应对智能体规模开发",
-        "summary": "GitHub 宣布重建 Git 基础设施，以支持智能体规模开发带来的高并发读写负载。2026 年 8 月 GitHub 月度 Git 事件量达 473.3 billion（一年翻倍以上），9 月智能体和开发者产生 7.38 billion commits（超一年前五倍），pushes 同比增长 4.9 倍。",
-        "source": "GitHub Blog",
+        "id": "aihot-196e54ab7c33",
+        "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度",
+        "summary": "Anthropic 正在为 Claude Max 和 Team 套餐推出月度 Claude Platform API 额度：Max 5x 为 $100，Max 20x 为 $200，Team 最多 $500 且可共享。额度适用于任何模型，包括 Haiku 5.5，可在自己的代码或第三方 harness 中使用。",
+        "source": "X：Claude Devs (@ClaudeDevs)",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-06T20:57:56.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-07T18:08:53.000Z",
         "links": {
-          "original": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
+          "original": "https://x.com/ClaudeDevs/status/2107895957933408429"
         }
       },
       {
-        "id": "aihot-01e424155648",
-        "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2",
-        "summary": "Google DeepMind 发布 EmbeddingGemma 2，基于 Gemma 4 架构，以 Apache 2.0 许可开源，将文本、代码、图像、视频和音频映射到统一嵌入空间。",
-        "source": "Google DeepMind：Blog（RSS）",
+        "id": "aihot-6e66cee95e5f",
+        "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI",
+        "summary": "OpenAI 发布面向更广泛用户的 GPT-6，并随 GPT-6 在 ChatGPT 中引入 Intelligent UI，可生成图形、按钮、表单、图表和可交互组件来回答问题。",
+        "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-07T18:00:58.000Z",
+        "links": {
+          "original": "https://openai.com/index/gpt-6-for-everyone/"
+        }
+      },
+      {
+        "id": "aihot-2d6179e16344",
+        "title": "Microsoft Research Asia 开源 Agent Lightning v1.0：3,500 行代码的真实 harness 智能体 RL 训练框架",
+        "summary": "Microsoft Research Asia 提出 Harnessed Agentic RL 训练范式并开源重建的 Agent Lightning v1.0，让部署时使用的同一 agent harness 直接参与强化学习，无需在训练框架内重写 agent。",
+        "source": "Microsoft Research 博客（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-07T16:00:00.000Z",
+        "links": {
+          "original": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/"
+        }
+      },
+      {
+        "id": "aihot-417154aa1555",
+        "title": "Anthropic 发布 Claude Haiku 5.5，Artificial Analysis 智能指数得分 43",
+        "summary": "Anthropic 发布 Claude Haiku 5.5，在 Artificial Analysis 智能指数得 43 分，较上一代 Haiku 一年内提升 26 分。",
+        "source": "X：Artificial Analysis (@ArtificialAnlys)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "publishedAt": "2026-10-07T19:12:16.000Z",
         "links": {
-          "original": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
+          "original": "https://x.com/ArtificialAnlys/status/2107911905822351609"
+        }
+      },
+      {
+        "id": "aihot-4f7a1c1104bf",
+        "title": "NVIDIA 与 Microsoft 发布 RTX Spark 及 DGX Station for Windows，推动 AI Agent 落地 Windows PC",
+        "summary": "NVIDIA 与 Microsoft 在旧金山 Windows AI 和 Surface 活动上宣布为 Windows PC 引入 AI Agent 硬件与软件。",
+        "source": "NVIDIA Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-07T18:45:28.000Z",
+        "links": {
+          "original": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/"
+        }
+      },
+      {
+        "id": "aihot-f38d23b68297",
+        "title": "Anthropic 将 Claude Sonnet 5.5 缓存读取价格减半至每百万 token $0.10",
+        "summary": "Anthropic 宣布将 Claude Sonnet 5.5 的缓存读取价格减半，降至每百万 token $0.10。官方称这使 Sonnet 5.5 在多数长期运行任务上的运行成本降低约 20%。",
+        "source": "X：Claude (@claudeai)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-07T18:01:21.000Z",
+        "links": {
+          "original": "https://x.com/claudeai/status/2107894060229034197"
+        }
+      },
+      {
+        "id": "aihot-2a1e3481e335",
+        "title": "Perplexity 开源 pplx-embed-v2-late 多模态 late-interaction 嵌入模型（9B 与 0.6B）",
+        "summary": "Perplexity 开源 pplx-embed-v2-late，两个针对文本和图像的 late-interaction 多向量嵌入模型，大小为 9B 和 0.6B，共享同一嵌入空间，权重已在 Hugging Face 提供。9B 可用于索引多模态数据，0.6B 可在设备端查询，无需 OCR 即可检索 PDF 页面；模型在 MADQA 得分 92.4%，BrowseComp+ 得分 64%。",
+        "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-07T16:33:02.000Z",
+        "links": {
+          "original": "https://x.com/AravSrinivas/status/2107871834205196784"
+        }
+      },
+      {
+        "id": "aihot-6da86c9d9639",
+        "title": "Unsloth 开源教程：本地训练 Qwen3.5 0.8B 决策模型，准确率从 20.7% 提升至 74.3%",
+        "summary": "Unsloth 发布教程与开源仓库，可将 Qwen3.8、Gemma 4 等 LLM 微调为输出选项概率的决策模型，Qwen3.5 0.8B 在 3 个决策基准上的合计准确率从 20.7% 提到 74.3%，仅需 4GB 显存。",
+        "source": "X：Unsloth (@UnslothAI)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-10-07T16:21:14.000Z",
+        "links": {
+          "original": "https://x.com/UnslothAI/status/2107868866361930236"
         }
       }
     ]
