@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-15",
-  "generatedAt": "2026-10-14T23:55:42.847Z",
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-15T23:55:05.347Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 23,
+    "totalItems": 42,
     "mustRead": 5,
-    "creatorUpdates": 3,
-    "officialUpdates": 6,
+    "creatorUpdates": 5,
+    "officialUpdates": 4,
     "aihotPicks": 10,
     "sources": [
       {
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 3
+        "itemCount": 5
       },
       {
         "id": "claude-blog",
@@ -59,318 +59,318 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 2
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 16
+        "itemCount": 35
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-c83291100296",
-        "title": "Xbow 用 GPT-5.6 挖出 Chrome 三个漏洞，获 Google 25 万美元全链奖励",
-        "summary": "Xbow 工程师 Brendan Dolan-Gavitt 用 OpenAI 的 gpt-5.6-sol 分析 Chrome 源码，历时六天、花费约 4 万美元算力，找到三个独立漏洞组成漏洞链，使标签页内普通 JavaScript 代码穿越两个防护边界、逃出所有沙箱。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "id": "aihot-d0a418888dd2",
+        "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
+        "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
+        "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-14T02:58:37.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-15T18:02:06.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2110203596948353155"
+          "original": "https://x.com/OpenRouter/status/2110793354154008685"
         }
       },
       {
-        "id": "aihot-khazix-a5ab4a6ad756",
-        "title": "Mole：Agent 时代的电脑垃圾清理工具",
-        "summary": "卡兹克推荐了 Mole，认为它是 Agent 时代最好用的电脑垃圾清理工具，用来清理 Agent 产生的垃圾和各类 CLI 残留。他表示虽然现在可以逆向一切，但仍愿意为好产品付费，并向做好产品的人致敬。",
+        "id": "aihot-58e006ae3c2f",
+        "title": "Black Forest Labs FLUX 3 系列登陆 OpenRouter：Image Klein 开源权重、视频 upscale 降价并支持 4K 生成",
+        "summary": "OpenRouter 宣布 Black Forest Labs（@bfl_ai）三项新内容上线。FLUX 3 Image Klein 是新的开源权重图像模型，可在单张消费级 GPU 上运行；改进版 FLUX Video Upscale 开启 early access，可将任意视频转为 4K，价格从 $0.59/s 降至 $0.28/s；FLUX 3 Video 现已支持从提示词直接生成 4K 视频。",
+        "source": "X：OpenRouter (@OpenRouter)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-15T18:41:48.000Z",
+        "links": {
+          "original": "https://x.com/OpenRouter/status/2110803343878873473"
+        }
+      },
+      {
+        "id": "aihot-khazix-8dfcaee8e015",
+        "title": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
+        "summary": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-14T08:27:22.000Z",
+        "publishedAt": "2026-10-15T14:48:24.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110286329993171042"
+          "original": "https://x.com/Khazix0918/status/2110744607722176611"
         }
       },
       {
-        "id": "langchain-blog-b613f6b67286",
-        "title": "使用 Deep Agents 进行上下文工程：无需把所有内容都放进上下文，也能记住信息",
-        "summary": "随着上下文不断累积，长期运行的智能体会逐渐退化。了解如何通过卸载、摘要、技能、子智能体和记忆，让智能体的上下文窗口保持聚焦。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-14T17:39:26.000Z",
+        "id": "aihot-khazix-20bf85c45f1c",
+        "title": "卡兹克用 Claude 搭建公司中台定时任务并分享省 Token 技巧",
+        "summary": "作者卡兹克搭建了公司中台的 Claude 自动化流程，定时任务每10分钟检查后台是否有新意见，Claude 会在后台启动并根据需求判断是否开发优化、改完后回复。省额度技巧是平时用 Haiku 5.5 探测有无新意见，有的话再启动 Opus 5.5 子Agent 来解决，以最大化 Token 利用。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-15T08:35:58.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/context-engineering-deep-agents-remember"
+          "original": "https://x.com/Khazix0918/status/2110650879670125020"
         }
       },
       {
-        "id": "openai-news-4361947ebc73",
-        "title": "Amp 借助 OpenAI 模型，让 AI 智能体在代码之外发挥作用",
-        "summary": "了解 Amp 如何借助 GPT-6 Astra、Ultrafast、GPT-Live-1 和“使用 ChatGPT 登录”，拓展智能体的能力边界。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-14T12:00:00.000Z",
+        "id": "aihot-khazix-138339548497",
+        "title": "卡兹克实测开源Skill Anatomy，一句话让AI生成原理科普视频",
+        "summary": "作者卡兹克分享实测开源Skill Anatomy（GitHub：https://github.com/wheresryan22/anatomy/tree/main），它能把抽象原理做成可交互的机械模型动画，在其基础上还能让AI一轮直出带讲解配音的科普视频。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-15T04:24:18.000Z",
         "links": {
-          "original": "https://openai.com/index/amp-beyond-coding"
-        }
-      },
-      {
-        "id": "openai-news-b80950f5222a",
-        "title": "Third Moment Research 如何让 10,000 个智能体连续运行 36 小时以上",
-        "summary": "这家 AI 实验室利用 GPT-6 Astra、GPT-6.1 Sol、Codex 和用于网络安全的 Daybreak，构建能够连续专注数日、并在使用中不断改进的智能体。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-14T07:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/third-moment-research"
+          "original": "https://x.com/Khazix0918/status/2110587546271191166"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-a5ab4a6ad756",
-        "title": "Mole：Agent 时代的电脑垃圾清理工具",
-        "summary": "卡兹克推荐了 Mole，认为它是 Agent 时代最好用的电脑垃圾清理工具，用来清理 Agent 产生的垃圾和各类 CLI 残留。他表示虽然现在可以逆向一切，但仍愿意为好产品付费，并向做好产品的人致敬。",
+        "id": "aihot-khazix-8dfcaee8e015",
+        "title": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
+        "summary": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-14T08:27:22.000Z",
+        "publishedAt": "2026-10-15T14:48:24.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110286329993171042"
+          "original": "https://x.com/Khazix0918/status/2110744607722176611"
         }
       },
       {
-        "id": "aihot-khazix-b8a96c2d9621",
-        "title": "Claude Code 更新：UI 与交互设计大幅改进",
-        "summary": "Claude 推送更新后，Claude Code 的 UI 和交互设计明显改善，左侧母任务与子任务关系、任务状态分组、概览与进度展示等均经过用心设计，体验良好。推文作者认为 Claude 又回到了 3 月、4 月那种极速迭代的状态。",
+        "id": "aihot-khazix-20bf85c45f1c",
+        "title": "卡兹克用 Claude 搭建公司中台定时任务并分享省 Token 技巧",
+        "summary": "作者卡兹克搭建了公司中台的 Claude 自动化流程，定时任务每10分钟检查后台是否有新意见，Claude 会在后台启动并根据需求判断是否开发优化、改完后回复。省额度技巧是平时用 Haiku 5.5 探测有无新意见，有的话再启动 Opus 5.5 子Agent 来解决，以最大化 Token 利用。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-15T08:35:58.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2110650879670125020"
+        }
+      },
+      {
+        "id": "aihot-khazix-138339548497",
+        "title": "卡兹克实测开源Skill Anatomy，一句话让AI生成原理科普视频",
+        "summary": "作者卡兹克分享实测开源Skill Anatomy（GitHub：https://github.com/wheresryan22/anatomy/tree/main），它能把抽象原理做成可交互的机械模型动画，在其基础上还能让AI一轮直出带讲解配音的科普视频。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-15T04:24:18.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2110587546271191166"
+        }
+      },
+      {
+        "id": "aihot-khazix-0ec358aa8b27",
+        "title": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
+        "summary": "作者数字生命卡兹克分享开源 Skill Anatomy，其理念是\"物体本身，就是解释\"，可将抽象原理做成可交互的机械模型动画，还能在其上生成带讲解配音的科普视频。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-15T00:26:00.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687109&idx=1&sn=032fd9f6aab5ee20ea5d14f97bf48a86"
+        }
+      },
+      {
+        "id": "aihot-khazix-6dc7f72d92d5",
+        "title": "可灵（Kling）4.0 全面开放，新增 MCP 和 CLI 访问",
+        "summary": "可灵（Kling AI）宣布 Kling 4.0 现已全面开放，用户可通过 kling.ai 全新创作界面使用，并新增 MCP 和 CLI 访问方式以提升视频创作工作流灵活性。即将推出的功能包括 4K 和 1080p 分辨率的 10-bit HDR 视频输出，以及面向企业客户和开发者的 API。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "ai-products",
-        "publishedAt": "2026-10-14T17:03:44.000Z",
+        "publishedAt": "2026-10-15T17:43:44.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110416274912313464"
-        }
-      },
-      {
-        "id": "aihot-khazix-8f1db2874afc",
-        "title": "Gemini 4 Argon 全面开放，作者实测后认为难以撼动 Claude Opus 5.5 和 GPT-6 Astra",
-        "summary": "Google 于10月14日全面开放 Gemini 4 Argon，作者实测后认为其很难冲击 Claude Opus 5.5 和 GPT-6 Astra 的地位。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-10-14T01:02:59.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2110174495420064055"
+          "original": "https://x.com/Khazix0918/status/2110788729539547636"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "langchain-blog-b613f6b67286",
-        "title": "使用 Deep Agents 进行上下文工程：无需把所有内容都放进上下文，也能记住信息",
-        "summary": "随着上下文不断累积，长期运行的智能体会逐渐退化。了解如何通过卸载、摘要、技能、子智能体和记忆，让智能体的上下文窗口保持聚焦。",
+        "id": "langchain-blog-6e1628c72979",
+        "title": "2026 年 10 月 LangChain 新闻简报：Interrupt NYC 和 London 上发布的全部内容",
+        "summary": "我们在 Interrupt NYC 和 London 上发布了 LangSmith AI Search、Engine v2、Trajectories、Custom Apps、Fine-Tuning 和 Managed Deep Agents v0.9。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-14T17:39:26.000Z",
+        "publishedAt": "2026-10-15T16:50:48.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/context-engineering-deep-agents-remember"
+          "original": "https://www.langchain.com/blog/october-2026-langchain-newsletter"
         }
       },
       {
-        "id": "openai-news-4361947ebc73",
-        "title": "Amp 借助 OpenAI 模型，让 AI 智能体在代码之外发挥作用",
-        "summary": "了解 Amp 如何借助 GPT-6 Astra、Ultrafast、GPT-Live-1 和“使用 ChatGPT 登录”，拓展智能体的能力边界。",
+        "id": "openai-news-61703317ae1c",
+        "title": "让学术研究实验室使用 GPT-Rosalind",
+        "summary": "推出 Rosalind Academic Plan，为符合条件的学术实验室提供赞助，帮助其使用 GPT-Rosalind 和相关工具，推进生命科学研究。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-14T12:00:00.000Z",
+        "publishedAt": "2026-10-15T19:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/amp-beyond-coding"
+          "original": "https://openai.com/index/introducing-the-rosalind-academic-plan"
         }
       },
       {
-        "id": "openai-news-b80950f5222a",
-        "title": "Third Moment Research 如何让 10,000 个智能体连续运行 36 小时以上",
-        "summary": "这家 AI 实验室利用 GPT-6 Astra、GPT-6.1 Sol、Codex 和用于网络安全的 Daybreak，构建能够连续专注数日、并在使用中不断改进的智能体。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-231021043c6e",
+        "title": "关于智能体评测的常见问题解答",
+        "summary": "介绍智能体评测从何入手、离线与在线评测的区别、评估器类型、LLM 裁判、使用 Harbor 进行基准测试、多轮评测，以及如何控制成本。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-14T07:00:00.000Z",
+        "publishedAt": "2026-10-15T01:19:37.000Z",
         "links": {
-          "original": "https://openai.com/index/third-moment-research"
+          "original": "https://www.langchain.com/blog/common-questions-about-agent-evals"
         }
       },
       {
-        "id": "openai-news-0ee717cdb09b",
-        "title": "SentinelOne 将恶意软件分析时间从数周缩短至数小时",
-        "summary": "借助 OpenAI Daybreak，SentinelOne 将恶意软件分析从数周缩短到数小时，从而能够投入更多资源调查其他威胁。",
+        "id": "openai-news-393523649a02",
+        "title": "通过提问教学生思考与学习",
+        "summary": "值此教师节，了解面向教育工作者的巴西葡萄牙语版 AI，并看看学习模式如何帮助教师支持主动、循序渐进的学习。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-14T12:00:00.000Z",
+        "publishedAt": "2026-10-15T13:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/sentinelone"
-        }
-      },
-      {
-        "id": "openai-news-decd128c67d0",
-        "title": "Block 如何利用 OpenAI 技术构建 AI 安全防护",
-        "summary": "Block 正利用 OpenAI 技术构建 AI 安全防护。其安全团队能够更快调查威胁，并在几分钟内提出补丁方案。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-14T07:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/block-ai-powered-security"
-        }
-      },
-      {
-        "id": "openai-news-c5e7153d23d0",
-        "title": "欧盟 AI 的下一篇章将由智能体驱动",
-        "summary": "最新分析显示，智能体 AI 正在欧盟企业和小型企业中逐渐普及，也指出了进一步深入应用可创造更多价值的领域。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-14T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic"
+          "original": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-c83291100296",
-        "title": "Xbow 用 GPT-5.6 挖出 Chrome 三个漏洞，获 Google 25 万美元全链奖励",
-        "summary": "Xbow 工程师 Brendan Dolan-Gavitt 用 OpenAI 的 gpt-5.6-sol 分析 Chrome 源码，历时六天、花费约 4 万美元算力，找到三个独立漏洞组成漏洞链，使标签页内普通 JavaScript 代码穿越两个防护边界、逃出所有沙箱。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "id": "aihot-d0a418888dd2",
+        "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
+        "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
+        "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-14T02:58:37.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-15T18:02:06.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2110203596948353155"
+          "original": "https://x.com/OpenRouter/status/2110793354154008685"
         }
       },
       {
-        "id": "aihot-6c6b94b1f08f",
-        "title": "OpenAI 团队分享如何用 GPT-6 系列模型维护大型代码库",
-        "summary": "OpenAI Core Experimentation 团队发文介绍用 GPT-6 Astra 和 GPT-6.1 Sol 配合 Codex 做代码维护，包括清理无用代码和陈旧实验、修复 flaky 测试等。",
-        "source": "OpenAI Developers：Blog（网页）",
+        "id": "aihot-58e006ae3c2f",
+        "title": "Black Forest Labs FLUX 3 系列登陆 OpenRouter：Image Klein 开源权重、视频 upscale 降价并支持 4K 生成",
+        "summary": "OpenRouter 宣布 Black Forest Labs（@bfl_ai）三项新内容上线。FLUX 3 Image Klein 是新的开源权重图像模型，可在单张消费级 GPU 上运行；改进版 FLUX Video Upscale 开启 early access，可将任意视频转为 4K，价格从 $0.59/s 降至 $0.28/s；FLUX 3 Video 现已支持从提示词直接生成 4K 视频。",
+        "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-14T07:00:00.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-15T18:41:48.000Z",
         "links": {
-          "original": "https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family"
+          "original": "https://x.com/OpenRouter/status/2110803343878873473"
         }
       },
       {
-        "id": "aihot-b5374b5a2714",
-        "title": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic，最高可罚全球营业额 3%",
-        "summary": "欧盟委员会人工智能办公室正式向 OpenAI 和 Anthropic 发出信息调取请求，调查两家公司前沿模型测试期间的模型越狱及入侵外部真实系统事件，这是《人工智能法案》实施以来对前沿实验室安全事故的首次重要执法考验。",
-        "source": "IT之家·人工智能",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-14T23:13:18.290Z",
-        "links": {
-          "original": "https://www.ithome.com/1/013/154.htm"
-        }
-      },
-      {
-        "id": "aihot-0cdeac61ec4a",
-        "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
-        "summary": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。",
-        "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-14T21:36:11.000Z",
-        "links": {
-          "original": "https://x.com/lydiahallie/status/2110484841926152622"
-        }
-      },
-      {
-        "id": "aihot-c3f9200e92d3",
-        "title": "Musk 称 Grok Voice 3.0 登顶 Artificial Analysis 语音模型评测",
-        "summary": "Musk 发文称 Grok Voice 3.0 已是全球领先的对话语音模型，并引用 Artificial Analysis 的评测：Grok Voice 3.0 以 86.9 分登顶 Speech to Speech Index，领先 GPT-Live-1（Astra, medium）的 83.2 和 Gemini 3.8 Live 的 82.6，较 Grok Voice 2.0 的 81.3 提升 5.6 分。该模型通过 Realtime API 提供，价格 $0.08 每分钟，Big Bench Audio 平均首音频延迟 0.81 秒，任务成功率 94.8% 居榜首。",
-        "source": "X：Elon Musk (@elonmusk, xAI)",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-14T21:32:41.000Z",
-        "links": {
-          "original": "https://x.com/elonmusk/status/2110483960312799675"
-        }
-      },
-      {
-        "id": "aihot-587cb36d9e1c",
-        "title": "Meta 的 Muse Wonder (Max) 以 +6.4% 净提升进入 Agent Arena 第12名",
-        "summary": "Arena 发布基于超过 5000 次真实智能体会话的评测结果，Meta 的 Muse Wonder (Max) 进入 Agent Arena 第12名，净提升 +6.4%，比 Muse Spark 1.3 (Max) 高 +2.8 分并上升四位。",
+        "id": "aihot-ae53887a689e",
+        "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
+        "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。",
         "source": "X：Arena (@arena)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-14T20:19:17.000Z",
+        "publishedAt": "2026-10-15T18:19:42.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2110465487914295770"
+          "original": "https://x.com/arena/status/2110797782953132049"
         }
       },
       {
-        "id": "aihot-814532adc586",
-        "title": "Gemini 4 Argon 向全球 Google AI Pro 和 Ultra 订阅者开放",
-        "summary": "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放。该模型此前已在 Gemini 应用中逐步推出，定位为处理复杂任务的前沿模型，更多详情见官方推文线程 https://x.com/GeminiApp/status/2110039322229649783。",
-        "source": "X：Gemini (@GeminiApp)",
+        "id": "aihot-569a3de70e92",
+        "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+        "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。",
+        "source": "PyTorch：Blog（RSS）",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-14T22:02:05.000Z",
+        "publishedAt": "2026-10-15T17:55:52.000Z",
         "links": {
-          "original": "https://x.com/GeminiApp/status/2110491358498865638"
+          "original": "https://pytorch.org/blog/muse-spark-open/"
         }
       },
       {
-        "id": "aihot-815376c099ca",
-        "title": "MIT团队用机器学习修正误差，将两到六周天气预报准确率翻倍",
-        "summary": "MIT研究人员团队在Nature发表论文，提出一个机器学习后处理层，通过从历史数据中学习现有预报模型的错误并修正其输出，将两周到六周范围的预报准确率翻倍。该模型在ECMWF的季节间预报竞赛中获第一名，首次在该时间范围内稳定超过气候学平均值，并显著改善洪水、寒潮等极端天气事件的预测；模型开源、低成本、可附加于任意预报模型，肯尼亚气象部门已接洽用于改进季风季预报。",
-        "source": "MIT News（RSS）",
+        "id": "aihot-23b35d098f3e",
+        "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
+        "summary": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。",
+        "source": "Platformer（热点 RSS）",
         "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-14T15:00:00.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-15T00:52:13.000Z",
         "links": {
-          "original": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
+          "original": "https://www.platformer.news/openai-states-lawsuit-liability/"
         }
       },
       {
-        "id": "aihot-a25079d311de",
-        "title": "Lovable 推出增长工具，从同一聊天窗口帮你获客投广告和做 SEO",
-        "summary": "Lovable 推出增长工具，在原有建应用聊天窗口中提供增长计划、广告投放和 SEO 能力。用户设定目标后，Lovable 依据应用上下文生成可执行计划；可连接 Google Ads 和 Meta 账号在 Google。",
-        "source": "Lovable Blog",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-14T12:50:00.000Z",
-        "links": {
-          "original": "https://lovable.dev/blog/introducing-growth-tools"
-        }
-      },
-      {
-        "id": "aihot-e97ea1b90513",
-        "title": "xAI 发布 Grok Voice 3.0 语音模型",
-        "summary": "xAI 发布 speech-to-speech 模型 Grok Voice 3.0，在 Artificial Analysis 的 Speech-to-Speech Index 以 86.9 分排名第一，时延低于一秒。",
-        "source": "xAI：News（网页）",
+        "id": "aihot-9452c91dafba",
+        "title": "vLLM 提供 Muse Spark Open Day 0 支持",
+        "summary": "vLLM 与 Meta Superintelligence Labs 合作，在发布当天即支持开源 MoE 模型 Muse Spark Open。该模型总参数 816B、每 token 激活 42B、上下文窗口 1M，面向长程智能体编码工作流。",
+        "source": "vLLM 官方博客（RSS）",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
         "links": {
-          "original": "https://x.ai/news/grok-voice-3"
+          "original": "https://vllm.ai/blog/2026-10-15-muse-spark-open"
+        }
+      },
+      {
+        "id": "aihot-0c57b6c5ae65",
+        "title": "Meta Muse Spark Open 上线 Together AI",
+        "summary": "Meta 的 Muse Spark Open 开源权重模型即日起在 Together AI 提供，Together AI 为 Day 0 发布合作方。该模型主打长时程智能体编码，具备 1M token 上下文窗口、计算机使用与多模态输入（文本、图像、音频、视频），并在行动前输出意图说明。",
+        "source": "Together AI 研究与产品博客（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "links": {
+          "original": "https://www.together.ai/blog/meta-muse-spark-open"
+        }
+      },
+      {
+        "id": "aihot-f7b8270297c6",
+        "title": "Krea 3 图像模型通过 ComfyUI Partner Nodes 上线",
+        "summary": "Krea 3 图像模型现已在 ComfyUI 通过 Partner Nodes 提供，主打基于参考图的生成与编辑。模型强调更快的迭代速度和更低的单张成本，支持按上传顺序引用多张参考图、保持产品标签形状材质不变的前提下修改环境光影构图，并可将生成结果作为新输入继续编辑。",
+        "source": "Comfy Blog",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-15T21:15:45.000Z",
+        "links": {
+          "original": "https://blog.comfy.org/p/krea-3-is-now-available-via-partner"
+        }
+      },
+      {
+        "id": "aihot-c8141e514f65",
+        "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
+        "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+        "source": "X：Claude Devs (@ClaudeDevs)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-15T20:09:02.000Z",
+        "links": {
+          "original": "https://x.com/ClaudeDevs/status/2110825294655562048"
+        }
+      },
+      {
+        "id": "aihot-6bb9d7bc31d1",
+        "title": "Step 5 Preview 上线 FeatherlessAI，官方转发开放权重模型部署信息",
+        "summary": "阶跃星辰转发 FeatherlessAI 的消息，Step 5 Preview 已上线该平台，以 FP8 精度提供服务。该开放权重模型为 600B 稀疏 MoE 架构、每 token 激活 27B，面向长程智能体工作，在软件工程和专业知识工作（尤其金融）上有前沿级表现，按 Artificial Analysis 数据其每任务成本约为 Claude Opus 5.5 的 1/6，智能水平与 Kimi K3 相当。",
+        "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-15T15:30:00.000Z",
+        "links": {
+          "original": "https://x.com/StepFun_ai/status/2110755075845169428"
         }
       }
     ]
