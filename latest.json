@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-16",
-  "generatedAt": "2026-10-15T23:55:05.347Z",
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-18T23:55:03.442Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 42,
+    "totalItems": 8,
     "mustRead": 5,
-    "creatorUpdates": 5,
-    "officialUpdates": 4,
-    "aihotPicks": 10,
+    "creatorUpdates": 4,
+    "officialUpdates": 0,
+    "aihotPicks": 4,
     "sources": [
       {
         "id": "mmguo-home",
@@ -24,7 +24,7 @@
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 3
       },
       {
         "id": "claude-blog",
@@ -59,318 +59,185 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 0
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 35
+        "itemCount": 5
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-d0a418888dd2",
-        "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
-        "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
-        "source": "X：OpenRouter (@OpenRouter)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T18:02:06.000Z",
-        "links": {
-          "original": "https://x.com/OpenRouter/status/2110793354154008685"
-        }
-      },
-      {
-        "id": "aihot-58e006ae3c2f",
-        "title": "Black Forest Labs FLUX 3 系列登陆 OpenRouter：Image Klein 开源权重、视频 upscale 降价并支持 4K 生成",
-        "summary": "OpenRouter 宣布 Black Forest Labs（@bfl_ai）三项新内容上线。FLUX 3 Image Klein 是新的开源权重图像模型，可在单张消费级 GPU 上运行；改进版 FLUX Video Upscale 开启 early access，可将任意视频转为 4K，价格从 $0.59/s 降至 $0.28/s；FLUX 3 Video 现已支持从提示词直接生成 4K 视频。",
-        "source": "X：OpenRouter (@OpenRouter)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T18:41:48.000Z",
-        "links": {
-          "original": "https://x.com/OpenRouter/status/2110803343878873473"
-        }
-      },
-      {
-        "id": "aihot-khazix-8dfcaee8e015",
-        "title": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
-        "summary": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
+        "id": "aihot-khazix-96fdaa17d132",
+        "title": "用户因GrokBot敷衍回复直接卸载",
+        "summary": "用户卡兹克宣布直接卸载GrokBot，称其一条回复成为压垮骆驼的最后一根稻草。他表示即便已在提示词中写满“必须详细思考、深度回复、看清所有再回答”等要求，该产品仍敷衍了事。其引用推文还提到GrokBot常年不思考、路由的垃圾模型不查证就直接回复，浪费的时间远超节省的时间。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-15T14:48:24.000Z",
+        "publishedAt": "2026-10-18T09:38:25.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110744607722176611"
+          "original": "https://x.com/Khazix0918/status/2111753760326496325"
         }
       },
       {
-        "id": "aihot-khazix-20bf85c45f1c",
-        "title": "卡兹克用 Claude 搭建公司中台定时任务并分享省 Token 技巧",
-        "summary": "作者卡兹克搭建了公司中台的 Claude 自动化流程，定时任务每10分钟检查后台是否有新意见，Claude 会在后台启动并根据需求判断是否开发优化、改完后回复。省额度技巧是平时用 Haiku 5.5 探测有无新意见，有的话再启动 Opus 5.5 子Agent 来解决，以最大化 Token 利用。",
+        "id": "aihot-khazix-edfb774ea36b",
+        "title": "用户吐槽 GrokBot 路由垃圾模型不查证直接回复",
+        "summary": "用户吐槽 GrokBot 经常不思考、张嘴就来，路由到的垃圾模型查都不查直接回复，掰扯和出错浪费的时间远超节省的时间。推文未给出具体模型版本、参数或性能数字，仅表达对 GrokBot 实际使用体验的质疑，并向其他用户询问使用方式。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-15T08:35:58.000Z",
+        "category": "opinion",
+        "publishedAt": "2026-10-18T06:43:22.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110650879670125020"
+          "original": "https://x.com/Khazix0918/status/2111709708226797737"
         }
       },
       {
-        "id": "aihot-khazix-138339548497",
-        "title": "卡兹克实测开源Skill Anatomy，一句话让AI生成原理科普视频",
-        "summary": "作者卡兹克分享实测开源Skill Anatomy（GitHub：https://github.com/wheresryan22/anatomy/tree/main），它能把抽象原理做成可交互的机械模型动画，在其基础上还能让AI一轮直出带讲解配音的科普视频。",
+        "id": "bilibili-chimp-d912dcfc8110",
+        "title": "Vibe 知识大赏 · 潮汐力",
+        "summary": "跟风玩一玩",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-18T09:01:38.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1wBnG6tE8s"
+        }
+      },
+      {
+        "id": "aihot-khazix-298d1f0fe12f",
+        "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
+        "summary": "作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-10-15T04:24:18.000Z",
+        "publishedAt": "2026-10-18T02:04:38.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110587546271191166"
+          "original": "https://x.com/Khazix0918/status/2111639562720329976"
+        }
+      },
+      {
+        "id": "aihot-411379746ddd",
+        "title": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍",
+        "summary": "Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。",
+        "source": "The Decoder：AI News（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-18T13:22:26.000Z",
+        "links": {
+          "original": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-8dfcaee8e015",
-        "title": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
-        "summary": "Codex提示词联想功能是我最近用的最爽的功能。 直到，我今天看到给我弹了这个联想。。。 我单方面宣布这就是AGI了。。。😂😂😂",
+        "id": "aihot-khazix-96fdaa17d132",
+        "title": "用户因GrokBot敷衍回复直接卸载",
+        "summary": "用户卡兹克宣布直接卸载GrokBot，称其一条回复成为压垮骆驼的最后一根稻草。他表示即便已在提示词中写满“必须详细思考、深度回复、看清所有再回答”等要求，该产品仍敷衍了事。其引用推文还提到GrokBot常年不思考、路由的垃圾模型不查证就直接回复，浪费的时间远超节省的时间。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-15T14:48:24.000Z",
+        "publishedAt": "2026-10-18T09:38:25.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110744607722176611"
+          "original": "https://x.com/Khazix0918/status/2111753760326496325"
         }
       },
       {
-        "id": "aihot-khazix-20bf85c45f1c",
-        "title": "卡兹克用 Claude 搭建公司中台定时任务并分享省 Token 技巧",
-        "summary": "作者卡兹克搭建了公司中台的 Claude 自动化流程，定时任务每10分钟检查后台是否有新意见，Claude 会在后台启动并根据需求判断是否开发优化、改完后回复。省额度技巧是平时用 Haiku 5.5 探测有无新意见，有的话再启动 Opus 5.5 子Agent 来解决，以最大化 Token 利用。",
+        "id": "aihot-khazix-edfb774ea36b",
+        "title": "用户吐槽 GrokBot 路由垃圾模型不查证直接回复",
+        "summary": "用户吐槽 GrokBot 经常不思考、张嘴就来，路由到的垃圾模型查都不查直接回复，掰扯和出错浪费的时间远超节省的时间。推文未给出具体模型版本、参数或性能数字，仅表达对 GrokBot 实际使用体验的质疑，并向其他用户询问使用方式。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-18T06:43:22.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2111709708226797737"
+        }
+      },
+      {
+        "id": "bilibili-chimp-d912dcfc8110",
+        "title": "Vibe 知识大赏 · 潮汐力",
+        "summary": "跟风玩一玩",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-18T09:01:38.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1wBnG6tE8s"
+        }
+      },
+      {
+        "id": "aihot-khazix-298d1f0fe12f",
+        "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
+        "summary": "作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-10-15T08:35:58.000Z",
+        "publishedAt": "2026-10-18T02:04:38.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2110650879670125020"
-        }
-      },
-      {
-        "id": "aihot-khazix-138339548497",
-        "title": "卡兹克实测开源Skill Anatomy，一句话让AI生成原理科普视频",
-        "summary": "作者卡兹克分享实测开源Skill Anatomy（GitHub：https://github.com/wheresryan22/anatomy/tree/main），它能把抽象原理做成可交互的机械模型动画，在其基础上还能让AI一轮直出带讲解配音的科普视频。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-15T04:24:18.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2110587546271191166"
-        }
-      },
-      {
-        "id": "aihot-khazix-0ec358aa8b27",
-        "title": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-        "summary": "作者数字生命卡兹克分享开源 Skill Anatomy，其理念是\"物体本身，就是解释\"，可将抽象原理做成可交互的机械模型动画，还能在其上生成带讲解配音的科普视频。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-15T00:26:00.000Z",
-        "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687109&idx=1&sn=032fd9f6aab5ee20ea5d14f97bf48a86"
-        }
-      },
-      {
-        "id": "aihot-khazix-6dc7f72d92d5",
-        "title": "可灵（Kling）4.0 全面开放，新增 MCP 和 CLI 访问",
-        "summary": "可灵（Kling AI）宣布 Kling 4.0 现已全面开放，用户可通过 kling.ai 全新创作界面使用，并新增 MCP 和 CLI 访问方式以提升视频创作工作流灵活性。即将推出的功能包括 4K 和 1080p 分辨率的 10-bit HDR 视频输出，以及面向企业客户和开发者的 API。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T17:43:44.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2110788729539547636"
+          "original": "https://x.com/Khazix0918/status/2111639562720329976"
         }
       }
     ],
-    "officialUpdates": [
-      {
-        "id": "langchain-blog-6e1628c72979",
-        "title": "2026 年 10 月 LangChain 新闻简报：Interrupt NYC 和 London 上发布的全部内容",
-        "summary": "我们在 Interrupt NYC 和 London 上发布了 LangSmith AI Search、Engine v2、Trajectories、Custom Apps、Fine-Tuning 和 Managed Deep Agents v0.9。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-15T16:50:48.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/october-2026-langchain-newsletter"
-        }
-      },
-      {
-        "id": "openai-news-61703317ae1c",
-        "title": "让学术研究实验室使用 GPT-Rosalind",
-        "summary": "推出 Rosalind Academic Plan，为符合条件的学术实验室提供赞助，帮助其使用 GPT-Rosalind 和相关工具，推进生命科学研究。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-15T19:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/introducing-the-rosalind-academic-plan"
-        }
-      },
-      {
-        "id": "langchain-blog-231021043c6e",
-        "title": "关于智能体评测的常见问题解答",
-        "summary": "介绍智能体评测从何入手、离线与在线评测的区别、评估器类型、LLM 裁判、使用 Harbor 进行基准测试、多轮评测，以及如何控制成本。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-15T01:19:37.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/common-questions-about-agent-evals"
-        }
-      },
-      {
-        "id": "openai-news-393523649a02",
-        "title": "通过提问教学生思考与学习",
-        "summary": "值此教师节，了解面向教育工作者的巴西葡萄牙语版 AI，并看看学习模式如何帮助教师支持主动、循序渐进的学习。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-15T13:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
-        }
-      }
-    ],
+    "officialUpdates": [],
     "aihotPicks": [
       {
-        "id": "aihot-d0a418888dd2",
-        "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
-        "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
-        "source": "X：OpenRouter (@OpenRouter)",
+        "id": "aihot-411379746ddd",
+        "title": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍",
+        "summary": "Anthropic 发布内部研究称，技术部门初级岗位占比从 2025 年初的 21% 降至 14%，新招初级占比从 27% 降至 9%，空缺初级职位降至 6%，非技术部门基本稳定。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T18:02:06.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-18T13:22:26.000Z",
         "links": {
-          "original": "https://x.com/OpenRouter/status/2110793354154008685"
+          "original": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
         }
       },
       {
-        "id": "aihot-58e006ae3c2f",
-        "title": "Black Forest Labs FLUX 3 系列登陆 OpenRouter：Image Klein 开源权重、视频 upscale 降价并支持 4K 生成",
-        "summary": "OpenRouter 宣布 Black Forest Labs（@bfl_ai）三项新内容上线。FLUX 3 Image Klein 是新的开源权重图像模型，可在单张消费级 GPU 上运行；改进版 FLUX Video Upscale 开启 early access，可将任意视频转为 4K，价格从 $0.59/s 降至 $0.28/s；FLUX 3 Video 现已支持从提示词直接生成 4K 视频。",
-        "source": "X：OpenRouter (@OpenRouter)",
+        "id": "aihot-4f0190a3d4dc",
+        "title": "Browser Use 讲解浏览器智能体的工作原理与使用时机",
+        "summary": "Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。",
+        "source": "Browser Use",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T18:41:48.000Z",
+        "category": "tip",
+        "publishedAt": "2026-10-18T00:00:00.000Z",
         "links": {
-          "original": "https://x.com/OpenRouter/status/2110803343878873473"
+          "original": "https://browser-use.com/posts/browser-agents"
         }
       },
       {
-        "id": "aihot-ae53887a689e",
-        "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
-        "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。",
+        "id": "aihot-079be3b40db4",
+        "title": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首",
+        "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。",
         "source": "X：Arena (@arena)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-15T18:19:42.000Z",
+        "publishedAt": "2026-10-18T18:56:03.000Z",
         "links": {
-          "original": "https://x.com/arena/status/2110797782953132049"
+          "original": "https://x.com/arena/status/2111894091168682086"
         }
       },
       {
-        "id": "aihot-569a3de70e92",
-        "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
-        "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。",
-        "source": "PyTorch：Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-15T17:55:52.000Z",
-        "links": {
-          "original": "https://pytorch.org/blog/muse-spark-open/"
-        }
-      },
-      {
-        "id": "aihot-23b35d098f3e",
-        "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
-        "summary": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。",
-        "source": "Platformer（热点 RSS）",
+        "id": "aihot-9a1979a75098",
+        "title": "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责",
+        "summary": "慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-15T00:52:13.000Z",
+        "publishedAt": "2026-10-18T10:52:39.000Z",
         "links": {
-          "original": "https://www.platformer.news/openai-states-lawsuit-liability/"
-        }
-      },
-      {
-        "id": "aihot-9452c91dafba",
-        "title": "vLLM 提供 Muse Spark Open Day 0 支持",
-        "summary": "vLLM 与 Meta Superintelligence Labs 合作，在发布当天即支持开源 MoE 模型 Muse Spark Open。该模型总参数 816B、每 token 激活 42B、上下文窗口 1M，面向长程智能体编码工作流。",
-        "source": "vLLM 官方博客（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T00:00:00.000Z",
-        "links": {
-          "original": "https://vllm.ai/blog/2026-10-15-muse-spark-open"
-        }
-      },
-      {
-        "id": "aihot-0c57b6c5ae65",
-        "title": "Meta Muse Spark Open 上线 Together AI",
-        "summary": "Meta 的 Muse Spark Open 开源权重模型即日起在 Together AI 提供，Together AI 为 Day 0 发布合作方。该模型主打长时程智能体编码，具备 1M token 上下文窗口、计算机使用与多模态输入（文本、图像、音频、视频），并在行动前输出意图说明。",
-        "source": "Together AI 研究与产品博客（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T00:00:00.000Z",
-        "links": {
-          "original": "https://www.together.ai/blog/meta-muse-spark-open"
-        }
-      },
-      {
-        "id": "aihot-f7b8270297c6",
-        "title": "Krea 3 图像模型通过 ComfyUI Partner Nodes 上线",
-        "summary": "Krea 3 图像模型现已在 ComfyUI 通过 Partner Nodes 提供，主打基于参考图的生成与编辑。模型强调更快的迭代速度和更低的单张成本，支持按上传顺序引用多张参考图、保持产品标签形状材质不变的前提下修改环境光影构图，并可将生成结果作为新输入继续编辑。",
-        "source": "Comfy Blog",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T21:15:45.000Z",
-        "links": {
-          "original": "https://blog.comfy.org/p/krea-3-is-now-available-via-partner"
-        }
-      },
-      {
-        "id": "aihot-c8141e514f65",
-        "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
-        "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
-        "source": "X：Claude Devs (@ClaudeDevs)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-15T20:09:02.000Z",
-        "links": {
-          "original": "https://x.com/ClaudeDevs/status/2110825294655562048"
-        }
-      },
-      {
-        "id": "aihot-6bb9d7bc31d1",
-        "title": "Step 5 Preview 上线 FeatherlessAI，官方转发开放权重模型部署信息",
-        "summary": "阶跃星辰转发 FeatherlessAI 的消息，Step 5 Preview 已上线该平台，以 FP8 精度提供服务。该开放权重模型为 600B 稀疏 MoE 架构、每 token 激活 27B，面向长程智能体工作，在软件工程和专业知识工作（尤其金融）上有前沿级表现，按 Artificial Analysis 数据其每任务成本约为 Claude Opus 5.5 的 1/6，智能水平与 Kimi K3 相当。",
-        "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-15T15:30:00.000Z",
-        "links": {
-          "original": "https://x.com/StepFun_ai/status/2110755075845169428"
+          "original": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/"
         }
       }
     ]
