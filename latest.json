@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-20",
-  "generatedAt": "2026-10-19T23:55:01.401Z",
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-20T23:57:03.269Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 16,
+    "totalItems": 20,
     "mustRead": 5,
-    "creatorUpdates": 0,
+    "creatorUpdates": 5,
     "officialUpdates": 2,
     "aihotPicks": 10,
     "sources": [
@@ -24,7 +24,7 @@
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 4
       },
       {
         "id": "claude-blog",
@@ -59,233 +59,294 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 16
+        "itemCount": 14
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-356f8d0b363d",
-        "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter",
-        "summary": "Inception 的扩散模型 Mercury 3 上线 OpenRouter，生成速度超 1,000 tok/s，支持 1M 上下文，是 Mercury 2.5 的 4 倍。Inception 报告其在 IFBench、GPQA Diamond 和 SWE-Bench Atlas 上超过 GPT-6 Luna 和 Haiku 5.5；上线期五折，价格 $0.10/M 输入、$0.35/M 输出。",
-        "source": "X：OpenRouter (@OpenRouter)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-19T16:54:03.000Z",
-        "links": {
-          "original": "https://x.com/OpenRouter/status/2112225779782398131"
-        }
-      },
-      {
-        "id": "openai-news-2cb2d84fca7b",
-        "title": "推动低资源编程语言的编程能力发展",
-        "summary": "了解 OpenAI 如何提升 ChatGPT 对低资源编程语言的支持，并推出面向软件工程、SQLite 和 COBOL 迁移的新评测。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-19T12:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/low-resource-programming-languages"
-        }
-      },
-      {
-        "id": "aihot-27897304b336",
-        "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一",
-        "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Agent Arena 第一开源模型，总排名第 11，基于超 7.5K 真实会话净提升 +5.1%。其中位任务成本 $0.20，约为 GPT-6.1 Sol 提升幅度的 37%、成本的 27%；Confirmed Success 提升 +11.5%，且无 Tool Hallucination 问题。",
-        "source": "X：Arena (@arena)",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-19T18:18:50.000Z",
-        "links": {
-          "original": "https://x.com/arena/status/2112247114944360666"
-        }
-      },
-      {
-        "id": "aihot-8837d3116db4",
-        "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹",
-        "summary": "美国法院批准羁押被指控在 OpenAI 会议室安装窃听器的前工程师 Abdulrahman Alfozan。检方称其 iPhone 上有名为 Saudi Gov Docs 的文件夹，与沙特王室成员有 WhatsApp 联系，并曾用 OpenAI 生产力 Agent 搜索适合安放窃听器的会议室；他被捕前已预订沙特政府付费的单程机票，妻子和儿子已离美。",
-        "source": "Ars Technica：AI（RSS）",
+        "id": "aihot-5186a5222ad1",
+        "title": "路透：OpenAI 拟在 Anthropic 上市前加速融资约 300 亿美元，估值超 1.4 万亿美元",
+        "summary": "据 Reuters 报道，OpenAI 正赶在 Anthropic 上市前洽谈融资约 300 亿美元，估值超 1.4 万亿美元，比 3 月的 8520 亿美元至少高 64%。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-19T20:21:53.000Z",
+        "publishedAt": "2026-10-20T08:06:25.000Z",
         "links": {
-          "original": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/"
+          "original": "https://x.com/rohanpaul_ai/status/2112455383356989598"
         }
       },
       {
-        "id": "aihot-4a04de1e468e",
-        "title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性",
-        "summary": "Meta 工程团队介绍其数据管道智能体采用的瘦编排器（thin orchestrator）模式：一个约 1300 行的编排器只负责路由和可靠性检查，将 20+ 工作流分派给 14 个上下文隔离的专项子智能体，自身不做任何领域推理。",
-        "source": "Meta Engineering Blog（RSS）",
-        "sourceId": "aihot",
+        "id": "aihot-khazix-e42b65e174c1",
+        "title": "旧 M4 Mac mini 的最爽用法：自建 CI 和 Agent 自动化测试机",
+        "summary": "作者分享把原本打算卖掉的旧 M4 Mac mini 改造成自建 CI 机的用法，用来给 Agent 跑自动化端到端测试。此前用 GitHub 跑 CI 时因 Agent 频繁提 PR，即使开了会员每月仍要多花二三十美元；改自建后速度快、可并行、24 小时待命，闲时还作为 Agent 专用机，预先登录好 Chrome 和飞书 CLI 供 Agent 全自动使用。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-10-19T15:30:37.000Z",
+        "publishedAt": "2026-10-20T16:38:00.000Z",
         "links": {
-          "original": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+          "original": "https://x.com/Khazix0918/status/2112584126155088004"
+        }
+      },
+      {
+        "id": "aihot-khazix-d1dafaf7377a",
+        "title": "旧 M4 Mac mini 改作自建 CI 与 Agent 专用机",
+        "summary": "作者把闲置的 M4 Mac mini 改造成自建 CI 机器，并专门给 Agent 跑端到端测试。此前用 GitHub 跑 CI，因 Agent 频繁提 PR，即使开了会员每月仍可能多花十几刀。现在速度快、并行爽、24 小时待命，还顺带当 Agent 专用机。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-20T16:19:42.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2112579521849471311"
+        }
+      },
+      {
+        "id": "bilibili-chimp-c965a8395a57",
+        "title": "Agent重塑下一代商业4大变化",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-20T10:00:00.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV159nc6mE9r"
+        }
+      },
+      {
+        "id": "aihot-khazix-af0e5e0305f6",
+        "title": "35万个AI反骗骗子：Apate.ai 与国内大学生用 AI 反制诈骗的两个故事",
+        "summary": "作者讲述两个用 AI 反制诈骗的案例。澳大利亚公司 Apate.ai 造了35万个 AI 装成易骗的普通人消耗骗子，已与骗子聊约250万次、累计耗掉约17年骗子时间，TPG 转接近59万通可疑来电，澳洲联邦银行公开报告的诈骗损失降低76%，今年8月获815万美元种子轮融资。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-20T03:32:06.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2112386350934868374"
         }
       }
     ],
-    "creatorUpdates": [],
-    "officialUpdates": [
+    "creatorUpdates": [
       {
-        "id": "openai-news-2cb2d84fca7b",
-        "title": "推动低资源编程语言的编程能力发展",
-        "summary": "了解 OpenAI 如何提升 ChatGPT 对低资源编程语言的支持，并推出面向软件工程、SQLite 和 COBOL 迁移的新评测。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-19T12:00:00.000Z",
+        "id": "aihot-khazix-e42b65e174c1",
+        "title": "旧 M4 Mac mini 的最爽用法：自建 CI 和 Agent 自动化测试机",
+        "summary": "作者分享把原本打算卖掉的旧 M4 Mac mini 改造成自建 CI 机的用法，用来给 Agent 跑自动化端到端测试。此前用 GitHub 跑 CI 时因 Agent 频繁提 PR，即使开了会员每月仍要多花二三十美元；改自建后速度快、可并行、24 小时待命，闲时还作为 Agent 专用机，预先登录好 Chrome 和飞书 CLI 供 Agent 全自动使用。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-20T16:38:00.000Z",
         "links": {
-          "original": "https://openai.com/index/low-resource-programming-languages"
+          "original": "https://x.com/Khazix0918/status/2112584126155088004"
         }
       },
       {
-        "id": "langchain-blog-4f640a47af38",
-        "title": "Numan 如何借助 LangGraph 和 LangSmith 打造评测优先的 AI 健康教练",
-        "summary": "了解 Numan 如何基于 LangGraph 和 LangSmith 打造 AI 健康教练 Nu，采用分类评测、模拟对话，并在监管边界上设置安全关卡。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-19T16:44:34.000Z",
+        "id": "aihot-khazix-d1dafaf7377a",
+        "title": "旧 M4 Mac mini 改作自建 CI 与 Agent 专用机",
+        "summary": "作者把闲置的 M4 Mac mini 改造成自建 CI 机器，并专门给 Agent 跑端到端测试。此前用 GitHub 跑 CI，因 Agent 频繁提 PR，即使开了会员每月仍可能多花十几刀。现在速度快、并行爽、24 小时待命，还顺带当 Agent 专用机。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-20T16:19:42.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith"
+          "original": "https://x.com/Khazix0918/status/2112579521849471311"
+        }
+      },
+      {
+        "id": "bilibili-chimp-c965a8395a57",
+        "title": "Agent重塑下一代商业4大变化",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-20T10:00:00.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV159nc6mE9r"
+        }
+      },
+      {
+        "id": "aihot-khazix-af0e5e0305f6",
+        "title": "35万个AI反骗骗子：Apate.ai 与国内大学生用 AI 反制诈骗的两个故事",
+        "summary": "作者讲述两个用 AI 反制诈骗的案例。澳大利亚公司 Apate.ai 造了35万个 AI 装成易骗的普通人消耗骗子，已与骗子聊约250万次、累计耗掉约17年骗子时间，TPG 转接近59万通可疑来电，澳洲联邦银行公开报告的诈骗损失降低76%，今年8月获815万美元种子轮融资。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-20T03:32:06.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2112386350934868374"
+        }
+      },
+      {
+        "id": "aihot-khazix-56a20643a911",
+        "title": "Apate.ai 用35万个AI反诈拖住骗子，国内年轻人用AI视频反制AI卖惨账号",
+        "summary": "作者讲述了两起用AI反制诈骗的案例。澳大利亚公司 Apate.ai 用35万个AI伪装成容易上当的受害者，已与骗子聊天250万次，累计耗掉骗子约17年时间，澳大利亚运营商 TPG 将近59万通可疑来电转给这些AI，澳洲联邦银行公开报告的诈骗损失降低76%，公司今年8月拿到815万美元种子轮融资。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "industry",
+        "publishedAt": "2026-10-20T00:26:00.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687365&idx=1&sn=4102098fb8725531aa2f783fa2f20f20"
+        }
+      }
+    ],
+    "officialUpdates": [
+      {
+        "id": "openai-news-9b10d269b198",
+        "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+        "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-20T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/ted-taylor-restaurant"
+        }
+      },
+      {
+        "id": "openai-news-ad5a009c6f7f",
+        "title": "OpenAI acquires Orchestra Bio",
+        "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-20T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/openai-to-acquire-orchestra-bio"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-356f8d0b363d",
-        "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter",
-        "summary": "Inception 的扩散模型 Mercury 3 上线 OpenRouter，生成速度超 1,000 tok/s，支持 1M 上下文，是 Mercury 2.5 的 4 倍。Inception 报告其在 IFBench、GPQA Diamond 和 SWE-Bench Atlas 上超过 GPT-6 Luna 和 Haiku 5.5；上线期五折，价格 $0.10/M 输入、$0.35/M 输出。",
-        "source": "X：OpenRouter (@OpenRouter)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-19T16:54:03.000Z",
-        "links": {
-          "original": "https://x.com/OpenRouter/status/2112225779782398131"
-        }
-      },
-      {
-        "id": "aihot-27897304b336",
-        "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一",
-        "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Agent Arena 第一开源模型，总排名第 11，基于超 7.5K 真实会话净提升 +5.1%。其中位任务成本 $0.20，约为 GPT-6.1 Sol 提升幅度的 37%、成本的 27%；Confirmed Success 提升 +11.5%，且无 Tool Hallucination 问题。",
-        "source": "X：Arena (@arena)",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-19T18:18:50.000Z",
-        "links": {
-          "original": "https://x.com/arena/status/2112247114944360666"
-        }
-      },
-      {
-        "id": "aihot-8837d3116db4",
-        "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹",
-        "summary": "美国法院批准羁押被指控在 OpenAI 会议室安装窃听器的前工程师 Abdulrahman Alfozan。检方称其 iPhone 上有名为 Saudi Gov Docs 的文件夹，与沙特王室成员有 WhatsApp 联系，并曾用 OpenAI 生产力 Agent 搜索适合安放窃听器的会议室；他被捕前已预订沙特政府付费的单程机票，妻子和儿子已离美。",
-        "source": "Ars Technica：AI（RSS）",
+        "id": "aihot-5186a5222ad1",
+        "title": "路透：OpenAI 拟在 Anthropic 上市前加速融资约 300 亿美元，估值超 1.4 万亿美元",
+        "summary": "据 Reuters 报道，OpenAI 正赶在 Anthropic 上市前洽谈融资约 300 亿美元，估值超 1.4 万亿美元，比 3 月的 8520 亿美元至少高 64%。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-19T20:21:53.000Z",
+        "publishedAt": "2026-10-20T08:06:25.000Z",
         "links": {
-          "original": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/"
+          "original": "https://x.com/rohanpaul_ai/status/2112455383356989598"
         }
       },
       {
-        "id": "aihot-4a04de1e468e",
-        "title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性",
-        "summary": "Meta 工程团队介绍其数据管道智能体采用的瘦编排器（thin orchestrator）模式：一个约 1300 行的编排器只负责路由和可靠性检查，将 20+ 工作流分派给 14 个上下文隔离的专项子智能体，自身不做任何领域推理。",
-        "source": "Meta Engineering Blog（RSS）",
+        "id": "aihot-c56bf083b19d",
+        "title": "Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理",
+        "summary": "Perplexity CEO Aravind Srinivas 宣布，Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理，也不用 WiFi。模型和智能体都在本机运行，可操作 Mac 原生应用和本地文件，敏感数据不必发送到云端，现已在 Perplexity Mac 应用中可用。",
+        "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-19T15:30:37.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-20T16:34:51.000Z",
         "links": {
-          "original": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+          "original": "https://x.com/AravSrinivas/status/2112583333825950207"
         }
       },
       {
-        "id": "aihot-8a062494322c",
-        "title": "n8n 教程：在 NVIDIA DGX Spark 上离线运行全套 AI 工作流",
-        "summary": "n8n 博客发布教程，讲解如何在一台 NVIDIA DGX Spark（128GB 统一内存）上部署七个本地模型，通过 LiteLLM 单一 OpenAI 兼容端点驱动 n8n 工作流，全程不调用云 API。",
-        "source": "n8n Blog",
+        "id": "aihot-fdb3c5042731",
+        "title": "Anthropic 云合作生变：AWS、Google、微软视其为竞争者",
+        "summary": "据泄露给华尔街日报的 S-1 文件，Anthropic 难以从 AWS、Google 和 Microsoft 获得足够云算力，这些厂商日益将其视为竞争者而非客户。",
+        "source": "TechCrunch：AI（RSS）",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-19T13:22:17.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-20T21:25:22.000Z",
         "links": {
-          "original": "https://blog.n8n.io/n8n-nvidia-dgx-spark/"
+          "original": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/"
         }
       },
       {
-        "id": "aihot-db4eaeed35c7",
-        "title": "fal 联合 bfl_ai 发布后训练视频模型 FLUX 3 Max",
-        "summary": "fal 发布与 @bfl_ai 合作的最新后训练视频模型 FLUX 3 Max，在第三方 image-to-video 质量评测中并列第一，生成 10 秒 720/768p 视频约需 12 秒。未来三周该模型 75% 折扣，标注为同质量级别最便宜的前沿视频模型。",
+        "id": "aihot-b2a8b4a39538",
+        "title": "fal 发布 FLUX 3 Max，图生视频 Elo 达 1139 并列第一",
+        "summary": "fal 发布与 Black Forest Labs 合作后训练的视频模型 FLUX 3 Max，在第三方独立人类偏好评测中获 1139 Elo，与 Seedance 2.5 并列图生视频质量第一梯队。该模型约 12 秒生成一段 10 秒 720/768p 视频，未来三周降价 75%，后续还将继续后训练改进。",
         "source": "X：fal (@fal)",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-19T18:34:22.000Z",
+        "publishedAt": "2026-10-20T17:42:57.000Z",
         "links": {
-          "original": "https://x.com/fal/status/2112251022047412492"
+          "original": "https://x.com/fal/status/2112600472922333263"
         }
       },
       {
-        "id": "aihot-9e88900a9893",
-        "title": "DeepSeek V4.1 Flash 1017 发布，Artificial Analysis 智能指数得分 45 并列开源模型第二",
-        "summary": "DeepSeek 发布 DeepSeek V4.1 Flash 1017，在 Artificial Analysis Intelligence Index 得分 45，比 DeepSeek V4.1 Flash 提高 6 分，与 GLM-5.3 并列开源权重模型第二，仅次于 MiMo-V2.6-Pro。",
-        "source": "X：Artificial Analysis (@ArtificialAnlys)",
+        "id": "aihot-538dfe178394",
+        "title": "Google 与 Meta 发布 TorchTPU：PyTorch 原生 TPU 后端",
+        "summary": "Google 与 Meta 发布开源项目 TorchTPU，为 Google TPU 提供原生 PyTorch 后端，模型迁移只需把 .to(\"cuda\") 改为 .to(\"tpu\")。",
+        "source": "PyTorch：Blog（RSS）",
         "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-19T16:25:46.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-20T16:00:30.000Z",
         "links": {
-          "original": "https://x.com/ArtificialAnlys/status/2112218661432000694"
+          "original": "https://pytorch.org/blog/introducing-torchtpu/"
         }
       },
       {
-        "id": "aihot-4a97c677d26a",
-        "title": "美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品",
-        "summary": "美国国土安全部依据 2018 年供应链法发布 2026-01 号命令，要求所有联邦文职机构立即停止采购 DeepSeek 及其关联公司产品，并从 IT 系统中移除相关产品，包括使用 DeepSeek 实现开发的第三方产品与服务。",
-        "source": "Hacker News：AI 热帖",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-19T15:05:00.000Z",
-        "links": {
-          "original": "https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party/"
-        }
-      },
-      {
-        "id": "aihot-cbcf4439f7c7",
-        "title": "黑客用 AI 智能体入侵 John Deere、SharkNinja 等超 100 家网站",
-        "summary": "AI 安全公司 Norforge 发现一名黑客用开源 AI 平台 Cairn 编排的智能体入侵了超过 100 个网站，据 Reuters 报道受害者包括 John Deere、SharkNinja 和 Cummins。",
-        "source": "The Verge：AI（RSS）",
+        "id": "aihot-95107761d930",
+        "title": "美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器",
+        "summary": "据 The Intercept 获取的文件，美国陆军网络司令部（ARCYBER）正在开发代号 ECHOTRIBBLE 的平台，让 AI 智能体自主在网络间移动、识别并清除威胁目标，之后自毁，且须在极少人工监督下运行。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-19T13:58:41.000Z",
+        "publishedAt": "2026-10-20T12:32:56.000Z",
         "links": {
-          "original": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+          "original": "https://the-decoder.com/army-cyber-commands-echotribble-would-turn-ai-agents-into-self-spreading-cyberweapons/"
         }
       },
       {
-        "id": "aihot-1993ce80cb69",
-        "title": "Meta 详解 Prometheus 吉瓦级超集群：一期已完成并用于训练 Muse 模型",
-        "summary": "Meta 介绍其位于俄亥俄州 New Albany 的吉瓦级超集群 Prometheus，一期已建成并用于训练 Muse 系列基础模型，目标扩展到约 100 万张 GPU。",
-        "source": "Meta Engineering Blog（RSS）",
+        "id": "aihot-dd03bf48ce6f",
+        "title": "llm-d 1.0 发布：Kubernetes 原生分布式推理服务走向生产就绪",
+        "summary": "IBM、Red Hat 和 Google 等主导的开源推理项目 llm-d 在 PyTorch Conference North America 上发布 llm-d 1.0，这是一个 Kubernetes 原生的分布式推理服务框架，支持任意模型、任意加速器和任意云。",
+        "source": "IBM Research：AI",
         "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-19T13:00:10.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-20T12:00:00.000Z",
         "links": {
-          "original": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/"
+          "original": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving?utm_medium=rss&utm_source=rss"
+        }
+      },
+      {
+        "id": "aihot-75f3d2366e44",
+        "title": "Databricks 发布 MemCurrent 生产级 Agent 持久记忆架构",
+        "summary": "Databricks 介绍 MemCurrent，一种面向生产 Agent 的持久记忆架构，结合情景记忆与派生记忆，通过插件、工具调用和离线 dreaming 管线三种访问模式读写与整合记忆，已用于 Agent Bricks Memory 和 Genie。",
+        "source": "Databricks：Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-20T00:00:00.000Z",
+        "links": {
+          "original": "https://www.databricks.com/blog/memcurrent-designing-persistent-memory-production-agents"
+        }
+      },
+      {
+        "id": "aihot-f7462471d6af",
+        "title": "SpaceX 财报显示 AI 业务超预期，占收入 52%",
+        "summary": "SpaceX 发布第三季度监管文件，披露营收 146 亿美元、净利润 44 亿美元，扭转去年同期 10 亿美元亏损。其更名的“Super Intelligence”业务线（含 Cursor、Grok 和 neocloud 算力业务）表现好于投资者预期，AI 目前占公司收入 52%，算力规模达 1.7 GW。",
+        "source": "TechCrunch：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-20T20:40:41.000Z",
+        "links": {
+          "original": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/"
+        }
+      },
+      {
+        "id": "aihot-4e09fcfdb3c3",
+        "title": "DeepSeek 全面开源内部推理框架 DeepInfer",
+        "summary": "DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，并同步开源生产级 Token 编解码组件 deepseek-recipe。",
+        "source": "公众号：DeepSeek（深度求索）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-20T08:54:54.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485884&idx=1&sn=d457981abe7db1f1b5d600fc109dc836"
         }
       }
     ]
