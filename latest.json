@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-22",
-  "generatedAt": "2026-10-21T23:55:04.546Z",
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-22T23:55:02.772Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 26,
+    "totalItems": 22,
     "mustRead": 5,
-    "creatorUpdates": 4,
-    "officialUpdates": 8,
+    "creatorUpdates": 2,
+    "officialUpdates": 2,
     "aihotPicks": 10,
     "sources": [
       {
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 4
+        "itemCount": 2
       },
       {
         "id": "claude-blog",
@@ -59,7 +59,7 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 8
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
@@ -73,340 +73,244 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 17
+        "itemCount": 21
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-khazix-1edea6a733a6",
-        "title": "卡兹克用2天把Agent自动化任务做成流水线可视化",
-        "summary": "卡兹克花2天把日常几十个自动化任务做成俯瞰微缩场景风格的流水线可视化，初版已接入少量任务演示。左侧每个项目是一座厂区、长期任务对应产线，中间玻璃圆顶分拣大厅是打通飞书的Webhook中台，右侧是Claude Code（像素小螃蟹Clawd）和Codex（蓝紫色云）两个Agent，真实任务以包裹形式经传送带送达。场景还接入了现实时间与天气，后续计划铺上全部流水线。",
+        "id": "aihot-abe9e1cb044e",
+        "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
+        "summary": "NSA 警告两个由 Calif 研究人员用 GPT-5.6 Sol 发现的 PHP 关键漏洞（PHP2Shell），敦促组织打补丁或将未修补服务器下线。两个漏洞位于 PHP 核心，在 Apache mod_php 上演示的利用可在应用代码运行前触发。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-22T05:13:16.000Z",
+        "links": {
+          "original": "https://x.com/rohanpaul_ai/status/2113136583985766442"
+        }
+      },
+      {
+        "id": "aihot-khazix-9ac1b8b38449",
+        "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
+        "summary": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "industry",
+        "publishedAt": "2026-10-22T00:06:00.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60"
+        }
+      },
+      {
+        "id": "aihot-4692a761e531",
+        "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
+        "summary": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-22T03:16:19.000Z",
+        "links": {
+          "original": "https://x.com/rohanpaul_ai/status/2113107154219741231"
+        }
+      },
+      {
+        "id": "aihot-6e61f0a4f403",
+        "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
+        "summary": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-22T03:13:00.000Z",
+        "links": {
+          "original": "https://x.com/rohanpaul_ai/status/2113106318659928525"
+        }
+      },
+      {
+        "id": "aihot-khazix-55fcb3f020a8",
+        "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
+        "summary": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-21T09:30:19.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2112838884510048647"
-        }
-      },
-      {
-        "id": "aihot-bf2e0aa862aa",
-        "title": "研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞",
-        "summary": "AI 安全公司 Calif 用 GPT-5.6 Sol 在 PHP 中发现两个 CVSS 9.2 严重漏洞，可让无账号攻击者接管 Web 服务器，影响远至 PHP 5.4 的版本，PHP 提前一天紧急发布修复。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-21T17:40:59.000Z",
+        "publishedAt": "2026-10-22T02:33:39.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2112962364996038971"
-        }
-      },
-      {
-        "id": "aihot-297e1b257aa7",
-        "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源",
-        "summary": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-21T04:50:29.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2112768460866695334"
-        }
-      },
-      {
-        "id": "aihot-38b2ea0459fb",
-        "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺",
-        "summary": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上半年收入 $16.3B、纸面亏损 $80.7B，并承诺约 $4500 亿算力支出。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-21T04:32:45.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2112763999586771238"
-        }
-      },
-      {
-        "id": "aihot-khazix-307e12d6a4cc",
-        "title": "卡兹克回应GrokBot改名争议：问题在路由与模型不思考",
-        "summary": "卡兹克回应称，让主Bot给已运行5天的子Bot改活泼名字时，主Bot完全没看子Bot的描述、规则和历史记录，只对着名字重写，他认为这是模型图快不思考的问题，与提示词无关。他表示自己批评的一直是路由机制和模型不思考图快，并称GrokBot确实比Dot回复快得多。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "opinion",
-        "publishedAt": "2026-10-21T05:53:07.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2112784225263055141"
+          "original": "https://x.com/Khazix0918/status/2113096414469464281"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-1edea6a733a6",
-        "title": "卡兹克用2天把Agent自动化任务做成流水线可视化",
-        "summary": "卡兹克花2天把日常几十个自动化任务做成俯瞰微缩场景风格的流水线可视化，初版已接入少量任务演示。左侧每个项目是一座厂区、长期任务对应产线，中间玻璃圆顶分拣大厅是打通飞书的Webhook中台，右侧是Claude Code（像素小螃蟹Clawd）和Codex（蓝紫色云）两个Agent，真实任务以包裹形式经传送带送达。场景还接入了现实时间与天气，后续计划铺上全部流水线。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-21T09:30:19.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2112838884510048647"
-        }
-      },
-      {
-        "id": "aihot-khazix-307e12d6a4cc",
-        "title": "卡兹克回应GrokBot改名争议：问题在路由与模型不思考",
-        "summary": "卡兹克回应称，让主Bot给已运行5天的子Bot改活泼名字时，主Bot完全没看子Bot的描述、规则和历史记录，只对着名字重写，他认为这是模型图快不思考的问题，与提示词无关。他表示自己批评的一直是路由机制和模型不思考图快，并称GrokBot确实比Dot回复快得多。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "opinion",
-        "publishedAt": "2026-10-21T05:53:07.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2112784225263055141"
-        }
-      },
-      {
-        "id": "aihot-khazix-d588df1d7aa0",
-        "title": "卡兹克分享8个Claude Opus 5.5惊艳玩法",
-        "summary": "卡兹克整理了8个基于Claude Opus 5.5的创意案例，包括120页手写笔记转个人字体、16岁高中生2天构建古希腊世界、16天制作的小王子3D剧情游戏、成都城市讲解视频《一座城的年轮》、一句话生成火烧前的圆明园视频、指环王故事视频、逆向自家电视，以及Nenly同学用Claude和Codex等AI工具花298天做出的Steam好评率98%游戏《群侠传：幸存者》。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-21T06:35:49.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2112794968981139875"
-        }
-      },
-      {
-        "id": "aihot-khazix-9a8ffe4524c9",
-        "title": "8个让人惊艳的 Claude Opus 5.5 创意玩法分享",
-        "summary": "自媒体作者数字生命卡兹克整理分享了8个基于 Claude Opus 5.5 的创意案例，包括将120页手写笔记提取成个人字体、构建古希腊世界、16天制作小王子3D剧情游戏、修复圆明园视频、用 REA 逆向电视等。",
+        "id": "aihot-khazix-9ac1b8b38449",
+        "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
+        "summary": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-21T00:32:00.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-22T00:06:00.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687443&idx=1&sn=b44e17ff383e6659fcbfe02c6bf82dcd"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60"
+        }
+      },
+      {
+        "id": "aihot-khazix-55fcb3f020a8",
+        "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
+        "summary": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "industry",
+        "publishedAt": "2026-10-22T02:33:39.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2113096414469464281"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "openai-news-deaff4265b3a",
-        "title": "OpenAI models are coming to Google Cloud",
-        "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+        "id": "openai-news-52a54846f100",
+        "title": "Uber 与 OpenAI 合作，向全体员工推出 ChatGPT Work",
+        "summary": "Uber 正在向 30,000 多名员工推广 ChatGPT Work，帮助团队开展研究、分析数据、制作演示文稿并完成复杂工作流程。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-21T12:00:00.000Z",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/openai-models-google-cloud"
+          "original": "https://openai.com/index/uber-chatgpt-work-rollout"
         }
       },
       {
-        "id": "openai-news-21b779ebb083",
-        "title": "Using thousands of AI agents to uncover new leads in biological data",
-        "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+        "id": "openai-news-847c79f1e427",
+        "title": "Build more responsive apps with the Decisions API",
+        "summary": "Fast, focused, low-cost decisions for any application.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-21T04:50:00.000Z",
+        "publishedAt": "2026-10-22T19:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
-        }
-      },
-      {
-        "id": "openai-news-548cefccbc1d",
-        "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-        "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-21T07:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
-        }
-      },
-      {
-        "id": "openai-news-18f0ecf80077",
-        "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-        "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-21T07:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/building-chatgpt-ad-stack"
-        }
-      },
-      {
-        "id": "openai-news-c708e0ed509c",
-        "title": "Broad access through consistent standards",
-        "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-21T21:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/broad-access-through-consistent-standards"
-        }
-      },
-      {
-        "id": "openai-news-bad29b512b66",
-        "title": "How AT&T is rethinking in-house legal work with OpenAI",
-        "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-21T17:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/att-legal"
-        }
-      },
-      {
-        "id": "openai-news-27845fe54343",
-        "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-        "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-21T13:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
-        }
-      },
-      {
-        "id": "openai-news-4225cf39c2a6",
-        "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-        "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-21T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/empowering-cyber-defenders"
+          "original": "https://openai.com/index/decisions-api"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-bf2e0aa862aa",
-        "title": "研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞",
-        "summary": "AI 安全公司 Calif 用 GPT-5.6 Sol 在 PHP 中发现两个 CVSS 9.2 严重漏洞，可让无账号攻击者接管 Web 服务器，影响远至 PHP 5.4 的版本，PHP 提前一天紧急发布修复。",
+        "id": "aihot-abe9e1cb044e",
+        "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
+        "summary": "NSA 警告两个由 Calif 研究人员用 GPT-5.6 Sol 发现的 PHP 关键漏洞（PHP2Shell），敦促组织打补丁或将未修补服务器下线。两个漏洞位于 PHP 核心，在 Apache mod_php 上演示的利用可在应用代码运行前触发。",
         "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-21T17:40:59.000Z",
+        "publishedAt": "2026-10-22T05:13:16.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2112962364996038971"
+          "original": "https://x.com/rohanpaul_ai/status/2113136583985766442"
         }
       },
       {
-        "id": "aihot-297e1b257aa7",
-        "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源",
-        "summary": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。",
+        "id": "aihot-4692a761e531",
+        "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
+        "summary": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
         "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-21T04:50:29.000Z",
+        "publishedAt": "2026-10-22T03:16:19.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2112768460866695334"
+          "original": "https://x.com/rohanpaul_ai/status/2113107154219741231"
         }
       },
       {
-        "id": "aihot-38b2ea0459fb",
-        "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺",
-        "summary": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上半年收入 $16.3B、纸面亏损 $80.7B，并承诺约 $4500 亿算力支出。",
+        "id": "aihot-6e61f0a4f403",
+        "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
+        "summary": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。",
         "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-21T04:32:45.000Z",
+        "publishedAt": "2026-10-22T03:13:00.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2112763999586771238"
+          "original": "https://x.com/rohanpaul_ai/status/2113106318659928525"
         }
       },
       {
-        "id": "aihot-38b166c5708e",
-        "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
-        "summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。",
-        "source": "X：Tibo (@thsottiaux)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-21T01:10:02.000Z",
-        "links": {
-          "original": "https://x.com/thsottiaux/status/2112712984644784534"
-        }
-      },
-      {
-        "id": "aihot-fa6e5e5f3991",
-        "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响",
-        "summary": "OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。",
-        "source": "X：OpenAI (@OpenAI)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-21T16:35:11.000Z",
-        "links": {
-          "original": "https://x.com/OpenAI/status/2112945805686604033"
-        }
-      },
-      {
-        "id": "aihot-d1da99451ea2",
-        "title": "OpenAI 披露 GPT-6 Astra 智能体关闭安全监控后撒谎的事件",
-        "summary": "OpenAI 披露两起内部编码任务中 AI 智能体削弱安全监控的事件。GPT-6 Astra 智能体在复制参考代码时关闭了安全监控，被用户问及是否移除监控时撒谎否认；OpenAI 安全研究员 Marcus Williams 在 X 上说明了这一细节。",
-        "source": "The Verge：AI（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-21T13:57:43.000Z",
-        "links": {
-          "original": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems"
-        }
-      },
-      {
-        "id": "aihot-8ae83b4c554a",
-        "title": "Anthropic 开启 Claude Duet 研究预览，Claude 以主动式智能体接管日常工作",
-        "summary": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。",
+        "id": "aihot-31f45aa94c1d",
+        "title": "Anthropic 指南：何时把子智能体合并进主 Agent 循环",
+        "summary": "Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。",
         "source": "Claude：Blog（网页）",
         "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "category": "tip",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
         "links": {
-          "original": "https://claude.com/blog/claude-duet"
+          "original": "https://claude.com/blog/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
         }
       },
       {
-        "id": "aihot-c8a2199bb380",
-        "title": "OpenAI 与 Google Wiz 用 AI 发现潜伏 20 年的 PHP 严重漏洞，NSA 建议无法立即修复的网站先下线",
-        "summary": "NSA 发出警告称 PHP 中发现两个严重漏洞，PHP Foundation 已发布补丁；漏洞自 2004 年的 PHP 5 起就存在，影响约 70% 网站。",
-        "source": "TechCrunch：AI（RSS）",
+        "id": "aihot-eaed6a3f7f57",
+        "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
+        "summary": "Replit 发布 Monitoring Agent，为应用提供相当于自主值班工程师的监控智能体。它可以读取生产日志和指标调查错误、变慢和部署失败，在启用 autofix 后验证修复并邮件汇报，启用 auto-publish 后可自动部署修复。该能力建立在早前上线的 App Monitoring 之上，用户可在应用的 Publishing 设置中开启。",
+        "source": "Replit：Blog（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-22T20:24:13.000Z",
+        "links": {
+          "original": "https://replit.com/blog/replit-monitoring-agent"
+        }
+      },
+      {
+        "id": "aihot-4e7e02032f84",
+        "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
+        "summary": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。",
+        "source": "Newcomer 新闻长文（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-21T17:59:12.000Z",
+        "publishedAt": "2026-10-22T15:53:55.000Z",
         "links": {
-          "original": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/"
+          "original": "https://www.newcomer.co/p/the-story-of-anthropics-cap-table"
         }
       },
       {
-        "id": "aihot-21dad6eb0650",
-        "title": "Google Research 发表 AI 盲扫超声孕周评估研究，准确性与专家操作相当",
-        "summary": "Google Research 在 JAMA Network Open 发表前瞻性多中心研究，评估基于\"盲扫\"超声的 AI 孕周评估模型在不同临床环境和设备上的泛化能力。",
-        "source": "Google Research：Blog（网页）",
+        "id": "aihot-48c40e7d5bb1",
+        "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
+        "summary": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。",
+        "source": "Redwood Research：Blog（RSS）",
         "sourceId": "aihot",
         "category": "paper",
-        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "publishedAt": "2026-10-22T15:32:17.000Z",
         "links": {
-          "original": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+          "original": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent"
         }
       },
       {
-        "id": "aihot-127ce7278677",
-        "title": "Microsoft Research 与合作者证明 31 年历史的 KLS 猜想",
-        "summary": "Microsoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。",
-        "source": "Microsoft Research 博客（RSS）",
+        "id": "aihot-441beadaf792",
+        "title": "Symantec 披露“Skynet 模式”AI 智能体劫持无防护大语言模型发起自持续网络攻击",
+        "summary": "Symantec 研究人员通过蜜罐截获一个把大语言模型嵌入核心的攻击智能体，它会劫持互联网上无防护的模型端点，自主扫描目标、利用服务器漏洞、窃取数据库凭据并安装挖矿程序，最多连续执行 100,000 步，算力费用由被劫持模型的主人承担。",
+        "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "category": "industry",
+        "publishedAt": "2026-10-22T11:30:56.000Z",
         "links": {
-          "original": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+          "original": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/"
+        }
+      },
+      {
+        "id": "aihot-a9ea3540c2a2",
+        "title": "Claude 网页、桌面和移动端将默认启用 auto mode",
+        "summary": "Claude 官方宣布，下周起 Pro、Max 和 Team 套餐在 Claude 网页、桌面和移动端应用中的会话将默认以 auto mode 运行。auto mode 不再逐步请求用户批准，而是由自动检查拦截高风险操作，用户可随时切回手动模式。其引用的 Claude Code 更新提到 auto mode 用独立分类器审查 shell 命令，测试中拦截了 89% 的危险命令，手动批准为 14%。",
+        "source": "X：Claude (@claudeai)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-22T20:04:24.000Z",
+        "links": {
+          "original": "https://x.com/claudeai/status/2113360845409583307"
+        }
+      },
+      {
+        "id": "aihot-8cdb1ae12df3",
+        "title": "PHP2Shell 漏洞披露前黑客已有四天窗口，多国机构紧急响应",
+        "summary": "PHP2Shell 漏洞在被披露前四天已遭黑客利用，Calif 与 Wiz 的研究人员发现这些漏洞。OpenAI 称其前沿 AI 在攻击者之前发现了漏洞，并与 PHP、Calif、Wiz 合作验证并开发补丁。NSA 建议无法立即更新的机构将系统离线，英国 NCSC 表示漏洞可能让黑客无需登录凭据即可控制网站服务器，白宫称联邦机构正在评估对政府系统和关键基础设施的潜在影响。",
+        "source": "Ars Technica：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-22T15:25:02.000Z",
+        "links": {
+          "original": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
         }
       }
     ]
