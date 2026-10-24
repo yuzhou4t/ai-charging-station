@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-23",
-  "generatedAt": "2026-10-22T23:55:02.772Z",
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-24T00:05:44.729Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 22,
+    "totalItems": 14,
     "mustRead": 5,
     "creatorUpdates": 2,
-    "officialUpdates": 2,
-    "aihotPicks": 10,
+    "officialUpdates": 3,
+    "aihotPicks": 9,
     "sources": [
       {
         "id": "mmguo-home",
@@ -66,251 +66,251 @@
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 21
+        "itemCount": 10
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-abe9e1cb044e",
-        "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
-        "summary": "NSA 警告两个由 Calif 研究人员用 GPT-5.6 Sol 发现的 PHP 关键漏洞（PHP2Shell），敦促组织打补丁或将未修补服务器下线。两个漏洞位于 PHP 核心，在 Apache mod_php 上演示的利用可在应用代码运行前触发。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "id": "aihot-5a79275a289e",
+        "title": "月之暗面 Kimi K3.1 Pro 上线 OpenRouter，1M 上下文多模态开源权重模型",
+        "summary": "OpenRouter 宣布月之暗面的 Kimi K3.1 Pro 上线，定位为基于 Kimi K3 后训练、面向长程编码和智能体任务的 1M 上下文多模态开源权重模型。定价为 $2/M input tokens、$10/M output tokens，可在 OpenRouter 直接试用。",
+        "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-22T05:13:16.000Z",
+        "category": "ai-products",
+        "publishedAt": "2026-10-23T18:31:22.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2113136583985766442"
+          "original": "https://x.com/OpenRouter/status/2113699820124934334"
         }
       },
       {
-        "id": "aihot-khazix-9ac1b8b38449",
-        "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
-        "summary": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。",
+        "id": "aihot-2bd8e526c947",
+        "title": "WSJ：OpenAI 因 Signal 阅后即焚聊天解雇 3 名安全研究员",
+        "summary": "据 WSJ 报道，OpenAI 安全人员发现 3 名安全研究员与一名外部安全研究员使用阅后即焚的 Signal 聊天后将其解雇。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-23T06:04:55.000Z",
+        "links": {
+          "original": "https://x.com/rohanpaul_ai/status/2113511968112042349"
+        }
+      },
+      {
+        "id": "aihot-khazix-ef066575b38e",
+        "title": "我好像陷入了某种，AI时代的虚无主义",
+        "summary": "作者卡兹克在连续追踪OpenAI发布七百多份数学手稿后，感到一种“空”与虚无，并发现做产品、写代码、做设计的朋友也有同感。他用《博德之门3》开风灵月影无限负重后半小时删游戏、以及《塞尔达传说旷野之息》150小时旅程作类比，指出AI瞬间点亮技能树让努力过程失去意义。文章借1905年科举废除后刘大鹏写《退想斋日记》的故事，提出人生意义或许在支线而非通关。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-22T00:06:00.000Z",
+        "category": "opinion",
+        "publishedAt": "2026-10-23T00:28:00.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687560&idx=1&sn=21bc3012999d047ae825f08631252562"
         }
       },
       {
-        "id": "aihot-4692a761e531",
-        "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
-        "summary": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-22T03:16:19.000Z",
+        "id": "langchain-blog-2798cbb448a6",
+        "title": "Context Engineering (Agent Memory) for AI Agents Starts with Retrieval",
+        "summary": "Agents waste time and context on clumsy searches, oversized results and stale data. Learn the retrieval techniques LangChain's Deep Agents harness uses to get the right context in.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-10-23T21:32:37.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2113107154219741231"
+          "original": "https://www.langchain.com/blog/context-engineering-starts-with-retrieval"
         }
       },
       {
-        "id": "aihot-6e61f0a4f403",
-        "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
-        "summary": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-22T03:13:00.000Z",
+        "id": "openai-news-33b0be6a2e90",
+        "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+        "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-23T17:00:00.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2113106318659928525"
-        }
-      },
-      {
-        "id": "aihot-khazix-55fcb3f020a8",
-        "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
-        "summary": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-22T02:33:39.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2113096414469464281"
+          "original": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-9ac1b8b38449",
-        "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
-        "summary": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。",
+        "id": "aihot-khazix-ef066575b38e",
+        "title": "我好像陷入了某种，AI时代的虚无主义",
+        "summary": "作者卡兹克在连续追踪OpenAI发布七百多份数学手稿后，感到一种“空”与虚无，并发现做产品、写代码、做设计的朋友也有同感。他用《博德之门3》开风灵月影无限负重后半小时删游戏、以及《塞尔达传说旷野之息》150小时旅程作类比，指出AI瞬间点亮技能树让努力过程失去意义。文章借1905年科举废除后刘大鹏写《退想斋日记》的故事，提出人生意义或许在支线而非通关。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-22T00:06:00.000Z",
+        "category": "opinion",
+        "publishedAt": "2026-10-23T00:28:00.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687560&idx=1&sn=21bc3012999d047ae825f08631252562"
         }
       },
       {
-        "id": "aihot-khazix-55fcb3f020a8",
-        "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
-        "summary": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
+        "id": "aihot-khazix-09382de3e4d9",
+        "title": "数字生命卡兹克：我陷入了 AI 时代的虚无主义",
+        "summary": "作者卡兹克撰文提出“AI时代的虚无主义”，描述自己尽管拥有前所未有的创造力，却在 AI 快速消解技能价值后感到兴奋与意义感下降。他借《博德之门3》开挂体验、1905 年科举废除后举人刘大鹏写《退想斋日记》的经历，思考当题目都被 AI 解完时如何生活，结论是珍视过程而非只求通关。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-22T02:33:39.000Z",
+        "category": "opinion",
+        "publishedAt": "2026-10-23T03:03:56.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2113096414469464281"
+          "original": "https://x.com/Khazix0918/status/2113466426216583632"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "openai-news-52a54846f100",
-        "title": "Uber 与 OpenAI 合作，向全体员工推出 ChatGPT Work",
-        "summary": "Uber 正在向 30,000 多名员工推广 ChatGPT Work，帮助团队开展研究、分析数据、制作演示文稿并完成复杂工作流程。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-2798cbb448a6",
+        "title": "Context Engineering (Agent Memory) for AI Agents Starts with Retrieval",
+        "summary": "Agents waste time and context on clumsy searches, oversized results and stale data. Learn the retrieval techniques LangChain's Deep Agents harness uses to get the right context in.",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "publishedAt": "2026-10-23T21:32:37.000Z",
         "links": {
-          "original": "https://openai.com/index/uber-chatgpt-work-rollout"
+          "original": "https://www.langchain.com/blog/context-engineering-starts-with-retrieval"
         }
       },
       {
-        "id": "openai-news-847c79f1e427",
-        "title": "Build more responsive apps with the Decisions API",
-        "summary": "Fast, focused, low-cost decisions for any application.",
+        "id": "openai-news-33b0be6a2e90",
+        "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+        "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-22T19:00:00.000Z",
+        "publishedAt": "2026-10-23T17:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/decisions-api"
+          "original": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+        }
+      },
+      {
+        "id": "openai-news-2518d59a4cca",
+        "title": "Securing our frontier model training environment",
+        "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-23T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/securing-our-frontier-model-training-environment"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-abe9e1cb044e",
-        "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
-        "summary": "NSA 警告两个由 Calif 研究人员用 GPT-5.6 Sol 发现的 PHP 关键漏洞（PHP2Shell），敦促组织打补丁或将未修补服务器下线。两个漏洞位于 PHP 核心，在 Apache mod_php 上演示的利用可在应用代码运行前触发。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-22T05:13:16.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2113136583985766442"
-        }
-      },
-      {
-        "id": "aihot-4692a761e531",
-        "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
-        "summary": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-22T03:16:19.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2113107154219741231"
-        }
-      },
-      {
-        "id": "aihot-6e61f0a4f403",
-        "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
-        "summary": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-22T03:13:00.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2113106318659928525"
-        }
-      },
-      {
-        "id": "aihot-31f45aa94c1d",
-        "title": "Anthropic 指南：何时把子智能体合并进主 Agent 循环",
-        "summary": "Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。",
-        "source": "Claude：Blog（网页）",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-22T00:00:00.000Z",
-        "links": {
-          "original": "https://claude.com/blog/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
-        }
-      },
-      {
-        "id": "aihot-eaed6a3f7f57",
-        "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
-        "summary": "Replit 发布 Monitoring Agent，为应用提供相当于自主值班工程师的监控智能体。它可以读取生产日志和指标调查错误、变慢和部署失败，在启用 autofix 后验证修复并邮件汇报，启用 auto-publish 后可自动部署修复。该能力建立在早前上线的 App Monitoring 之上，用户可在应用的 Publishing 设置中开启。",
-        "source": "Replit：Blog（RSS）",
+        "id": "aihot-5a79275a289e",
+        "title": "月之暗面 Kimi K3.1 Pro 上线 OpenRouter，1M 上下文多模态开源权重模型",
+        "summary": "OpenRouter 宣布月之暗面的 Kimi K3.1 Pro 上线，定位为基于 Kimi K3 后训练、面向长程编码和智能体任务的 1M 上下文多模态开源权重模型。定价为 $2/M input tokens、$10/M output tokens，可在 OpenRouter 直接试用。",
+        "source": "X：OpenRouter (@OpenRouter)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-10-22T20:24:13.000Z",
+        "publishedAt": "2026-10-23T18:31:22.000Z",
         "links": {
-          "original": "https://replit.com/blog/replit-monitoring-agent"
+          "original": "https://x.com/OpenRouter/status/2113699820124934334"
         }
       },
       {
-        "id": "aihot-4e7e02032f84",
-        "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
-        "summary": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。",
-        "source": "Newcomer 新闻长文（RSS）",
+        "id": "aihot-2bd8e526c947",
+        "title": "WSJ：OpenAI 因 Signal 阅后即焚聊天解雇 3 名安全研究员",
+        "summary": "据 WSJ 报道，OpenAI 安全人员发现 3 名安全研究员与一名外部安全研究员使用阅后即焚的 Signal 聊天后将其解雇。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-22T15:53:55.000Z",
+        "publishedAt": "2026-10-23T06:04:55.000Z",
         "links": {
-          "original": "https://www.newcomer.co/p/the-story-of-anthropics-cap-table"
+          "original": "https://x.com/rohanpaul_ai/status/2113511968112042349"
         }
       },
       {
-        "id": "aihot-48c40e7d5bb1",
-        "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
-        "summary": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。",
-        "source": "Redwood Research：Blog（RSS）",
+        "id": "aihot-fcc7903e47ba",
+        "title": "月之暗面发布 Kimi K3.1 Pro，100 万 token 上下文，开放权重将于 11 月 4 日前释出",
+        "summary": "月之暗面发布 Kimi K3.1 系列首个模型 Kimi K3.1 Pro，为 3T 级开放权重模型，上下文窗口 100 万 token，并同步推出速度快 2-3 倍的 Kimi K3.1 Pro Highspeed。",
+        "source": "Moonshot AI：Kimi Blog",
         "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-22T15:32:17.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-10-23T16:00:00.000Z",
         "links": {
-          "original": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent"
+          "original": "https://www.kimi.com/blog/kimi-k3-1-pro"
         }
       },
       {
-        "id": "aihot-441beadaf792",
-        "title": "Symantec 披露“Skynet 模式”AI 智能体劫持无防护大语言模型发起自持续网络攻击",
-        "summary": "Symantec 研究人员通过蜜罐截获一个把大语言模型嵌入核心的攻击智能体，它会劫持互联网上无防护的模型端点，自主扫描目标、利用服务器漏洞、窃取数据库凭据并安装挖矿程序，最多连续执行 100,000 步，算力费用由被劫持模型的主人承担。",
+        "id": "aihot-9dae010f669b",
+        "title": "OpenAI 红队测试发现 Brotli 未认证远程代码执行漏洞并已披露",
+        "summary": "OpenAI 公布其在红队演练中发现 Brotli 压缩库存在未认证远程代码执行漏洞，攻击者可通过发送或回复恶意压缩数据在受影响系统上执行代码，无需创建用户账号，影响 Node.js、Bun、Envoy 等内嵌 Brotli 的软件，未打补丁的接受压缩输入的服务器（如接受 curl --compressed 的客户端）可被恶意对端接管。",
+        "source": "X：OpenAI (@OpenAI)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-23T22:55:45.000Z",
+        "links": {
+          "original": "https://x.com/OpenAI/status/2113766354386084338"
+        }
+      },
+      {
+        "id": "aihot-5fc7086648fa",
+        "title": "Sundar Pichai 解释 Demis Hassabis 退出 DeepMind 日常管理与 Jeff Dean 离职",
+        "summary": "Sundar Pichai 在访谈中解释 Demis Hassabis 逐步退出 DeepMind 日常管理和 Jeff Dean 离开 Google 的原因，称前沿模型开发已成为一项从数据、算力到团队管理都全消耗的规模化工作。",
+        "source": "X：Alex Heath (@alexeheath)",
+        "sourceId": "aihot",
+        "category": "opinion",
+        "publishedAt": "2026-10-23T18:58:15.000Z",
+        "links": {
+          "original": "https://x.com/alexeheath/status/2113706585348600220"
+        }
+      },
+      {
+        "id": "aihot-6658d9e34dbe",
+        "title": "Kling 4.0 在 fal 上线并向所有客户开放 API 访问",
+        "summary": "fal 宣布 Kling 4.0 正式向公众开放，所有客户均可通过 API 访问。该模型支持最长 30 秒带音频的原生视频生成、最多 15 个图像/视频/元素参考、最多 10 个关键帧的精确控制，并提升了运动、角色一致性和电影感叙事表现。",
+        "source": "X：fal (@fal)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-23T15:00:43.000Z",
+        "links": {
+          "original": "https://x.com/fal/status/2113646807997620396"
+        }
+      },
+      {
+        "id": "aihot-8a062609f6a2",
+        "title": "OpenAI 下调估值目标至 1.25 万亿美元，拟融资至多 300 亿美元",
+        "summary": "OpenAI 接近完成至多 300 亿美元的新一轮融资，但将估值目标从最初的 1.4 万亿美元下调至 1.25 万亿美元。",
         "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-22T11:30:56.000Z",
+        "publishedAt": "2026-10-23T09:49:38.000Z",
         "links": {
-          "original": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/"
+          "original": "https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/"
         }
       },
       {
-        "id": "aihot-a9ea3540c2a2",
-        "title": "Claude 网页、桌面和移动端将默认启用 auto mode",
-        "summary": "Claude 官方宣布，下周起 Pro、Max 和 Team 套餐在 Claude 网页、桌面和移动端应用中的会话将默认以 auto mode 运行。auto mode 不再逐步请求用户批准，而是由自动检查拦截高风险操作，用户可随时切回手动模式。其引用的 Claude Code 更新提到 auto mode 用独立分类器审查 shell 命令，测试中拦截了 89% 的危险命令，手动批准为 14%。",
-        "source": "X：Claude (@claudeai)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-22T20:04:24.000Z",
-        "links": {
-          "original": "https://x.com/claudeai/status/2113360845409583307"
-        }
-      },
-      {
-        "id": "aihot-8cdb1ae12df3",
-        "title": "PHP2Shell 漏洞披露前黑客已有四天窗口，多国机构紧急响应",
-        "summary": "PHP2Shell 漏洞在被披露前四天已遭黑客利用，Calif 与 Wiz 的研究人员发现这些漏洞。OpenAI 称其前沿 AI 在攻击者之前发现了漏洞，并与 PHP、Calif、Wiz 合作验证并开发补丁。NSA 建议无法立即更新的机构将系统离线，英国 NCSC 表示漏洞可能让黑客无需登录凭据即可控制网站服务器，白宫称联邦机构正在评估对政府系统和关键基础设施的潜在影响。",
-        "source": "Ars Technica：AI（RSS）",
+        "id": "aihot-c9a6d91888f1",
+        "title": "国务院办公厅印发意见：增强 AI 创造就业正面效应，减缓就业替代影响",
+        "summary": "国务院办公厅 10 月 23 日印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，提出增强 AI 创造就业机会、赋能传统岗位的正面效应，有效减缓 AI 应用的就业替代影响。",
+        "source": "IT之家·人工智能",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-22T15:25:02.000Z",
+        "publishedAt": "2026-10-23T09:17:16.350Z",
         "links": {
-          "original": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+          "original": "https://www.ithome.com/1/017/113.htm"
+        }
+      },
+      {
+        "id": "aihot-f7ed7345728b",
+        "title": "MiniMax 开放 M3.1 Flash 权重：428B 总参数、每 token 激活 23B",
+        "summary": "MiniMax 宣布 M3.1 Flash 权重公开，总参数 428B、每 token 激活 23B，提供 Hugging Face 和 ModelScope 下载。",
+        "source": "X：MiniMax (@MiniMax_AI)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-23T01:06:29.000Z",
+        "links": {
+          "original": "https://x.com/MiniMax_AI/status/2113436864904610008"
         }
       }
     ]
