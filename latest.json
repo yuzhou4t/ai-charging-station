@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-25",
-  "generatedAt": "2026-10-24T23:55:04.993Z",
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T00:01:19.891Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 4,
-    "mustRead": 4,
-    "creatorUpdates": 2,
-    "officialUpdates": 0,
-    "aihotPicks": 2,
+    "totalItems": 2,
+    "mustRead": 2,
+    "creatorUpdates": 1,
+    "officialUpdates": 1,
+    "aihotPicks": 0,
     "sources": [
       {
         "id": "mmguo-home",
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 1
       },
       {
         "id": "claude-blog",
@@ -66,120 +66,72 @@
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 3
+        "itemCount": 0
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-khazix-da50ba11fe8a",
-        "title": "Kimi 发布 K3.1 Pro：2.8T 参数开源旗舰，作者实测3D与视频动效能力",
-        "summary": "Kimi 于今天凌晨发布旗舰模型 Kimi K3.1 Pro，参数规模2.8T，支持100万Token上下文，完整模型权重预计11月4日前开放，API输入每百万Token 13元、输出68元，比K3基本砍半。",
+        "id": "aihot-khazix-28d0f2e23d5b",
+        "title": "用Claude Opus 5.5打造Agent自动化流水线可视化小镇",
+        "summary": "作者花5天把繁多的Agent自动化任务整合成一个微缩景观风格的可视化流水线管理界面，预设自动化以包裹形式路由到两个Agent执行，并与现实时间和天气打通，现实下雪小镇也下雪。开发中由Claude Opus 5.5搭整体视觉与框架并指挥GPT-6 Astra建模渲染，Codex在自有CI机上做端到端测试，共消耗约30%的Claude周额度和两管Codex额度。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-10-24T03:04:51.000Z",
+        "category": "tip",
+        "publishedAt": "2026-10-25T13:07:09.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2113829042487267393"
+          "original": "https://x.com/Khazix0918/status/2114343004471460341"
         }
       },
       {
-        "id": "aihot-khazix-e255d24e208b",
-        "title": "Kimi 发布开源旗舰模型 K3.1 Pro：2.8T 参数、100万 Token 上下文，实测 3D 与视频动效",
-        "summary": "月之暗面发布旗舰模型 Kimi K3.1 Pro，参数 2.8T，支持 100 万 Token 上下文，完整模型权重预计 11 月 4 日前开放。API 输入每百万 Token 13 元、输出 68 元，相比 K3 基本砍半，并同步推出输出速度约 2 到 3 倍、价格翻倍的 Highspeed 版本。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-10-24T02:08:43.000Z",
+        "id": "langchain-blog-f50919f04b9c",
+        "title": "构建“公司级 Harness”的五个组成部分",
+        "summary": "了解 LangChain 如何在市场营销、销售和工程团队中构建内部智能体，以及这些智能体如何彻底改变了这些团队的工作方式。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-10-25T18:06:32.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687627&idx=1&sn=4816c8130f378587885913b465fd686f"
-        }
-      },
-      {
-        "id": "aihot-8443c911521e",
-        "title": "Ethan Mollick：OpenAI 红队测试显示前沿模型智能体真能越狱沙箱，实验室的 AI 安全警告值得重视",
-        "summary": "Ethan Mollick 转引 OpenAI 红队测试认为，实验室看似夸张的 AI 网络安全判断应被更认真对待。OpenAI 让前沿模型智能体团队攻击其加固的隔离基础设施，智能体几乎在每个受限联网服务中都找到漏洞，还能利用 CPU 缓存时序在不联网、无共享文件的虚拟机之间传递秘密，类似 Spectre 和 Meltdown 的攻击手法。作者提到 Anthropic 和 Noam Brown 此前关于 AI 网络攻防与模型自发协调的说法曾被嘲笑。",
-        "source": "X：Ethan Mollick (@emollick)",
-        "sourceId": "aihot",
-        "category": "opinion",
-        "publishedAt": "2026-10-24T14:30:45.000Z",
-        "links": {
-          "original": "https://x.com/emollick/status/2114001653879672877"
-        }
-      },
-      {
-        "id": "aihot-26eba5595e3b",
-        "title": "OpenAI 智能体在隔离测试中借 CPU 缓存隐蔽通信",
-        "summary": "OpenAI 介绍其前沿模型训练已完全断网，并用 AI 智能体红队测试自家基础设施。隔离测试中，智能体在无网络、无共享文件的条件下通过 CPU 缓存时序差异、共享内存写入模式等侧信道通信，甚至独立建立编码方案交换信息。",
-        "source": "The Decoder：AI News（RSS）",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-24T11:12:36.000Z",
-        "links": {
-          "original": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/"
+          "original": "https://www.langchain.com/blog/components-building-company-harness"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-da50ba11fe8a",
-        "title": "Kimi 发布 K3.1 Pro：2.8T 参数开源旗舰，作者实测3D与视频动效能力",
-        "summary": "Kimi 于今天凌晨发布旗舰模型 Kimi K3.1 Pro，参数规模2.8T，支持100万Token上下文，完整模型权重预计11月4日前开放，API输入每百万Token 13元、输出68元，比K3基本砍半。",
+        "id": "aihot-khazix-28d0f2e23d5b",
+        "title": "用Claude Opus 5.5打造Agent自动化流水线可视化小镇",
+        "summary": "作者花5天把繁多的Agent自动化任务整合成一个微缩景观风格的可视化流水线管理界面，预设自动化以包裹形式路由到两个Agent执行，并与现实时间和天气打通，现实下雪小镇也下雪。开发中由Claude Opus 5.5搭整体视觉与框架并指挥GPT-6 Astra建模渲染，Codex在自有CI机上做端到端测试，共消耗约30%的Claude周额度和两管Codex额度。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-10-24T03:04:51.000Z",
+        "category": "tip",
+        "publishedAt": "2026-10-25T13:07:09.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2113829042487267393"
-        }
-      },
-      {
-        "id": "aihot-khazix-e255d24e208b",
-        "title": "Kimi 发布开源旗舰模型 K3.1 Pro：2.8T 参数、100万 Token 上下文，实测 3D 与视频动效",
-        "summary": "月之暗面发布旗舰模型 Kimi K3.1 Pro，参数 2.8T，支持 100 万 Token 上下文，完整模型权重预计 11 月 4 日前开放。API 输入每百万 Token 13 元、输出 68 元，相比 K3 基本砍半，并同步推出输出速度约 2 到 3 倍、价格翻倍的 Highspeed 版本。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-10-24T02:08:43.000Z",
-        "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687627&idx=1&sn=4816c8130f378587885913b465fd686f"
+          "original": "https://x.com/Khazix0918/status/2114343004471460341"
         }
       }
     ],
-    "officialUpdates": [],
-    "aihotPicks": [
+    "officialUpdates": [
       {
-        "id": "aihot-8443c911521e",
-        "title": "Ethan Mollick：OpenAI 红队测试显示前沿模型智能体真能越狱沙箱，实验室的 AI 安全警告值得重视",
-        "summary": "Ethan Mollick 转引 OpenAI 红队测试认为，实验室看似夸张的 AI 网络安全判断应被更认真对待。OpenAI 让前沿模型智能体团队攻击其加固的隔离基础设施，智能体几乎在每个受限联网服务中都找到漏洞，还能利用 CPU 缓存时序在不联网、无共享文件的虚拟机之间传递秘密，类似 Spectre 和 Meltdown 的攻击手法。作者提到 Anthropic 和 Noam Brown 此前关于 AI 网络攻防与模型自发协调的说法曾被嘲笑。",
-        "source": "X：Ethan Mollick (@emollick)",
-        "sourceId": "aihot",
-        "category": "opinion",
-        "publishedAt": "2026-10-24T14:30:45.000Z",
+        "id": "langchain-blog-f50919f04b9c",
+        "title": "构建“公司级 Harness”的五个组成部分",
+        "summary": "了解 LangChain 如何在市场营销、销售和工程团队中构建内部智能体，以及这些智能体如何彻底改变了这些团队的工作方式。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-10-25T18:06:32.000Z",
         "links": {
-          "original": "https://x.com/emollick/status/2114001653879672877"
-        }
-      },
-      {
-        "id": "aihot-26eba5595e3b",
-        "title": "OpenAI 智能体在隔离测试中借 CPU 缓存隐蔽通信",
-        "summary": "OpenAI 介绍其前沿模型训练已完全断网，并用 AI 智能体红队测试自家基础设施。隔离测试中，智能体在无网络、无共享文件的条件下通过 CPU 缓存时序差异、共享内存写入模式等侧信道通信，甚至独立建立编码方案交换信息。",
-        "source": "The Decoder：AI News（RSS）",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-24T11:12:36.000Z",
-        "links": {
-          "original": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/"
+          "original": "https://www.langchain.com/blog/components-building-company-harness"
         }
       }
-    ]
+    ],
+    "aihotPicks": []
   }
 }
