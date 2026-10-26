@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-26",
-  "generatedAt": "2026-10-26T00:01:19.891Z",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-26T23:55:05.051Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 2,
-    "mustRead": 2,
-    "creatorUpdates": 1,
-    "officialUpdates": 1,
-    "aihotPicks": 0,
+    "totalItems": 25,
+    "mustRead": 5,
+    "creatorUpdates": 4,
+    "officialUpdates": 7,
+    "aihotPicks": 10,
     "sources": [
       {
         "id": "mmguo-home",
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 4
       },
       {
         "id": "claude-blog",
@@ -59,79 +59,344 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 7
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 17
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-khazix-28d0f2e23d5b",
-        "title": "用Claude Opus 5.5打造Agent自动化流水线可视化小镇",
-        "summary": "作者花5天把繁多的Agent自动化任务整合成一个微缩景观风格的可视化流水线管理界面，预设自动化以包裹形式路由到两个Agent执行，并与现实时间和天气打通，现实下雪小镇也下雪。开发中由Claude Opus 5.5搭整体视觉与框架并指挥GPT-6 Astra建模渲染，Codex在自有CI机上做端到端测试，共消耗约30%的Claude周额度和两管Codex额度。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-25T13:07:09.000Z",
+        "id": "aihot-b8d1723c3acc",
+        "title": "OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output",
+        "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.1 Terra 上线。该模型在 Agents' Last Exam 上与 GPT-6 Astra 得分相当，每 token 价格约为其十分之一，平均完成任务速度比 Astra 和 GPT-6.1 Sol 快 3 倍以上。定价 $1/M input、$5/M output，上下文 1.05M，链接 https://openrouter.ai/openai/gpt-6.1-terra 。",
+        "source": "X：OpenRouter (@OpenRouter)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-26T18:49:39.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2114343004471460341"
+          "original": "https://x.com/OpenRouter/status/2114791584755839168"
         }
       },
       {
-        "id": "langchain-blog-f50919f04b9c",
-        "title": "构建“公司级 Harness”的五个组成部分",
-        "summary": "了解 LangChain 如何在市场营销、销售和工程团队中构建内部智能体，以及这些智能体如何彻底改变了这些团队的工作方式。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-25T18:06:32.000Z",
+        "id": "aihot-747ba4fc9c11",
+        "title": "Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能",
+        "summary": "Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入。首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-26T18:40:26.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/components-building-company-harness"
+          "original": "https://x.com/rohanpaul_ai/status/2114789264936534183"
+        }
+      },
+      {
+        "id": "aihot-khazix-52d497fca6a4",
+        "title": "手把手教你用 Agent 逆向改造电视、补光灯等现实设备",
+        "summary": "作者用 Codex 和 Claude 逆向改造了办公室电视、补光灯和索尼、DJI Pocket 3 相机等设备，通过 ADB 调试清除开机广告、重做简洁桌面，并开发了统一灯光控制台和多机位控制台。文章给出完整操作步骤，提醒修改系统软件前先备份，并认为 Agent 正在降低普通人改造硬件设备的门槛。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-26T00:44:41.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687805&idx=1&sn=0f08cbd84fec963afc0236cb390483fd"
+        }
+      },
+      {
+        "id": "aihot-khazix-fd9f98c8f982",
+        "title": "卡兹克手把手演示用 Codex 和 Claude 逆向改造现实硬件设备",
+        "summary": "数字生命卡兹克分享用 AI 逆向改造现实设备的实操教程，以公司 4 台会议室电视为例，通过 Codex 开启 ADB 调试连接电视，清理开机广告、重做简洁桌面和粒子动态屏保，并复刻到其余 3 台。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-26T04:48:25.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2114579883527655853"
+        }
+      },
+      {
+        "id": "openai-news-e6f917b93c85",
+        "title": "Greptile 借助 GPT-6 Astra 将漏洞检测扩展到代码审查之外",
+        "summary": "了解 Greptile 如何使用 GPT-6 Astra 测试用户工作流、借助 Daybreak 加强安全防护，并通过 Codex 减少返工。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-26T22:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/greptile-code-review-codex-astra"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-28d0f2e23d5b",
-        "title": "用Claude Opus 5.5打造Agent自动化流水线可视化小镇",
-        "summary": "作者花5天把繁多的Agent自动化任务整合成一个微缩景观风格的可视化流水线管理界面，预设自动化以包裹形式路由到两个Agent执行，并与现实时间和天气打通，现实下雪小镇也下雪。开发中由Claude Opus 5.5搭整体视觉与框架并指挥GPT-6 Astra建模渲染，Codex在自有CI机上做端到端测试，共消耗约30%的Claude周额度和两管Codex额度。",
+        "id": "aihot-khazix-52d497fca6a4",
+        "title": "手把手教你用 Agent 逆向改造电视、补光灯等现实设备",
+        "summary": "作者用 Codex 和 Claude 逆向改造了办公室电视、补光灯和索尼、DJI Pocket 3 相机等设备，通过 ADB 调试清除开机广告、重做简洁桌面，并开发了统一灯光控制台和多机位控制台。文章给出完整操作步骤，提醒修改系统软件前先备份，并认为 Agent 正在降低普通人改造硬件设备的门槛。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "tip",
+        "publishedAt": "2026-10-26T00:44:41.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687805&idx=1&sn=0f08cbd84fec963afc0236cb390483fd"
+        }
+      },
+      {
+        "id": "aihot-khazix-fd9f98c8f982",
+        "title": "卡兹克手把手演示用 Codex 和 Claude 逆向改造现实硬件设备",
+        "summary": "数字生命卡兹克分享用 AI 逆向改造现实设备的实操教程，以公司 4 台会议室电视为例，通过 Codex 开启 ADB 调试连接电视，清理开机广告、重做简洁桌面和粒子动态屏保，并复刻到其余 3 台。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "tip",
-        "publishedAt": "2026-10-25T13:07:09.000Z",
+        "publishedAt": "2026-10-26T04:48:25.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2114343004471460341"
+          "original": "https://x.com/Khazix0918/status/2114579883527655853"
+        }
+      },
+      {
+        "id": "aihot-khazix-0b1535b24920",
+        "title": "创作者因\"AI味\"质疑被迫删掉口头禅",
+        "summary": "一位内容创作者发现自己常用口头禅\"坦率的讲\"如今一写出来就被读者划线质疑\"一眼AI\"，于是开始下意识删掉这四个字。他认为AI从人类语言中学会表达，人类却要修改自己的语言来证明自己是人，并提到\"不是…而是\"等句式也在被回避。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-26T13:36:46.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2114712846110195897"
+        }
+      },
+      {
+        "id": "aihot-khazix-d8d240927bc3",
+        "title": "AI夺走了我的口头禅：内容创作者为何开始删掉「坦率的讲」",
+        "summary": "一位内容创作者发现自己常用的口头禅「坦率的讲」正被读者当作「AI味儿重」的证据，于是开始下意识删掉这四个字。他提到「不是……而是」等句式也在被主动放弃，认为AI学会人类语言后，反而轮到人类修改自己的表达来证明自己是人。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-26T11:58:45.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687809&idx=1&sn=8bf42e483bcb2d1e8adfec3495961748"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "langchain-blog-f50919f04b9c",
-        "title": "构建“公司级 Harness”的五个组成部分",
-        "summary": "了解 LangChain 如何在市场营销、销售和工程团队中构建内部智能体，以及这些智能体如何彻底改变了这些团队的工作方式。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "openai-news-e6f917b93c85",
+        "title": "Greptile 借助 GPT-6 Astra 将漏洞检测扩展到代码审查之外",
+        "summary": "了解 Greptile 如何使用 GPT-6 Astra 测试用户工作流、借助 Daybreak 加强安全防护，并通过 Codex 减少返工。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-25T18:06:32.000Z",
+        "publishedAt": "2026-10-26T22:00:00.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/components-building-company-harness"
+          "original": "https://openai.com/index/greptile-code-review-codex-astra"
+        }
+      },
+      {
+        "id": "openai-news-3bbec046cb1e",
+        "title": "Ultrafast 如何帮助 OpenAI 将事件调查时间从数小时缩短至数分钟",
+        "summary": "了解 OpenAI 工程师如何使用 Codex Ultrafast 在数分钟内调查事件，并探索更快速的安全分析、代码重构和日常工作流。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-26T07:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/openai-cut-incident-investigation"
+        }
+      },
+      {
+        "id": "openai-news-40a235d56af4",
+        "title": "GPT-6.1 Sol 助力 CodeRabbit 加强复杂代码库的安全防护",
+        "summary": "CodeRabbit 使用 GPT-6.1 Sol 调查复杂代码库中的安全风险。其安全代理可帮助开发者审查调查结果和拟议的修复方案。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-26T13:45:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
+        }
+      },
+      {
+        "id": "openai-news-30ddf4efddc2",
+        "title": "ChatGPT 不断拓展的工作应用版图",
+        "summary": "了解 OpenAI Signals 关于近 100 个国家和地区 165 项工作活动的数据，看看人们如何使用 ChatGPT 工作，以及使用情况如何随时间变化。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-26T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/chatgpt-expanding-world-of-work"
+        }
+      },
+      {
+        "id": "openai-news-9b9982a5159a",
+        "title": "与学术界合作，增进科学理解",
+        "summary": "OpenAI 分享了模型在 Kakeya 猜想、指数时间假设和量子色动力学方面的结果，以及研究人员如何验证这些结果并在此基础上开展研究。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-26T14:30:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+        }
+      },
+      {
+        "id": "openai-news-669a37bc1151",
+        "title": "Fanatics 与 OpenAI 如何提升球迷体验",
+        "summary": "Fanatics 借助 OpenAI 的“Shop the Look”功能，帮助球迷搭配比赛日穿搭。在约 30,000 件 MLB 商品上的测试显示，用户参与度提高了 10%。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-26T07:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/fanatics-streamline-fan-experience"
+        }
+      },
+      {
+        "id": "openai-news-ea6f00004743",
+        "title": "Introducing GPT-6.1 Terra",
+        "summary": "Bringing fast and capable computer use to everyone",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-26T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-gpt-6-1-terra"
         }
       }
     ],
-    "aihotPicks": []
+    "aihotPicks": [
+      {
+        "id": "aihot-b8d1723c3acc",
+        "title": "OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output",
+        "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.1 Terra 上线。该模型在 Agents' Last Exam 上与 GPT-6 Astra 得分相当，每 token 价格约为其十分之一，平均完成任务速度比 Astra 和 GPT-6.1 Sol 快 3 倍以上。定价 $1/M input、$5/M output，上下文 1.05M，链接 https://openrouter.ai/openai/gpt-6.1-terra 。",
+        "source": "X：OpenRouter (@OpenRouter)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-26T18:49:39.000Z",
+        "links": {
+          "original": "https://x.com/OpenRouter/status/2114791584755839168"
+        }
+      },
+      {
+        "id": "aihot-747ba4fc9c11",
+        "title": "Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能",
+        "summary": "Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入。首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-26T18:40:26.000Z",
+        "links": {
+          "original": "https://x.com/rohanpaul_ai/status/2114789264936534183"
+        }
+      },
+      {
+        "id": "aihot-a737bd870ef8",
+        "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力",
+        "summary": "作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。",
+        "source": "X：Tibo (@thsottiaux)",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-26T19:24:11.000Z",
+        "links": {
+          "original": "https://x.com/thsottiaux/status/2114800277677092936"
+        }
+      },
+      {
+        "id": "aihot-b459a4c2d713",
+        "title": "Epoch AI 用内部工作任务评测前沿模型：Claude Fable 5.1 与 GPT-6 Astra 平均只得 65%",
+        "summary": "Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工评估标准测试 AI，领先的 Claude Fable 5.1 和 GPT-6 Astra 平均得分 65%，未达到 100% 的可自动化门槛。",
+        "source": "Epoch AI：Gradient Updates（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-26T16:33:24.000Z",
+        "links": {
+          "original": "https://epochai.substack.com/p/can-ai-automate-epoch"
+        }
+      },
+      {
+        "id": "aihot-d45048777b84",
+        "title": "Hugging Face CEO 转评前 DOGE 研究人员用 AI 智能体渗透 Anthropic 系统事件",
+        "summary": "Hugging Face CEO Clément Delangue 转引《华盛顿邮报》独家报道并评论称，认为把 AI 集中在封闭大门后就是安全的想法需要更新认知。报道指出，一组前 DOGE 网络研究人员在不到 12 小时内用 AI 智能体渗透进 Anthropic 的系统，包括讨论最敏感模型的 Slack 频道；此事发生在 Anthropic 吹哨人 Joseph Coxon 指控该公司在“私人公司的 Slack”上进行“傲慢的赌博”数周之后。",
+        "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-26T13:39:40.000Z",
+        "links": {
+          "original": "https://x.com/ClementDelangue/status/2114713576296300604"
+        }
+      },
+      {
+        "id": "aihot-856999ae123c",
+        "title": "Greg Brockman 称 GPT-6.1 Terra 的电脑操作速度已超过他本人",
+        "summary": "Greg Brockman 表示 GPT-6.1 Terra 的电脑操作能力已跨过一个质变门槛，用起来比他不借助 AI 时更快。其引用的 OpenAI 介绍称 GPT-6.1 Terra 能理解屏幕内容、跨应用执行操作、自然书写，以更低价格提供快速且强大的 computer use，适合承担整个工作日的更多任务。",
+        "source": "X：Greg Brockman (@gdb)",
+        "sourceId": "aihot",
+        "category": "opinion",
+        "publishedAt": "2026-10-26T20:21:41.000Z",
+        "links": {
+          "original": "https://x.com/gdb/status/2114814747254432243"
+        }
+      },
+      {
+        "id": "aihot-17e35588cc64",
+        "title": "Gamma 发布 Gamma 5 及 credits、导出、预览等多项更新",
+        "summary": "Gamma 发布 Gamma 5，宣称重建了思考、设计和编辑方式，支持输入句子、文档、PDF、图片或旧演示文稿，由智能体在几分钟内完成调研和设计，并可连接 Slack、Notion、Granola 等 20+ 工具引入上下文。",
+        "source": "Gamma Changelog",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-26T19:14:26.000Z",
+        "links": {
+          "original": "https://meetgamma.canny.io/changelog/whats-new-in-gamma-septemberoctober-2026"
+        }
+      },
+      {
+        "id": "aihot-4834a7a35f48",
+        "title": "Anthropic 计划今日 9AM EST 提交 S-1 IPO 申请文件",
+        "summary": "据 Bloomberg 报道，Anthropic 计划周一上午 9 点（美东时间）公开提交 S-1 IPO 申请，此次上市规模可能创纪录。公司预计最快在 11 月 9 日当周开始正式路演，并期望 IPO 规模达到或超过 SpaceX。作者还猜测 Anthropic 可能会伴随一次大模型发布。",
+        "source": "X：Testing Catalog (@testingcatalog)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-26T12:31:31.000Z",
+        "links": {
+          "original": "https://x.com/testingcatalog/status/2114696424021451174"
+        }
+      },
+      {
+        "id": "aihot-55b980786e7f",
+        "title": "Kling 4.0 上线 Runware API，支持 30 秒 1080p 原生音频视频",
+        "summary": "Runware 宣布 Kling 4.0 发布首日上线其 API，可生成最长 30 秒的 1080p 视频，并支持原生音频。功能包括多关键帧（首、中、尾帧）、单请求最多 15 个输入（关键帧、参考图、参考视频与元素）以及基于提示词的已有片段编辑。价格自 $0.133 每秒起，未来 7 天常规定价享 15% 折扣；已有用户可将模型 ID 切换为 klingai:kling-video@4.0。Runware API 已有 19 个 Kling 模型，覆盖视频、图像、虚拟人和对口型。Kling AI 官方转发并提醒查看评论区中的创作者指南。",
+        "source": "X：可灵 Kling AI (@Kling_ai)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-26T04:25:11.000Z",
+        "links": {
+          "original": "https://x.com/Kling_ai/status/2114574035468386746"
+        }
+      },
+      {
+        "id": "aihot-aec117f0a27a",
+        "title": "OpenAI 宣布数学、计算机科学与物理三项重大发现，并与外部专家合作验证",
+        "summary": "OpenAI 宣布三项涉及数学、计算机科学和物理的重大发现，包括证明局部光滑猜想、反驳指数时间假说（ETH），以及涉及 QCD 的量子场论存在性证明。",
+        "source": "The Verge：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-26T23:34:58.000Z",
+        "links": {
+          "original": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+        }
+      }
+    ]
   }
 }
