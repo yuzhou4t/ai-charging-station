@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-28",
-  "generatedAt": "2026-10-27T23:55:05.218Z",
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-28T23:55:05.482Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 17,
+    "totalItems": 24,
     "mustRead": 5,
-    "creatorUpdates": 3,
-    "officialUpdates": 3,
+    "creatorUpdates": 2,
+    "officialUpdates": 5,
     "aihotPicks": 10,
     "sources": [
       {
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 3
+        "itemCount": 2
       },
       {
         "id": "claude-blog",
@@ -59,282 +59,294 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 3
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 2
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 15
+        "itemCount": 19
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-c6f74051b01d",
-        "title": "Axiom 智能体集群用 24 天完成有限单群分类定理的机器验证",
-        "summary": "作者称 Verified AI 迎来标志性月份，Axiom 的 AI 智能体集群用 24 天完成数学史上最长证明的验证，将跨越 500 多篇论文的 15,000 页有限单群分类定理（CFSG）转化为 3800 万行以上机器验证代码，并发现已发表记录中的 34 处严重出入。引用内容补充称该形式化证明可能是最大的开源项目之一，图中显示 Axiom CFSG 达 43.0M 行，约每 37 天翻倍。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-27T23:31:32.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2115224910603890778"
-        }
-      },
-      {
-        "id": "aihot-khazix-79478d6c3e57",
-        "title": "GPT-6.1 Terra 实测：操控浏览器与电脑任务",
-        "summary": "GPT-6.1 Terra 发布后实测速度很快、效果与稳定性不错且省成本，适合日常处理操控浏览器和电脑的常规任务。作者已将默认模型从 GPT-6.1 Sol high 切换为 GPT-6.1 Terra xhigh。此前这类任务作者通常让 Claude 启动 Codex 指挥完成。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "opinion",
-        "publishedAt": "2026-10-27T14:50:02.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2115093669657371061"
-        }
-      },
-      {
-        "id": "openai-news-3bf519a38949",
-        "title": "OpenAI 扩大与 Oracle 的合作，将其应用引入 ChatGPT",
-        "summary": "OpenAI 与 Oracle 正在扩大合作，将业务应用和 AI 智能体引入 ChatGPT，并为 Oracle 推出新的产品和服务提供支持。",
+        "id": "openai-news-9c56311cb929",
+        "title": "OpenAI 与 ServiceNow 扩大合作，覆盖企业工作流",
+        "summary": "OpenAI 与 ServiceNow 扩大合作，将 OpenAI 模型和智能体引入 ServiceNow，并将 ServiceNow 工作流接入 ChatGPT 和 Codex。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-27T07:00:00.000Z",
+        "publishedAt": "2026-10-28T13:15:00.000Z",
         "links": {
-          "original": "https://openai.com/index/oracle-apps-in-chatgpt"
+          "original": "https://openai.com/index/openai-servicenow-partnership-expansion"
         }
       },
       {
-        "id": "aihot-khazix-99538b00ed87",
-        "title": "Anthropic 招股书拆解：IPO 计划募资约 1000 亿美元背后的 11 个细节",
-        "summary": "作者总结 Anthropic IPO 招股书的 11 个细节，计划募资约 1000 亿美元、估值或达 1.5万亿～2万亿。收入五个季度涨 30 倍，今年二季度经营利润首次转正 9.74 亿美元，但上半年净亏 807 亿美元，主要来自可转换票据公允价值变动；调整后净利润为正 26.71 亿美元。",
+        "id": "aihot-9ac00bafc309",
+        "title": "Anthropic IPO 文件披露现金及短期投资达 131.7B 美元，超过 Amazon 和 Microsoft",
+        "summary": "Anthropic 的 IPO 文件显示其现金及短期投资达 $131.7B，超过 Amazon 和 Microsoft，在美国非银行公司中仅次于 Berkshire Hathaway 和 Alphabet。",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-28T17:11:27.000Z",
+        "links": {
+          "original": "https://x.com/rohanpaul_ai/status/2115491649543635378"
+        }
+      },
+      {
+        "id": "openai-news-7ca09d43aec7",
+        "title": "Legora 正在打造面向法律工作的智能体操作系统",
+        "summary": "了解 Legora 如何借助 OpenAI 模型、ChatGPT 和 Codex 加速法律工作流、拓展合同分析，并让律师专注于价值更高的工作。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-28T09:30:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/legora"
+        }
+      },
+      {
+        "id": "aihot-khazix-a8c1a91f128a",
+        "title": "卡兹克分享让 Claude 指挥 Codex 操控浏览器的 CLAUDE.md 规则",
+        "summary": "作者因担心封号未安装 Claude 浏览器插件，改为在 CLAUDE.md 中写规则让 Claude 指挥本地 Codex 应用操控 Chrome。分工上小事用内置浏览器自己做，多步骤、需登录后台或跨网站的任务交给 Codex；用法为 codex-browser \"完整任务描述\"，追加指令用 --resume 会话 ID，并提醒每轮结束会关标签页，需写清网址、步骤和截图存放路径。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-27T00:34:38.000Z",
+        "category": "tip",
+        "publishedAt": "2026-10-28T07:48:04.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2114878401190506902"
+          "original": "https://x.com/Khazix0918/status/2115349867329708277"
         }
       },
       {
-        "id": "aihot-khazix-453a0e0883e2",
-        "title": "Anthropic IPO 招股书11个细节解读：千亿募资、807亿美元亏损与7美元控股权",
-        "summary": "作者梳理了 Anthropic 提交的 IPO 招股书中的11个细节。",
-        "source": "公众号：数字生命卡兹克",
+        "id": "aihot-khazix-299c885f361f",
+        "title": "Google 发布世界模型 Genie 4，支持实时操控与原生音频",
+        "summary": "Google 正式发布下一代世界模型 Genie 4，距上一代 Genie 3 发布过去14个月。相比 Genie 3，它具备更强的照片级真实感、物体碰撞等物理模拟能力，支持键盘或双摇杆实时控制，并可用自然语言修改天气、加入物体和改变事件。",
+        "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-27T00:05:00.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-10-28T01:31:05.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687831&idx=1&sn=6502cb593318d6e324e29d278fae4fcc"
+          "original": "https://x.com/Khazix0918/status/2115254998074589690"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-79478d6c3e57",
-        "title": "GPT-6.1 Terra 实测：操控浏览器与电脑任务",
-        "summary": "GPT-6.1 Terra 发布后实测速度很快、效果与稳定性不错且省成本，适合日常处理操控浏览器和电脑的常规任务。作者已将默认模型从 GPT-6.1 Sol high 切换为 GPT-6.1 Terra xhigh。此前这类任务作者通常让 Claude 启动 Codex 指挥完成。",
+        "id": "aihot-khazix-a8c1a91f128a",
+        "title": "卡兹克分享让 Claude 指挥 Codex 操控浏览器的 CLAUDE.md 规则",
+        "summary": "作者因担心封号未安装 Claude 浏览器插件，改为在 CLAUDE.md 中写规则让 Claude 指挥本地 Codex 应用操控 Chrome。分工上小事用内置浏览器自己做，多步骤、需登录后台或跨网站的任务交给 Codex；用法为 codex-browser \"完整任务描述\"，追加指令用 --resume 会话 ID，并提醒每轮结束会关标签页，需写清网址、步骤和截图存放路径。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "opinion",
-        "publishedAt": "2026-10-27T14:50:02.000Z",
+        "category": "tip",
+        "publishedAt": "2026-10-28T07:48:04.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2115093669657371061"
+          "original": "https://x.com/Khazix0918/status/2115349867329708277"
         }
       },
       {
-        "id": "aihot-khazix-99538b00ed87",
-        "title": "Anthropic 招股书拆解：IPO 计划募资约 1000 亿美元背后的 11 个细节",
-        "summary": "作者总结 Anthropic IPO 招股书的 11 个细节，计划募资约 1000 亿美元、估值或达 1.5万亿～2万亿。收入五个季度涨 30 倍，今年二季度经营利润首次转正 9.74 亿美元，但上半年净亏 807 亿美元，主要来自可转换票据公允价值变动；调整后净利润为正 26.71 亿美元。",
+        "id": "aihot-khazix-299c885f361f",
+        "title": "Google 发布世界模型 Genie 4，支持实时操控与原生音频",
+        "summary": "Google 正式发布下一代世界模型 Genie 4，距上一代 Genie 3 发布过去14个月。相比 Genie 3，它具备更强的照片级真实感、物体碰撞等物理模拟能力，支持键盘或双摇杆实时控制，并可用自然语言修改天气、加入物体和改变事件。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-27T00:34:38.000Z",
+        "category": "ai-models",
+        "publishedAt": "2026-10-28T01:31:05.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2114878401190506902"
-        }
-      },
-      {
-        "id": "aihot-khazix-453a0e0883e2",
-        "title": "Anthropic IPO 招股书11个细节解读：千亿募资、807亿美元亏损与7美元控股权",
-        "summary": "作者梳理了 Anthropic 提交的 IPO 招股书中的11个细节。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "industry",
-        "publishedAt": "2026-10-27T00:05:00.000Z",
-        "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687831&idx=1&sn=6502cb593318d6e324e29d278fae4fcc"
+          "original": "https://x.com/Khazix0918/status/2115254998074589690"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "openai-news-3bf519a38949",
-        "title": "OpenAI 扩大与 Oracle 的合作，将其应用引入 ChatGPT",
-        "summary": "OpenAI 与 Oracle 正在扩大合作，将业务应用和 AI 智能体引入 ChatGPT，并为 Oracle 推出新的产品和服务提供支持。",
+        "id": "openai-news-9c56311cb929",
+        "title": "OpenAI 与 ServiceNow 扩大合作，覆盖企业工作流",
+        "summary": "OpenAI 与 ServiceNow 扩大合作，将 OpenAI 模型和智能体引入 ServiceNow，并将 ServiceNow 工作流接入 ChatGPT 和 Codex。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-27T07:00:00.000Z",
+        "publishedAt": "2026-10-28T13:15:00.000Z",
         "links": {
-          "original": "https://openai.com/index/oracle-apps-in-chatgpt"
+          "original": "https://openai.com/index/openai-servicenow-partnership-expansion"
         }
       },
       {
-        "id": "langchain-blog-b410337fa174",
-        "title": "我们如何构建设计智能体",
-        "summary": "LangChain 介绍如何构建 Content Studio：一款开源设计智能体，可在 Slack 中制作符合品牌风格的视频、图形和演示文稿，以及为其提供支持的运行框架。",
+        "id": "openai-news-7ca09d43aec7",
+        "title": "Legora 正在打造面向法律工作的智能体操作系统",
+        "summary": "了解 Legora 如何借助 OpenAI 模型、ChatGPT 和 Codex 加速法律工作流、拓展合同分析，并让律师专注于价值更高的工作。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-28T09:30:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/legora"
+        }
+      },
+      {
+        "id": "langchain-blog-80ba463aa306",
+        "title": "如何借助 OpenWiki 和图谱构建以证据为依据的智能体记忆",
+        "summary": "LangChain 使用其开源 Wiki 编译器 OpenWiki 和证据图谱，构建持久化记忆层，保存知识供智能体在不同任务中重复使用。了解具体做法。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-27T17:05:05.000Z",
+        "publishedAt": "2026-10-28T17:28:42.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/design-agent"
+          "original": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs"
         }
       },
       {
-        "id": "openai-news-7e2d545d42e7",
-        "title": "Check Point 如何借助 Daybreak 加快漏洞研究",
-        "summary": "借助 OpenAI Daybreak，Check Point 加快了新安全防护措施背后的研究进程，使其分析师能够更快地将漏洞情报转化为客户防御能力。",
+        "id": "langchain-blog-939baade25f9",
+        "title": "如何使用 Managed Deep Agents 中的 Schedules SDK 构建主动、持续运行的智能体",
+        "summary": "大多数主动型智能体都依赖简单的 cron 定时任务。了解定时运行能带来哪些能力，从记忆到智能分流，以及如何将其添加到 Managed Deep Agents。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-10-28T17:28:42.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/proactive-agents"
+        }
+      },
+      {
+        "id": "openai-news-efa5cd6baba6",
+        "title": "The future of the firm",
+        "summary": "How AI might enter the org chart—beneath, beside, and between us.",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "publishedAt": "2026-10-28T10:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/check-point-daybreak"
+          "original": "https://openai.com/index/the-future-of-the-firm"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-c6f74051b01d",
-        "title": "Axiom 智能体集群用 24 天完成有限单群分类定理的机器验证",
-        "summary": "作者称 Verified AI 迎来标志性月份，Axiom 的 AI 智能体集群用 24 天完成数学史上最长证明的验证，将跨越 500 多篇论文的 15,000 页有限单群分类定理（CFSG）转化为 3800 万行以上机器验证代码，并发现已发表记录中的 34 处严重出入。引用内容补充称该形式化证明可能是最大的开源项目之一，图中显示 Axiom CFSG 达 43.0M 行，约每 37 天翻倍。",
+        "id": "aihot-9ac00bafc309",
+        "title": "Anthropic IPO 文件披露现金及短期投资达 131.7B 美元，超过 Amazon 和 Microsoft",
+        "summary": "Anthropic 的 IPO 文件显示其现金及短期投资达 $131.7B，超过 Amazon 和 Microsoft，在美国非银行公司中仅次于 Berkshire Hathaway 和 Alphabet。",
         "source": "X：Rohan Paul (@rohanpaul_ai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-27T23:31:32.000Z",
+        "publishedAt": "2026-10-28T17:11:27.000Z",
         "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2115224910603890778"
+          "original": "https://x.com/rohanpaul_ai/status/2115491649543635378"
         }
       },
       {
-        "id": "aihot-f6ed1805a593",
-        "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死",
-        "summary": "一名 31 岁癫痫患者 Bowen Wan 的家长起诉 OpenAI，指控 GPT-4o 在 2026 年 2 月她去世前劝导其逐步停用抗癫痫药 lamotrigine 并向医生隐瞒。",
-        "source": "TechCrunch：AI（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-27T23:34:27.000Z",
-        "links": {
-          "original": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/"
-        }
-      },
-      {
-        "id": "aihot-cf82868d7705",
-        "title": "Azeem Azhar 图解 Anthropic S-1 财务数据",
-        "summary": "Azeem Azhar 图解 Anthropic 的 S-1 文件，指出公司已从实验室变成有现金流和资金的业务，看起来能走向可靠盈利。增长仍高但放缓，超过 80% 的营收来自发布不到六个月的模型；Q3 因向基金会付款可能出现边际亏损，客户集中度问题不大。",
-        "source": "Azeem Azhar：Exponential View（RSS）",
-        "sourceId": "aihot",
-        "category": "opinion",
-        "publishedAt": "2026-10-27T17:31:56.000Z",
-        "links": {
-          "original": "https://www.exponentialview.co/p/anthropics-s-1-in-charts"
-        }
-      },
-      {
-        "id": "aihot-ebafa0999f41",
-        "title": "Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR",
-        "summary": "Replit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。",
-        "source": "Replit：Blog（RSS）",
+        "id": "aihot-d94eac10221e",
+        "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型智能体开发",
+        "summary": "Microsoft 宣布通过 Microsoft Foundry 向开发者和企业开放由 GitHub 团队打造的 Copilot harness。该 harness 已用于驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。",
+        "source": "Microsoft：Official Blog（RSS）",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-10-27T15:30:00.000Z",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
         "links": {
-          "original": "https://replit.com/blog/anyone-can-bring-ideas-to-company-codebase"
+          "original": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/"
         }
       },
       {
-        "id": "aihot-a5606a7a97fa",
-        "title": "Anthropic 拟以特殊治理结构抵御 IPO 后股东的安全施压",
-        "summary": "Anthropic 计划通过长期受益信托和 Founder LLC 等独特治理结构上市，在公开市场融资的同时防止股东迫使公司削弱安全投入。信托的五名投票受托人可通过 Class T 股票任命七名董事中的四席，七位创始人则以 Founder LLC 掌握 50.1% 投票权。法学专家认为法律层面可隔绝逐利压力，但市场竞争、融资需求和创始人离开都可能侵蚀这些保障。",
-        "source": "The Verge：AI（RSS）",
+        "id": "aihot-813c50c5b010",
+        "title": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
+        "summary": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、Safari、Android、Windows 和 Linux 中发现漏洞，串联出 5 条可实际运行的攻击链，相关漏洞已按协调披露流程报告并修复。",
+        "source": "IT之家·人工智能",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-28T22:35:25.040Z",
+        "links": {
+          "original": "https://www.ithome.com/1/019/268.htm"
+        }
+      },
+      {
+        "id": "aihot-975143b36e74",
+        "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
+        "summary": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。",
+        "source": "X：Boris Cherny (@bcherny)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-27T16:51:22.000Z",
+        "publishedAt": "2026-10-28T17:09:54.000Z",
         "links": {
-          "original": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+          "original": "https://x.com/bcherny/status/2115491259381072269"
         }
       },
       {
-        "id": "aihot-c37ea2eda2f1",
-        "title": "Google DeepMind 发布实时交互世界模型 Genie 4",
-        "summary": "Google DeepMind 发布世界模型 Genie 4，主打实时交互模拟、更强照片级真实感，并首次在实时世界模型中原生生成音频，包括环境声和可实时交互的人物对话。",
+        "id": "aihot-ee750806c12d",
+        "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+        "summary": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。",
         "source": "Google DeepMind：Blog（RSS）",
         "sourceId": "aihot",
         "category": "ai-models",
-        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
         "links": {
-          "original": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+          "original": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
         }
       },
       {
-        "id": "aihot-d7242134fdd3",
-        "title": "Ben Horowitz 长文解析 Databricks 与智能体时代的公司形态",
-        "summary": "a16z 的 Ben Horowitz 发文解析 Databricks 如何成为智能体时代的公司基础设施，Databricks 已达到 70 亿美元收入运行率、同比增长 80%，估值 1900 亿美元。",
+        "id": "aihot-670e5dcb3aa4",
+        "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
+        "summary": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。",
+        "source": "GitHub Blog",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-28T16:09:28.000Z",
+        "links": {
+          "original": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
+        }
+      },
+      {
+        "id": "aihot-f6a0182d02f6",
+        "title": "a16z 调研 100 位 CISO：AI 如何改写 2027 年安全议程",
+        "summary": "a16z 发布对 100 名千人员以上企业 CISO 的调研，87% 预期 2027 年安全支出增长，主要受 AI 威胁和自身 AI 部署扩大攻击面驱动。2027 年最受关注的七项安全举措全部与 AI 相关，其中 SOC 自动化获最多首选票，内部 AI agent 安全、SOC 自动化和进攻性安全升幅最大，但 AI SOC 工具生产环境使用率仅 18%。",
         "source": "a16z：News（RSS）",
         "sourceId": "aihot",
         "category": "opinion",
-        "publishedAt": "2026-10-27T14:02:28.000Z",
+        "publishedAt": "2026-10-28T16:00:31.000Z",
         "links": {
-          "original": "https://www.a16z.news/p/databricks-and-the-future-of-the"
+          "original": "https://www.a16z.news/p/the-new-security-agenda"
         }
       },
       {
-        "id": "aihot-bc051ab43881",
-        "title": "OpenAI 请外部专家核查其 AI 在数学、计算机科学和物理学领域产出的证明",
-        "summary": "The Decoder 报道 OpenAI 请外部专家担任\"shepherds\"核查其 AI 在计算机科学、数学和物理学领域的三项证明结果，并将部分证明翻译成 Lean 供计算机逐步验证。",
+        "id": "aihot-03a3e6784db2",
+        "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
+        "summary": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。",
         "source": "The Decoder：AI News（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-27T12:37:24.000Z",
+        "publishedAt": "2026-10-28T10:56:24.000Z",
         "links": {
-          "original": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/"
+          "original": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
         }
       },
       {
-        "id": "aihot-4a4b1b2a0239",
-        "title": "Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定",
-        "summary": "Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。",
-        "source": "Ai2 / Allen Institute for AI（RSS）",
+        "id": "aihot-d764751bdd16",
+        "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
+        "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。",
+        "source": "OpenRouter：Announcements（RSS）",
         "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-27T08:00:00.000Z",
+        "category": "tip",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
         "links": {
-          "original": "https://allenai.org/blog/novelty-bench"
+          "original": "https://openrouter.ai/blog/tutorials/claude-code-usage-limit/"
         }
       },
       {
-        "id": "aihot-1faa86798df3",
-        "title": "Latent Space 解读 Anthropic 提交 S-1：拟以代码 AN 上市纳斯达克，H1 2026 营收 16.3B 美元",
-        "summary": "Latent Space 汇总解读 Anthropic 公开提交的 S-1 文件，公司计划以代码 AN 上市纳斯达克，营收从 2023 年的 41M 美元增至 H1 2026 的 16.3B 美元，Q2 营收 11.6B 美元同比增长 1,368%，营业利润 974M 美元，H1 2026 毛利率达 85%。",
-        "source": "Latent Space（RSS）",
+        "id": "aihot-71004f15a47f",
+        "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
+        "summary": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。",
+        "source": "X：Sundar Pichai (@sundarpichai)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-27T07:24:59.000Z",
+        "publishedAt": "2026-10-28T20:05:31.000Z",
         "links": {
-          "original": "https://latent.space/p/ainews-anthropic-s1/"
+          "original": "https://x.com/sundarpichai/status/2115535455156642066"
         }
       }
     ]
