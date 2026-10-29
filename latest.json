@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-29",
-  "generatedAt": "2026-10-28T23:55:05.482Z",
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-29T23:55:03.165Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 24,
+    "totalItems": 28,
     "mustRead": 5,
-    "creatorUpdates": 2,
+    "creatorUpdates": 5,
     "officialUpdates": 5,
     "aihotPicks": 10,
     "sources": [
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 5
       },
       {
         "id": "claude-blog",
@@ -73,280 +73,316 @@
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 19
+        "itemCount": 21
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-9c56311cb929",
-        "title": "OpenAI 与 ServiceNow 扩大合作，覆盖企业工作流",
-        "summary": "OpenAI 与 ServiceNow 扩大合作，将 OpenAI 模型和智能体引入 ServiceNow，并将 ServiceNow 工作流接入 ChatGPT 和 Codex。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-28T13:15:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/openai-servicenow-partnership-expansion"
-        }
-      },
-      {
-        "id": "aihot-9ac00bafc309",
-        "title": "Anthropic IPO 文件披露现金及短期投资达 131.7B 美元，超过 Amazon 和 Microsoft",
-        "summary": "Anthropic 的 IPO 文件显示其现金及短期投资达 $131.7B，超过 Amazon 和 Microsoft，在美国非银行公司中仅次于 Berkshire Hathaway 和 Alphabet。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-28T17:11:27.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2115491649543635378"
-        }
-      },
-      {
-        "id": "openai-news-7ca09d43aec7",
-        "title": "Legora 正在打造面向法律工作的智能体操作系统",
-        "summary": "了解 Legora 如何借助 OpenAI 模型、ChatGPT 和 Codex 加速法律工作流、拓展合同分析，并让律师专注于价值更高的工作。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-28T09:30:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/legora"
-        }
-      },
-      {
-        "id": "aihot-khazix-a8c1a91f128a",
-        "title": "卡兹克分享让 Claude 指挥 Codex 操控浏览器的 CLAUDE.md 规则",
-        "summary": "作者因担心封号未安装 Claude 浏览器插件，改为在 CLAUDE.md 中写规则让 Claude 指挥本地 Codex 应用操控 Chrome。分工上小事用内置浏览器自己做，多步骤、需登录后台或跨网站的任务交给 Codex；用法为 codex-browser \"完整任务描述\"，追加指令用 --resume 会话 ID，并提醒每轮结束会关标签页，需写清网址、步骤和截图存放路径。",
+        "id": "aihot-khazix-83eddbd1cb20",
+        "title": "一条段子对比 Claude 与 GPT 的性格差异",
+        "summary": "卡兹克用一个写脚本的例子形容 Claude 和 Codex 的性格差异：面对\"每周下载 20 个 Excel 再手动合并\"的需求，GPT 直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试。Claude 则反问这些 Excel 是否来自同一数据库，转而写 SQL 接上后台数据源，每周自动生成最终报表。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-28T07:48:04.000Z",
+        "category": "opinion",
+        "publishedAt": "2026-10-29T06:23:43.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2115349867329708277"
+          "original": "https://x.com/Khazix0918/status/2115691027860443268"
         }
       },
       {
-        "id": "aihot-khazix-299c885f361f",
-        "title": "Google 发布世界模型 Genie 4，支持实时操控与原生音频",
-        "summary": "Google 正式发布下一代世界模型 Genie 4，距上一代 Genie 3 发布过去14个月。相比 Genie 3，它具备更强的照片级真实感、物体碰撞等物理模拟能力，支持键盘或双摇杆实时控制，并可用自然语言修改天气、加入物体和改变事件。",
+        "id": "aihot-khazix-377d2f80535a",
+        "title": "腾讯WorkBuddy上线Buddy One，打通腾讯会议、腾讯文档、ima和腾讯网盘账号体系",
+        "summary": "腾讯WorkBuddy推出Buddy One，将WorkBuddy、腾讯会议、腾讯文档、ima和腾讯网盘的账号体系打通。免费的Buddy One ID支持WorkBuddy积分在四个产品中通用，赠送100积分，数据打通目前仅限只读，写入需通过连接器MCP实现。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T04:31:26.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2115662773103530096"
+        }
+      },
+      {
+        "id": "aihot-khazix-defc8c05fd15",
+        "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
+        "summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "ai-models",
-        "publishedAt": "2026-10-28T01:31:05.000Z",
+        "publishedAt": "2026-10-29T20:07:09.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2115254998074589690"
+          "original": "https://x.com/Khazix0918/status/2115898252004622617"
+        }
+      },
+      {
+        "id": "aihot-khazix-8c308ea70f31",
+        "title": "聊聊GPT和Claude的性格差异",
+        "summary": "作者用一个自动下载并合并20个Excel的需求对比GPT与Claude的性格差异：GPT直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试；Claude则反问这些Excel是否来自同一数据库，转而写SQL接上后台数据源，每周自动生成最终报表。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-29T10:25:36.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687936&idx=1&sn=6b08522e1faf62822e141f2c1f3d228d"
+        }
+      },
+      {
+        "id": "aihot-khazix-23ea8452407c",
+        "title": "腾讯上线 Buddy One：打通 WorkBuddy 与腾讯会议、腾讯文档、ima、腾讯网盘账号体系",
+        "summary": "腾讯推出 Buddy One，将 WorkBuddy、腾讯会议、腾讯文档、ima、腾讯网盘账号打通，分免费的 Buddy One ID 和 700 元/月的 Buddy One VIP 两层。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T03:30:56.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687932&idx=1&sn=771f8b464f04c1f297e5624a600c7933"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-a8c1a91f128a",
-        "title": "卡兹克分享让 Claude 指挥 Codex 操控浏览器的 CLAUDE.md 规则",
-        "summary": "作者因担心封号未安装 Claude 浏览器插件，改为在 CLAUDE.md 中写规则让 Claude 指挥本地 Codex 应用操控 Chrome。分工上小事用内置浏览器自己做，多步骤、需登录后台或跨网站的任务交给 Codex；用法为 codex-browser \"完整任务描述\"，追加指令用 --resume 会话 ID，并提醒每轮结束会关标签页，需写清网址、步骤和截图存放路径。",
+        "id": "aihot-khazix-83eddbd1cb20",
+        "title": "一条段子对比 Claude 与 GPT 的性格差异",
+        "summary": "卡兹克用一个写脚本的例子形容 Claude 和 Codex 的性格差异：面对\"每周下载 20 个 Excel 再手动合并\"的需求，GPT 直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试。Claude 则反问这些 Excel 是否来自同一数据库，转而写 SQL 接上后台数据源，每周自动生成最终报表。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
-        "category": "tip",
-        "publishedAt": "2026-10-28T07:48:04.000Z",
+        "category": "opinion",
+        "publishedAt": "2026-10-29T06:23:43.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2115349867329708277"
+          "original": "https://x.com/Khazix0918/status/2115691027860443268"
         }
       },
       {
-        "id": "aihot-khazix-299c885f361f",
-        "title": "Google 发布世界模型 Genie 4，支持实时操控与原生音频",
-        "summary": "Google 正式发布下一代世界模型 Genie 4，距上一代 Genie 3 发布过去14个月。相比 Genie 3，它具备更强的照片级真实感、物体碰撞等物理模拟能力，支持键盘或双摇杆实时控制，并可用自然语言修改天气、加入物体和改变事件。",
+        "id": "aihot-khazix-377d2f80535a",
+        "title": "腾讯WorkBuddy上线Buddy One，打通腾讯会议、腾讯文档、ima和腾讯网盘账号体系",
+        "summary": "腾讯WorkBuddy推出Buddy One，将WorkBuddy、腾讯会议、腾讯文档、ima和腾讯网盘的账号体系打通。免费的Buddy One ID支持WorkBuddy积分在四个产品中通用，赠送100积分，数据打通目前仅限只读，写入需通过连接器MCP实现。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T04:31:26.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2115662773103530096"
+        }
+      },
+      {
+        "id": "aihot-khazix-defc8c05fd15",
+        "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
+        "summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "ai-models",
-        "publishedAt": "2026-10-28T01:31:05.000Z",
+        "publishedAt": "2026-10-29T20:07:09.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2115254998074589690"
+          "original": "https://x.com/Khazix0918/status/2115898252004622617"
+        }
+      },
+      {
+        "id": "aihot-khazix-8c308ea70f31",
+        "title": "聊聊GPT和Claude的性格差异",
+        "summary": "作者用一个自动下载并合并20个Excel的需求对比GPT与Claude的性格差异：GPT直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试；Claude则反问这些Excel是否来自同一数据库，转而写SQL接上后台数据源，每周自动生成最终报表。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-29T10:25:36.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687936&idx=1&sn=6b08522e1faf62822e141f2c1f3d228d"
+        }
+      },
+      {
+        "id": "aihot-khazix-23ea8452407c",
+        "title": "腾讯上线 Buddy One：打通 WorkBuddy 与腾讯会议、腾讯文档、ima、腾讯网盘账号体系",
+        "summary": "腾讯推出 Buddy One，将 WorkBuddy、腾讯会议、腾讯文档、ima、腾讯网盘账号打通，分免费的 Buddy One ID 和 700 元/月的 Buddy One VIP 两层。",
+        "source": "公众号：数字生命卡兹克",
+        "sourceId": "aihot-khazix",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T03:30:56.000Z",
+        "links": {
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687932&idx=1&sn=771f8b464f04c1f297e5624a600c7933"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "openai-news-9c56311cb929",
-        "title": "OpenAI 与 ServiceNow 扩大合作，覆盖企业工作流",
-        "summary": "OpenAI 与 ServiceNow 扩大合作，将 OpenAI 模型和智能体引入 ServiceNow，并将 ServiceNow 工作流接入 ChatGPT 和 Codex。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-28T13:15:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/openai-servicenow-partnership-expansion"
-        }
-      },
-      {
-        "id": "openai-news-7ca09d43aec7",
-        "title": "Legora 正在打造面向法律工作的智能体操作系统",
-        "summary": "了解 Legora 如何借助 OpenAI 模型、ChatGPT 和 Codex 加速法律工作流、拓展合同分析，并让律师专注于价值更高的工作。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-10-28T09:30:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/legora"
-        }
-      },
-      {
-        "id": "langchain-blog-80ba463aa306",
-        "title": "如何借助 OpenWiki 和图谱构建以证据为依据的智能体记忆",
-        "summary": "LangChain 使用其开源 Wiki 编译器 OpenWiki 和证据图谱，构建持久化记忆层，保存知识供智能体在不同任务中重复使用。了解具体做法。",
+        "id": "langchain-blog-b3defa20891a",
+        "title": "Managed Deep Agents v0.10：支持浏览器操作和异步子代理",
+        "summary": "Managed Deep Agents v0.10 新增浏览器操作功能，让智能体能够处理没有 API 的网站，并可将浏览器窗口交给你登录；还新增了用于后台工作的异步子代理。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-28T17:28:42.000Z",
+        "publishedAt": "2026-10-29T17:03:39.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs"
+          "original": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents"
         }
       },
       {
-        "id": "langchain-blog-939baade25f9",
-        "title": "如何使用 Managed Deep Agents 中的 Schedules SDK 构建主动、持续运行的智能体",
-        "summary": "大多数主动型智能体都依赖简单的 cron 定时任务。了解定时运行能带来哪些能力，从记忆到智能分流，以及如何将其添加到 Managed Deep Agents。",
+        "id": "langchain-blog-9fe1366ba9d7",
+        "title": "Managed Deep Agents 支持浏览器操作",
+        "summary": "Managed Deep Agents 现在可以为智能体启动浏览器，并提供针对高效利用上下文而优化的浏览器工具；你也可以接管浏览器，亲自登录。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-10-28T17:28:42.000Z",
+        "publishedAt": "2026-10-29T16:45:29.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/proactive-agents"
+          "original": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents"
         }
       },
       {
-        "id": "openai-news-efa5cd6baba6",
-        "title": "The future of the firm",
-        "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+        "id": "openai-news-f21147a30e8e",
+        "title": "我们如何检测前沿模型的目标偏离",
+        "summary": "OpenAI 通过分层监控，检测前沿模型的目标偏离和未经授权的智能体行为，以便响应人员在事态升级为事故前介入。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-28T10:00:00.000Z",
+        "publishedAt": "2026-10-29T09:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/the-future-of-the-firm"
+          "original": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+        }
+      },
+      {
+        "id": "openai-news-1b8a4b92acff",
+        "title": "更新版 Model Spec：打造能力更强、更加有益的 AI",
+        "summary": "OpenAI 更新版 Model Spec 提出五项核心价值观，旨在引导能力更强的 AI 作出审慎判断、尊重人的自主性，并忠实遵循人类意图。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-29T17:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/updated-model-spec"
+        }
+      },
+      {
+        "id": "openai-news-a842763c3213",
+        "title": "Ropes & Gray 如何开发用于交易尽职调查的 AI",
+        "summary": "Ropes & Gray 正与 OpenAI 合作开发用于交易尽职调查的 AI。律师会审阅归类后的文件、摘要和报告，再向客户提供建议。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-29T07:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/ropes-gray-ai-diligence"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-9ac00bafc309",
-        "title": "Anthropic IPO 文件披露现金及短期投资达 131.7B 美元，超过 Amazon 和 Microsoft",
-        "summary": "Anthropic 的 IPO 文件显示其现金及短期投资达 $131.7B，超过 Amazon 和 Microsoft，在美国非银行公司中仅次于 Berkshire Hathaway 和 Alphabet。",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-28T17:11:27.000Z",
-        "links": {
-          "original": "https://x.com/rohanpaul_ai/status/2115491649543635378"
-        }
-      },
-      {
-        "id": "aihot-d94eac10221e",
-        "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型智能体开发",
-        "summary": "Microsoft 宣布通过 Microsoft Foundry 向开发者和企业开放由 GitHub 团队打造的 Copilot harness。该 harness 已用于驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。",
-        "source": "Microsoft：Official Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-28T16:51:35.000Z",
-        "links": {
-          "original": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/"
-        }
-      },
-      {
-        "id": "aihot-813c50c5b010",
-        "title": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
-        "summary": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、Safari、Android、Windows 和 Linux 中发现漏洞，串联出 5 条可实际运行的攻击链，相关漏洞已按协调披露流程报告并修复。",
-        "source": "IT之家·人工智能",
-        "sourceId": "aihot",
-        "category": "paper",
-        "publishedAt": "2026-10-28T22:35:25.040Z",
-        "links": {
-          "original": "https://www.ithome.com/1/019/268.htm"
-        }
-      },
-      {
-        "id": "aihot-975143b36e74",
-        "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
-        "summary": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。",
-        "source": "X：Boris Cherny (@bcherny)",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-28T17:09:54.000Z",
-        "links": {
-          "original": "https://x.com/bcherny/status/2115491259381072269"
-        }
-      },
-      {
-        "id": "aihot-ee750806c12d",
-        "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
-        "summary": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。",
-        "source": "Google DeepMind：Blog（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-28T17:00:58.000Z",
-        "links": {
-          "original": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
-        }
-      },
-      {
-        "id": "aihot-670e5dcb3aa4",
-        "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
-        "summary": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。",
-        "source": "GitHub Blog",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-28T16:09:28.000Z",
-        "links": {
-          "original": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
-        }
-      },
-      {
-        "id": "aihot-f6a0182d02f6",
-        "title": "a16z 调研 100 位 CISO：AI 如何改写 2027 年安全议程",
-        "summary": "a16z 发布对 100 名千人员以上企业 CISO 的调研，87% 预期 2027 年安全支出增长，主要受 AI 威胁和自身 AI 部署扩大攻击面驱动。2027 年最受关注的七项安全举措全部与 AI 相关，其中 SOC 自动化获最多首选票，内部 AI agent 安全、SOC 自动化和进攻性安全升幅最大，但 AI SOC 工具生产环境使用率仅 18%。",
-        "source": "a16z：News（RSS）",
-        "sourceId": "aihot",
-        "category": "opinion",
-        "publishedAt": "2026-10-28T16:00:31.000Z",
-        "links": {
-          "original": "https://www.a16z.news/p/the-new-security-agenda"
-        }
-      },
-      {
-        "id": "aihot-03a3e6784db2",
-        "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
-        "summary": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。",
-        "source": "The Decoder：AI News（RSS）",
-        "sourceId": "aihot",
-        "category": "industry",
-        "publishedAt": "2026-10-28T10:56:24.000Z",
-        "links": {
-          "original": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
-        }
-      },
-      {
-        "id": "aihot-d764751bdd16",
-        "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
-        "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。",
-        "source": "OpenRouter：Announcements（RSS）",
+        "id": "aihot-88a3abc0ca97",
+        "title": "Figma 讲解如何训练专用画布编辑模型",
+        "summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。",
+        "source": "Figma AI / Agent / Make",
         "sourceId": "aihot",
         "category": "tip",
-        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "publishedAt": "2026-10-29T21:00:00.000Z",
         "links": {
-          "original": "https://openrouter.ai/blog/tutorials/claude-code-usage-limit/"
+          "original": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/"
         }
       },
       {
-        "id": "aihot-71004f15a47f",
-        "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
-        "summary": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。",
-        "source": "X：Sundar Pichai (@sundarpichai)",
+        "id": "aihot-3f487d6c4b9f",
+        "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
+        "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。",
+        "source": "X：Tibo (@thsottiaux)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T16:56:07.000Z",
+        "links": {
+          "original": "https://x.com/thsottiaux/status/2115850175868727621"
+        }
+      },
+      {
+        "id": "aihot-35fe644060b2",
+        "title": "Unsloth 发布 Mistral Le Chonk 1-bit GGUF 量化版，可本地运行 1T 参数模型",
+        "summary": "Unsloth 发布 Mistral Le Chonk（Mistral Large 4，1T 参数 MoE，52B 激活）的 Dynamic 1-bit GGUF，可在 Mac Studio 上本地运行，保留 91% top-1 准确率，体积约 233GB（较 1.1TB FP8 小 80%）。图为各量化档位给出硬件需求，1-bit 需 256-270GB 内存，最小 UD-IQ1_S 约占 233GB 磁盘，并支持文本与图像输入、1M 上下文和 160+ 语言。GGUF 与指南见 huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF 和 unsloth.ai/docs/models/mistral-large-4。",
+        "source": "X：Unsloth (@UnslothAI)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T14:27:32.000Z",
+        "links": {
+          "original": "https://x.com/UnslothAI/status/2115812784189620265"
+        }
+      },
+      {
+        "id": "aihot-0a60248d454f",
+        "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
+        "summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。",
+        "source": "X：Addy Osmani (@addyosmani)",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-10-29T06:13:39.000Z",
+        "links": {
+          "original": "https://x.com/addyosmani/status/2115688494865465370"
+        }
+      },
+      {
+        "id": "aihot-e44d66b51158",
+        "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
+        "summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。",
+        "source": "Hugging Face 官方团队博客",
+        "sourceId": "aihot",
+        "category": "ai-models",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "links": {
+          "original": "https://huggingface.co/blog/mistral-large4"
+        }
+      },
+      {
+        "id": "aihot-f98f6a121e9e",
+        "title": "Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness",
+        "summary": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。",
+        "source": "Factory 研究 / 产品（RSS）",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "links": {
+          "original": "https://factory.com/news/frontier-harness"
+        }
+      },
+      {
+        "id": "aihot-a28a32a7b3cc",
+        "title": "Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧",
+        "summary": "作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47 亿美元增至 116 亿美元，并录得首个运营利润，截至 6 月底现金储备仅次于 Google 和 Berkshire Hathaway。",
+        "source": "Timothy B. Lee：Understanding AI（RSS）",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-28T20:05:31.000Z",
+        "publishedAt": "2026-10-29T19:10:41.000Z",
         "links": {
-          "original": "https://x.com/sundarpichai/status/2115535455156642066"
+          "original": "https://www.understandingai.org/p/anthropics-financials-are-surprisingly"
+        }
+      },
+      {
+        "id": "aihot-2f18d4ed3060",
+        "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
+        "summary": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。",
+        "source": "X：腾讯混元 (@TencentHunyuan)",
+        "sourceId": "aihot",
+        "category": "ai-products",
+        "publishedAt": "2026-10-29T17:00:03.000Z",
+        "links": {
+          "original": "https://x.com/TencentHunyuan/status/2115851165904814283"
+        }
+      },
+      {
+        "id": "aihot-e2854fd2df03",
+        "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
+        "summary": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。",
+        "source": "Wiz：Research（安全研究）",
+        "sourceId": "aihot",
+        "category": "paper",
+        "publishedAt": "2026-10-29T14:36:22.000Z",
+        "links": {
+          "original": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
+        }
+      },
+      {
+        "id": "aihot-4d2b9689117b",
+        "title": "404 Media 起底 Proton 内部 AI 转型之争：CEO Andy Yen 强推 AI 引发恐惧文化",
+        "summary": "404 Media 采访九名现任与离职 Proton 员工并查阅内部文件，报道 CEO Andy Yen 强推 AI 转型引发的内部冲突。10 月公司 90% 代码由 AI 编写，多使用 Anthropic 的 Claude；Yen 称今年是最后一年招聘工程师，并宣布将以可能决定去留的重新面试评估员工 AI 使用情况。",
+        "source": "404 Media（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-29T14:21:49.000Z",
+        "links": {
+          "original": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/"
         }
       }
     ]
