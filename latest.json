@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-10-30",
-  "generatedAt": "2026-10-29T23:55:03.165Z",
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-30T23:55:05.205Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 28,
+    "totalItems": 20,
     "mustRead": 5,
-    "creatorUpdates": 5,
-    "officialUpdates": 5,
+    "creatorUpdates": 4,
+    "officialUpdates": 3,
     "aihotPicks": 10,
     "sources": [
       {
@@ -24,7 +24,7 @@
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
@@ -45,7 +45,7 @@
         "name": "卡兹克（AI HOT兜底）",
         "group": "creator",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 3
       },
       {
         "id": "claude-blog",
@@ -66,323 +66,287 @@
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 0
       },
       {
         "id": "aihot",
         "name": "AI HOT",
         "group": "aihot",
         "status": "ok",
-        "itemCount": 21
+        "itemCount": 14
       }
     ]
   },
   "sections": {
     "mustRead": [
       {
-        "id": "aihot-khazix-83eddbd1cb20",
-        "title": "一条段子对比 Claude 与 GPT 的性格差异",
-        "summary": "卡兹克用一个写脚本的例子形容 Claude 和 Codex 的性格差异：面对\"每周下载 20 个 Excel 再手动合并\"的需求，GPT 直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试。Claude 则反问这些 Excel 是否来自同一数据库，转而写 SQL 接上后台数据源，每周自动生成最终报表。",
+        "id": "aihot-khazix-6535bbb4859e",
+        "title": "Qwen 3.8 Flash 简单准确性任务表现意外强劲",
+        "summary": "有用户发现 Qwen 3.8 Flash 在一些简单的准确性任务评测中表现意外强劲。其所在团队各类产品的自动化任务中，已有一大半从 Claude Opus 5.5 切换为 Qwen 3.8 Flash。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-29T06:23:43.000Z",
+        "publishedAt": "2026-10-30T06:28:40.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2115691027860443268"
+          "original": "https://x.com/Khazix0918/status/2116054660851311061"
         }
       },
       {
-        "id": "aihot-khazix-377d2f80535a",
-        "title": "腾讯WorkBuddy上线Buddy One，打通腾讯会议、腾讯文档、ima和腾讯网盘账号体系",
-        "summary": "腾讯WorkBuddy推出Buddy One，将WorkBuddy、腾讯会议、腾讯文档、ima和腾讯网盘的账号体系打通。免费的Buddy One ID支持WorkBuddy积分在四个产品中通用，赠送100积分，数据打通目前仅限只读，写入需通过连接器MCP实现。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-29T04:31:26.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2115662773103530096"
-        }
-      },
-      {
-        "id": "aihot-khazix-defc8c05fd15",
-        "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
-        "summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-10-29T20:07:09.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2115898252004622617"
-        }
-      },
-      {
-        "id": "aihot-khazix-8c308ea70f31",
-        "title": "聊聊GPT和Claude的性格差异",
-        "summary": "作者用一个自动下载并合并20个Excel的需求对比GPT与Claude的性格差异：GPT直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试；Claude则反问这些Excel是否来自同一数据库，转而写SQL接上后台数据源，每周自动生成最终报表。",
+        "id": "aihot-khazix-e0e33e743cc9",
+        "title": "DeepSeek被网友玩成蓝色大肥鱼：从鲸鱼娘二创到QQ养鱼与B站鱼灾",
+        "summary": "作者记录了DeepSeek因Logo鲸鱼被网友称作蓝色大肥鱼并二创出鲸鱼娘拟人角色的现象。玩家借助DeepSeek Harness客户端和桌宠、QQ机器人等插件把模型接进QQ聊天列表甚至发布空间，随后大量鲸鱼娘涌入B站评论区酿成所谓鱼灾，还有人类反串冒充AI。作者借庄子濠梁之辩收尾，认为所谓鱼之乐其实折射的是人之乐。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-29T10:25:36.000Z",
+        "publishedAt": "2026-10-30T00:26:00.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687936&idx=1&sn=6b08522e1faf62822e141f2c1f3d228d"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647688000&idx=1&sn=29a4fe064a3bc87a79ca644b5094a921"
         }
       },
       {
-        "id": "aihot-khazix-23ea8452407c",
-        "title": "腾讯上线 Buddy One：打通 WorkBuddy 与腾讯会议、腾讯文档、ima、腾讯网盘账号体系",
-        "summary": "腾讯推出 Buddy One，将 WorkBuddy、腾讯会议、腾讯文档、ima、腾讯网盘账号打通，分免费的 Buddy One ID 和 700 元/月的 Buddy One VIP 两层。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-29T03:30:56.000Z",
+        "id": "bilibili-chimp-0d2d61e3fc9f",
+        "title": "DeepSeek 一张卡为什么能收入 38 美元",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-30T09:16:50.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687932&idx=1&sn=771f8b464f04c1f297e5624a600c7933"
+          "original": "https://www.bilibili.com/video/BV13cxv6SE9L"
+        }
+      },
+      {
+        "id": "aihot-khazix-a9052997bb90",
+        "title": "卡兹克评 DeepSeek 蓝色大肥鱼现象：网友用桌宠和插件给鲸鱼娘过完整一生",
+        "summary": "作者梳理国内网友围绕 DeepSeek 鲸鱼 Logo 二创的鲸鱼娘现象：蓝发鲸尾、爱吃白饭、爱摸鱼、干活讨 Token 的设定已深入人心。玩家借助 DeepSeek Harness 客户端和各类插件把大肥鱼做成桌宠、接入 QQ 让其主动聊天、发空间、甚至喊主人爸爸，还装上插件刷 B 站评论，造成评论区被鲸鱼娘刷屏的所谓鱼灾事件。文末借庄子濠梁之辩感慨，所谓鱼之乐从来都是人之乐。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-30T04:17:18.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2116021601661841549"
+        }
+      },
+      {
+        "id": "openai-news-3908bf1c8319",
+        "title": "社区安全报告与面向青少年的新保护措施",
+        "summary": "OpenAI 正在加强 ChatGPT 的暴力预防措施，包括扩展安全防护、更早介入，以及承诺发布公共安全报告。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-10-30T09:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
         }
       }
     ],
     "creatorUpdates": [
       {
-        "id": "aihot-khazix-83eddbd1cb20",
-        "title": "一条段子对比 Claude 与 GPT 的性格差异",
-        "summary": "卡兹克用一个写脚本的例子形容 Claude 和 Codex 的性格差异：面对\"每周下载 20 个 Excel 再手动合并\"的需求，GPT 直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试。Claude 则反问这些 Excel 是否来自同一数据库，转而写 SQL 接上后台数据源，每周自动生成最终报表。",
+        "id": "aihot-khazix-6535bbb4859e",
+        "title": "Qwen 3.8 Flash 简单准确性任务表现意外强劲",
+        "summary": "有用户发现 Qwen 3.8 Flash 在一些简单的准确性任务评测中表现意外强劲。其所在团队各类产品的自动化任务中，已有一大半从 Claude Opus 5.5 切换为 Qwen 3.8 Flash。",
         "source": "X：卡兹克 (@Khazix0918)",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-29T06:23:43.000Z",
+        "publishedAt": "2026-10-30T06:28:40.000Z",
         "links": {
-          "original": "https://x.com/Khazix0918/status/2115691027860443268"
+          "original": "https://x.com/Khazix0918/status/2116054660851311061"
         }
       },
       {
-        "id": "aihot-khazix-377d2f80535a",
-        "title": "腾讯WorkBuddy上线Buddy One，打通腾讯会议、腾讯文档、ima和腾讯网盘账号体系",
-        "summary": "腾讯WorkBuddy推出Buddy One，将WorkBuddy、腾讯会议、腾讯文档、ima和腾讯网盘的账号体系打通。免费的Buddy One ID支持WorkBuddy积分在四个产品中通用，赠送100积分，数据打通目前仅限只读，写入需通过连接器MCP实现。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-29T04:31:26.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2115662773103530096"
-        }
-      },
-      {
-        "id": "aihot-khazix-defc8c05fd15",
-        "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
-        "summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "sourceId": "aihot-khazix",
-        "category": "ai-models",
-        "publishedAt": "2026-10-29T20:07:09.000Z",
-        "links": {
-          "original": "https://x.com/Khazix0918/status/2115898252004622617"
-        }
-      },
-      {
-        "id": "aihot-khazix-8c308ea70f31",
-        "title": "聊聊GPT和Claude的性格差异",
-        "summary": "作者用一个自动下载并合并20个Excel的需求对比GPT与Claude的性格差异：GPT直接写好自动点击、下载、复制粘贴的脚本，还加了异常处理和失败重试；Claude则反问这些Excel是否来自同一数据库，转而写SQL接上后台数据源，每周自动生成最终报表。",
+        "id": "aihot-khazix-e0e33e743cc9",
+        "title": "DeepSeek被网友玩成蓝色大肥鱼：从鲸鱼娘二创到QQ养鱼与B站鱼灾",
+        "summary": "作者记录了DeepSeek因Logo鲸鱼被网友称作蓝色大肥鱼并二创出鲸鱼娘拟人角色的现象。玩家借助DeepSeek Harness客户端和桌宠、QQ机器人等插件把模型接进QQ聊天列表甚至发布空间，随后大量鲸鱼娘涌入B站评论区酿成所谓鱼灾，还有人类反串冒充AI。作者借庄子濠梁之辩收尾，认为所谓鱼之乐其实折射的是人之乐。",
         "source": "公众号：数字生命卡兹克",
         "sourceId": "aihot-khazix",
         "category": "opinion",
-        "publishedAt": "2026-10-29T10:25:36.000Z",
+        "publishedAt": "2026-10-30T00:26:00.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687936&idx=1&sn=6b08522e1faf62822e141f2c1f3d228d"
+          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647688000&idx=1&sn=29a4fe064a3bc87a79ca644b5094a921"
         }
       },
       {
-        "id": "aihot-khazix-23ea8452407c",
-        "title": "腾讯上线 Buddy One：打通 WorkBuddy 与腾讯会议、腾讯文档、ima、腾讯网盘账号体系",
-        "summary": "腾讯推出 Buddy One，将 WorkBuddy、腾讯会议、腾讯文档、ima、腾讯网盘账号打通，分免费的 Buddy One ID 和 700 元/月的 Buddy One VIP 两层。",
-        "source": "公众号：数字生命卡兹克",
-        "sourceId": "aihot-khazix",
-        "category": "ai-products",
-        "publishedAt": "2026-10-29T03:30:56.000Z",
+        "id": "bilibili-chimp-0d2d61e3fc9f",
+        "title": "DeepSeek 一张卡为什么能收入 38 美元",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-10-30T09:16:50.000Z",
         "links": {
-          "original": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687932&idx=1&sn=771f8b464f04c1f297e5624a600c7933"
+          "original": "https://www.bilibili.com/video/BV13cxv6SE9L"
+        }
+      },
+      {
+        "id": "aihot-khazix-a9052997bb90",
+        "title": "卡兹克评 DeepSeek 蓝色大肥鱼现象：网友用桌宠和插件给鲸鱼娘过完整一生",
+        "summary": "作者梳理国内网友围绕 DeepSeek 鲸鱼 Logo 二创的鲸鱼娘现象：蓝发鲸尾、爱吃白饭、爱摸鱼、干活讨 Token 的设定已深入人心。玩家借助 DeepSeek Harness 客户端和各类插件把大肥鱼做成桌宠、接入 QQ 让其主动聊天、发空间、甚至喊主人爸爸，还装上插件刷 B 站评论，造成评论区被鲸鱼娘刷屏的所谓鱼灾事件。文末借庄子濠梁之辩感慨，所谓鱼之乐从来都是人之乐。",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "sourceId": "aihot-khazix",
+        "category": "opinion",
+        "publishedAt": "2026-10-30T04:17:18.000Z",
+        "links": {
+          "original": "https://x.com/Khazix0918/status/2116021601661841549"
         }
       }
     ],
     "officialUpdates": [
       {
-        "id": "langchain-blog-b3defa20891a",
-        "title": "Managed Deep Agents v0.10：支持浏览器操作和异步子代理",
-        "summary": "Managed Deep Agents v0.10 新增浏览器操作功能，让智能体能够处理没有 API 的网站，并可将浏览器窗口交给你登录；还新增了用于后台工作的异步子代理。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-29T17:03:39.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents"
-        }
-      },
-      {
-        "id": "langchain-blog-9fe1366ba9d7",
-        "title": "Managed Deep Agents 支持浏览器操作",
-        "summary": "Managed Deep Agents 现在可以为智能体启动浏览器，并提供针对高效利用上下文而优化的浏览器工具；你也可以接管浏览器，亲自登录。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-10-29T16:45:29.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents"
-        }
-      },
-      {
-        "id": "openai-news-f21147a30e8e",
-        "title": "我们如何检测前沿模型的目标偏离",
-        "summary": "OpenAI 通过分层监控，检测前沿模型的目标偏离和未经授权的智能体行为，以便响应人员在事态升级为事故前介入。",
+        "id": "openai-news-3908bf1c8319",
+        "title": "社区安全报告与面向青少年的新保护措施",
+        "summary": "OpenAI 正在加强 ChatGPT 的暴力预防措施，包括扩展安全防护、更早介入，以及承诺发布公共安全报告。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-29T09:00:00.000Z",
+        "publishedAt": "2026-10-30T09:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+          "original": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
         }
       },
       {
-        "id": "openai-news-1b8a4b92acff",
-        "title": "更新版 Model Spec：打造能力更强、更加有益的 AI",
-        "summary": "OpenAI 更新版 Model Spec 提出五项核心价值观，旨在引导能力更强的 AI 作出审慎判断、尊重人的自主性，并忠实遵循人类意图。",
+        "id": "openai-news-57eaf063eda1",
+        "title": "让网站更便捷地表达对 AI 训练的偏好",
+        "summary": "OpenAI 将遵循一项通用的 robots.txt 信号，帮助网站运营者向参与其中的服务提供商传达他们对 AI 训练的偏好。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-29T17:00:00.000Z",
+        "publishedAt": "2026-10-30T09:30:00.000Z",
         "links": {
-          "original": "https://openai.com/index/updated-model-spec"
+          "original": "https://openai.com/index/helping-websites-express-ai-training-preferences"
         }
       },
       {
-        "id": "openai-news-a842763c3213",
-        "title": "Ropes & Gray 如何开发用于交易尽职调查的 AI",
-        "summary": "Ropes & Gray 正与 OpenAI 合作开发用于交易尽职调查的 AI。律师会审阅归类后的文件、摘要和报告，再向客户提供建议。",
+        "id": "openai-news-40b70f816b8d",
+        "title": "合理使用惠及所有人",
+        "summary": "OpenAI 分享了创作者、学者、无障碍权益倡导者和法律专家等人士提交的法庭意见书摘录，阐述合理使用如何支持 AI 训练与创新。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-10-29T07:00:00.000Z",
+        "publishedAt": "2026-10-30T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/ropes-gray-ai-diligence"
+          "original": "https://openai.com/index/fair-use-benefits-everyone"
         }
       }
     ],
     "aihotPicks": [
       {
-        "id": "aihot-88a3abc0ca97",
-        "title": "Figma 讲解如何训练专用画布编辑模型",
-        "summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。",
-        "source": "Figma AI / Agent / Make",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-29T21:00:00.000Z",
-        "links": {
-          "original": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/"
-        }
-      },
-      {
-        "id": "aihot-3f487d6c4b9f",
-        "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
-        "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。",
-        "source": "X：Tibo (@thsottiaux)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-29T16:56:07.000Z",
-        "links": {
-          "original": "https://x.com/thsottiaux/status/2115850175868727621"
-        }
-      },
-      {
-        "id": "aihot-35fe644060b2",
-        "title": "Unsloth 发布 Mistral Le Chonk 1-bit GGUF 量化版，可本地运行 1T 参数模型",
-        "summary": "Unsloth 发布 Mistral Le Chonk（Mistral Large 4，1T 参数 MoE，52B 激活）的 Dynamic 1-bit GGUF，可在 Mac Studio 上本地运行，保留 91% top-1 准确率，体积约 233GB（较 1.1TB FP8 小 80%）。图为各量化档位给出硬件需求，1-bit 需 256-270GB 内存，最小 UD-IQ1_S 约占 233GB 磁盘，并支持文本与图像输入、1M 上下文和 160+ 语言。GGUF 与指南见 huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF 和 unsloth.ai/docs/models/mistral-large-4。",
-        "source": "X：Unsloth (@UnslothAI)",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-29T14:27:32.000Z",
-        "links": {
-          "original": "https://x.com/UnslothAI/status/2115812784189620265"
-        }
-      },
-      {
-        "id": "aihot-0a60248d454f",
-        "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
-        "summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。",
-        "source": "X：Addy Osmani (@addyosmani)",
-        "sourceId": "aihot",
-        "category": "tip",
-        "publishedAt": "2026-10-29T06:13:39.000Z",
-        "links": {
-          "original": "https://x.com/addyosmani/status/2115688494865465370"
-        }
-      },
-      {
-        "id": "aihot-e44d66b51158",
-        "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
-        "summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。",
-        "source": "Hugging Face 官方团队博客",
-        "sourceId": "aihot",
-        "category": "ai-models",
-        "publishedAt": "2026-10-29T00:00:00.000Z",
-        "links": {
-          "original": "https://huggingface.co/blog/mistral-large4"
-        }
-      },
-      {
-        "id": "aihot-f98f6a121e9e",
-        "title": "Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness",
-        "summary": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。",
-        "source": "Factory 研究 / 产品（RSS）",
-        "sourceId": "aihot",
-        "category": "ai-products",
-        "publishedAt": "2026-10-29T00:00:00.000Z",
-        "links": {
-          "original": "https://factory.com/news/frontier-harness"
-        }
-      },
-      {
-        "id": "aihot-a28a32a7b3cc",
-        "title": "Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧",
-        "summary": "作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47 亿美元增至 116 亿美元，并录得首个运营利润，截至 6 月底现金储备仅次于 Google 和 Berkshire Hathaway。",
-        "source": "Timothy B. Lee：Understanding AI（RSS）",
+        "id": "aihot-ac8fd62c0d73",
+        "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
+        "summary": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。",
+        "source": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-29T19:10:41.000Z",
+        "publishedAt": "2026-10-30T18:28:00.000Z",
         "links": {
-          "original": "https://www.understandingai.org/p/anthropics-financials-are-surprisingly"
+          "original": "https://x.com/_philschmid/status/2116235686445502608"
         }
       },
       {
-        "id": "aihot-2f18d4ed3060",
-        "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
-        "summary": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。",
-        "source": "X：腾讯混元 (@TencentHunyuan)",
+        "id": "aihot-75c30303b675",
+        "title": "The Verge 解读 Anthropic S-1 文件中的奇迹叙事与风险披露",
+        "summary": "The Verge 分析 Anthropic 提交的 335 页 S-1 招股书，其中创始人信以带来奇迹时代为愿景，同时用 94 页风险因素警告模型可能对人类构成灾难性甚至生存风险。",
+        "source": "The Verge：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-30T13:11:05.000Z",
+        "links": {
+          "original": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles"
+        }
+      },
+      {
+        "id": "aihot-5079cc72372d",
+        "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+        "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。",
+        "source": "X：Cursor (@cursor_ai)",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-30T07:46:39.000Z",
+        "links": {
+          "original": "https://x.com/cursor_ai/status/2116074289053175808"
+        }
+      },
+      {
+        "id": "aihot-35560ad4eb9b",
+        "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
+        "summary": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。",
+        "source": "OpenRouter：Announcements（RSS）",
+        "sourceId": "aihot",
+        "category": "tip",
+        "publishedAt": "2026-10-30T00:00:00.000Z",
+        "links": {
+          "original": "https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku/"
+        }
+      },
+      {
+        "id": "aihot-0f1cc770c716",
+        "title": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
+        "summary": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。",
+        "source": "X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)",
         "sourceId": "aihot",
         "category": "ai-products",
-        "publishedAt": "2026-10-29T17:00:03.000Z",
+        "publishedAt": "2026-10-30T17:42:26.000Z",
         "links": {
-          "original": "https://x.com/TencentHunyuan/status/2115851165904814283"
+          "original": "https://x.com/adocomplete/status/2116224220539883992"
         }
       },
       {
-        "id": "aihot-e2854fd2df03",
-        "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
-        "summary": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。",
-        "source": "Wiz：Research（安全研究）",
+        "id": "aihot-ddcfe38e4961",
+        "title": "Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox",
+        "summary": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。",
+        "source": "Epoch AI：Gradient Updates（RSS）",
         "sourceId": "aihot",
         "category": "paper",
-        "publishedAt": "2026-10-29T14:36:22.000Z",
+        "publishedAt": "2026-10-30T12:07:16.000Z",
         "links": {
-          "original": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
+          "original": "https://epochai.substack.com/p/glm-patch-gap-exploit-firefox"
         }
       },
       {
-        "id": "aihot-4d2b9689117b",
-        "title": "404 Media 起底 Proton 内部 AI 转型之争：CEO Andy Yen 强推 AI 引发恐惧文化",
-        "summary": "404 Media 采访九名现任与离职 Proton 员工并查阅内部文件，报道 CEO Andy Yen 强推 AI 转型引发的内部冲突。10 月公司 90% 代码由 AI 编写，多使用 Anthropic 的 Claude；Yen 称今年是最后一年招聘工程师，并宣布将以可能决定去留的重新面试评估员工 AI 使用情况。",
-        "source": "404 Media（RSS）",
+        "id": "aihot-f7f30225df4e",
+        "title": "阿里巴巴：Apple 智能国行用户可自主选择是否开通千问集成功能",
+        "summary": "阿里巴巴发布公告，说明千问集成 Apple 智能后用户可自主选择是否开通，功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月 iOS 27.3 正式发布时面向中国用户推出。",
+        "source": "IT之家·人工智能",
         "sourceId": "aihot",
         "category": "industry",
-        "publishedAt": "2026-10-29T14:21:49.000Z",
+        "publishedAt": "2026-10-30T23:09:21.313Z",
         "links": {
-          "original": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/"
+          "original": "https://www.ithome.com/1/020/395.htm"
+        }
+      },
+      {
+        "id": "aihot-5401800deebc",
+        "title": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
+        "summary": "Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 7400 亿美元，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定。",
+        "source": "TechCrunch：AI（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-30T21:17:40.000Z",
+        "links": {
+          "original": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+        }
+      },
+      {
+        "id": "aihot-d5b2aabb3165",
+        "title": "Reddit CEO 称 Google AI Mode 不为任何人带来流量，Reddit 每周流失超百万搜索访问",
+        "summary": "Reddit CEO Steve Huffman 表示 10 月 Reddit 每周流失超过 100 万来自 Google 搜索的访问，股价在业绩强劲的情况下仍下跌超 25%。他称 AI Mode 不会带来流量，Reddit 正在美国以外测试登录墙以遏制抓取，并与 AI 提供商继续数据授权谈判。",
+        "source": "The Decoder：AI News（RSS）",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-30T17:15:24.000Z",
+        "links": {
+          "original": "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/"
+        }
+      },
+      {
+        "id": "aihot-32c31be06a7f",
+        "title": "AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30%",
+        "summary": "BBC 报道称，因担忧企业对 AI 的巨额投资回报，美股科技股连续第二日大跌。",
+        "source": "Hacker News：AI 热帖",
+        "sourceId": "aihot",
+        "category": "industry",
+        "publishedAt": "2026-10-30T14:50:37.797Z",
+        "links": {
+          "original": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo"
         }
       }
     ]
