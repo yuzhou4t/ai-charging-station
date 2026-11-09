@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-09",
-  "generatedAt": "2026-11-08T23:55:01.937Z",
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-09T23:55:05.947Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 0,
-    "mustRead": 0,
-    "creatorUpdates": 0,
-    "officialUpdates": 0,
+    "totalItems": 6,
+    "mustRead": 5,
+    "creatorUpdates": 1,
+    "officialUpdates": 5,
     "aihotPicks": 0,
     "sources": [
       {
@@ -24,7 +24,7 @@
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
@@ -59,14 +59,14 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 4
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
@@ -78,9 +78,144 @@
     ]
   },
   "sections": {
-    "mustRead": [],
-    "creatorUpdates": [],
-    "officialUpdates": [],
+    "mustRead": [
+      {
+        "id": "bilibili-chimp-3895574892ce",
+        "title": "人体编程：AI 最有价值的应用",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-11-09T11:05:48.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1aaWt6tE3P"
+        }
+      },
+      {
+        "id": "openai-news-9dbad16bb3b6",
+        "title": "CodeRabbit 扩展智能体软件开发，交付量提升 20 倍",
+        "summary": "CodeRabbit 使用 OpenAI 模型对 AI 生成的代码进行治理并建立信任，并借助 Codex 让同一支工程团队交付的软件量提升 20 倍。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-09T08:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/coderabbit-codex-daybreak"
+        }
+      },
+      {
+        "id": "langchain-blog-48a23ec67393",
+        "title": "什么是评测驱动开发？如何改进 AI 智能体",
+        "summary": "评测驱动开发通过一组一致的指标，帮助你构建 AI 智能体。先定义良好行为，再编写评测，然后比较不同实验。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-11-09T16:23:28.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/what-is-eval-driven-development"
+        }
+      },
+      {
+        "id": "openai-news-2e03667107e8",
+        "title": "ChatGPT Enterprise 现已登陆 AWS Marketplace",
+        "summary": "ChatGPT Enterprise 现已通过 AWS Marketplace 提供，组织可利用现有的 AWS 采购和账单关系简化采购流程。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-09T19:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+        }
+      },
+      {
+        "id": "openai-news-4249217d88b3",
+        "title": "Control Room：集中跟踪并停止研究基础设施中的模型工作负载",
+        "summary": "了解 OpenAI 的 Control Room 如何跟踪研究基础设施中的模型工作负载，并在出现安全或安保问题时迅速停止这些工作负载。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-09T13:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/control-room"
+        }
+      }
+    ],
+    "creatorUpdates": [
+      {
+        "id": "bilibili-chimp-3895574892ce",
+        "title": "人体编程：AI 最有价值的应用",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-11-09T11:05:48.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1aaWt6tE3P"
+        }
+      }
+    ],
+    "officialUpdates": [
+      {
+        "id": "openai-news-9dbad16bb3b6",
+        "title": "CodeRabbit 扩展智能体软件开发，交付量提升 20 倍",
+        "summary": "CodeRabbit 使用 OpenAI 模型对 AI 生成的代码进行治理并建立信任，并借助 Codex 让同一支工程团队交付的软件量提升 20 倍。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-09T08:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/coderabbit-codex-daybreak"
+        }
+      },
+      {
+        "id": "langchain-blog-48a23ec67393",
+        "title": "什么是评测驱动开发？如何改进 AI 智能体",
+        "summary": "评测驱动开发通过一组一致的指标，帮助你构建 AI 智能体。先定义良好行为，再编写评测，然后比较不同实验。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-11-09T16:23:28.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/what-is-eval-driven-development"
+        }
+      },
+      {
+        "id": "openai-news-2e03667107e8",
+        "title": "ChatGPT Enterprise 现已登陆 AWS Marketplace",
+        "summary": "ChatGPT Enterprise 现已通过 AWS Marketplace 提供，组织可利用现有的 AWS 采购和账单关系简化采购流程。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-09T19:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+        }
+      },
+      {
+        "id": "openai-news-4249217d88b3",
+        "title": "Control Room：集中跟踪并停止研究基础设施中的模型工作负载",
+        "summary": "了解 OpenAI 的 Control Room 如何跟踪研究基础设施中的模型工作负载，并在出现安全或安保问题时迅速停止这些工作负载。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-09T13:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/control-room"
+        }
+      },
+      {
+        "id": "openai-news-6b2aa2e63b74",
+        "title": "Kuken Industries 几分钟内检索 70 年的图纸",
+        "summary": "Kuken Industries 使用 OpenAI API 检索 70 年来积累的冷却塔图纸。工程师查找维修所需图纸的时间从近一小时缩短至 4.5 分钟。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-09T08:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/kuken"
+        }
+      }
+    ],
     "aihotPicks": []
   }
 }
