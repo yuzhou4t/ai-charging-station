@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-10",
-  "generatedAt": "2026-11-09T23:55:05.947Z",
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-10T23:55:04.156Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 6,
+    "totalItems": 7,
     "mustRead": 5,
-    "creatorUpdates": 1,
-    "officialUpdates": 5,
+    "creatorUpdates": 0,
+    "officialUpdates": 7,
     "aihotPicks": 0,
     "sources": [
       {
@@ -23,8 +23,8 @@
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "ok",
-        "itemCount": 1
+        "status": "failed",
+        "itemCount": 0
       },
       {
         "id": "bilibili-donquixote",
@@ -52,7 +52,7 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 2
       },
       {
         "id": "openai-news",
@@ -80,139 +80,150 @@
   "sections": {
     "mustRead": [
       {
-        "id": "bilibili-chimp-3895574892ce",
-        "title": "人体编程：AI 最有价值的应用",
-        "summary": "",
-        "source": "第四种黑猩猩CHIMP",
-        "sourceId": "bilibili-chimp",
-        "category": null,
-        "publishedAt": "2026-11-09T11:05:48.000Z",
-        "links": {
-          "original": "https://www.bilibili.com/video/BV1aaWt6tE3P"
-        }
-      },
-      {
-        "id": "openai-news-9dbad16bb3b6",
-        "title": "CodeRabbit 扩展智能体软件开发，交付量提升 20 倍",
-        "summary": "CodeRabbit 使用 OpenAI 模型对 AI 生成的代码进行治理并建立信任，并借助 Codex 让同一支工程团队交付的软件量提升 20 倍。",
+        "id": "openai-news-e7ba49f8b598",
+        "title": "帮助照护者在日常生活中使用 AI",
+        "summary": "OpenAI Academy 将在美国五座城市为照护者举办免费、重实践的 ChatGPT 工作坊，帮助他们掌握可用于日常生活的实用 AI 技能。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-09T08:00:00.000Z",
+        "publishedAt": "2026-11-10T12:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/coderabbit-codex-daybreak"
+          "original": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
         }
       },
       {
-        "id": "langchain-blog-48a23ec67393",
-        "title": "什么是评测驱动开发？如何改进 AI 智能体",
-        "summary": "评测驱动开发通过一组一致的指标，帮助你构建 AI 智能体。先定义良好行为，再编写评测，然后比较不同实验。",
+        "id": "openai-news-335164dfdc10",
+        "title": "前沿工作：AI 对自由职业的影响",
+        "summary": "OpenAI 与 Upwork 的最新研究发现，自由职业的需求正在变化，新的技能组合不断涌现，与 AI 相关项目的预算和工时也在增加。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-10T07:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/ai-effect-on-freelance-work"
+        }
+      },
+      {
+        "id": "langchain-blog-178674c967db",
+        "title": "Workday 如何借助 LangGraph 和 LangSmith 构建企业级 AI 智能体平台",
+        "summary": "了解 Workday 如何使用 LangGraph 和 LangSmith 构建内部 AI 智能体平台，将原型开发时间从数月缩短至不到一天，并满足合规需求。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-09T16:23:28.000Z",
+        "publishedAt": "2026-11-10T17:22:14.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/what-is-eval-driven-development"
+          "original": "https://www.langchain.com/blog/how-workday-built-an-enterprise-scale-ai-agent-platform-with-langgraph-and-langsmith"
         }
       },
       {
-        "id": "openai-news-2e03667107e8",
-        "title": "ChatGPT Enterprise 现已登陆 AWS Marketplace",
-        "summary": "ChatGPT Enterprise 现已通过 AWS Marketplace 提供，组织可利用现有的 AWS 采购和账单关系简化采购流程。",
+        "id": "openai-news-9ff59bd1d353",
+        "title": "推出 ChatGPT 中的企业信息",
+        "summary": "管理企业信息，了解企业在 ChatGPT 中的展示情况，并将用户兴趣转化为行动。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-09T19:00:00.000Z",
+        "publishedAt": "2026-11-10T10:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+          "original": "https://openai.com/index/introducing-businesses-chatgpt"
         }
       },
       {
-        "id": "openai-news-4249217d88b3",
-        "title": "Control Room：集中跟踪并停止研究基础设施中的模型工作负载",
-        "summary": "了解 OpenAI 的 Control Room 如何跟踪研究基础设施中的模型工作负载，并在出现安全或安保问题时迅速停止这些工作负载。",
+        "id": "openai-news-e8e7fa03b13e",
+        "title": "弥合教育领域的 AI 指导鸿沟",
+        "summary": "介绍 ThinkYoung 的最新研究，以及 OpenAI 在 EMEA 地区教育合作中的经验，探讨如何支持教师、提升 AI 素养并促进自主学习。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-09T13:00:00.000Z",
+        "publishedAt": "2026-11-10T09:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/control-room"
+          "original": "https://openai.com/index/closing-ai-guidance-gap-education"
         }
       }
     ],
-    "creatorUpdates": [
-      {
-        "id": "bilibili-chimp-3895574892ce",
-        "title": "人体编程：AI 最有价值的应用",
-        "summary": "",
-        "source": "第四种黑猩猩CHIMP",
-        "sourceId": "bilibili-chimp",
-        "category": null,
-        "publishedAt": "2026-11-09T11:05:48.000Z",
-        "links": {
-          "original": "https://www.bilibili.com/video/BV1aaWt6tE3P"
-        }
-      }
-    ],
+    "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-9dbad16bb3b6",
-        "title": "CodeRabbit 扩展智能体软件开发，交付量提升 20 倍",
-        "summary": "CodeRabbit 使用 OpenAI 模型对 AI 生成的代码进行治理并建立信任，并借助 Codex 让同一支工程团队交付的软件量提升 20 倍。",
+        "id": "openai-news-e7ba49f8b598",
+        "title": "帮助照护者在日常生活中使用 AI",
+        "summary": "OpenAI Academy 将在美国五座城市为照护者举办免费、重实践的 ChatGPT 工作坊，帮助他们掌握可用于日常生活的实用 AI 技能。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-09T08:00:00.000Z",
+        "publishedAt": "2026-11-10T12:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/coderabbit-codex-daybreak"
+          "original": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
         }
       },
       {
-        "id": "langchain-blog-48a23ec67393",
-        "title": "什么是评测驱动开发？如何改进 AI 智能体",
-        "summary": "评测驱动开发通过一组一致的指标，帮助你构建 AI 智能体。先定义良好行为，再编写评测，然后比较不同实验。",
+        "id": "openai-news-335164dfdc10",
+        "title": "前沿工作：AI 对自由职业的影响",
+        "summary": "OpenAI 与 Upwork 的最新研究发现，自由职业的需求正在变化，新的技能组合不断涌现，与 AI 相关项目的预算和工时也在增加。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-10T07:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/ai-effect-on-freelance-work"
+        }
+      },
+      {
+        "id": "langchain-blog-178674c967db",
+        "title": "Workday 如何借助 LangGraph 和 LangSmith 构建企业级 AI 智能体平台",
+        "summary": "了解 Workday 如何使用 LangGraph 和 LangSmith 构建内部 AI 智能体平台，将原型开发时间从数月缩短至不到一天，并满足合规需求。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-09T16:23:28.000Z",
+        "publishedAt": "2026-11-10T17:22:14.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/what-is-eval-driven-development"
+          "original": "https://www.langchain.com/blog/how-workday-built-an-enterprise-scale-ai-agent-platform-with-langgraph-and-langsmith"
         }
       },
       {
-        "id": "openai-news-2e03667107e8",
-        "title": "ChatGPT Enterprise 现已登陆 AWS Marketplace",
-        "summary": "ChatGPT Enterprise 现已通过 AWS Marketplace 提供，组织可利用现有的 AWS 采购和账单关系简化采购流程。",
+        "id": "openai-news-9ff59bd1d353",
+        "title": "推出 ChatGPT 中的企业信息",
+        "summary": "管理企业信息，了解企业在 ChatGPT 中的展示情况，并将用户兴趣转化为行动。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-09T19:00:00.000Z",
+        "publishedAt": "2026-11-10T10:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+          "original": "https://openai.com/index/introducing-businesses-chatgpt"
         }
       },
       {
-        "id": "openai-news-4249217d88b3",
-        "title": "Control Room：集中跟踪并停止研究基础设施中的模型工作负载",
-        "summary": "了解 OpenAI 的 Control Room 如何跟踪研究基础设施中的模型工作负载，并在出现安全或安保问题时迅速停止这些工作负载。",
+        "id": "openai-news-e8e7fa03b13e",
+        "title": "弥合教育领域的 AI 指导鸿沟",
+        "summary": "介绍 ThinkYoung 的最新研究，以及 OpenAI 在 EMEA 地区教育合作中的经验，探讨如何支持教师、提升 AI 素养并促进自主学习。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-09T13:00:00.000Z",
+        "publishedAt": "2026-11-10T09:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/control-room"
+          "original": "https://openai.com/index/closing-ai-guidance-gap-education"
         }
       },
       {
-        "id": "openai-news-6b2aa2e63b74",
-        "title": "Kuken Industries 几分钟内检索 70 年的图纸",
-        "summary": "Kuken Industries 使用 OpenAI API 检索 70 年来积累的冷却塔图纸。工程师查找维修所需图纸的时间从近一小时缩短至 4.5 分钟。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "claude-blog-d5393f8e032e",
+        "title": "文章｜2026 年 11 月 9 日｜借助 Claude Fable 5.2 安全扩展多智能体团队",
+        "summary": "一支由 1,000 个智能体组成的团队运行 Claude Fable 5.2 的早期版本，借助通用工具、共享数据库和分层安全控制，复现了费马大定理的一个形式化证明。（在新标签页中打开）",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
         "category": null,
-        "publishedAt": "2026-11-09T08:00:00.000Z",
+        "publishedAt": null,
         "links": {
-          "original": "https://openai.com/index/kuken"
+          "original": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
+        }
+      },
+      {
+        "id": "claude-blog-583c5495b130",
+        "title": "文章｜2026 年 11 月 9 日｜应该用哪个 Claude 模型进行开发？",
+        "summary": "根据任务、成本和所需工作量，了解如何在 Claude Fable 5.2、Opus 5.5、Sonnet 5.5 和 Haiku 5.5 之间进行选择。Claude Platform、Claude Code。（在新标签页中打开）",
+        "source": "Claude Blog",
+        "sourceId": "claude-blog",
+        "category": null,
+        "publishedAt": null,
+        "links": {
+          "original": "https://claude.dev/blog/which-claude-model-should-you-build-with/"
         }
       }
     ],
