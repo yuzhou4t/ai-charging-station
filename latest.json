@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-13",
-  "generatedAt": "2026-11-12T23:55:05.795Z",
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-13T23:55:04.952Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 4,
-    "mustRead": 4,
+    "totalItems": 2,
+    "mustRead": 2,
     "creatorUpdates": 0,
-    "officialUpdates": 4,
+    "officialUpdates": 2,
     "aihotPicks": 0,
     "sources": [
       {
@@ -59,14 +59,14 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 4
+        "itemCount": 1
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "aihot",
@@ -80,102 +80,54 @@
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-fcb27c1bdf6c",
-        "title": "Amplitude 如何借助 OpenAI 在 1–2 天内推出产品改进",
-        "summary": "Amplitude 的主动式产品智能体 Wave 主要基于 OpenAI 模型构建，可识别产品开发方向，借助编程智能体帮助团队交付改动，并衡量改动成效。",
+        "id": "openai-news-bd98a5d1e6e2",
+        "title": "推出 ChatGPT Wallet",
+        "summary": "推出 ChatGPT Wallet，为 ChatGPT Work、Codex 和 dots 中的智能体提供安全的购物方式。用户批准后，智能体即可完成购买，并享有现有的银行卡安全保障。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-12T20:00:00.000Z",
+        "publishedAt": "2026-11-13T15:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/amplitude"
+          "original": "https://openai.com/index/introducing-chatgpt-wallet"
         }
       },
       {
-        "id": "openai-news-d2b6f9aa4fef",
-        "title": "Gondola 在团队借助 Codex 加快开发的同时实现收入翻倍",
-        "summary": "Gondola 帮助创意工作者获得认可并找到工作。Codex 让其首席工程师的产出提高了 50%，ChatGPT 则简化了日常工作。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-6250e7643652",
+        "title": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元",
+        "summary": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元，本轮融资由 CapitalG 领投。公司希望借助智能体工程平台 LangSmith，帮助每家企业掌握自己的智能技术。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-12T12:00:00.000Z",
+        "publishedAt": "2026-11-13T16:06:29.000Z",
         "links": {
-          "original": "https://openai.com/business/customer-stories/gondola"
-        }
-      },
-      {
-        "id": "openai-news-f40a064075c5",
-        "title": "Holiday Extras 借助 Codex 重新思考自身的开发可能",
-        "summary": "借助 Codex，Holiday Extras 正将客户专业知识转化为更出色的应用、更高的预订转化率，以及新的增长可能。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-12T09:30:00.000Z",
-        "links": {
-          "original": "https://openai.com/business/customer-stories/holidays-extras-codex"
-        }
-      },
-      {
-        "id": "openai-news-d284c53b365a",
-        "title": "支持有关 AI 与儿童安全的研究",
-        "summary": "OpenAI 承诺投入 200 万美元，支持 AI 与儿童安全相关研究。这项工作将助力开发共享工具，用于衡量 AI 为年轻人带来的风险与机遇。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-12T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/children-first-declaration"
+          "original": "https://www.langchain.com/blog/series-c"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-fcb27c1bdf6c",
-        "title": "Amplitude 如何借助 OpenAI 在 1–2 天内推出产品改进",
-        "summary": "Amplitude 的主动式产品智能体 Wave 主要基于 OpenAI 模型构建，可识别产品开发方向，借助编程智能体帮助团队交付改动，并衡量改动成效。",
+        "id": "openai-news-bd98a5d1e6e2",
+        "title": "推出 ChatGPT Wallet",
+        "summary": "推出 ChatGPT Wallet，为 ChatGPT Work、Codex 和 dots 中的智能体提供安全的购物方式。用户批准后，智能体即可完成购买，并享有现有的银行卡安全保障。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-12T20:00:00.000Z",
+        "publishedAt": "2026-11-13T15:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/amplitude"
+          "original": "https://openai.com/index/introducing-chatgpt-wallet"
         }
       },
       {
-        "id": "openai-news-d2b6f9aa4fef",
-        "title": "Gondola 在团队借助 Codex 加快开发的同时实现收入翻倍",
-        "summary": "Gondola 帮助创意工作者获得认可并找到工作。Codex 让其首席工程师的产出提高了 50%，ChatGPT 则简化了日常工作。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-6250e7643652",
+        "title": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元",
+        "summary": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元，本轮融资由 CapitalG 领投。公司希望借助智能体工程平台 LangSmith，帮助每家企业掌握自己的智能技术。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-12T12:00:00.000Z",
+        "publishedAt": "2026-11-13T16:06:29.000Z",
         "links": {
-          "original": "https://openai.com/business/customer-stories/gondola"
-        }
-      },
-      {
-        "id": "openai-news-f40a064075c5",
-        "title": "Holiday Extras 借助 Codex 重新思考自身的开发可能",
-        "summary": "借助 Codex，Holiday Extras 正将客户专业知识转化为更出色的应用、更高的预订转化率，以及新的增长可能。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-12T09:30:00.000Z",
-        "links": {
-          "original": "https://openai.com/business/customer-stories/holidays-extras-codex"
-        }
-      },
-      {
-        "id": "openai-news-d284c53b365a",
-        "title": "支持有关 AI 与儿童安全的研究",
-        "summary": "OpenAI 承诺投入 200 万美元，支持 AI 与儿童安全相关研究。这项工作将助力开发共享工具，用于衡量 AI 为年轻人带来的风险与机遇。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-12T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/children-first-declaration"
+          "original": "https://www.langchain.com/blog/series-c"
         }
       }
     ],
