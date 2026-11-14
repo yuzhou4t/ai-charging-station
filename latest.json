@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-14",
-  "generatedAt": "2026-11-13T23:55:04.952Z",
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-14T23:55:04.182Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 2,
-    "mustRead": 2,
+    "totalItems": 1,
+    "mustRead": 1,
     "creatorUpdates": 0,
-    "officialUpdates": 2,
+    "officialUpdates": 1,
     "aihotPicks": 0,
     "sources": [
       {
@@ -59,7 +59,7 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "langchain-blog",
@@ -80,54 +80,30 @@
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-bd98a5d1e6e2",
-        "title": "推出 ChatGPT Wallet",
-        "summary": "推出 ChatGPT Wallet，为 ChatGPT Work、Codex 和 dots 中的智能体提供安全的购物方式。用户批准后，智能体即可完成购买，并享有现有的银行卡安全保障。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-13T15:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/introducing-chatgpt-wallet"
-        }
-      },
-      {
-        "id": "langchain-blog-6250e7643652",
-        "title": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元",
-        "summary": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元，本轮融资由 CapitalG 领投。公司希望借助智能体工程平台 LangSmith，帮助每家企业掌握自己的智能技术。",
+        "id": "langchain-blog-af7a4c86ed79",
+        "title": "目标工程",
+        "summary": "智能体的未来在于承担开放式目标，并推动这些目标最终完成。了解更多。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-13T16:06:29.000Z",
+        "publishedAt": "2026-11-14T16:00:01.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/series-c"
+          "original": "https://www.langchain.com/blog/goal-engineering"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-bd98a5d1e6e2",
-        "title": "推出 ChatGPT Wallet",
-        "summary": "推出 ChatGPT Wallet，为 ChatGPT Work、Codex 和 dots 中的智能体提供安全的购物方式。用户批准后，智能体即可完成购买，并享有现有的银行卡安全保障。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-13T15:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/introducing-chatgpt-wallet"
-        }
-      },
-      {
-        "id": "langchain-blog-6250e7643652",
-        "title": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元",
-        "summary": "LangChain 完成 3 亿美元 C 轮融资，估值达 30 亿美元，本轮融资由 CapitalG 领投。公司希望借助智能体工程平台 LangSmith，帮助每家企业掌握自己的智能技术。",
+        "id": "langchain-blog-af7a4c86ed79",
+        "title": "目标工程",
+        "summary": "智能体的未来在于承担开放式目标，并推动这些目标最终完成。了解更多。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-13T16:06:29.000Z",
+        "publishedAt": "2026-11-14T16:00:01.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/series-c"
+          "original": "https://www.langchain.com/blog/goal-engineering"
         }
       }
     ],
