@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-15",
-  "generatedAt": "2026-11-14T23:55:04.182Z",
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-15T23:55:02.564Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 1,
-    "mustRead": 1,
+    "totalItems": 2,
+    "mustRead": 2,
     "creatorUpdates": 0,
-    "officialUpdates": 1,
+    "officialUpdates": 2,
     "aihotPicks": 0,
     "sources": [
       {
@@ -59,14 +59,14 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 2
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "aihot",
@@ -80,30 +80,54 @@
   "sections": {
     "mustRead": [
       {
-        "id": "langchain-blog-af7a4c86ed79",
-        "title": "目标工程",
-        "summary": "智能体的未来在于承担开放式目标，并推动这些目标最终完成。了解更多。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "openai-news-fa3b10ce1dfd",
+        "title": "迈向在晶格上定义标准模型",
+        "summary": "探索一种非微扰的标准模型晶格定义方案，以及 GPT-6 Astra 如何帮助将这一构想转化为详细证明。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-14T16:00:01.000Z",
+        "publishedAt": "2026-11-15T22:00:01.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/goal-engineering"
+          "original": "https://openai.com/index/step-toward-defining-the-standard-model"
+        }
+      },
+      {
+        "id": "openai-news-53c374421fb4",
+        "title": "我们的科学新博客",
+        "summary": "OpenAI 科学博客分享新发现、实用方法，以及研究人员借助 AI 推动科学发现的亲身经历。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-15T22:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/our-new-blog-for-science"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "langchain-blog-af7a4c86ed79",
-        "title": "目标工程",
-        "summary": "智能体的未来在于承担开放式目标，并推动这些目标最终完成。了解更多。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "openai-news-fa3b10ce1dfd",
+        "title": "迈向在晶格上定义标准模型",
+        "summary": "探索一种非微扰的标准模型晶格定义方案，以及 GPT-6 Astra 如何帮助将这一构想转化为详细证明。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-14T16:00:01.000Z",
+        "publishedAt": "2026-11-15T22:00:01.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/goal-engineering"
+          "original": "https://openai.com/index/step-toward-defining-the-standard-model"
+        }
+      },
+      {
+        "id": "openai-news-53c374421fb4",
+        "title": "我们的科学新博客",
+        "summary": "OpenAI 科学博客分享新发现、实用方法，以及研究人员借助 AI 推动科学发现的亲身经历。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-15T22:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/our-new-blog-for-science"
         }
       }
     ],
