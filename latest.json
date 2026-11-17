@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-16",
-  "generatedAt": "2026-11-15T23:55:02.564Z",
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-17T23:55:04.157Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 2,
-    "mustRead": 2,
+    "totalItems": 9,
+    "mustRead": 5,
     "creatorUpdates": 0,
-    "officialUpdates": 2,
+    "officialUpdates": 9,
     "aihotPicks": 0,
     "sources": [
       {
@@ -59,14 +59,14 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 5
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 4
       },
       {
         "id": "aihot",
@@ -80,54 +80,174 @@
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-fa3b10ce1dfd",
-        "title": "迈向在晶格上定义标准模型",
-        "summary": "探索一种非微扰的标准模型晶格定义方案，以及 GPT-6 Astra 如何帮助将这一构想转化为详细证明。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-a526e0bf56d6",
+        "title": "从任务导向到目标导向",
+        "summary": "LangChain 首席执行官兼联合创始人 Harrison Chase 分享了我们如何从面向特定任务的智能体转向以目标为中心的智能体。了解更多。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-15T22:00:01.000Z",
+        "publishedAt": "2026-11-17T13:50:44.000Z",
         "links": {
-          "original": "https://openai.com/index/step-toward-defining-the-standard-model"
+          "original": "https://www.langchain.com/blog/from-tasks-to-goals"
         }
       },
       {
-        "id": "openai-news-53c374421fb4",
-        "title": "我们的科学新博客",
-        "summary": "OpenAI 科学博客分享新发现、实用方法，以及研究人员借助 AI 推动科学发现的亲身经历。",
+        "id": "openai-news-6a1fee5c76fe",
+        "title": "OpenAI 落地智利",
+        "summary": "OpenAI 与智利政府建立合作，支持负责任地采用 AI、提升公共部门技能，并帮助当地初创企业开发 AI 应用。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-15T22:00:00.000Z",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/our-new-blog-for-science"
+          "original": "https://openai.com/index/introducing-openai-for-chile"
+        }
+      },
+      {
+        "id": "openai-news-ea767c0a7f81",
+        "title": "推出 GPT-6.2 Astra 和 Sol",
+        "summary": "推出 GPT‑6.2 Astra 和 Sol：在 ChatGPT Work、Codex 和 API 中，以更低成本提供更出色的专业输出、编程和计算机操作能力，并提升效率。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-17T17:45:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      },
+      {
+        "id": "langchain-blog-bee4f9ce4f88",
+        "title": "构建主动式智能体的经验",
+        "summary": "主动式智能体会在后台朝目标推进，并在需要你参与时与你联系。本文分享了我们在构建 GTM Agent 和 Robin 时，对记忆功能和用户体验的经验。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-11-17T16:49:23.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/what-weve-learned-building-proactive-agents"
+        }
+      },
+      {
+        "id": "langchain-blog-e110faa9a0c9",
+        "title": "为何我们围绕智能体重构 LangSmith",
+        "summary": "我们围绕单一智能体记录重新组织了 LangSmith。无论使用哪种框架或运行时，都可以在同一处构建、运行、改进和治理每个智能体。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-11-17T13:50:44.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/we-rebuilt-langsmith-around-the-agent"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-fa3b10ce1dfd",
-        "title": "迈向在晶格上定义标准模型",
-        "summary": "探索一种非微扰的标准模型晶格定义方案，以及 GPT-6 Astra 如何帮助将这一构想转化为详细证明。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-a526e0bf56d6",
+        "title": "从任务导向到目标导向",
+        "summary": "LangChain 首席执行官兼联合创始人 Harrison Chase 分享了我们如何从面向特定任务的智能体转向以目标为中心的智能体。了解更多。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-15T22:00:01.000Z",
+        "publishedAt": "2026-11-17T13:50:44.000Z",
         "links": {
-          "original": "https://openai.com/index/step-toward-defining-the-standard-model"
+          "original": "https://www.langchain.com/blog/from-tasks-to-goals"
         }
       },
       {
-        "id": "openai-news-53c374421fb4",
-        "title": "我们的科学新博客",
-        "summary": "OpenAI 科学博客分享新发现、实用方法，以及研究人员借助 AI 推动科学发现的亲身经历。",
+        "id": "openai-news-6a1fee5c76fe",
+        "title": "OpenAI 落地智利",
+        "summary": "OpenAI 与智利政府建立合作，支持负责任地采用 AI、提升公共部门技能，并帮助当地初创企业开发 AI 应用。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-15T22:00:00.000Z",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/our-new-blog-for-science"
+          "original": "https://openai.com/index/introducing-openai-for-chile"
+        }
+      },
+      {
+        "id": "openai-news-ea767c0a7f81",
+        "title": "推出 GPT-6.2 Astra 和 Sol",
+        "summary": "推出 GPT‑6.2 Astra 和 Sol：在 ChatGPT Work、Codex 和 API 中，以更低成本提供更出色的专业输出、编程和计算机操作能力，并提升效率。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-17T17:45:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      },
+      {
+        "id": "langchain-blog-bee4f9ce4f88",
+        "title": "构建主动式智能体的经验",
+        "summary": "主动式智能体会在后台朝目标推进，并在需要你参与时与你联系。本文分享了我们在构建 GTM Agent 和 Robin 时，对记忆功能和用户体验的经验。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-11-17T16:49:23.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/what-weve-learned-building-proactive-agents"
+        }
+      },
+      {
+        "id": "langchain-blog-e110faa9a0c9",
+        "title": "为何我们围绕智能体重构 LangSmith",
+        "summary": "我们围绕单一智能体记录重新组织了 LangSmith。无论使用哪种框架或运行时，都可以在同一处构建、运行、改进和治理每个智能体。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-11-17T13:50:44.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/we-rebuilt-langsmith-around-the-agent"
+        }
+      },
+      {
+        "id": "openai-news-2f9ba5e47826",
+        "title": "推出 ChatGPT for Sales",
+        "summary": "了解 ChatGPT 中全新的 Sales 插件，以及新增和扩展的 30 多款合作伙伴插件，助你调研潜在客户、准备推介、更新 CRM 并推动交易进展。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-17T08:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-chatgpt-for-sales"
+        }
+      },
+      {
+        "id": "openai-news-98b3b7432048",
+        "title": "借助 AI 加强北约及盟友的网络防御",
+        "summary": "了解 OpenAI 如何与北约及盟友的网络机构合作，帮助可信赖的防御人员发现漏洞、测试修复方案并保护关键系统。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai"
+        }
+      },
+      {
+        "id": "openai-news-8e8ea1f9594c",
+        "title": "Astra for Law 在法律智能领域领先",
+        "summary": "在涵盖 24 个法律领域的发布评测中，Astra for Law 排名第一。所有 ChatGPT Enterprise 客户现在都可以申请访问。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/astra-law-6-2"
+        }
+      },
+      {
+        "id": "langchain-blog-1f0069347afd",
+        "title": "保护轨迹中的敏感数据：LangSmith 推出新控制功能",
+        "summary": "LangSmith 现已推出新控制功能，帮助团队管理对敏感轨迹数据的访问。了解更多。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
+        "category": null,
+        "publishedAt": "2026-11-17T18:00:02.000Z",
+        "links": {
+          "original": "https://www.langchain.com/blog/protect-sensitive-data-in-your-traces-new-controls-in-langsmith"
         }
       }
     ],
