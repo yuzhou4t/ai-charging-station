@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-19",
-  "generatedAt": "2026-11-18T23:55:05.775Z",
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-20T23:55:05.130Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 9,
-    "mustRead": 5,
+    "totalItems": 4,
+    "mustRead": 4,
     "creatorUpdates": 0,
-    "officialUpdates": 9,
+    "officialUpdates": 4,
     "aihotPicks": 0,
     "sources": [
       {
@@ -52,14 +52,14 @@
         "name": "Claude Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 0
       },
       {
         "id": "openai-news",
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 6
+        "itemCount": 3
       },
       {
         "id": "langchain-blog",
@@ -80,174 +80,102 @@
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-38b2bfd4e75a",
-        "title": "加速研究：参差不齐的前沿能力",
-        "summary": "OpenAI 衡量了编程智能体如何加速 AI 研究、它们的表现仍在哪些方面参差不齐，以及这对递归式自我改进意味着什么。",
+        "id": "openai-news-dd1953a1ad5c",
+        "title": "Hebbia 在金融研究中发现 GPT-6 Astra 带来的改进",
+        "summary": "Hebbia 测试了 GPT-6 Astra 在金融研究中的表现。发布前评估显示，该模型在来源覆盖度、引文相关性和呈现质量方面均有所提升。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-18T08:00:00.000Z",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/research-acceleration-jagged-frontier"
+          "original": "https://openai.com/business/customer-stories/hebbia"
         }
       },
       {
-        "id": "langchain-blog-4e0529257431",
-        "title": "面向编程智能体的 LangSmith：现在可按成果追踪支出",
-        "summary": "LangSmith 现已推出专为编程智能体打造的报告功能，以及将其支出与所生成拉取请求关联起来的新能力。",
+        "id": "openai-news-e7ceb653c73e",
+        "title": "应对对抗性蒸馏",
+        "summary": "OpenAI 通过分层方案应对对抗性蒸馏，结合模型训练、安全防护、检测和执法措施，防止模型能力被提取。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-20T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/combatting-adversarial-distillation"
+        }
+      },
+      {
+        "id": "langchain-blog-b7d46e1d0622",
+        "title": "Why agent governance starts with observability",
+        "summary": "A strong AI agent governance strategy",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-18T16:27:01.000Z",
+        "publishedAt": "2026-11-20T00:57:43.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/langsmith-coding-agents-roi"
+          "original": "https://www.langchain.com/blog/agent-governance-observability"
         }
       },
       {
-        "id": "openai-news-efd49742ab7b",
-        "title": "借助 OpenAI 模型推进芯片设计",
-        "summary": "OpenAI 模型优化了 Jalapeño 芯片中使用的电路，并改进了 RISC‑V 核心设计，展现了 GPT‑6 Astra 在 AI 辅助芯片设计方面取得的进展。",
+        "id": "openai-news-568a32dd4e20",
+        "title": "AI 能帮助科学家识别有前景的候选药物吗？",
+        "summary": "MedChemBench 评估 AI 模型解读分子结构、依据实验数据进行推理，以及在早期药物发现中筛选化合物的能力。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/advancing-chip-design-with-our-models"
-        }
-      },
-      {
-        "id": "openai-news-54291dee240b",
-        "title": "Le Groupe Figaro 与 OpenAI 合作，将《费加罗报》的新闻内容带入 ChatGPT",
-        "summary": "Le Groupe Figaro 与 OpenAI 合作，通过摘要和摘录将《费加罗报》的新闻内容带入 ChatGPT，并附上原文链接。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-18T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
-        }
-      },
-      {
-        "id": "claude-blog-b87173f25947",
-        "title": "文章｜2026年11月16日｜Claude Code 团队如何看待验证",
-        "summary": "端到端测试、属性测试和差分测试如何让编程智能体以证据验证自己的工作；Claude Code 团队又如何确保验证器诚实可靠。Claude Code（在新标签页中打开）",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
+          "original": "https://openai.com/index/introducing-medchembench"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-38b2bfd4e75a",
-        "title": "加速研究：参差不齐的前沿能力",
-        "summary": "OpenAI 衡量了编程智能体如何加速 AI 研究、它们的表现仍在哪些方面参差不齐，以及这对递归式自我改进意味着什么。",
+        "id": "openai-news-dd1953a1ad5c",
+        "title": "Hebbia 在金融研究中发现 GPT-6 Astra 带来的改进",
+        "summary": "Hebbia 测试了 GPT-6 Astra 在金融研究中的表现。发布前评估显示，该模型在来源覆盖度、引文相关性和呈现质量方面均有所提升。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-18T08:00:00.000Z",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/research-acceleration-jagged-frontier"
+          "original": "https://openai.com/business/customer-stories/hebbia"
         }
       },
       {
-        "id": "langchain-blog-4e0529257431",
-        "title": "面向编程智能体的 LangSmith：现在可按成果追踪支出",
-        "summary": "LangSmith 现已推出专为编程智能体打造的报告功能，以及将其支出与所生成拉取请求关联起来的新能力。",
+        "id": "openai-news-e7ceb653c73e",
+        "title": "应对对抗性蒸馏",
+        "summary": "OpenAI 通过分层方案应对对抗性蒸馏，结合模型训练、安全防护、检测和执法措施，防止模型能力被提取。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-20T10:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/combatting-adversarial-distillation"
+        }
+      },
+      {
+        "id": "langchain-blog-b7d46e1d0622",
+        "title": "Why agent governance starts with observability",
+        "summary": "A strong AI agent governance strategy",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-18T16:27:01.000Z",
+        "publishedAt": "2026-11-20T00:57:43.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/langsmith-coding-agents-roi"
+          "original": "https://www.langchain.com/blog/agent-governance-observability"
         }
       },
       {
-        "id": "openai-news-efd49742ab7b",
-        "title": "借助 OpenAI 模型推进芯片设计",
-        "summary": "OpenAI 模型优化了 Jalapeño 芯片中使用的电路，并改进了 RISC‑V 核心设计，展现了 GPT‑6 Astra 在 AI 辅助芯片设计方面取得的进展。",
+        "id": "openai-news-568a32dd4e20",
+        "title": "AI 能帮助科学家识别有前景的候选药物吗？",
+        "summary": "MedChemBench 评估 AI 模型解读分子结构、依据实验数据进行推理，以及在早期药物发现中筛选化合物的能力。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/advancing-chip-design-with-our-models"
-        }
-      },
-      {
-        "id": "openai-news-54291dee240b",
-        "title": "Le Groupe Figaro 与 OpenAI 合作，将《费加罗报》的新闻内容带入 ChatGPT",
-        "summary": "Le Groupe Figaro 与 OpenAI 合作，通过摘要和摘录将《费加罗报》的新闻内容带入 ChatGPT，并附上原文链接。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-18T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
-        }
-      },
-      {
-        "id": "claude-blog-b87173f25947",
-        "title": "文章｜2026年11月16日｜Claude Code 团队如何看待验证",
-        "summary": "端到端测试、属性测试和差分测试如何让编程智能体以证据验证自己的工作；Claude Code 团队又如何确保验证器诚实可靠。Claude Code（在新标签页中打开）",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
-        }
-      },
-      {
-        "id": "openai-news-ccf47c2a3a30",
-        "title": "沉默的共识",
-        "summary": "OpenAI 战略未来平台主管 Dean Ball 探讨能力更强的 AI 可能如何重塑社会，以及人们如何继续掌控自己的制度。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-18T10:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/the-silent-consensus"
-        }
-      },
-      {
-        "id": "openai-news-2fef3972cb90",
-        "title": "Codex 沙盒内部",
-        "summary": "了解 Codex 如何在你的设备上运行命令，同时在 macOS、Linux 和 Windows 上执行由你控制的文件系统与网络限制。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-18T08:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/inside-the-codex-sandbox"
-        }
-      },
-      {
-        "id": "openai-news-f8e8d73d74fe",
-        "title": "管理前沿 AI 风险：从训练到部署",
-        "summary": "OpenAI 介绍了如何从训练到部署管理前沿 AI 风险，包括模型对齐、沙盒隔离、阻断式防护措施和监控。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-18T06:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/managing-frontier-ai-risk"
-        }
-      },
-      {
-        "id": "claude-blog-960c1f28b015",
-        "title": "文章｜2026年11月17日｜用“混沌循环”加固 Claude Docs 上线：数十亿次请求中出现 60 次服务器错误",
-        "summary": "Claude 如何花两周时间对预发布集群进行负载测试，故意破坏 Claude Docs 服务，并在上线前修复故障；以及哪些因素让服务足够透明易懂，使 Claude 能够完成这一闭环。Claude Code、Claude 应用（在新标签页中打开）",
-        "source": "Claude Blog",
-        "sourceId": "claude-blog",
-        "category": null,
-        "publishedAt": null,
-        "links": {
-          "original": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
+          "original": "https://openai.com/index/introducing-medchembench"
         }
       }
     ],
