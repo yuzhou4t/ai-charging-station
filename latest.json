@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-21",
-  "generatedAt": "2026-11-20T23:55:05.130Z",
+  "date": "2026-11-22",
+  "generatedAt": "2026-11-21T23:55:04.609Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 4,
-    "mustRead": 4,
+    "totalItems": 1,
+    "mustRead": 1,
     "creatorUpdates": 0,
-    "officialUpdates": 4,
+    "officialUpdates": 1,
     "aihotPicks": 0,
     "sources": [
       {
@@ -23,7 +23,7 @@
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "ok",
+        "status": "failed",
         "itemCount": 0
       },
       {
@@ -59,7 +59,7 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 3
+        "itemCount": 0
       },
       {
         "id": "langchain-blog",
@@ -80,102 +80,30 @@
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-dd1953a1ad5c",
-        "title": "Hebbia 在金融研究中发现 GPT-6 Astra 带来的改进",
-        "summary": "Hebbia 测试了 GPT-6 Astra 在金融研究中的表现。发布前评估显示，该模型在来源覆盖度、引文相关性和呈现质量方面均有所提升。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/business/customer-stories/hebbia"
-        }
-      },
-      {
-        "id": "openai-news-e7ceb653c73e",
-        "title": "应对对抗性蒸馏",
-        "summary": "OpenAI 通过分层方案应对对抗性蒸馏，结合模型训练、安全防护、检测和执法措施，防止模型能力被提取。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-20T10:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/combatting-adversarial-distillation"
-        }
-      },
-      {
-        "id": "langchain-blog-b7d46e1d0622",
-        "title": "Why agent governance starts with observability",
-        "summary": "A strong AI agent governance strategy",
+        "id": "langchain-blog-bbb5246325c1",
+        "title": "如何为 AI 智能体构建知识工厂",
+        "summary": "知识工厂是 LangChain 保持其智能体所掌握的企业知识与时俱进的方式：智能体会标记缺失的信息，再由一个策展智能体在后台补全。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-20T00:57:43.000Z",
+        "publishedAt": "2026-11-21T16:45:08.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/agent-governance-observability"
-        }
-      },
-      {
-        "id": "openai-news-568a32dd4e20",
-        "title": "AI 能帮助科学家识别有前景的候选药物吗？",
-        "summary": "MedChemBench 评估 AI 模型解读分子结构、依据实验数据进行推理，以及在早期药物发现中筛选化合物的能力。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/introducing-medchembench"
+          "original": "https://www.langchain.com/blog/knowledge-factory"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-dd1953a1ad5c",
-        "title": "Hebbia 在金融研究中发现 GPT-6 Astra 带来的改进",
-        "summary": "Hebbia 测试了 GPT-6 Astra 在金融研究中的表现。发布前评估显示，该模型在来源覆盖度、引文相关性和呈现质量方面均有所提升。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/business/customer-stories/hebbia"
-        }
-      },
-      {
-        "id": "openai-news-e7ceb653c73e",
-        "title": "应对对抗性蒸馏",
-        "summary": "OpenAI 通过分层方案应对对抗性蒸馏，结合模型训练、安全防护、检测和执法措施，防止模型能力被提取。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-20T10:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/combatting-adversarial-distillation"
-        }
-      },
-      {
-        "id": "langchain-blog-b7d46e1d0622",
-        "title": "Why agent governance starts with observability",
-        "summary": "A strong AI agent governance strategy",
+        "id": "langchain-blog-bbb5246325c1",
+        "title": "如何为 AI 智能体构建知识工厂",
+        "summary": "知识工厂是 LangChain 保持其智能体所掌握的企业知识与时俱进的方式：智能体会标记缺失的信息，再由一个策展智能体在后台补全。",
         "source": "LangChain Blog",
         "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-20T00:57:43.000Z",
+        "publishedAt": "2026-11-21T16:45:08.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/agent-governance-observability"
-        }
-      },
-      {
-        "id": "openai-news-568a32dd4e20",
-        "title": "AI 能帮助科学家识别有前景的候选药物吗？",
-        "summary": "MedChemBench 评估 AI 模型解读分子结构、依据实验数据进行推理，以及在早期药物发现中筛选化合物的能力。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-20T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/introducing-medchembench"
+          "original": "https://www.langchain.com/blog/knowledge-factory"
         }
       }
     ],
