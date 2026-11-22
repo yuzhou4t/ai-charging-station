@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-22",
-  "generatedAt": "2026-11-21T23:55:04.609Z",
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-22T23:55:02.279Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
@@ -23,7 +23,7 @@
         "id": "bilibili-chimp",
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
-        "status": "failed",
+        "status": "ok",
         "itemCount": 0
       },
       {
@@ -59,14 +59,14 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 0
       },
       {
         "id": "aihot",
@@ -80,30 +80,30 @@
   "sections": {
     "mustRead": [
       {
-        "id": "langchain-blog-bbb5246325c1",
-        "title": "如何为 AI 智能体构建知识工厂",
-        "summary": "知识工厂是 LangChain 保持其智能体所掌握的企业知识与时俱进的方式：智能体会标记缺失的信息，再由一个策展智能体在后台补全。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "openai-news-00cae405562c",
+        "title": "困惑度与智能",
+        "summary": "困惑度如何衡量 AI 模型的进展，以及它为何有助于开发者建立一套通用方法，评估新兴能力。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-21T16:45:08.000Z",
+        "publishedAt": "2026-11-22T00:00:00.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/knowledge-factory"
+          "original": "https://openai.com/index/perplexity-and-intelligence"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "langchain-blog-bbb5246325c1",
-        "title": "如何为 AI 智能体构建知识工厂",
-        "summary": "知识工厂是 LangChain 保持其智能体所掌握的企业知识与时俱进的方式：智能体会标记缺失的信息，再由一个策展智能体在后台补全。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
+        "id": "openai-news-00cae405562c",
+        "title": "困惑度与智能",
+        "summary": "困惑度如何衡量 AI 模型的进展，以及它为何有助于开发者建立一套通用方法，评估新兴能力。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-21T16:45:08.000Z",
+        "publishedAt": "2026-11-22T00:00:00.000Z",
         "links": {
-          "original": "https://www.langchain.com/blog/knowledge-factory"
+          "original": "https://openai.com/index/perplexity-and-intelligence"
         }
       }
     ],
