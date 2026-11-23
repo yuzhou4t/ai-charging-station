@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-23",
-  "generatedAt": "2026-11-22T23:55:02.279Z",
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-23T23:55:05.483Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 1,
-    "mustRead": 1,
-    "creatorUpdates": 0,
-    "officialUpdates": 1,
+    "totalItems": 4,
+    "mustRead": 4,
+    "creatorUpdates": 1,
+    "officialUpdates": 3,
     "aihotPicks": 0,
     "sources": [
       {
@@ -24,7 +24,7 @@
         "name": "第四种黑猩猩CHIMP",
         "group": "creator",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 1
       },
       {
         "id": "bilibili-donquixote",
@@ -59,7 +59,7 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 1
+        "itemCount": 3
       },
       {
         "id": "langchain-blog",
@@ -80,30 +80,103 @@
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-00cae405562c",
-        "title": "困惑度与智能",
-        "summary": "困惑度如何衡量 AI 模型的进展，以及它为何有助于开发者建立一套通用方法，评估新兴能力。",
+        "id": "bilibili-chimp-5465921b0b1d",
+        "title": "看 Anthropic 上市就像吃了一只苍蝇",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-11-23T11:42:52.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1gZySzXEZe"
+        }
+      },
+      {
+        "id": "openai-news-c1ca846e01d2",
+        "title": "Richpanel 助力企业在 30 天内将 50% 的客服支持自动化",
+        "summary": "Richpanel 使用 GPT-6 Astra 和 GPT-6.1 Sol 为 AI 客服代理配备工具和流程，并使用 GPT-6 Luna 处理客服对话。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-22T00:00:00.000Z",
+        "publishedAt": "2026-11-23T08:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/perplexity-and-intelligence"
+          "original": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+        }
+      },
+      {
+        "id": "openai-news-5b45294afa3b",
+        "title": "让企业内部法务实现互联智能",
+        "summary": "观看 OpenAI 的 Stacey Wang 和 Craig Bruney、LECG 的 Mary O’Carroll，以及 Cooley 的 Richard Segal，共同探讨 AI 如何帮助企业内部法务团队结合业务背景、构建可复用的工作流，并更有效地利用外部法律顾问。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-23T08:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal"
+        }
+      },
+      {
+        "id": "openai-news-6c6ae82689b1",
+        "title": "OpenAI 与 Cisco 推出 Shirudo",
+        "summary": "OpenAI 与 Cisco 推出 Shirudo，这是一款适用于 Linux 的开源运行时，可帮助团队在部署补丁期间保护正在运行的系统。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-23T21:20:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-shirudo"
         }
       }
     ],
-    "creatorUpdates": [],
+    "creatorUpdates": [
+      {
+        "id": "bilibili-chimp-5465921b0b1d",
+        "title": "看 Anthropic 上市就像吃了一只苍蝇",
+        "summary": "",
+        "source": "第四种黑猩猩CHIMP",
+        "sourceId": "bilibili-chimp",
+        "category": null,
+        "publishedAt": "2026-11-23T11:42:52.000Z",
+        "links": {
+          "original": "https://www.bilibili.com/video/BV1gZySzXEZe"
+        }
+      }
+    ],
     "officialUpdates": [
       {
-        "id": "openai-news-00cae405562c",
-        "title": "困惑度与智能",
-        "summary": "困惑度如何衡量 AI 模型的进展，以及它为何有助于开发者建立一套通用方法，评估新兴能力。",
+        "id": "openai-news-c1ca846e01d2",
+        "title": "Richpanel 助力企业在 30 天内将 50% 的客服支持自动化",
+        "summary": "Richpanel 使用 GPT-6 Astra 和 GPT-6.1 Sol 为 AI 客服代理配备工具和流程，并使用 GPT-6 Luna 处理客服对话。",
         "source": "OpenAI News",
         "sourceId": "openai-news",
         "category": null,
-        "publishedAt": "2026-11-22T00:00:00.000Z",
+        "publishedAt": "2026-11-23T08:00:00.000Z",
         "links": {
-          "original": "https://openai.com/index/perplexity-and-intelligence"
+          "original": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+        }
+      },
+      {
+        "id": "openai-news-5b45294afa3b",
+        "title": "让企业内部法务实现互联智能",
+        "summary": "观看 OpenAI 的 Stacey Wang 和 Craig Bruney、LECG 的 Mary O’Carroll，以及 Cooley 的 Richard Segal，共同探讨 AI 如何帮助企业内部法务团队结合业务背景、构建可复用的工作流，并更有效地利用外部法律顾问。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-23T08:00:00.000Z",
+        "links": {
+          "original": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal"
+        }
+      },
+      {
+        "id": "openai-news-6c6ae82689b1",
+        "title": "OpenAI 与 Cisco 推出 Shirudo",
+        "summary": "OpenAI 与 Cisco 推出 Shirudo，这是一款适用于 Linux 的开源运行时，可帮助团队在部署补丁期间保护正在运行的系统。",
+        "source": "OpenAI News",
+        "sourceId": "openai-news",
+        "category": null,
+        "publishedAt": "2026-11-23T21:20:00.000Z",
+        "links": {
+          "original": "https://openai.com/index/introducing-shirudo"
         }
       }
     ],
