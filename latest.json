@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-25",
-  "generatedAt": "2026-11-24T23:55:05.347Z",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-25T23:55:06.000Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 5,
-    "mustRead": 5,
+    "totalItems": 2,
+    "mustRead": 2,
     "creatorUpdates": 0,
-    "officialUpdates": 5,
+    "officialUpdates": 2,
     "aihotPicks": 0,
     "sources": [
       {
@@ -59,14 +59,14 @@
         "name": "OpenAI News",
         "group": "official",
         "status": "ok",
-        "itemCount": 5
+        "itemCount": 0
       },
       {
         "id": "langchain-blog",
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 0
+        "itemCount": 2
       },
       {
         "id": "aihot",
@@ -80,126 +80,54 @@
   "sections": {
     "mustRead": [
       {
-        "id": "openai-news-7ea53ed008b4",
-        "title": "How iFood scales coding agents across 15,000 repositories",
-        "summary": "",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-75ddb8dc83bc",
+        "title": "智能体湖",
+        "summary": "智能体湖汇集智能体生成的所有运行轨迹。了解 LangSmith 如何大规模筛选出高价值轨迹，并将其转化为问题修复方案和微调模型。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "publishedAt": "2026-11-25T16:26:23.000Z",
         "links": {
-          "original": "https://openai.com/business/customer-stories/ifood"
+          "original": "https://www.langchain.com/blog/the-agent-lake"
         }
       },
       {
-        "id": "openai-news-12388f38b14f",
-        "title": "Clay 借助 Codex 和 ChatGPT 助力销售团队赢单",
-        "summary": "ChatGPT 和 Codex 集成帮助 Clay 用户研究交易机会，并将数据转化为市场拓展策略；推理工作由 GPT-6 模型完成。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-97a44d440aca",
+        "title": "我们如何借助 LangSmith 获得 ISO 42001 认证",
+        "summary": "LangChain 借助 LangSmith 获得了 ISO/IEC 42001 认证。这是人工智能管理体系的国际标准。了解详情。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "publishedAt": "2026-11-25T01:04:06.000Z",
         "links": {
-          "original": "https://openai.com/business/customer-stories/clay-plugins-openai"
-        }
-      },
-      {
-        "id": "openai-news-9b78a3558270",
-        "title": "GPT-6 模型展现出内在的蛋白质设计能力",
-        "summary": "GPT-6 模型运用推理和代码设计蛋白质结构与序列。实验室测试在五个靶标上发现了结合证据。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-24T13:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
-        }
-      },
-      {
-        "id": "openai-news-d5c8fbf9e25b",
-        "title": "借助 Astra 搜寻遥远行星",
-        "summary": "了解两位业余天文学家如何使用 Codex 和 Astra，在 NASA 的开普勒和 TESS 太空望远镜公开数据中寻找潜在系外行星。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-24T11:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/searching-for-distant-planets-with-astra"
-        }
-      },
-      {
-        "id": "openai-news-df70aef3f2a5",
-        "title": "Intentful 如何借助 dots 为增长腾出更多时间",
-        "summary": "Marina Petrova 的 dot Aria 能协助调研网站、制作提案，还会主动标记消息并解决问题。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-24T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/business/customer-stories/intentful-dots"
+          "original": "https://www.langchain.com/blog/ai-governance-iso-iec-42001-langsmith"
         }
       }
     ],
     "creatorUpdates": [],
     "officialUpdates": [
       {
-        "id": "openai-news-7ea53ed008b4",
-        "title": "How iFood scales coding agents across 15,000 repositories",
-        "summary": "",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-75ddb8dc83bc",
+        "title": "智能体湖",
+        "summary": "智能体湖汇集智能体生成的所有运行轨迹。了解 LangSmith 如何大规模筛选出高价值轨迹，并将其转化为问题修复方案和微调模型。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "publishedAt": "2026-11-25T16:26:23.000Z",
         "links": {
-          "original": "https://openai.com/business/customer-stories/ifood"
+          "original": "https://www.langchain.com/blog/the-agent-lake"
         }
       },
       {
-        "id": "openai-news-12388f38b14f",
-        "title": "Clay 借助 Codex 和 ChatGPT 助力销售团队赢单",
-        "summary": "ChatGPT 和 Codex 集成帮助 Clay 用户研究交易机会，并将数据转化为市场拓展策略；推理工作由 GPT-6 模型完成。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
+        "id": "langchain-blog-97a44d440aca",
+        "title": "我们如何借助 LangSmith 获得 ISO 42001 认证",
+        "summary": "LangChain 借助 LangSmith 获得了 ISO/IEC 42001 认证。这是人工智能管理体系的国际标准。了解详情。",
+        "source": "LangChain Blog",
+        "sourceId": "langchain-blog",
         "category": null,
-        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "publishedAt": "2026-11-25T01:04:06.000Z",
         "links": {
-          "original": "https://openai.com/business/customer-stories/clay-plugins-openai"
-        }
-      },
-      {
-        "id": "openai-news-9b78a3558270",
-        "title": "GPT-6 模型展现出内在的蛋白质设计能力",
-        "summary": "GPT-6 模型运用推理和代码设计蛋白质结构与序列。实验室测试在五个靶标上发现了结合证据。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-24T13:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
-        }
-      },
-      {
-        "id": "openai-news-d5c8fbf9e25b",
-        "title": "借助 Astra 搜寻遥远行星",
-        "summary": "了解两位业余天文学家如何使用 Codex 和 Astra，在 NASA 的开普勒和 TESS 太空望远镜公开数据中寻找潜在系外行星。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-24T11:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/index/searching-for-distant-planets-with-astra"
-        }
-      },
-      {
-        "id": "openai-news-df70aef3f2a5",
-        "title": "Intentful 如何借助 dots 为增长腾出更多时间",
-        "summary": "Marina Petrova 的 dot Aria 能协助调研网站、制作提案，还会主动标记消息并解决问题。",
-        "source": "OpenAI News",
-        "sourceId": "openai-news",
-        "category": null,
-        "publishedAt": "2026-11-24T00:00:00.000Z",
-        "links": {
-          "original": "https://openai.com/business/customer-stories/intentful-dots"
+          "original": "https://www.langchain.com/blog/ai-governance-iso-iec-42001-langsmith"
         }
       }
     ],
