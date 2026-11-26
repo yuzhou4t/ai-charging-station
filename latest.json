@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "service": "AI充电站日报",
-  "date": "2026-11-26",
-  "generatedAt": "2026-11-25T23:55:06.000Z",
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-26T23:55:04.626Z",
   "timezone": "Asia/Shanghai",
   "windowLabel": "过去 24 小时",
   "summary": {
-    "totalItems": 2,
-    "mustRead": 2,
+    "totalItems": 0,
+    "mustRead": 0,
     "creatorUpdates": 0,
-    "officialUpdates": 2,
+    "officialUpdates": 0,
     "aihotPicks": 0,
     "sources": [
       {
@@ -66,7 +66,7 @@
         "name": "LangChain Blog",
         "group": "official",
         "status": "ok",
-        "itemCount": 2
+        "itemCount": 0
       },
       {
         "id": "aihot",
@@ -78,59 +78,9 @@
     ]
   },
   "sections": {
-    "mustRead": [
-      {
-        "id": "langchain-blog-75ddb8dc83bc",
-        "title": "智能体湖",
-        "summary": "智能体湖汇集智能体生成的所有运行轨迹。了解 LangSmith 如何大规模筛选出高价值轨迹，并将其转化为问题修复方案和微调模型。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-11-25T16:26:23.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/the-agent-lake"
-        }
-      },
-      {
-        "id": "langchain-blog-97a44d440aca",
-        "title": "我们如何借助 LangSmith 获得 ISO 42001 认证",
-        "summary": "LangChain 借助 LangSmith 获得了 ISO/IEC 42001 认证。这是人工智能管理体系的国际标准。了解详情。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-11-25T01:04:06.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/ai-governance-iso-iec-42001-langsmith"
-        }
-      }
-    ],
+    "mustRead": [],
     "creatorUpdates": [],
-    "officialUpdates": [
-      {
-        "id": "langchain-blog-75ddb8dc83bc",
-        "title": "智能体湖",
-        "summary": "智能体湖汇集智能体生成的所有运行轨迹。了解 LangSmith 如何大规模筛选出高价值轨迹，并将其转化为问题修复方案和微调模型。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-11-25T16:26:23.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/the-agent-lake"
-        }
-      },
-      {
-        "id": "langchain-blog-97a44d440aca",
-        "title": "我们如何借助 LangSmith 获得 ISO 42001 认证",
-        "summary": "LangChain 借助 LangSmith 获得了 ISO/IEC 42001 认证。这是人工智能管理体系的国际标准。了解详情。",
-        "source": "LangChain Blog",
-        "sourceId": "langchain-blog",
-        "category": null,
-        "publishedAt": "2026-11-25T01:04:06.000Z",
-        "links": {
-          "original": "https://www.langchain.com/blog/ai-governance-iso-iec-42001-langsmith"
-        }
-      }
-    ],
+    "officialUpdates": [],
     "aihotPicks": []
   }
 }
